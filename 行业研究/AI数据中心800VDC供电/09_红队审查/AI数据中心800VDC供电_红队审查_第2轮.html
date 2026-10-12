@@ -1,0 +1,528 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI数据中心800VDC供电_红队审查_第2轮 · 研究库</title><style>body{font-family:-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;max-width:920px;margin:0 auto;padding:24px;line-height:1.75;color:#24292f}
+h1,h2,h3{border-bottom:1px solid #e1e4e8;padding-bottom:6px}h1{font-size:1.7em}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.92em;display:block;overflow-x:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px;text-align:left}th{background:#f6f8fa}
+blockquote{border-left:4px solid #d0d7de;margin:0;padding:2px 14px;color:#57606a;background:#f6f8fa}
+code{background:#f0f1f2;padding:1px 5px;border-radius:4px;font-size:.9em}
+pre{background:#f6f8fa;padding:12px;border-radius:8px;overflow-x:auto}
+a{color:#0969da}nav{font-size:.9em;margin-bottom:18px}
+nav a{margin-right:14px;text-decoration:none}
+.sidebar{display:none}
+@media(min-width:1100px){.sidebar{display:block;position:fixed;left:16px;top:16px;bottom:16px;width:230px;overflow:auto;font-size:.85em;border-right:1px solid #e1e4e8;padding-right:10px}
+body{margin-left:280px}
+.sidebar a{display:block;text-decoration:none;color:#24292f;padding:2px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sidebar .group{border-bottom:1px solid #eef0f2;padding:2px 0}
+.sidebar .grp{font-weight:700;margin-top:8px;margin-bottom:2px;color:#0969da;cursor:pointer;user-select:none;display:block;padding:6px 18px 6px 2px;position:relative;min-height:1.4em}
+.sidebar a.current{background:#ddf4ff;border-left:3px solid #0969da;color:#0550ae;font-weight:600;padding-left:8px;border-radius:0 4px 4px 0}
+.sidebar .group:has(a.current)>.grp{color:#0550ae}
+.sidebar .grp::after{content:'▾';position:absolute;right:2px;top:6px;font-size:.75em;color:#8b949e}
+.sidebar .collapsed .grp::after{content:'▸'}
+.sidebar .collapsed a{display:none}
+#sidebarToggle{position:fixed;left:16px;top:16px;z-index:30;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:.9em;color:#24292f}
+body.hide-sb{margin-left:24px}
+body.hide-sb .sidebar{display:none!important}}
+</style>
+<button id="sidebarToggle" title="收起/展开菜单">◀</button><div class="sidebar"><div class="grp">📖 研究库</div>
+<div class="group"><div class="grp">00_使用说明</div>
+<a href="../00_使用说明/README_使用说明.html">README_使用说明</a>
+<a href="../00_使用说明/任务队列.html">任务队列</a>
+<a href="../../00_使用说明/报告模板/company_report.html">company_report</a>
+<a href="../../00_使用说明/报告模板/industry_report.html">industry_report</a>
+<a href="../../00_使用说明/报告模板/node_report.html">node_report</a>
+<a href="../00_使用说明/研究总表.html">研究总表</a>
+</div>
+<div class="group"><div class="grp">06_数据与工具</div>
+<a href="../06_数据与工具/数据能力说明.html">数据能力说明</a>
+</div>
+<div class="group"><div class="grp">08_归档</div>
+<a href="../08_归档/归档登记表.html">归档登记表</a>
+</div>
+<div class="group"><div class="grp">AI数据中心800VDC供电</div>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_研究材料.html">AI数据中心800VDC供电_研究材料</a>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_机会节点研究.html">AI数据中心800VDC供电_机会节点研究</a>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_候选企业清单.html">AI数据中心800VDC供电_候选企业清单</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_三企业估值报告.html">AI数据中心800VDC供电_三企业估值报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/07_深度报告/AI数据中心800VDC供电_产业深度研究报告.html">AI数据中心800VDC供电_产业深度研究报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_复审R2.html">AI800VDC_复审R2</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_红队审查.html">AI800VDC_红队审查</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第2轮.html">AI数据中心800VDC供电_红队审查_第2轮</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第3轮.html">AI数据中心800VDC供电_红队审查_第3轮</a>
+</div>
+<div class="group"><div class="grp">化纤</div>
+<a href="../../行业研究/化纤/化纤_产业趋势研究.html">化纤_产业趋势研究</a>
+<a href="../../行业研究/化纤/化纤_机会节点研究.html">化纤_机会节点研究</a>
+<a href="../../行业研究/化纤/化纤_候选企业清单.html">化纤_候选企业清单</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_三企业估值报告.html">化纤_三企业估值报告</a>
+<a href="../../../行业研究/化纤/07_深度报告/化纤_产业深度研究报告.html">化纤_产业深度研究报告</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R2.html">化纤_复审R2</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R3.html">化纤_复审R3</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查.html">化纤_红队审查</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第2轮.html">化纤_红队审查_第2轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第3轮.html">化纤_红队审查_第3轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/审查记录.html">审查记录</a>
+</div>
+<div class="group"><div class="grp">家庭空间常驻Agent</div>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_产业趋势研究.html">家庭空间常驻Agent_产业趋势研究</a>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_机会节点研究.html">家庭空间常驻Agent_机会节点研究</a>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_候选企业清单.html">家庭空间常驻Agent_候选企业清单</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_核心企业估值报告.html">家庭空间常驻Agent_核心企业估值报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/07_深度报告/家庭空间常驻Agent_产业深度研究报告.html">家庭空间常驻Agent_产业深度研究报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_复审R2.html">家庭空间常驻Agent_复审R2</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_红队审查.html">家庭空间常驻Agent_红队审查</a>
+</div>
+<div class="group"><div class="grp">开源中尺寸模型</div>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势研究.html">开源中尺寸模型_产业趋势研究</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_机会节点研究.html">开源中尺寸模型_机会节点研究</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_候选企业清单.html">开源中尺寸模型_候选企业清单</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_估值与分级_v1.html">开源中尺寸模型_估值与分级_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_核心企业估值报告.html">开源中尺寸模型_核心企业估值报告</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_产业深度研究报告.html">开源中尺寸模型_产业深度研究报告</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_深度报告_v1.0.html">开源中尺寸模型_深度报告_v1.0</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_复审R2.html">开源中尺寸模型_复审R2</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查.html">开源中尺寸模型_红队审查</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_v1.html">开源中尺寸模型_红队审查_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第2轮.html">开源中尺寸模型_红队审查_第2轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第3轮.html">开源中尺寸模型_红队审查_第3轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/红队审查_待执行.html">红队审查_待执行</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势与节点研究.html">开源中尺寸模型_产业趋势与节点研究</a>
+</div>
+<div class="group"><div class="grp">新型电池</div>
+<a href="../../行业研究/新型电池/新型电池_产业趋势研究.html">新型电池_产业趋势研究</a>
+<a href="../../行业研究/新型电池/新型电池_机会节点研究.html">新型电池_机会节点研究</a>
+<a href="../../行业研究/新型电池/新型电池_候选企业清单.html">新型电池_候选企业清单</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_三企业估值报告.html">新型电池_三企业估值报告</a>
+<a href="../../../行业研究/新型电池/07_深度报告/新型电池_产业深度研究报告.html">新型电池_产业深度研究报告</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_复审R2.html">新型电池_复审R2</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查.html">新型电池_红队审查</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第2轮.html">新型电池_红队审查_第2轮</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第3轮.html">新型电池_红队审查_第3轮</a>
+</div>
+<div class="group"><div class="grp">智能网联新能源汽车</div>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_产业趋势研究.html">智能网联新能源汽车_产业趋势研究</a>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_机会节点研究.html">智能网联新能源汽车_机会节点研究</a>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_候选企业清单.html">智能网联新能源汽车_候选企业清单</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_估值与分级_v1.html">智能网联新能源汽车_估值与分级_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_核心企业估值报告.html">智能网联新能源汽车_核心企业估值报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_产业深度研究报告.html">智能网联新能源汽车_产业深度研究报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_深度报告_v1.0.html">智能网联新能源汽车_深度报告_v1.0</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_复审R2.html">智能网联新能源汽车_复审R2</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查.html">智能网联新能源汽车_红队审查</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_v1.html">智能网联新能源汽车_红队审查_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第2轮.html">智能网联新能源汽车_红队审查_第2轮</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第3轮.html">智能网联新能源汽车_红队审查_第3轮</a>
+</div>
+</div><script>
+(function(){
+  // 高亮当前页：用 new URL() 把相对 href 解析为绝对路径后比对 pathname
+  document.querySelectorAll('.sidebar a').forEach(function(a){
+    try{
+      if(new URL(a.getAttribute('href'), location.href).pathname === location.pathname){
+        a.classList.add('current');
+        var g=a.closest('.group');
+        if(g)g.classList.remove('collapsed');
+      }
+    }catch(e){}
+  });
+})();
+document.addEventListener('click',function(e){
+  var g=e.target.closest('.grp');
+  if(g){g.parentElement.classList.toggle('collapsed');return;}
+  var t=e.target.closest('#sidebarToggle');
+  if(t){document.body.classList.toggle('hide-sb');
+    t.textContent=document.body.classList.contains('hide-sb')?'☰':'◀';}
+});
+</script><div class="content"><nav><a href="00_使用说明/index.html">00_使用说明</a> <a href="06_数据与工具/index.html">06_数据与工具</a> <a href="08_归档/index.html">08_归档</a> <a href="AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="化纤/index.html">化纤</a> <a href="家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="新型电池/index.html">新型电池</a> <a href="智能网联新能源汽车/index.html">智能网联新能源汽车</a></nav><p><a href="../../index.html">← 返回</a> · 生成于 2026-10-12 14:11</p>
+<h1 id="ai800vdc-2">AI数据中心800VDC供电链研究 —— 红队审查（第2轮）</h1>
+<blockquote>
+<p>审查人：独立反方研究员（Red Team，第2轮复审）｜审查日期：2026-10-12
+审查对象：<code>07_深度报告/AI数据中心800VDC供电_产业深度研究报告.md</code>（v1.0定稿），并回溯核对机会节点研究、候选企业清单、三企业估值报告与第1轮红队审查。
+方法（按任务要求）：①逐条复验第1轮红队指出的问题是否真实修正；②用东财 datacenter（数据采集脚本 quote/fin，2026-10-12执行，venv ~/research/.venv）独立复采抽验关键数字；③web检索换源交叉核验行业数据（每项标URL/时点）。
+规则：正方结论→挑战→证据→裁定，逐条列示；估算值显式标注；未验证项写明验证路径。</p>
+</blockquote>
+<hr />
+<h2 id="_1">结论摘要（先说立场）</h2>
+<ol>
+<li><strong>第1轮红队提出的问题绝大部分已被真实修正</strong>：主情景时间表切换、滑期情景显性建模（第六章）、盛弘降B、麦格升级条件收紧、SemiAnalysis口径标注"不适用中国"、欧陆通覆盖缺口声明——逐条复验均落实（见第一节）。</li>
+<li>但换源复采<strong>发现定稿v1.0仍有4处事实错误+1处算术表述瑕疵</strong>，其中2处恰恰出在"红队修订"新写的段落里（金盘订单口径统一、盛弘扣非标注）——修订过程本身引入了新错误。</li>
+<li>两项此前"未复核"的外部引语本轮已换源核实成功：Schneider"10% by 2030"（The Next Platform 2026-05-27原文已取得）与SST"$13B@2030"（SemiAnalysis原文经DG Matrix官方新闻稿等多源确认）。定稿的"未复核"标注已过时，应升级为"已验证"。</li>
+<li><strong>本轮裁定：4处事实错误未清零，暂不建议定稿</strong>；按下表修正后可达零事实错误。</li>
+</ol>
+<hr />
+<h2 id="1">一、第1轮红队问题整改复验（逐条）</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>第1轮指出的问题</th>
+<th>定稿整改方式</th>
+<th>复验裁定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>麦格米特股价两文件不一致（105.08 vs 103.4）</td>
+<td>定稿§4.1统一为105.08元（10-09），103.4作废</td>
+<td>✅已修正。本轮独立复采：东财quote 002851 = 601.33亿/PE 268.17（trade_date 2026-10-09），与105.08元口径自洽；10-12实时104.68元，日内波动不影响结论</td>
+</tr>
+<tr>
+<td>2</td>
+<td>新洁能"+97%"笔误</td>
+<td>定稿§4.1修正为"约-1%"并作废+97%</td>
+<td>✅已修正于定稿；本轮东财fin 605111复采：26H1归母2.334亿 vs 25H1 2.351亿=-0.7%≈-1%，证实修正正确。⚠️<strong>残留</strong>：候选企业清单L120原文仍保留"+97% yoy"（虽附更正注），源头文件未同步改</td>
+</tr>
+<tr>
+<td>3</td>
+<td>金盘海外订单口径冲突</td>
+<td>定稿§4.1设"新签/在手"双口径</td>
+<td>❌<strong>修正本身引入新错误</strong>，见第二节E1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>情景结构缺"滑期"主情景</td>
+<td>新增第六章滑期情景+§九裁决采用台达2027口径</td>
+<td>✅已修正。滑期测算区间复核：麦格80–180亿 vs 601亿=-70%~-87%✓；金盘140–150亿 vs 272亿≈-45%~-49%，报告写"约-45%"✓（偏保守但可接受）；⚠️盛弘区间见第二节E5</td>
+</tr>
+<tr>
+<td>5</td>
+<td>盛弘B+应降B（61.9%毛利率单点依赖）</td>
+<td>采纳，降B（观察），回升/证伪线明确</td>
+<td>✅已修正。61.9%毛利率本轮换源证实：雪球引半年报、aigbk财报快递均载"工业配套电源4.41亿+57.81%，毛利率61.94%"（URL见第二节E3条）</td>
+</tr>
+<tr>
+<td>6</td>
+<td>麦格升级条件过松</td>
+<td>收紧为"扣非&gt;2亿且OCF&gt;扣非"</td>
+<td>✅已修正</td>
+</tr>
+<tr>
+<td>7</td>
+<td>SemiAnalysis口径未中国化</td>
+<td>§二中国场景单列+标注"不适用中国"</td>
+<td>✅已修正</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Schneider引语未复核、SST $13B年份待复核</td>
+<td>定稿保留"未复核"标注</td>
+<td>⚠️非错误但<strong>已过时</strong>：本轮均已核实成功，见第四节</td>
+</tr>
+<tr>
+<td>9</td>
+<td>欧陆通覆盖缺口</td>
+<td>§十显性声明+补覆盖触发条件</td>
+<td>✅已修正。东财fin 300870复采：26H1归母0.0809亿、Q1亏损0.125亿，与定稿"Q1亏损Q2转正、缺乏正常化盈利基数"一致</td>
+</tr>
+</tbody>
+</table>
+<p><strong>复验总结</strong>：9项中7项整改到位，1项整改引入新错误（E1），1项标注过时（非错误）。</p>
+<hr />
+<h2 id="v10">二、本轮新发现：定稿v1.0事实错误清单</h2>
+<h3 id="e1-19441">E1. 金盘"19.4亿"的期间归属标错（定稿§4.1）【事实错误】</h3>
+<ul>
+<li><strong>正方结论</strong>（定稿§4.1）：「19.4亿为26H1<strong>新签</strong>海外订单，62.39亿为海外在手订单」。</li>
+<li><strong>挑战</strong>：19.4亿的期间归属需要换源核实——26H1海外新签若为41.90亿，19.4亿就不可能是H1口径。</li>
+<li><strong>证据</strong>：国联民生2026-08-24中报点评（同花顺F10页 https://basic.10jqka.com.cn/688676/worth.html ，2026-10-12检索）：「海外新签销售订单41.90亿元，同比+270.69%，<strong>其中26Q2销售订单实现19.39亿元，同比增长259.68%</strong>」；中财网2026-08-21（https://stock.cfi.cn/p20260821000642.html ）亦载"海外新签订单19.4亿元，同比增长260%"但未标期间，属转述省略。</li>
+<li><strong>裁定</strong>：<strong>19.4亿（+260%）实为26Q2单季海外新签，26H1海外新签为41.90亿（+270.69%）</strong>。定稿§4.1的"口径统一"把Q2单季错标为H1新签，引入新事实错误。修正：将§4.1该行改为「19.39亿为26Q2单季海外新签（26H1海外新签41.90亿+270.69%）；62.39亿为海外在手订单（+122.7%，占58.32%）」。其余数字（在手106.97亿+41.87%、DC新签38.69亿+336.25%、DC收入12.65亿+122.57%）经同花顺F10国联民生/国金点评双源确认✅。</li>
+</ul>
+<h3 id="e2-26h1-ocf147-34244">E2. 盛弘"26H1 OCF&gt;归母、净现比1.47"口径错误（定稿§〇-3、§4.2、§4.4）【事实错误】</h3>
+<ul>
+<li><strong>正方结论</strong>（定稿§4.2表）：「26H1经营现金流 +1.66亿（<strong>&gt;归母</strong>）」；§〇-3：「净现比1.47」。</li>
+<li><strong>挑战</strong>：东财fin复采26H1归母2.278亿、每股OCF 0.5314元×3.128亿股≈1.66亿——1.66亿 &lt; 2.28亿，"OCF&gt;归母"不成立；1.47的净现比与26H1不符（1.66/2.28=0.73）。</li>
+<li><strong>证据</strong>：①东财RPT_LICO_FN_CPD，300693，2026-10-12拉取：26H1归母2.2779亿、MGJYXJJE 0.5314元；②2025年报期：归母4.761亿、每股OCF 2.2411元×3.128亿股≈7.01亿→净现比≈1.47；③雪球引半年报（https://xueqiu.com/S/SZ300693/404774103 ，2026-10-12检索）：26H1"归母净利2.28亿，同比+44.11%"与OCF 1.66亿并列。</li>
+<li><strong>裁定</strong>：<strong>"净现比1.47"是2025年度口径（OCF 7.0亿/归母4.76亿），被误置于26H1语境；"26H1 OCF&gt;归母"为假（实际约0.73）</strong>。修正：§4.2改为「+1.66亿（净现比0.73；2025年度净现比1.47）」，§〇-3与§4.4"OCF&gt;归母"表述同步更正。注：此修正不推翻"财务质量全链最好"的结论（0.73的净现比在链内仍属健康），但引用口径必须改。</li>
+</ul>
+<h3 id="e3-26q342">E3. 盛弘"扣非未单列，待26Q3验证"标注错误（定稿§4.2、§九待验证清单）【事实错误】</h3>
+<ul>
+<li><strong>正方结论</strong>（定稿§4.2）：「2.28亿（<strong>扣非未单列，待26Q3验证</strong>）」；§九：「盛弘扣非未单列问题待26Q3披露补齐」。</li>
+<li><strong>挑战</strong>：26H1扣非是否真的未披露？</li>
+<li><strong>证据</strong>：①研报雷达载开源证券2026-08中报点评（https://zc-baogao.com/report.html?id=39237 ，2026-10-12检索）：「扣非归母净利润2.28亿元，同比+50%」；②aigbk财报快递（https://www.aigbk.com/article/shenghong_2026_h1_profit_up_50_industrial_power/ ）：「扣非归母净利润2.28亿元，同比增长50.45%」；③雪球引半年报同口径。</li>
+<li><strong>裁定</strong>：<strong>26H1扣非已披露：2.28亿元，+50.45%</strong>（恰与归母2.28亿几乎相等，这可能正是此前误判"未单列"的来源）。定稿§4.2该格与§九该条均应改为"扣非2.28亿（+50.45%），与归母基本持平"。此修正<strong>正面支持</strong>盛弘"利润质量无粉饰"的判断——第1轮红队"待26Q3验证"的保守表述可撤销，"量级不影响结论"的原判断反而被证实。</li>
+</ul>
+<h3 id="e4-26h1-39pct42">E4. 麦格米特26H1毛利率同比降幅"-3.9pct"无出处（定稿§4.2）【事实错误】</h3>
+<ul>
+<li><strong>正方结论</strong>（定稿§4.2）：麦格米特26H1毛利率「21.2%（<strong>-3.9pct</strong>）」。</li>
+<li><strong>挑战</strong>：东财fin复采：26H1销售毛利率21.21%，25H1为22.07%——同比降幅约-0.86pct，不是-3.9pct。</li>
+<li><strong>证据</strong>：东财RPT_LICO_FN_CPD，002851，2026-10-12拉取：2026-06-30期XSMLL=21.2129，2025-06-30期XSMLL=22.0699。</li>
+<li><strong>裁定</strong>：<strong>-3.9pct与东财口径不符</strong>（无论对比25H1的-0.9pct还是对比2025全年的-1.1pct都对不上），疑为与2025全年毛利率同比（22.3% vs 25.2%≈-2.9pct）或26Q1同比（-1.4pct，华泰口径）混淆后误植。修正：改为「21.2%（同比约-0.9pct，东财口径）」。该错误不改变"C+评级"论据结构，但属事实错误，必须改。</li>
+</ul>
+<h3 id="e5-62">E5. 盛弘滑期情景区间表述与自身测算不自洽（定稿§6.2表）【算术表述瑕疵】</h3>
+<ul>
+<li><strong>正方结论</strong>：滑期情景盛弘「≈中性95–116亿」对现价「<strong>-5%~-13%</strong>」。</li>
+<li><strong>挑战</strong>：109亿现价 vs 116亿上限 = +6%，vs 95亿下限 = -13%。区间上限高于现价，"-5%~-13%"两端皆为负、与测算不自洽。</li>
+<li><strong>裁定</strong>：改为「<strong>-13%~+6%</strong>（中性区间跨现价）」——这恰恰强化了报告自己的结论（盛弘对滑期几乎免疫），修正后逻辑更顺。</li>
+</ul>
+<hr />
+<h2 id="datacenter22026-10-12">三、东财datacenter独立复采抽验记录（第2轮，2026-10-12执行）</h2>
+<p>脚本：<code>~/research/06_数据与工具/数据采集脚本.py</code>（quote/fin），抽验对象为定稿§4.2三企业对比表：</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>抽验项</th>
+<th>定稿值</th>
+<th>本轮独立复采值</th>
+<th>判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>麦格米特市值/PE-TTM</td>
+<td>601亿/268.2x（10-09）</td>
+<td>601.33亿/268.17（10-09）；10-12实时104.68元</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>2</td>
+<td>麦格26H1收入/归母/毛利率</td>
+<td>60.61亿/2.52亿/21.2%</td>
+<td>60.61亿/2.5207亿/21.21%</td>
+<td>✅（但同比降幅-3.9pct错，见E4）</td>
+</tr>
+<tr>
+<td>3</td>
+<td>盛弘26H1收入/归母/毛利率/OCF</td>
+<td>17.59亿/2.28亿/40.7%/1.66亿</td>
+<td>17.59亿/2.2779亿/40.70%/0.5314×3.128亿≈1.66亿</td>
+<td>✅（"OCF&gt;归母"错，见E2）</td>
+</tr>
+<tr>
+<td>4</td>
+<td>金盘26H1收入/归母/毛利率</td>
+<td>35.56亿/3.03亿/27.4%</td>
+<td>35.56亿/3.0267亿/27.41%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>5</td>
+<td>金盘26H1 OCF</td>
+<td>-0.24亿</td>
+<td>-0.05168元/股×约4.50亿股≈-0.233亿</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>6</td>
+<td>欧陆通PE-TTM/26H1归母</td>
+<td>201x/0.08亿</td>
+<td>201.22/0.0809亿</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>7</td>
+<td>新洁能26H1同比</td>
+<td>约-1%（修正后）</td>
+<td>2.334亿 vs 25H1 2.351亿=-0.7%</td>
+<td>✅修正正确</td>
+</tr>
+<tr>
+<td>8</td>
+<td>盛弘2025 ROE</td>
+<td>24.15%</td>
+<td>24.15（东财2025-12-31期）</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>9</td>
+<td>金盘2025 ROE</td>
+<td>14.05%</td>
+<td>同花顺F10一致（14.05%）；东财fin口径72.95亿收入/6.60亿归母亦吻合</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>10</td>
+<td>麦格2025 ROE</td>
+<td>2.38%</td>
+<td>2.38（东财2025-12-31期）</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<p>10项抽验中9项完全一致（第1轮已验过的不再重复计入）；本轮新发现错误集中在<strong>比率/同比/期间归属等"衍生口径"</strong>，而非原始财务数据本身——模式与第1轮一致。</p>
+<hr />
+<h2 id="url">四、换源交叉核验：行业外部论据（标URL/时点）</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>论据</th>
+<th>定稿状态</th>
+<th>换源核验结果（2026-10-12检索）</th>
+<th>裁定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Digitimes 1Q27量产/台达2Q27爬坡</td>
+<td>已引用（标2026-07-23/24两个日期）</td>
+<td>Digitimes原文标题《Nvidia 800V HVDC enters production in 1Q27, Delta set for 2Q ramp》（https://digitimes.com/news/a20260723PD209/nvidia-production-forecast-2027-market.html ，2026-07-23）；ME News/BlockBeats 2026-07-24转述一致（kucoin.com/news/flash/...；coinex.network）。补充细节：延迟主因首代产品系统验证发现潜在短路风险、美国客户追加测试</td>
+<td>✅引用属实。建议统一标注为"2026-07-23（部分转载署07-24 UTC+8）"</td>
+</tr>
+<tr>
+<td>2</td>
+<td>SemiAnalysis"大规模部署滑至2028后"</td>
+<td>已引用</td>
+<td>Digitimes原文导语直接转述，双源成立</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Schneider"2030年或仅~10%新节点"</td>
+<td>标"原始引语未复核，单一二手来源，置信中等"</td>
+<td><strong>已复核成功</strong>：The Next Platform 2026-05-27《Not So Fast On That Charge For 800 Volt Datacenter Power》（https://nextplatform.com/compute/2026/05/27/not-so-fast-on-that-charge-for-800-volt-datacenter-power/5246760 ）：Schneider云与服务提供商技术方案总监Rob Bunger原话「We think by 2030 maybe 10 percent of the new AI nodes coming out will be required to have 800 volt DC」，另有open-factory.com（2026）与hw.dev（2026）独立转引一致；并载sidecar 600kW–1MW、集中式方案2029年细节</td>
+<td>✅引语属实。定稿"未复核"标注应升级为"已验证（TNP 2026-05-27）"，置信中等→较高（口径为"或仅约10%"，原报告表述准确）</td>
+</tr>
+<tr>
+<td>4</td>
+<td>SST市场"~$13B"年份归属</td>
+<td>标"年份归属待复核"</td>
+<td><strong>已复核成功</strong>：SemiAnalysis《Inside the 800VDC Revolution – Part 1》（2026-05-25）口径经DG Matrix官方新闻稿（dgmatrix.com/news-and-media/press-release/3，BUSINESS WIRE）确认：「sizes the solid-state transformer market at <strong>$13 billion by 2030</strong>」；BigGo Finance（finance.biggo.com）与老虎国际（itiger.com/news/1177902816）转述一致，并确认sidecar市场峰值~$110亿@2028、2030年800V覆盖~39GW、集中式UPS退出约$1.2M/MW</td>
+<td>✅年份归属确认为2030。定稿"待复核"标注撤销。<strong>顺带补强</strong>：UPS -$1.2M/MW口径同时被老虎/BigGo转载源确认，SemiAnalysis价值迁移引用链完整</td>
+</tr>
+<tr>
+<td>5</td>
+<td>麦格米特"首个AI电源量产订单"（高盛口径）</td>
+<td>定稿已引用，标"单一来源"</td>
+<td>datayes（m-robo.datayes.com/feed/detail?id=587190）确认高盛研报要点：26Q1经美国总部ODM厂商获北美CSP基于GB300的首个AI电源量产订单（含PSU与超级电容、不含电池组），<strong>且明确"产品定价低于同行水平"</strong></td>
+<td>✅属实。补充：<strong>"定价低于同行"细节反而支持C+评级中"新进入者以价格换份额"的论据</strong>，建议主编将该细节补入§4.3</td>
+</tr>
+<tr>
+<td>6</td>
+<td>盛弘工业配套电源61.9%毛利率/4.41亿+57.81%</td>
+<td>已引用（单点依赖论据核心）</td>
+<td>雪球引半年报（xueqiu.com/S/SZ300693/404774103）、aigbk财报快递、研报雷达三源一致：61.94%/+57.81%；另确认"2026年新设AIDC关键电源业务部"出自半年报原文</td>
+<td>✅属实</td>
+</tr>
+<tr>
+<td>7</td>
+<td>金盘DC收入12.65亿+122.6%、新签38.69亿+336%、在手107亿</td>
+<td>已引用</td>
+<td>国联民生/国金双点评（同花顺F10）：+122.57%/+336.25%/106.97亿+41.87%</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>8</td>
+<td>麦格电源板块18.41亿+60.9%（26H1）</td>
+<td>已引用，标注"以电源板块近似AI口径"</td>
+<td>本轮未取得独立第二源（分部数据来自中报分部披露，东财fin不含分部）</td>
+<td>⚠️维持定稿既有"近似口径"标注即可，不构成错误；建议后续以中报分部PDF复核</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_2">五、遗留整改事项（非事实错误，但需主编处理）</h2>
+<ol>
+<li><strong>源头文件未同步</strong>：候选企业清单L14（麦格103.4元）、L120（新洁能"+97% yoy"）未按定稿§4.1口径更正。定稿统一口径只能约束下游引用，建议直接修订清单原文或在清单头部加"以定稿§4.1为准"勘误框。</li>
+<li><strong>过时标注升级</strong>：Schneider引语、SST $13B年份两项"未复核"标注（§4.1表、§六、§七、§九）应升级为"已验证"并附本报告第四节的URL与日期。</li>
+<li><strong>"定价低于同行"补强</strong>：麦格米特C+论据可新增高盛订单细节（见四-5），属对评级结论的进一步支持。</li>
+</ol>
+<hr />
+<h2 id="_3">六、逐条裁定汇总</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>正方结论（定稿v1.0）</th>
+<th>挑战</th>
+<th>证据</th>
+<th>裁定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E1</td>
+<td>金盘19.4亿=26H1海外新签</td>
+<td>H1海外新签应为41.9亿</td>
+<td>国联民生/中财网2026-08</td>
+<td>❌事实错误：19.4亿为26Q2单季新签</td>
+</tr>
+<tr>
+<td>E2</td>
+<td>盛弘26H1 OCF&gt;归母、净现比1.47</td>
+<td>1.66&lt;2.28</td>
+<td>东财fin+半年报</td>
+<td>❌事实错误：净现比0.73；1.47系2025年度口径</td>
+</tr>
+<tr>
+<td>E3</td>
+<td>盛弘26H1扣非未单列</td>
+<td>已披露</td>
+<td>开源点评/aigbk/雪球三源</td>
+<td>❌事实错误：扣非2.28亿+50.45%已披露（此修正对盛弘判断<strong>有利</strong>）</td>
+</tr>
+<tr>
+<td>E4</td>
+<td>麦格26H1毛利率-3.9pct</td>
+<td>东财口径-0.9pct</td>
+<td>东财fin 25H1/26H1</td>
+<td>❌事实错误：应为约-0.9pct</td>
+</tr>
+<tr>
+<td>E5</td>
+<td>盛弘滑期-5%~-13%</td>
+<td>上限116亿&gt;现价109亿</td>
+<td>定稿自身测算</td>
+<td>⚠️算术表述瑕疵：应为-13%~+6%</td>
+</tr>
+<tr>
+<td>V1</td>
+<td>主情景采用台达2027口径</td>
+<td>是否真实修正</td>
+<td>定稿§〇/§六/§九</td>
+<td>✅已修正</td>
+</tr>
+<tr>
+<td>V2</td>
+<td>滑期情景显性建模</td>
+<td>区间算术复核</td>
+<td>复算</td>
+<td>✅成立（盛弘区间表述除外）</td>
+</tr>
+<tr>
+<td>V3</td>
+<td>第1轮10项财务抽验结论</td>
+<td>是否可复现</td>
+<td>本轮东财复采10项</td>
+<td>✅可复现</td>
+</tr>
+<tr>
+<td>V4</td>
+<td>Schneider引语未复核</td>
+<td>换源核实</td>
+<td>TNP 2026-05-27原文</td>
+<td>✅引语属实，标注过时</td>
+</tr>
+<tr>
+<td>V5</td>
+<td>SST $13B年份待复核</td>
+<td>换源核实</td>
+<td>DG Matrix新闻稿等</td>
+<td>✅=2030，标注过时</td>
+</tr>
+<tr>
+<td>V6</td>
+<td>SemiAnalysis口径不适用中国</td>
+<td>方法论复核</td>
+<td>§二中国场景三约束仍无反证</td>
+<td>✅维持</td>
+</tr>
+<tr>
+<td>V7</td>
+<td>欧陆通覆盖缺口声明</td>
+<td>数据复核</td>
+<td>东财fin 300870</td>
+<td>✅成立</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_4">七、最终裁定</h2>
+<ul>
+<li>本轮复验+复采+换源共核验17项，<strong>确认定稿v1.0现存事实错误4处（E1–E4）+算术表述瑕疵1处（E5）</strong>。</li>
+<li>E1–E4全部为"衍生口径"错误（期间归属、比率、同比、披露状态），原始财务数据经东财datacenter二次独立复采<strong>全部干净</strong>；E1、E2、E3三处均不改变任何评级结论与方向判断（E3甚至强化盛弘的利润质量论据），但按"零事实错误方可定稿"的规则，<strong>本轮不能出具"零事实错误，建议定稿"</strong>。</li>
+<li><strong>建议</strong>：主编按第二节E1–E5逐条修正（均为单行/单格修改，不触及论证结构），并完成第五节3项遗留事项后，可进入第3轮红队快速复验（仅需复核E1–E5修正点+两项标注升级，无需重跑全量抽查）——修正到位即可判定零事实错误、建议定稿。</li>
+</ul>
+<p><em>红队第2轮审查完。所有证据均附URL/数据源/时点；估算与未验证项均已显式标注，无一项以推断替代数据。</em></p></div>

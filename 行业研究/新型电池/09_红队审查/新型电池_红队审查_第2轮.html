@@ -1,0 +1,425 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>新型电池_红队审查_第2轮 · 研究库</title><style>body{font-family:-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;max-width:920px;margin:0 auto;padding:24px;line-height:1.75;color:#24292f}
+h1,h2,h3{border-bottom:1px solid #e1e4e8;padding-bottom:6px}h1{font-size:1.7em}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.92em;display:block;overflow-x:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px;text-align:left}th{background:#f6f8fa}
+blockquote{border-left:4px solid #d0d7de;margin:0;padding:2px 14px;color:#57606a;background:#f6f8fa}
+code{background:#f0f1f2;padding:1px 5px;border-radius:4px;font-size:.9em}
+pre{background:#f6f8fa;padding:12px;border-radius:8px;overflow-x:auto}
+a{color:#0969da}nav{font-size:.9em;margin-bottom:18px}
+nav a{margin-right:14px;text-decoration:none}
+.sidebar{display:none}
+@media(min-width:1100px){.sidebar{display:block;position:fixed;left:16px;top:16px;bottom:16px;width:230px;overflow:auto;font-size:.85em;border-right:1px solid #e1e4e8;padding-right:10px}
+body{margin-left:280px}
+.sidebar a{display:block;text-decoration:none;color:#24292f;padding:2px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sidebar .group{border-bottom:1px solid #eef0f2;padding:2px 0}
+.sidebar .grp{font-weight:700;margin-top:8px;margin-bottom:2px;color:#0969da;cursor:pointer;user-select:none;display:block;padding:6px 18px 6px 2px;position:relative;min-height:1.4em}
+.sidebar a.current{background:#ddf4ff;border-left:3px solid #0969da;color:#0550ae;font-weight:600;padding-left:8px;border-radius:0 4px 4px 0}
+.sidebar .group:has(a.current)>.grp{color:#0550ae}
+.sidebar .grp::after{content:'▾';position:absolute;right:2px;top:6px;font-size:.75em;color:#8b949e}
+.sidebar .collapsed .grp::after{content:'▸'}
+.sidebar .collapsed a{display:none}
+#sidebarToggle{position:fixed;left:16px;top:16px;z-index:30;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:.9em;color:#24292f}
+body.hide-sb{margin-left:24px}
+body.hide-sb .sidebar{display:none!important}}
+</style>
+<button id="sidebarToggle" title="收起/展开菜单">◀</button><div class="sidebar"><div class="grp">📖 研究库</div>
+<div class="group"><div class="grp">00_使用说明</div>
+<a href="../00_使用说明/README_使用说明.html">README_使用说明</a>
+<a href="../00_使用说明/任务队列.html">任务队列</a>
+<a href="../../00_使用说明/报告模板/company_report.html">company_report</a>
+<a href="../../00_使用说明/报告模板/industry_report.html">industry_report</a>
+<a href="../../00_使用说明/报告模板/node_report.html">node_report</a>
+<a href="../00_使用说明/研究总表.html">研究总表</a>
+</div>
+<div class="group"><div class="grp">06_数据与工具</div>
+<a href="../06_数据与工具/数据能力说明.html">数据能力说明</a>
+</div>
+<div class="group"><div class="grp">08_归档</div>
+<a href="../08_归档/归档登记表.html">归档登记表</a>
+</div>
+<div class="group"><div class="grp">AI数据中心800VDC供电</div>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_研究材料.html">AI数据中心800VDC供电_研究材料</a>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_机会节点研究.html">AI数据中心800VDC供电_机会节点研究</a>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_候选企业清单.html">AI数据中心800VDC供电_候选企业清单</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_三企业估值报告.html">AI数据中心800VDC供电_三企业估值报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/07_深度报告/AI数据中心800VDC供电_产业深度研究报告.html">AI数据中心800VDC供电_产业深度研究报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_复审R2.html">AI800VDC_复审R2</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_红队审查.html">AI800VDC_红队审查</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第2轮.html">AI数据中心800VDC供电_红队审查_第2轮</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第3轮.html">AI数据中心800VDC供电_红队审查_第3轮</a>
+</div>
+<div class="group"><div class="grp">化纤</div>
+<a href="../../行业研究/化纤/化纤_产业趋势研究.html">化纤_产业趋势研究</a>
+<a href="../../行业研究/化纤/化纤_机会节点研究.html">化纤_机会节点研究</a>
+<a href="../../行业研究/化纤/化纤_候选企业清单.html">化纤_候选企业清单</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_三企业估值报告.html">化纤_三企业估值报告</a>
+<a href="../../../行业研究/化纤/07_深度报告/化纤_产业深度研究报告.html">化纤_产业深度研究报告</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R2.html">化纤_复审R2</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R3.html">化纤_复审R3</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查.html">化纤_红队审查</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第2轮.html">化纤_红队审查_第2轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第3轮.html">化纤_红队审查_第3轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/审查记录.html">审查记录</a>
+</div>
+<div class="group"><div class="grp">家庭空间常驻Agent</div>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_产业趋势研究.html">家庭空间常驻Agent_产业趋势研究</a>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_机会节点研究.html">家庭空间常驻Agent_机会节点研究</a>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_候选企业清单.html">家庭空间常驻Agent_候选企业清单</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_核心企业估值报告.html">家庭空间常驻Agent_核心企业估值报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/07_深度报告/家庭空间常驻Agent_产业深度研究报告.html">家庭空间常驻Agent_产业深度研究报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_复审R2.html">家庭空间常驻Agent_复审R2</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_红队审查.html">家庭空间常驻Agent_红队审查</a>
+</div>
+<div class="group"><div class="grp">开源中尺寸模型</div>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势研究.html">开源中尺寸模型_产业趋势研究</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_机会节点研究.html">开源中尺寸模型_机会节点研究</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_候选企业清单.html">开源中尺寸模型_候选企业清单</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_估值与分级_v1.html">开源中尺寸模型_估值与分级_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_核心企业估值报告.html">开源中尺寸模型_核心企业估值报告</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_产业深度研究报告.html">开源中尺寸模型_产业深度研究报告</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_深度报告_v1.0.html">开源中尺寸模型_深度报告_v1.0</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_复审R2.html">开源中尺寸模型_复审R2</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查.html">开源中尺寸模型_红队审查</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_v1.html">开源中尺寸模型_红队审查_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第2轮.html">开源中尺寸模型_红队审查_第2轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第3轮.html">开源中尺寸模型_红队审查_第3轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/红队审查_待执行.html">红队审查_待执行</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势与节点研究.html">开源中尺寸模型_产业趋势与节点研究</a>
+</div>
+<div class="group"><div class="grp">新型电池</div>
+<a href="../../行业研究/新型电池/新型电池_产业趋势研究.html">新型电池_产业趋势研究</a>
+<a href="../../行业研究/新型电池/新型电池_机会节点研究.html">新型电池_机会节点研究</a>
+<a href="../../行业研究/新型电池/新型电池_候选企业清单.html">新型电池_候选企业清单</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_三企业估值报告.html">新型电池_三企业估值报告</a>
+<a href="../../../行业研究/新型电池/07_深度报告/新型电池_产业深度研究报告.html">新型电池_产业深度研究报告</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_复审R2.html">新型电池_复审R2</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查.html">新型电池_红队审查</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第2轮.html">新型电池_红队审查_第2轮</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第3轮.html">新型电池_红队审查_第3轮</a>
+</div>
+<div class="group"><div class="grp">智能网联新能源汽车</div>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_产业趋势研究.html">智能网联新能源汽车_产业趋势研究</a>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_机会节点研究.html">智能网联新能源汽车_机会节点研究</a>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_候选企业清单.html">智能网联新能源汽车_候选企业清单</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_估值与分级_v1.html">智能网联新能源汽车_估值与分级_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_核心企业估值报告.html">智能网联新能源汽车_核心企业估值报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_产业深度研究报告.html">智能网联新能源汽车_产业深度研究报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_深度报告_v1.0.html">智能网联新能源汽车_深度报告_v1.0</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_复审R2.html">智能网联新能源汽车_复审R2</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查.html">智能网联新能源汽车_红队审查</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_v1.html">智能网联新能源汽车_红队审查_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第2轮.html">智能网联新能源汽车_红队审查_第2轮</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第3轮.html">智能网联新能源汽车_红队审查_第3轮</a>
+</div>
+</div><script>
+(function(){
+  // 高亮当前页：用 new URL() 把相对 href 解析为绝对路径后比对 pathname
+  document.querySelectorAll('.sidebar a').forEach(function(a){
+    try{
+      if(new URL(a.getAttribute('href'), location.href).pathname === location.pathname){
+        a.classList.add('current');
+        var g=a.closest('.group');
+        if(g)g.classList.remove('collapsed');
+      }
+    }catch(e){}
+  });
+})();
+document.addEventListener('click',function(e){
+  var g=e.target.closest('.grp');
+  if(g){g.parentElement.classList.toggle('collapsed');return;}
+  var t=e.target.closest('#sidebarToggle');
+  if(t){document.body.classList.toggle('hide-sb');
+    t.textContent=document.body.classList.contains('hide-sb')?'☰':'◀';}
+});
+</script><div class="content"><nav><a href="00_使用说明/index.html">00_使用说明</a> <a href="06_数据与工具/index.html">06_数据与工具</a> <a href="08_归档/index.html">08_归档</a> <a href="AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="化纤/index.html">化纤</a> <a href="家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="新型电池/index.html">新型电池</a> <a href="智能网联新能源汽车/index.html">智能网联新能源汽车</a></nav><p><a href="../../index.html">← 返回</a> · 生成于 2026-10-12 14:11</p>
+<h1 id="2">新型电池行业研究·红队审查（第2轮）</h1>
+<p><strong>审查日期</strong>：2026-10-12　|　<strong>审查对象</strong>：《新型电池_产业深度研究报告（定稿v1.0）》及四份底层子报告、第1轮《红队审查》
+<strong>方法</strong>：①逐条复验第1轮修订是否真正落实（逐文件比对，而非只看定稿声明）；②东财datacenter独立复采（<code>数据采集脚本.py quote/fin</code>，venv=~/research/.venv，本次执行于2026-10-12，估值快照trade_date=2026-10-09）；③换源交叉核验行业关键数字（新华网/人民网/新浪/每经/证券时报/北极星/Mysteel/东财PDF等，URL与时点逐条标注）。
+<strong>结论分级</strong>：【已修正】【未修正】【复验成立】【复验推翻】【新发现】。</p>
+<hr />
+<h2 id="1">一、第1轮修订落实情况复验</h2>
+<h3 id="11">1.1 储能涨价双口径拆分 —— 【已修正（定稿），未同步至底层子报告】</h3>
+<ul>
+<li>正方（定稿v1.0第二节/第六节）：统一为「市场均价0.31→0.365元/Wh（+18%）」与「宁德商城挂牌价0.42+（起售价，含587Ah结构切换）」两条线，并声明全文按此口径执行。</li>
+<li>挑战：修订是否只改了定稿？逐文件检查结果——<strong>《产业趋势研究》2.5/3.1节仍保留「0.31→0.42元/Wh两轮提价」「314Ah报价反弹至约0.4元/Wh」旧口径；《机会节点研究》5.2节仍写「0.31→0.365→0.42+元/Wh连续三季回升」，把两个口径重新缝合</strong>；《三企业估值报告》2.1节「隐含预期」仍引「0.31→0.42+两轮提价」。</li>
+<li>证据：三份子报告原文（2026-10-12版）比对。</li>
+<li>裁定：定稿已修正，但<strong>四份子报告均未回改，定稿与底层证据链口径不一致</strong>。属一致性问题（非新事实错误），但定稿声称「已吸收全部修订」与实情不符，应在子报告头部加注「口径以定稿v1.0为准」或同步回改。</li>
+</ul>
+<h3 id="12-17000190002000">1.2 宁德中性下修至17,000–19,000亿、其他业务2,000亿降级为期权 —— 【已修正（定稿），未同步至估值报告】</h3>
+<ul>
+<li>定稿8.2/8.5节已按第1轮建议改写（中性17,000–19,000亿、其他业务移出中性、分部归因改标「公司半年报」、补境外毛利率29.97%、净现金不再叠加计入）。</li>
+<li>但<strong>《三企业估值报告》全文未动</strong>：总览表仍写「中性21,600亿/+57%」、分部表仍标「经东吴点评转引」、固定三句话仍把「其他业务2,000亿」列为估值贡献、恩捷中性PB仍为2.2–2.5x、乐观情景仍给PB 3x、OCF裂口一节仍无票据解释。<strong>定稿第八节与估值报告正文直接矛盾</strong>，任何引用估值报告原文的读者会拿到被第1轮否决的旧结论。</li>
+<li>裁定：【未修正】（就证据链完整性而言）。必须在估值报告头部加显著声明（或回改），否则定稿的「红队后仍成立」标签悬空。</li>
+</ul>
+<h3 id="13-ocf">1.3 天赐：OCF裂口机理改写 + 中性低估风险标注 —— 【已修正（定稿）】</h3>
+<p>定稿8.3节已改写为公司互动平台官方口径（票据未贴现），加可证伪验证点（应收款项融资回升），并明示中性可能低估。估值报告原文未同步（同1.2）。</p>
+<h3 id="14-pb2022x">1.4 恩捷：PB上限2.0–2.2x、卖方分歧显性化 —— 【已修正（定稿）】</h3>
+<p>定稿8.4节落实；估值报告原文未同步（同1.2）。</p>
+<h3 id="15">1.5 十五五规划逐字核实 + 对二线收缩信号 —— 【已修正，且本次换源复验通过】</h3>
+<ul>
+<li>本次独立换源：新华网xinhuanet.com/20260928、人民网finance.people.com.cn/n1/2026/0928/c1004-40806910、新浪财经doc-initkhxe2945742（含文号<strong>工信部联规〔2026〕220号</strong>）——七部门、2026-09-28、「到2030年全固态电池初步实现规模化应用」「循环寿命达到15000次」「PPB级」「5方面19项重点任务」逐字一致【复验成立】。新浪稿正文提及「5个专栏」（另一段落笔误为4个，以官方口径5个为准——定稿写5专栏正确）。</li>
+<li>「由产能扩张转向附加值竞争、支持兼并重组」的收缩信号解读：规划原文含「支持符合条件的新型电池产业链骨干企业融资」「强化专项资金渠道统筹」与竞争秩序表述，定稿的「对二线收缩」为合理推断而非原文逐字，措辞已按推断处理【复验成立】。</li>
+</ul>
+<hr />
+<h2 id="datacenter2026-10-12">二、东财datacenter独立复采（本次执行，2026-10-12）</h2>
+<table>
+<thead>
+<tr>
+<th>数字</th>
+<th>报告值</th>
+<th>本次独立复采</th>
+<th>判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>宁德总市值/PE-TTM/PB（10-09）</td>
+<td>13,778 / 16.2 / 3.63</td>
+<td>13,777.6亿 / 16.21 / 3.63</td>
+<td>一致✓</td>
+</tr>
+<tr>
+<td>宁德H1净利/毛利率/ROE</td>
+<td>432.8亿 / 23.9% / 12.08%</td>
+<td>432.84亿 / 23.93% / 12.08%</td>
+<td>一致✓</td>
+</tr>
+<tr>
+<td>宁德Q1/Q2单季净利</td>
+<td>207→225亿</td>
+<td>207.38 / 225.46亿</td>
+<td>一致✓（换源：财联社cls.cn/detail/2436624同数）</td>
+</tr>
+<tr>
+<td>天赐市值/PE/PB</td>
+<td>727 / 18.4 / 3.59</td>
+<td>727.36亿 / 18.39 / 3.59</td>
+<td>一致✓</td>
+</tr>
+<tr>
+<td>天赐H1净利/毛利率/ROE</td>
+<td>28.6 / 33.5% / 15.0%</td>
+<td>28.61亿 / 33.55% / 15.00%</td>
+<td>一致✓</td>
+</tr>
+<tr>
+<td>天赐Q1每股OCF</td>
+<td>-0.01元</td>
+<td>-0.01049元</td>
+<td>一致✓</td>
+</tr>
+<tr>
+<td>天赐2025净利</td>
+<td>13.6亿</td>
+<td>13.62亿</td>
+<td>一致✓</td>
+</tr>
+<tr>
+<td>恩捷市值/PE/PB</td>
+<td>470 / 44.5 / 1.80</td>
+<td>469.56亿 / 44.47 / 1.80</td>
+<td>一致✓</td>
+</tr>
+<tr>
+<td>恩捷H1净利/毛利率/ROE</td>
+<td>8.2 / 29.9% / 3.15%</td>
+<td>8.20亿 / 29.89% / 3.15%</td>
+<td>一致✓</td>
+</tr>
+<tr>
+<td>恩捷2025净利</td>
+<td>1.4亿</td>
+<td>1.43亿</td>
+<td>一致✓</td>
+</tr>
+</tbody>
+</table>
+<p><strong>复采结论：全部10组估值/财务快照与报告一致，第二口径（换源）亦一致。数据纪律维持第1轮评价。</strong></p>
+<p>一处【新发现·微瑕】：定稿/估值报告称天赐「2026H1 OCF 4.0亿」。东财每股OCF口径0.1949元×约19.2亿股≈<strong>3.7亿</strong>，与4.0亿差约7%。若按合并现金流量表期末数（未逐项取得）可能为4.0亿，但现有可复核口径指向3.7亿。OCF/净利=14%的结论不受影响（3.7/28.6≈13%），<strong>列为待核微瑕，不计为事实错误</strong>，建议改写为「约3.7–4.0亿（每股口径推算）」。</p>
+<hr />
+<h2 id="url">三、换源交叉核验（行业关键数字，标URL/时点）</h2>
+<table>
+<thead>
+<tr>
+<th>数字</th>
+<th>报告口径</th>
+<th>换源核验</th>
+<th>判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>十五五规划要素</td>
+<td>七部门/9-28/2030全固态初步规模化/15000次/PPB/19项任务5专栏</td>
+<td>新华网2026-09-28、人民网同日、新浪（文号工信部联规〔2026〕220号）逐字一致</td>
+<td>属实✓</td>
+</tr>
+<tr>
+<td>储能电芯市场均价0.31→0.365（2026-08）</td>
+<td>高工/上证报转引</td>
+<td>21经济网2026-08-14（m.21jingji.com「均价0.365元/Wh附近，较2025年末约0.31元」）、东财wap.eastmoney.com/a/202609213879750089（「2026年8月主流314Ah均价约0.365元/Wh，较2025年末上涨超20%」）双源一致。注：部分媒体称「+20%+」，定稿取+18%（0.365/0.31-1=17.7%，自算口径正确）</td>
+<td>属实✓</td>
+</tr>
+<tr>
+<td>宁德商城挂牌0.423（8/1）/9-21再调</td>
+<td>观点网</td>
+<td>财闻网caiwennews.com「8月1日上调至0.423元/Wh」一致；亿纬9-1内销全品类+2%传导消费税（同源）</td>
+<td>属实✓</td>
+</tr>
+<tr>
+<td>宁德半年报分部：动力1921.25亿/毛利率20.63%；储能+87.5%；境外871亿/毛利率29.97% vs 境内21.16%</td>
+<td>公司半年报</td>
+<td>观察网guancha.cn/qiche/2026_07_25_825061、澎湃m.thepaper.cn/newsDetail_forward_33718068（境外营收871亿、+42%、占比31.46%、毛利率29.97% vs 21.16%）逐项一致</td>
+<td>属实✓</td>
+</tr>
+<tr>
+<td>宁德2025年产能利用率约97%</td>
+<td>公司数据转引</td>
+<td>澎湃：2026H1产能利用率94.86%（不同期，不矛盾）；2025年772/748≈96.9%自算一致</td>
+<td>属实✓</td>
+</tr>
+<tr>
+<td>六氟价格11.7万（Mysteel 9-28）</td>
+<td>Mysteel</td>
+<td>Mysteel六氟磷酸锂日度中间价：2026-09-30为<strong>117,000元/吨</strong>（m.mysteel.com/hot/1522712）、9-20附近106,000–124,000区间中间价115,000——11.7万与官方中间价一致</td>
+<td>属实✓（第1轮「取区间上限」批评经复验偏严：Mysteel中间价本身即11.7万）</td>
+</tr>
+<tr>
+<td>六氟单吨利润修复至1.5万</td>
+<td>隆众</td>
+<td>证券时报经Mysteel转载（news.mysteel.com/a/26071611）：隆众金佩佩「利润修复到1.5万元/吨水平」一致</td>
+<td>属实✓</td>
+</tr>
+<tr>
+<td>六氟2026年内高点/低点</td>
+<td>14.2万（2月）/9.65万（7月）</td>
+<td>隆众口径：年初最高16.5万、5月中旬最低9.9万（news.mysteel.com/a/26071611）；电池网：2026年4月底跌破10万。<strong>定稿「14.2万高点」与隆众16.5万/生意社14.2万并存，属多口径并存，建议标注口径</strong></td>
+<td>基本属实（口径需标注）</td>
+</tr>
+<tr>
+<td>储能H1系统招标148.1GWh、+88.3%</td>
+<td>CNESA</td>
+<td>证券时报stcn.com/article/detail/4037809：CNESA口径「上半年累计招标148.1GWh，同比大增88.3%」逐字一致</td>
+<td>属实✓</td>
+</tr>
+<tr>
+<td>东吴点评：动力/储能单Wh毛利0.12元、储能均价0.55元/Wh、其他业务68亿/材料回收40亿（估）</td>
+<td>东吴2026-07-26</td>
+<td>东吴中报点评PDF（pdf.dfcfw.com/pdf/H3_AP202607261827357010_1.pdf）原文逐字一致，且明确「我们预计贡献」为估算</td>
+<td>属实✓</td>
+</tr>
+<tr>
+<td>六氟行业月度产能利用率84.9%（Mysteel 2026-09）</td>
+<td>第1轮红队自引</td>
+<td><strong>本次多组检索未能复现该数字</strong>；可复现的相邻事实：天赐开工率约90%（上证报2026-05-28）、天际三厂满负荷（Mysteel转证券日报10月中）。84.9%若无原始链接，应降级为「未能复证」</td>
+<td>未能复证⚠</td>
+</tr>
+<tr>
+<td>机构预测Q3-Q4六氟旺季中枢16–19万（ChemNet转引2026-06）</td>
+<td>第1轮红队自引</td>
+<td>未复现原始出处；可复现的相邻判断：国金「全年价格中枢支撑10–15万」（新浪2026-05-26）、隆众「旺季前有望再涨」。16–19万显著高于国金区间，<strong>应标注为单一来源且未能复证</strong></td>
+<td>未能复证⚠</td>
+</tr>
+</tbody>
+</table>
+<p><strong>重要更正（针对第1轮红队自身）</strong>：
+1. 第1轮称「报告使用储能均价0.55元/Wh明显偏高，与市场均价0.365矛盾」。<strong>复验裁定：该批评本身混用了口径</strong>——0.55元/Wh是东吴依据公司储能收入533亿÷出货量推得的公司口径ASP（含海外系统级交付与产品结构），0.365是314Ah电芯市场均价，两者口径不同，不构成「矛盾」。定稿8.2/十二节据此做压力测试（按0.37–0.40测单Wh毛利0.08–0.09元）作为保守检验是合理的，但「0.55与市价矛盾」的表述应删除。
+2. 第1轮称六氟11.7万「取区间上限」。复验Mysteel日度中间价9-30即11.7万，该批评撤回。
+3. 第1轮红队引用的两条独家证据（84.9%利用率、16–19万旺季中枢）均未能换源复现，定稿8.3节已将其作为「中性低估」的核心依据——<strong>这两条目前是定稿中证据强度最弱的环节</strong>，须降级标注为「单一来源、未能复证」，天赐「中性低估」结论改列观察项而非修正依据。</p>
+<hr />
+<h2 id="_1">四、逐条裁定汇总（正方→挑战→证据→裁定）</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>议题</th>
+<th>挑战</th>
+<th>证据</th>
+<th>裁定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>定稿称「已吸收红队全部修订」</td>
+<td>四份底层子报告均未回改，估值报告仍含被否决的21,600亿/东吴归因/PB3x等旧结论</td>
+<td>逐文件比对（1.1–1.4节）</td>
+<td>【未修正·一致性缺陷】须加注或回改</td>
+</tr>
+<tr>
+<td>2</td>
+<td>10组估值/财务快照</td>
+<td>是否仍准确</td>
+<td>东财复采+财联社换源</td>
+<td>【复验成立】全部一致</td>
+</tr>
+<tr>
+<td>3</td>
+<td>十五五规划事实层</td>
+<td>是否属实</td>
+<td>新华网/人民网/新浪（220号文）</td>
+<td>【复验成立】</td>
+</tr>
+<tr>
+<td>4</td>
+<td>储能0.31→0.365口径</td>
+<td>是否为可比真涨价</td>
+<td>21经济网/东财双源</td>
+<td>【复验成立】</td>
+</tr>
+<tr>
+<td>5</td>
+<td>宁德分部与境外数据</td>
+<td>归因是否已更正</td>
+<td>观察网/澎湃/东吴PDF</td>
+<td>【复验成立】（定稿层面）</td>
+</tr>
+<tr>
+<td>6</td>
+<td>天赐H1 OCF 4.0亿</td>
+<td>每股口径推算≈3.7亿</td>
+<td>东财fin MGJYXJJE</td>
+<td>【新发现·微瑕待核】不计事实错误，建议改写区间</td>
+</tr>
+<tr>
+<td>7</td>
+<td>六氟高点14.2万 vs 隆众16.5万</td>
+<td>口径不一</td>
+<td>隆众/电池网</td>
+<td>【微瑕】多口径并存需标注</td>
+</tr>
+<tr>
+<td>8</td>
+<td>定稿8.2「达到1,200亿需H2净利767亿、环比+77%」</td>
+<td><strong>基年错配</strong>：1,200亿是2027E，767亿=1,200-432.8是按2026全年口径算的；对2026E一致预期961亿的正确检验是H2需528亿、环比+22%；2027年1,200亿较2026E需+25%</td>
+<td>东财fin复采+算术复核</td>
+<td>【新发现·事实/逻辑错误1处】结论方向（中性偏乐观）不受影响，但数字链条须改写</td>
+</tr>
+<tr>
+<td>9</td>
+<td>84.9%六氟利用率、16–19万旺季中枢（定稿8.3核心依据）</td>
+<td>单一来源未能复现</td>
+<td>本次多组检索</td>
+<td>【新发现·证据缺陷】降级标注，天赐「中性低估」改为观察项</td>
+</tr>
+<tr>
+<td>10</td>
+<td>宁德Q1国内市占率50.1%（乘联会）</td>
+<td>未能独立复证；可证相邻值为H1装机46.0%/乘用车46.7%</td>
+<td>澎湃/东吴PDF</td>
+<td>【待核】量级可信（Q1高于H1均值与6月环比下滑-3.4pct自洽），建议标注未逐字核实</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_2">五、事实错误清点与结论</h2>
+<p><strong>确认的事实/逻辑错误：1处</strong>（第8项：定稿8.2节「达到1,200亿需H2净利767亿、环比+77%」基年错配——第1轮红队引入、定稿v1.0沿用。修正写法：「2026E一致预期961亿需H2净利528亿、环比H1+22%，在毛利率逐季下滑背景下已偏满打满算；2027E 1,200亿较2026E再+25%。中性21,600亿的乐观性主要来自18x重估而非利润不可达」，原「过于乐观、下修至17,000–19,000亿」的结论不变）。</p>
+<p><strong>待核微瑕（不计错误）</strong>：天赐OCF 4.0亿（建议改3.7–4.0亿区间）、六氟高点多口径并存、Q1市占率50.1%未逐字核实、84.9%利用率与16–19万中枢两条红队自引证据未能复证（须降级标注）。</p>
+<p><strong>总裁定</strong>：
+1. 第1轮全部五项修订建议在定稿v1.0层面已正确落实，且其事实层（规划原文、公司分部、市场均价、东财快照）经本轮东财复采+双源换址核验全部成立；
+2. 但存在1处事实/逻辑错误（上表#8）、1处一致性缺陷（子报告未同步）与4处待核微瑕；
+3. <strong>本报告不写「零事实错误」</strong>：修正定稿8.2节该句、给四份子报告加口径声明、降级两条未复证证据后，可进入第3轮复核（预期届时可达零事实错误、建议定稿）。</p>
+<hr />
+<p><strong>本报告数据来源</strong>：东财datacenter独立复采（数据采集脚本.py quote/fin，2026-10-12执行，估值快照trade_date=2026-10-09）；新华网xinhuanet.com/20260928/cefa675c2cb14aa18182b89c3c37ecdd、人民网finance.people.com.cn/n1/2026/0928/c1004-40806910、新浪财经finance.sina.com.cn/wm/2026-09-28/doc-initkhxe2945742（工信部联规〔2026〕220号）；观察网guancha.cn/qiche/2026_07_25_825061、澎湃m.thepaper.cn/newsDetail_forward_33718068、财联社cls.cn/detail/2436624；东吴中报点评pdf.dfcfw.com/pdf/H3_AP202607261827357010_1.pdf；21经济网m.21jingji.com/article/20260814、东方财富wap.eastmoney.com/a/202609213879750089、财闻网caiwennews.com/article/1561103；Mysteel（m.mysteel.com/hot/1522712、news.mysteel.com/a/26071611）、新浪财经2026-05-26/05-28六氟专题；证券时报stcn.com/article/detail/4037809。</p></div>

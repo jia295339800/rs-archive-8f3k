@@ -1,0 +1,400 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>开源中尺寸模型_红队审查_第3轮 · 研究库</title><style>body{font-family:-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;max-width:920px;margin:0 auto;padding:24px;line-height:1.75;color:#24292f}
+h1,h2,h3{border-bottom:1px solid #e1e4e8;padding-bottom:6px}h1{font-size:1.7em}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.92em;display:block;overflow-x:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px;text-align:left}th{background:#f6f8fa}
+blockquote{border-left:4px solid #d0d7de;margin:0;padding:2px 14px;color:#57606a;background:#f6f8fa}
+code{background:#f0f1f2;padding:1px 5px;border-radius:4px;font-size:.9em}
+pre{background:#f6f8fa;padding:12px;border-radius:8px;overflow-x:auto}
+a{color:#0969da}nav{font-size:.9em;margin-bottom:18px}
+nav a{margin-right:14px;text-decoration:none}
+.sidebar{display:none}
+@media(min-width:1100px){.sidebar{display:block;position:fixed;left:16px;top:16px;bottom:16px;width:230px;overflow:auto;font-size:.85em;border-right:1px solid #e1e4e8;padding-right:10px}
+body{margin-left:280px}
+.sidebar a{display:block;text-decoration:none;color:#24292f;padding:2px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sidebar .group{border-bottom:1px solid #eef0f2;padding:2px 0}
+.sidebar .grp{font-weight:700;margin-top:8px;margin-bottom:2px;color:#0969da;cursor:pointer;user-select:none;display:block;padding:6px 18px 6px 2px;position:relative;min-height:1.4em}
+.sidebar a.current{background:#ddf4ff;border-left:3px solid #0969da;color:#0550ae;font-weight:600;padding-left:8px;border-radius:0 4px 4px 0}
+.sidebar .group:has(a.current)>.grp{color:#0550ae}
+.sidebar .grp::after{content:'▾';position:absolute;right:2px;top:6px;font-size:.75em;color:#8b949e}
+.sidebar .collapsed .grp::after{content:'▸'}
+.sidebar .collapsed a{display:none}
+#sidebarToggle{position:fixed;left:16px;top:16px;z-index:30;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:.9em;color:#24292f}
+body.hide-sb{margin-left:24px}
+body.hide-sb .sidebar{display:none!important}}
+</style>
+<button id="sidebarToggle" title="收起/展开菜单">◀</button><div class="sidebar"><div class="grp">📖 研究库</div>
+<div class="group"><div class="grp">00_使用说明</div>
+<a href="../00_使用说明/README_使用说明.html">README_使用说明</a>
+<a href="../00_使用说明/任务队列.html">任务队列</a>
+<a href="../../00_使用说明/报告模板/company_report.html">company_report</a>
+<a href="../../00_使用说明/报告模板/industry_report.html">industry_report</a>
+<a href="../../00_使用说明/报告模板/node_report.html">node_report</a>
+<a href="../00_使用说明/研究总表.html">研究总表</a>
+</div>
+<div class="group"><div class="grp">06_数据与工具</div>
+<a href="../06_数据与工具/数据能力说明.html">数据能力说明</a>
+</div>
+<div class="group"><div class="grp">08_归档</div>
+<a href="../08_归档/归档登记表.html">归档登记表</a>
+</div>
+<div class="group"><div class="grp">AI数据中心800VDC供电</div>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_研究材料.html">AI数据中心800VDC供电_研究材料</a>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_机会节点研究.html">AI数据中心800VDC供电_机会节点研究</a>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_候选企业清单.html">AI数据中心800VDC供电_候选企业清单</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_三企业估值报告.html">AI数据中心800VDC供电_三企业估值报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/07_深度报告/AI数据中心800VDC供电_产业深度研究报告.html">AI数据中心800VDC供电_产业深度研究报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_复审R2.html">AI800VDC_复审R2</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_红队审查.html">AI800VDC_红队审查</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第2轮.html">AI数据中心800VDC供电_红队审查_第2轮</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第3轮.html">AI数据中心800VDC供电_红队审查_第3轮</a>
+</div>
+<div class="group"><div class="grp">化纤</div>
+<a href="../../行业研究/化纤/化纤_产业趋势研究.html">化纤_产业趋势研究</a>
+<a href="../../行业研究/化纤/化纤_机会节点研究.html">化纤_机会节点研究</a>
+<a href="../../行业研究/化纤/化纤_候选企业清单.html">化纤_候选企业清单</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_三企业估值报告.html">化纤_三企业估值报告</a>
+<a href="../../../行业研究/化纤/07_深度报告/化纤_产业深度研究报告.html">化纤_产业深度研究报告</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R2.html">化纤_复审R2</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R3.html">化纤_复审R3</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查.html">化纤_红队审查</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第2轮.html">化纤_红队审查_第2轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第3轮.html">化纤_红队审查_第3轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/审查记录.html">审查记录</a>
+</div>
+<div class="group"><div class="grp">家庭空间常驻Agent</div>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_产业趋势研究.html">家庭空间常驻Agent_产业趋势研究</a>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_机会节点研究.html">家庭空间常驻Agent_机会节点研究</a>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_候选企业清单.html">家庭空间常驻Agent_候选企业清单</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_核心企业估值报告.html">家庭空间常驻Agent_核心企业估值报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/07_深度报告/家庭空间常驻Agent_产业深度研究报告.html">家庭空间常驻Agent_产业深度研究报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_复审R2.html">家庭空间常驻Agent_复审R2</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_红队审查.html">家庭空间常驻Agent_红队审查</a>
+</div>
+<div class="group"><div class="grp">开源中尺寸模型</div>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势研究.html">开源中尺寸模型_产业趋势研究</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_机会节点研究.html">开源中尺寸模型_机会节点研究</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_候选企业清单.html">开源中尺寸模型_候选企业清单</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_估值与分级_v1.html">开源中尺寸模型_估值与分级_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_核心企业估值报告.html">开源中尺寸模型_核心企业估值报告</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_产业深度研究报告.html">开源中尺寸模型_产业深度研究报告</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_深度报告_v1.0.html">开源中尺寸模型_深度报告_v1.0</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_复审R2.html">开源中尺寸模型_复审R2</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查.html">开源中尺寸模型_红队审查</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_v1.html">开源中尺寸模型_红队审查_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第2轮.html">开源中尺寸模型_红队审查_第2轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第3轮.html">开源中尺寸模型_红队审查_第3轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/红队审查_待执行.html">红队审查_待执行</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势与节点研究.html">开源中尺寸模型_产业趋势与节点研究</a>
+</div>
+<div class="group"><div class="grp">新型电池</div>
+<a href="../../行业研究/新型电池/新型电池_产业趋势研究.html">新型电池_产业趋势研究</a>
+<a href="../../行业研究/新型电池/新型电池_机会节点研究.html">新型电池_机会节点研究</a>
+<a href="../../行业研究/新型电池/新型电池_候选企业清单.html">新型电池_候选企业清单</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_三企业估值报告.html">新型电池_三企业估值报告</a>
+<a href="../../../行业研究/新型电池/07_深度报告/新型电池_产业深度研究报告.html">新型电池_产业深度研究报告</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_复审R2.html">新型电池_复审R2</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查.html">新型电池_红队审查</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第2轮.html">新型电池_红队审查_第2轮</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第3轮.html">新型电池_红队审查_第3轮</a>
+</div>
+<div class="group"><div class="grp">智能网联新能源汽车</div>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_产业趋势研究.html">智能网联新能源汽车_产业趋势研究</a>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_机会节点研究.html">智能网联新能源汽车_机会节点研究</a>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_候选企业清单.html">智能网联新能源汽车_候选企业清单</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_估值与分级_v1.html">智能网联新能源汽车_估值与分级_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_核心企业估值报告.html">智能网联新能源汽车_核心企业估值报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_产业深度研究报告.html">智能网联新能源汽车_产业深度研究报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_深度报告_v1.0.html">智能网联新能源汽车_深度报告_v1.0</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_复审R2.html">智能网联新能源汽车_复审R2</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查.html">智能网联新能源汽车_红队审查</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_v1.html">智能网联新能源汽车_红队审查_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第2轮.html">智能网联新能源汽车_红队审查_第2轮</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第3轮.html">智能网联新能源汽车_红队审查_第3轮</a>
+</div>
+</div><script>
+(function(){
+  // 高亮当前页：用 new URL() 把相对 href 解析为绝对路径后比对 pathname
+  document.querySelectorAll('.sidebar a').forEach(function(a){
+    try{
+      if(new URL(a.getAttribute('href'), location.href).pathname === location.pathname){
+        a.classList.add('current');
+        var g=a.closest('.group');
+        if(g)g.classList.remove('collapsed');
+      }
+    }catch(e){}
+  });
+})();
+document.addEventListener('click',function(e){
+  var g=e.target.closest('.grp');
+  if(g){g.parentElement.classList.toggle('collapsed');return;}
+  var t=e.target.closest('#sidebarToggle');
+  if(t){document.body.classList.toggle('hide-sb');
+    t.textContent=document.body.classList.contains('hide-sb')?'☰':'◀';}
+});
+</script><div class="content"><nav><a href="00_使用说明/index.html">00_使用说明</a> <a href="06_数据与工具/index.html">06_数据与工具</a> <a href="08_归档/index.html">08_归档</a> <a href="AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="化纤/index.html">化纤</a> <a href="家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="新型电池/index.html">新型电池</a> <a href="智能网联新能源汽车/index.html">智能网联新能源汽车</a></nav><p><a href="../../index.html">← 返回</a> · 生成于 2026-10-12 14:11</p>
+<h1 id="__3">开源中尺寸模型_红队审查_第3轮（收窄范围复审）</h1>
+<blockquote>
+<p>2026-10-12 ｜ 审查对象：估值与分级 v1.1（F1/F2 修正执行版）、深度报告 v1.0（头部同步版）、候选企业清单、机会节点研究、产业趋势与节点研究
+本轮方法（按任务收窄为三项）：①逐条验证第 2 轮修正执行记录（F1 TTM 列 11 家、浪潮 PS、F2 智微增速、讯飞 OCF/学习机补注、腾讯 capex）；②用东财 datacenter <strong>独立重跑</strong> 财报接口（RPT_LICO_FN_CPD，2026-10-12 复采，脚本 <code>~/research/06_数据与工具/数据采集脚本.py</code>，venv=~/research/.venv，15 家全量），以「2025FY − 2025H1 + 2026H1」复算 TTM，独立验证估值文档表 2.1；③抽查深度报告及关联文档的数字同步情况（全库残留检索：旧错误值 2,137 / 0.44x / 76.3 / 194.4 / 192.3 / 75.8 / 60.7 / 38.1 / +37.7% / +21.7% / +2.6% / 「收入零增长」）。
+裁定分级沿用：【事实错误】/【证据不足】/【观点分歧】/【口径问题】。</p>
+</blockquote>
+<hr />
+<h2 id="ttm-215-2026-10-12-datacenter">一、独立复采与 TTM 复算（第②项：15 家全量，2026-10-12 东财 datacenter 重跑）</h2>
+<p>本次为<strong>全新独立重跑</strong>（非复用第 2 轮落盘 JSON），采集过程含一次纠错：科士达首次误用 002851（系麦格米特），核对代码后改 002518 重采——提示候选清单代码列此前亦有讯飞代码错误（E 系列已更正），代码级错误仍是本数据链的现实风险点。</p>
+<table>
+<thead>
+<tr>
+<th>公司</th>
+<th>代码</th>
+<th>2025FY(亿)</th>
+<th>2025H1(亿)</th>
+<th>2026H1(亿)</th>
+<th>本轮复算 TTM</th>
+<th>估值文档 v1.1 现值</th>
+<th>判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>浪潮信息</td>
+<td>000977</td>
+<td>1647.8</td>
+<td>801.92</td>
+<td>843.79</td>
+<td><strong>1689.7</strong></td>
+<td>≈1,690</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>海光信息</td>
+<td>688041</td>
+<td>143.8</td>
+<td>54.64</td>
+<td>90.99</td>
+<td><strong>180.1</strong></td>
+<td>≈180.1</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>中科曙光</td>
+<td>603019</td>
+<td>149.6</td>
+<td>58.50</td>
+<td>74.66</td>
+<td><strong>165.8</strong></td>
+<td>≈165.8</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>润泽科技</td>
+<td>300442</td>
+<td>56.7</td>
+<td>24.96</td>
+<td>37.46</td>
+<td><strong>69.2</strong></td>
+<td>≈69.2</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>金山办公</td>
+<td>688111</td>
+<td>59.29</td>
+<td>26.57</td>
+<td>33.13</td>
+<td><strong>65.8</strong></td>
+<td>≈65.8</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>瑞芯微</td>
+<td>603893</td>
+<td>44.0</td>
+<td>20.46</td>
+<td>28.77</td>
+<td><strong>52.3</strong></td>
+<td>≈52.3</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>全志科技</td>
+<td>300458</td>
+<td>28.4</td>
+<td>13.37</td>
+<td>18.88</td>
+<td><strong>33.9</strong></td>
+<td>≈33.9</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>汉得信息</td>
+<td>300170</td>
+<td>34.2</td>
+<td>15.75</td>
+<td>16.70</td>
+<td><strong>35.1</strong></td>
+<td>≈35.1</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>奥飞数据</td>
+<td>300738</td>
+<td>25.2</td>
+<td>11.48</td>
+<td>14.69</td>
+<td><strong>28.4</strong></td>
+<td>≈28.4</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>科士达</td>
+<td>002518</td>
+<td>52.7</td>
+<td>21.63</td>
+<td>25.91</td>
+<td><strong>57.0</strong></td>
+<td>≈57.0</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>智微智能</td>
+<td>001339</td>
+<td>40.9</td>
+<td>19.47</td>
+<td>30.50</td>
+<td><strong>51.9</strong></td>
+<td>≈51.9</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>寒武纪</td>
+<td>688256</td>
+<td>65.0</td>
+<td>28.81</td>
+<td>59.96</td>
+<td>96.1</td>
+<td>≈96.1</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>软通动力</td>
+<td>301236</td>
+<td>350.9</td>
+<td>157.81</td>
+<td>186.07</td>
+<td>379.2</td>
+<td>≈379.2</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>科大讯飞</td>
+<td>002230</td>
+<td>271.1</td>
+<td>109.11</td>
+<td>116.23</td>
+<td>278.2</td>
+<td>≈278.2</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>拓维信息</td>
+<td>002261</td>
+<td>31.7</td>
+<td>13.06</td>
+<td>13.12</td>
+<td>31.8</td>
+<td>≈31.8</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<p><strong>15/15 全部吻合（&lt;0.3%）。</strong> 任务指定的 11 家重算值（浪潮 1,690 / 海光 180.1 / 曙光 165.8 / 润泽 69.2 / 金山 65.8 / 瑞芯微 52.3 / 全志 33.9 / 汉得 35.1 / 奥飞 28.4 / 科士达 57.0 / 智微 51.9 亿）逐一与独立复算一致，F1 修正执行到位。</p>
+<p>顺带复验 26H1 营收增速列：浪潮 +5.2%、海光 +66.5%、曙光 +27.6%、润泽 +50.1%、金山 +24.7%、瑞芯微 +40.6%、全志 +41.2%、汉得 +6.1%、奥飞 +27.9%、科士达 +19.8%、智微 +56.6%、寒武纪 +108.1%、软通 +17.9%、讯飞 +6.5%、拓维 +0.4% —— 与文档表 2.1 及 E1-E5 复验值一致；全志 +41.2%、科士达 +19.8% 第 2 轮所记【口径问题】标注已如实保留在表内，处理恰当。</p>
+<h2 id="1">二、修正执行记录逐条验证（第①项）</h2>
+<table>
+<thead>
+<tr>
+<th>修正项</th>
+<th>验证结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F1：表 2.1 TTM 列 11 家重写</td>
+<td>✅ 到位。上表 15/15 独立复算吻合；脚注已声明算式「2025年报-2025H1+2026H1」</td>
+</tr>
+<tr>
+<td>浪潮 PS 0.56x</td>
+<td>✅ 到位。950 亿 ÷ 1,690 亿 = 0.562x；估值文档脚注明确「原 0.44x 系 TTM 误算 2,137 亿所致」并作废；深度报告头部「逻辑变化①」同步 0.56x。全库检索 <code>0.44</code> / <code>2,137</code> 在正文零残留（仅存于红队报告记述中，属应存档内容）</td>
+</tr>
+<tr>
+<td>F2：智微智能 +56.6%</td>
+<td>✅ 到位。独立复算 30.50/19.47−1 = +56.6% 吻合；沿袭点全部同步——估值表 2.1（「F2 更正」标注）、深度报告节点 B、机会节点研究节点 B、候选企业清单（含 30.50/19.47 明细与「不再以收入零增长为由」改写说明）；「+2.6%」全库仅存于红队报告记述与更正说明语境中，无一处作为现行数据引用；「收入零增长式」表述已删除（深度报告「逻辑变化②」明确记录删除动作）</td>
+</tr>
+<tr>
+<td>讯飞 OCF / 学习机补注</td>
+<td>✅ 到位。估值文档 §2.3（Q2 单季 OCF 转正 + H1 累计 -9.45 亿口径注明）、深度报告 §1.2 讯飞段与 §2 削弱项③（学习机 7 月同比 +3%、削弱项强度打折）均已补注</td>
+</tr>
+<tr>
+<td>腾讯 capex 527.84 亿</td>
+<td>✅ 到位。深度报告、产业趋势研究、产业趋势与节点研究三处均已改 527.84 亿（约 528 亿）</td>
+</tr>
+<tr>
+<td>金山 TTM 65.8 亿同步</td>
+<td>✅ 到位。深度报告 §3 金山段含完整算式 59.29−26.57+33.13 及 76.3 亿错误根因说明</td>
+</tr>
+<tr>
+<td>全志/科士达增速【口径问题】</td>
+<td>✅ 按第 2 轮建议暂计并标注「待利润表原文终裁」，未强行裁定——处理正确</td>
+</tr>
+</tbody>
+</table>
+<p><strong>结论：第 2 轮修正执行记录所列全部事项落实到位，无执行遗漏、无新引入错误。</strong></p>
+<h2 id="3">三、深度报告同步抽查（第③项）</h2>
+<p>全库（深度报告、估值文档两版、候选清单、机会节点、产业趋势两版、红队档案）正则残留检索：旧错误值 2,137 / 0.44x / 76.3 / 194.4 / 192.3 / 75.8 / 60.7 / 38.1 / +37.7% / +21.7% / +2.6% 在<strong>非红队档案文档中零残留</strong>；所有命中均在红队审查报告自身记述或「原 E10 给出的…系更正值本身错误」这类更正说明语境中，属应保留的审计痕迹。深度报告头部「最新更新/逻辑变化」与正文节点表、个股段落（浪潮 +5.2%/0.56x、金山 65.8 亿、智微 +56.6%、讯飞双补注、腾讯 528 亿）数字一致。候选企业清单智微智能条目已同步 F2 明细与 C 级理由改写。</p>
+<h2 id="_1">四、遗留事项（不计入事实错误）</h2>
+<ol>
+<li><strong>E12（Bernstein 8% / TrendForce 国产近 90%）</strong>：连续两轮未能对付费源原文换源，维持「归属暂信任 v1、列为待验」的处理。建议定稿时在引用处保留「待独立核验」标注。</li>
+<li><strong>全志 +41.2% / 科士达 +19.8% 与旧值差 1.9-3.5pct</strong>：仍为【口径问题】，待利润表原文终裁。东财同接口重跑与文档现值一致，不影响本轮裁定。</li>
+<li><strong>采集链代码风险</strong>：本轮复采中科士达曾误取 002851（麦格米特）。候选清单代码列此前已有讯飞代码错误（已更正）。建议对清单 15 家代码列做一次机器可读校验（代码↔简称映射），作为后续采集脚本的固定前置检查。</li>
+<li>摩尔线程之外，沐曦/壁仞/燧原仍未逐一核验（沿用 v1 待验，不阻塞定稿）。</li>
+</ol>
+<h2 id="_2">五、总裁定</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>裁定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F1 修正（TTM 列 11 家 + 浪潮 PS 0.56x）</td>
+<td><strong>到位</strong>（15/15 独立复算吻合）</td>
+</tr>
+<tr>
+<td>F2 修正（智微 +56.6% 及沿袭三处+清单）</td>
+<td><strong>到位</strong>（零残留）</td>
+</tr>
+<tr>
+<td>讯飞 OCF/学习机补注、腾讯 capex、金山 TTM 同步</td>
+<td><strong>到位</strong></td>
+</tr>
+<tr>
+<td>深度报告及关联文档同步</td>
+<td><strong>到位</strong>（全库检索无旧值残留）</td>
+</tr>
+<tr>
+<td>遗留</td>
+<td>E12 付费源换源、全志/科士达口径差终裁、代码列校验——均不构成事实错误</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3_1">第 3 轮事实错误清单</h3>
+<p>无。第 2 轮 F1、F2 两项事实错误已全部按正确算式与复采值更正，且经本轮<strong>独立重跑东财接口</strong>再次证实；修正过程未引入新错误。</p>
+<h2 id="0"><strong>事实错误数：0 —— 零事实错误，建议定稿。</strong></h2>
+<blockquote>
+<p>定稿前可选动作（非阻塞）：①在 Bernstein/TrendForce 引用处保留「待独立核验」标注；②为候选清单 15 家代码列加映射校验。
+复采数据落盘：<code>~/research/06_数据与工具/原始数据/</code>（15 家 <code>&lt;代码&gt;_fin.json</code>，2026-10-12 第 3 轮重跑覆盖）。</p>
+</blockquote></div>

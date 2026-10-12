@@ -1,0 +1,249 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>开源中尺寸模型_机会节点研究 · 研究库</title><style>body{font-family:-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;max-width:920px;margin:0 auto;padding:24px;line-height:1.75;color:#24292f}
+h1,h2,h3{border-bottom:1px solid #e1e4e8;padding-bottom:6px}h1{font-size:1.7em}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.92em;display:block;overflow-x:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px;text-align:left}th{background:#f6f8fa}
+blockquote{border-left:4px solid #d0d7de;margin:0;padding:2px 14px;color:#57606a;background:#f6f8fa}
+code{background:#f0f1f2;padding:1px 5px;border-radius:4px;font-size:.9em}
+pre{background:#f6f8fa;padding:12px;border-radius:8px;overflow-x:auto}
+a{color:#0969da}nav{font-size:.9em;margin-bottom:18px}
+nav a{margin-right:14px;text-decoration:none}
+.sidebar{display:none}
+@media(min-width:1100px){.sidebar{display:block;position:fixed;left:16px;top:16px;bottom:16px;width:230px;overflow:auto;font-size:.85em;border-right:1px solid #e1e4e8;padding-right:10px}
+body{margin-left:280px}
+.sidebar a{display:block;text-decoration:none;color:#24292f;padding:2px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sidebar .group{border-bottom:1px solid #eef0f2;padding:2px 0}
+.sidebar .grp{font-weight:700;margin-top:8px;margin-bottom:2px;color:#0969da;cursor:pointer;user-select:none;display:block;padding:6px 18px 6px 2px;position:relative;min-height:1.4em}
+.sidebar a.current{background:#ddf4ff;border-left:3px solid #0969da;color:#0550ae;font-weight:600;padding-left:8px;border-radius:0 4px 4px 0}
+.sidebar .group:has(a.current)>.grp{color:#0550ae}
+.sidebar .grp::after{content:'▾';position:absolute;right:2px;top:6px;font-size:.75em;color:#8b949e}
+.sidebar .collapsed .grp::after{content:'▸'}
+.sidebar .collapsed a{display:none}
+#sidebarToggle{position:fixed;left:16px;top:16px;z-index:30;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:.9em;color:#24292f}
+body.hide-sb{margin-left:24px}
+body.hide-sb .sidebar{display:none!important}}
+</style>
+<button id="sidebarToggle" title="收起/展开菜单">◀</button><div class="sidebar"><div class="grp">📖 研究库</div>
+<div class="group"><div class="grp">00_使用说明</div>
+<a href="../00_使用说明/README_使用说明.html">README_使用说明</a>
+<a href="../00_使用说明/任务队列.html">任务队列</a>
+<a href="../../00_使用说明/报告模板/company_report.html">company_report</a>
+<a href="../../00_使用说明/报告模板/industry_report.html">industry_report</a>
+<a href="../../00_使用说明/报告模板/node_report.html">node_report</a>
+<a href="../00_使用说明/研究总表.html">研究总表</a>
+</div>
+<div class="group"><div class="grp">06_数据与工具</div>
+<a href="../06_数据与工具/数据能力说明.html">数据能力说明</a>
+</div>
+<div class="group"><div class="grp">08_归档</div>
+<a href="../08_归档/归档登记表.html">归档登记表</a>
+</div>
+<div class="group"><div class="grp">AI数据中心800VDC供电</div>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_研究材料.html">AI数据中心800VDC供电_研究材料</a>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_机会节点研究.html">AI数据中心800VDC供电_机会节点研究</a>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_候选企业清单.html">AI数据中心800VDC供电_候选企业清单</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_三企业估值报告.html">AI数据中心800VDC供电_三企业估值报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/07_深度报告/AI数据中心800VDC供电_产业深度研究报告.html">AI数据中心800VDC供电_产业深度研究报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_复审R2.html">AI800VDC_复审R2</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_红队审查.html">AI800VDC_红队审查</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第2轮.html">AI数据中心800VDC供电_红队审查_第2轮</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第3轮.html">AI数据中心800VDC供电_红队审查_第3轮</a>
+</div>
+<div class="group"><div class="grp">化纤</div>
+<a href="../../行业研究/化纤/化纤_产业趋势研究.html">化纤_产业趋势研究</a>
+<a href="../../行业研究/化纤/化纤_机会节点研究.html">化纤_机会节点研究</a>
+<a href="../../行业研究/化纤/化纤_候选企业清单.html">化纤_候选企业清单</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_三企业估值报告.html">化纤_三企业估值报告</a>
+<a href="../../../行业研究/化纤/07_深度报告/化纤_产业深度研究报告.html">化纤_产业深度研究报告</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R2.html">化纤_复审R2</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R3.html">化纤_复审R3</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查.html">化纤_红队审查</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第2轮.html">化纤_红队审查_第2轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第3轮.html">化纤_红队审查_第3轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/审查记录.html">审查记录</a>
+</div>
+<div class="group"><div class="grp">家庭空间常驻Agent</div>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_产业趋势研究.html">家庭空间常驻Agent_产业趋势研究</a>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_机会节点研究.html">家庭空间常驻Agent_机会节点研究</a>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_候选企业清单.html">家庭空间常驻Agent_候选企业清单</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_核心企业估值报告.html">家庭空间常驻Agent_核心企业估值报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/07_深度报告/家庭空间常驻Agent_产业深度研究报告.html">家庭空间常驻Agent_产业深度研究报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_复审R2.html">家庭空间常驻Agent_复审R2</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_红队审查.html">家庭空间常驻Agent_红队审查</a>
+</div>
+<div class="group"><div class="grp">开源中尺寸模型</div>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势研究.html">开源中尺寸模型_产业趋势研究</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_机会节点研究.html">开源中尺寸模型_机会节点研究</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_候选企业清单.html">开源中尺寸模型_候选企业清单</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_估值与分级_v1.html">开源中尺寸模型_估值与分级_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_核心企业估值报告.html">开源中尺寸模型_核心企业估值报告</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_产业深度研究报告.html">开源中尺寸模型_产业深度研究报告</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_深度报告_v1.0.html">开源中尺寸模型_深度报告_v1.0</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_复审R2.html">开源中尺寸模型_复审R2</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查.html">开源中尺寸模型_红队审查</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_v1.html">开源中尺寸模型_红队审查_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第2轮.html">开源中尺寸模型_红队审查_第2轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第3轮.html">开源中尺寸模型_红队审查_第3轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/红队审查_待执行.html">红队审查_待执行</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势与节点研究.html">开源中尺寸模型_产业趋势与节点研究</a>
+</div>
+<div class="group"><div class="grp">新型电池</div>
+<a href="../../行业研究/新型电池/新型电池_产业趋势研究.html">新型电池_产业趋势研究</a>
+<a href="../../行业研究/新型电池/新型电池_机会节点研究.html">新型电池_机会节点研究</a>
+<a href="../../行业研究/新型电池/新型电池_候选企业清单.html">新型电池_候选企业清单</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_三企业估值报告.html">新型电池_三企业估值报告</a>
+<a href="../../../行业研究/新型电池/07_深度报告/新型电池_产业深度研究报告.html">新型电池_产业深度研究报告</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_复审R2.html">新型电池_复审R2</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查.html">新型电池_红队审查</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第2轮.html">新型电池_红队审查_第2轮</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第3轮.html">新型电池_红队审查_第3轮</a>
+</div>
+<div class="group"><div class="grp">智能网联新能源汽车</div>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_产业趋势研究.html">智能网联新能源汽车_产业趋势研究</a>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_机会节点研究.html">智能网联新能源汽车_机会节点研究</a>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_候选企业清单.html">智能网联新能源汽车_候选企业清单</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_估值与分级_v1.html">智能网联新能源汽车_估值与分级_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_核心企业估值报告.html">智能网联新能源汽车_核心企业估值报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_产业深度研究报告.html">智能网联新能源汽车_产业深度研究报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_深度报告_v1.0.html">智能网联新能源汽车_深度报告_v1.0</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_复审R2.html">智能网联新能源汽车_复审R2</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查.html">智能网联新能源汽车_红队审查</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_v1.html">智能网联新能源汽车_红队审查_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第2轮.html">智能网联新能源汽车_红队审查_第2轮</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第3轮.html">智能网联新能源汽车_红队审查_第3轮</a>
+</div>
+</div><script>
+(function(){
+  // 高亮当前页：用 new URL() 把相对 href 解析为绝对路径后比对 pathname
+  document.querySelectorAll('.sidebar a').forEach(function(a){
+    try{
+      if(new URL(a.getAttribute('href'), location.href).pathname === location.pathname){
+        a.classList.add('current');
+        var g=a.closest('.group');
+        if(g)g.classList.remove('collapsed');
+      }
+    }catch(e){}
+  });
+})();
+document.addEventListener('click',function(e){
+  var g=e.target.closest('.grp');
+  if(g){g.parentElement.classList.toggle('collapsed');return;}
+  var t=e.target.closest('#sidebarToggle');
+  if(t){document.body.classList.toggle('hide-sb');
+    t.textContent=document.body.classList.contains('hide-sb')?'☰':'◀';}
+});
+</script><div class="content"><nav><a href="00_使用说明/index.html">00_使用说明</a> <a href="06_数据与工具/index.html">06_数据与工具</a> <a href="08_归档/index.html">08_归档</a> <a href="AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="化纤/index.html">化纤</a> <a href="家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="新型电池/index.html">新型电池</a> <a href="智能网联新能源汽车/index.html">智能网联新能源汽车</a></nav><p><a href="../index.html">← 返回</a> · 生成于 2026-10-12 14:11</p>
+<h1 id="_">开源中尺寸模型_机会节点研究</h1>
+<blockquote>
+<p>v1.1 ｜ 2026-10-12 ｜ 状态：红队修正版（红队后仍成立） ｜ 配套文档：产业趋势研究、候选企业清单
+<strong>最新更新（2026-10-12 红队审查后）</strong>：①节点B证据补浪潮收入端真实增速+5.2%更正与订单转化率要求；②节点C裁定规则补政采网/运营商集采中标数据（季度跟踪，两季数据前维持"验证中"）；③节点A/B评级与产业层"搬离云无证据"的张力标注【观点分歧】；④关键验证信号补具体阈值。</p>
+</blockquote>
+<h2 id="1">1. 价值链拆解与利润流向【定性判断+证据】</h2>
+<p>价值链：<strong>模型层（开源免费）→ 推理芯片/ASIC → 服务器/一体机整机 → AIDC/机房 → 云MaaS/AI IaaS → 部署实施与调优 → 行业应用/Agent → 端侧终端</strong></p>
+<p>开源中尺寸普及的结构性效应：把模型层利润清零，价值向两端迁移：
+- <strong>向上（量）</strong>：推理算力消耗总量暴涨（Token调用2025年+16倍，IDC）。利润池：AI IaaS（2025年486.7亿元、+128%）、AI服务器（浪潮2026H1净利+270%）、国产芯片（寒武纪+108%、海光+66%）。
+- <strong>向下（场景）</strong>：部署、调优、行业知识、Agent编排成为模型之后的价值捕获点。利润池当前规模小且普遍亏损（软通/拓维/汉得AI业务），属于"收入先行、利润后到"。
+- <strong>被挤压</strong>：闭源模型API的纯模型溢价（开源旗舰差距1.7pct，Stanford AI Index 2025）、纯贴牌一体机商（硬件同质化、毛利率被压至个位数，软通计算产品毛利率7.7%）。
+- <strong>关键约束</strong>：服务器整机毛利率被上游芯片和下游大客户两头挤压（浪潮毛利率4.91%，2025前三季）；真正的高毛利在芯片（寒武纪55%）和有场景粘性的应用（金山办公86%）。</p>
+<h2 id="2-a-j">2. 开放式机会节点（A-J）</h2>
+<table>
+<thead>
+<tr>
+<th>节点</th>
+<th>内容</th>
+<th>受益逻辑</th>
+<th>证据强度</th>
+<th>成熟度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A 推理ASIC/国产加速芯片</strong></td>
+<td>推理是国产芯片放量入口；专用推理架构（ASIC/存算一体）能效比3-5倍于GPU</td>
+<td>推理负载占比2/3（德勤/36氪）；TrendForce 2026国产份额上行（8%归Bernstein，红队E12更正）；寒武纪/海光业绩兑现</td>
+<td>A</td>
+<td>已兑现中。⚠️竞争风险须纳入国产GPU四小龙（摩尔线程/沐曦/壁仞/燧原，2025H2-2026密集上市），芯片双雄隐含CAGR的直接威胁（红队挑战⑦）</td>
+</tr>
+<tr>
+<td><strong>B 推理服务器/超节点整机</strong></td>
+<td>推理是持续性需求，常态化扩容替代项目制</td>
+<td>浪潮2026H1净利+270%、在手订单350亿+；<strong>收入端真实增速仅+5.2%（红队E1更正），量增系利润率修复，需订单转化率证据</strong>；智微智能净利预告+245-310%、总营收+56.6%（红队第2轮F2更正，原E10给的"+2.6%"系更正值本身错误）</td>
+<td>A（评级与"搬离云"分歧联动，见产业趋势2.3【观点分歧】）</td>
+<td>已兑现中（利润端）；收入端待订单验证</td>
+</tr>
+<tr>
+<td><strong>C 智算一体机（G端/央国企私有化）</strong></td>
+<td>数据不出域硬约束；45%央企已部署；单台10-500万预算</td>
+<td>60+厂商推一体机；昇腾系为主；39万台2026预测有第二来源（亿欧智库 2026-07，红队核验）；但智算中心利用率&lt;40%提示复购风险</td>
+<td>B（销量预测分歧大；裁定规则=政采网/运营商集采中标台数与金额，季度跟踪；两季数据前维持"验证中"，不给"早期放量"）</td>
+<td>早期放量，验证中。<strong>可证伪指标：2026Q4单季央国企中标≥5万台→券商路径成立；&lt;2万台→"问多买少"坐实，智微智能等降D</strong></td>
+</tr>
+<tr>
+<td><strong>D 部署实施与调优服务</strong></td>
+<td>模型免费后价值在交付：知识库、微调、推理调优、运维</td>
+<td>汉得AI业务3.1亿、软通AI收入114亿(+40%)；但利润普遍为负</td>
+<td>B</td>
+<td>收入先行、利润未到</td>
+</tr>
+<tr>
+<td><strong>E 行业Agent与垂类应用</strong></td>
+<td>模型同质化后，上下文/场景/工作流是壁垒</td>
+<td>金山办公经调整净利+18-38%、WPS AI月活8013万；IDC：72%企业已投产Agent</td>
+<td>B+</td>
+<td>商业模式已验证（办公），其他垂类待证</td>
+</tr>
+<tr>
+<td><strong>F 端侧推理芯片/边缘盒</strong></td>
+<td>中尺寸MoE（激活3B）端侧可跑；存算一体10W跑35-120B</td>
+<td>后摩M50、瑞芯微RK182X；中低端端侧芯片出货+110%（IDC 2026Q1）</td>
+<td>B-</td>
+<td>元年，出货未验证</td>
+</tr>
+<tr>
+<td><strong>G AI PC/超级个体终端</strong></td>
+<td>OPX一人公司范式驱动结构性PC需求</td>
+<td>IDC：2026年OPX PC需求160万台（大盘仅-6.1%）</td>
+<td>C</td>
+<td>早期</td>
+</tr>
+<tr>
+<td><strong>H AIDC分布式推理机房</strong></td>
+<td>推理从万卡单点转向多点分布式；政企自建推理350EFlops</td>
+<td>IDC×信通院：自建推理占线下1/3+；液冷机柜价格回升（润泽）</td>
+<td>B</td>
+<td>兑现中</td>
+</tr>
+<tr>
+<td><strong>I MaaS工具链/Token工厂</strong></td>
+<td>纯API溢价消失，工具链/调度/SLA是新分层</td>
+<td>火山49.5%份额靠综合能力；趋境科技TaaS模式半年融资10亿</td>
+<td>C+</td>
+<td>新模式，未证伪</td>
+</tr>
+<tr>
+<td><strong>J 配套电气/散热（交叉引用）</strong></td>
+<td>一体机与推理机房带动配电、备电、液冷</td>
+<td>详见《AI数据中心800VDC供电》（麦格米特/盛弘/金盘/科士达等，已定稿）</td>
+<td>—</td>
+<td>引用</td>
+</tr>
+</tbody>
+</table>
+<p><strong>节点B补遗（红队挑战⑦）</strong>：节点B最直接的已兑现标的实为<strong>工业富联</strong>（2025归母353亿+52%、营收9029亿+48.2%、AI服务器全球份额第一——证券时报·数据宝 2026-04-16），清单原只列浪潮，属覆盖性误伤，已在候选清单补写。</p>
+<h2 id="3">3. 利润流向的时间结构【推断】</h2>
+<ul>
+<li><strong>已兑现（2025-2026报表可见）</strong>：A芯片、B服务器、H机房——确认性最高，但估值已部分反映（寒武纪PS 38x、麦格米特红队C+）。</li>
+<li><strong>正在兑现</strong>：C一体机、D部署服务——收入可见、利润未到，买收入质量不买收入规模（毛利率、回款、现金流）。</li>
+<li><strong>期权型（2027+）</strong>：E垂类Agent盈利扩散、F端侧放量、G PC结构变量、I Token工厂。</li>
+<li>反直觉节点：开源普及<strong>利空</strong>闭源API纯模型商与纯算力转租商（无调优能力的算力租赁毛利将被推理优化侵蚀）；利空"重模型自研、轻场景"的公司。</li>
+</ul>
+<h2 id="4">4. 关键验证信号（按节点）</h2>
+<ul>
+<li>A：IDC加速卡季报国产份额；寒武纪/海光单季毛利率。</li>
+<li>B：浪潮/中科曙光订单与合同负债；推理型服务器占比。</li>
+<li>C：央国企一体机中标公告（政采网）；避免用券商销量预测作锚。</li>
+<li>D：软通/汉得/拓维AI业务毛利率与经营现金流拐点。</li>
+<li>E：金山办公AI付费转化率；行业Agent标杆项目ARR。</li>
+<li>F：端侧芯片出货同比；AI PC渗透率（IDC季报）。</li>
+</ul></div>

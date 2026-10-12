@@ -1,0 +1,640 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>开源中尺寸模型_产业趋势与节点研究 · 研究库</title><style>body{font-family:-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;max-width:920px;margin:0 auto;padding:24px;line-height:1.75;color:#24292f}
+h1,h2,h3{border-bottom:1px solid #e1e4e8;padding-bottom:6px}h1{font-size:1.7em}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.92em;display:block;overflow-x:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px;text-align:left}th{background:#f6f8fa}
+blockquote{border-left:4px solid #d0d7de;margin:0;padding:2px 14px;color:#57606a;background:#f6f8fa}
+code{background:#f0f1f2;padding:1px 5px;border-radius:4px;font-size:.9em}
+pre{background:#f6f8fa;padding:12px;border-radius:8px;overflow-x:auto}
+a{color:#0969da}nav{font-size:.9em;margin-bottom:18px}
+nav a{margin-right:14px;text-decoration:none}
+.sidebar{display:none}
+@media(min-width:1100px){.sidebar{display:block;position:fixed;left:16px;top:16px;bottom:16px;width:230px;overflow:auto;font-size:.85em;border-right:1px solid #e1e4e8;padding-right:10px}
+body{margin-left:280px}
+.sidebar a{display:block;text-decoration:none;color:#24292f;padding:2px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sidebar .group{border-bottom:1px solid #eef0f2;padding:2px 0}
+.sidebar .grp{font-weight:700;margin-top:8px;margin-bottom:2px;color:#0969da;cursor:pointer;user-select:none;display:block;padding:6px 18px 6px 2px;position:relative;min-height:1.4em}
+.sidebar a.current{background:#ddf4ff;border-left:3px solid #0969da;color:#0550ae;font-weight:600;padding-left:8px;border-radius:0 4px 4px 0}
+.sidebar .group:has(a.current)>.grp{color:#0550ae}
+.sidebar .grp::after{content:'▾';position:absolute;right:2px;top:6px;font-size:.75em;color:#8b949e}
+.sidebar .collapsed .grp::after{content:'▸'}
+.sidebar .collapsed a{display:none}
+#sidebarToggle{position:fixed;left:16px;top:16px;z-index:30;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:.9em;color:#24292f}
+body.hide-sb{margin-left:24px}
+body.hide-sb .sidebar{display:none!important}}
+</style>
+<button id="sidebarToggle" title="收起/展开菜单">◀</button><div class="sidebar"><div class="grp">📖 研究库</div>
+<div class="group"><div class="grp">00_使用说明</div>
+<a href="../00_使用说明/README_使用说明.html">README_使用说明</a>
+<a href="../00_使用说明/任务队列.html">任务队列</a>
+<a href="../../00_使用说明/报告模板/company_report.html">company_report</a>
+<a href="../../00_使用说明/报告模板/industry_report.html">industry_report</a>
+<a href="../../00_使用说明/报告模板/node_report.html">node_report</a>
+<a href="../00_使用说明/研究总表.html">研究总表</a>
+</div>
+<div class="group"><div class="grp">06_数据与工具</div>
+<a href="../06_数据与工具/数据能力说明.html">数据能力说明</a>
+</div>
+<div class="group"><div class="grp">08_归档</div>
+<a href="../08_归档/归档登记表.html">归档登记表</a>
+</div>
+<div class="group"><div class="grp">AI数据中心800VDC供电</div>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_研究材料.html">AI数据中心800VDC供电_研究材料</a>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_机会节点研究.html">AI数据中心800VDC供电_机会节点研究</a>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_候选企业清单.html">AI数据中心800VDC供电_候选企业清单</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_三企业估值报告.html">AI数据中心800VDC供电_三企业估值报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/07_深度报告/AI数据中心800VDC供电_产业深度研究报告.html">AI数据中心800VDC供电_产业深度研究报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_复审R2.html">AI800VDC_复审R2</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_红队审查.html">AI800VDC_红队审查</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第2轮.html">AI数据中心800VDC供电_红队审查_第2轮</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第3轮.html">AI数据中心800VDC供电_红队审查_第3轮</a>
+</div>
+<div class="group"><div class="grp">化纤</div>
+<a href="../../行业研究/化纤/化纤_产业趋势研究.html">化纤_产业趋势研究</a>
+<a href="../../行业研究/化纤/化纤_机会节点研究.html">化纤_机会节点研究</a>
+<a href="../../行业研究/化纤/化纤_候选企业清单.html">化纤_候选企业清单</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_三企业估值报告.html">化纤_三企业估值报告</a>
+<a href="../../../行业研究/化纤/07_深度报告/化纤_产业深度研究报告.html">化纤_产业深度研究报告</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R2.html">化纤_复审R2</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R3.html">化纤_复审R3</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查.html">化纤_红队审查</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第2轮.html">化纤_红队审查_第2轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第3轮.html">化纤_红队审查_第3轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/审查记录.html">审查记录</a>
+</div>
+<div class="group"><div class="grp">家庭空间常驻Agent</div>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_产业趋势研究.html">家庭空间常驻Agent_产业趋势研究</a>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_机会节点研究.html">家庭空间常驻Agent_机会节点研究</a>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_候选企业清单.html">家庭空间常驻Agent_候选企业清单</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_核心企业估值报告.html">家庭空间常驻Agent_核心企业估值报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/07_深度报告/家庭空间常驻Agent_产业深度研究报告.html">家庭空间常驻Agent_产业深度研究报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_复审R2.html">家庭空间常驻Agent_复审R2</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_红队审查.html">家庭空间常驻Agent_红队审查</a>
+</div>
+<div class="group"><div class="grp">开源中尺寸模型</div>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势研究.html">开源中尺寸模型_产业趋势研究</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_机会节点研究.html">开源中尺寸模型_机会节点研究</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_候选企业清单.html">开源中尺寸模型_候选企业清单</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_估值与分级_v1.html">开源中尺寸模型_估值与分级_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_核心企业估值报告.html">开源中尺寸模型_核心企业估值报告</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_产业深度研究报告.html">开源中尺寸模型_产业深度研究报告</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_深度报告_v1.0.html">开源中尺寸模型_深度报告_v1.0</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_复审R2.html">开源中尺寸模型_复审R2</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查.html">开源中尺寸模型_红队审查</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_v1.html">开源中尺寸模型_红队审查_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第2轮.html">开源中尺寸模型_红队审查_第2轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第3轮.html">开源中尺寸模型_红队审查_第3轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/红队审查_待执行.html">红队审查_待执行</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势与节点研究.html">开源中尺寸模型_产业趋势与节点研究</a>
+</div>
+<div class="group"><div class="grp">新型电池</div>
+<a href="../../行业研究/新型电池/新型电池_产业趋势研究.html">新型电池_产业趋势研究</a>
+<a href="../../行业研究/新型电池/新型电池_机会节点研究.html">新型电池_机会节点研究</a>
+<a href="../../行业研究/新型电池/新型电池_候选企业清单.html">新型电池_候选企业清单</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_三企业估值报告.html">新型电池_三企业估值报告</a>
+<a href="../../../行业研究/新型电池/07_深度报告/新型电池_产业深度研究报告.html">新型电池_产业深度研究报告</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_复审R2.html">新型电池_复审R2</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查.html">新型电池_红队审查</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第2轮.html">新型电池_红队审查_第2轮</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第3轮.html">新型电池_红队审查_第3轮</a>
+</div>
+<div class="group"><div class="grp">智能网联新能源汽车</div>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_产业趋势研究.html">智能网联新能源汽车_产业趋势研究</a>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_机会节点研究.html">智能网联新能源汽车_机会节点研究</a>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_候选企业清单.html">智能网联新能源汽车_候选企业清单</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_估值与分级_v1.html">智能网联新能源汽车_估值与分级_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_核心企业估值报告.html">智能网联新能源汽车_核心企业估值报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_产业深度研究报告.html">智能网联新能源汽车_产业深度研究报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_深度报告_v1.0.html">智能网联新能源汽车_深度报告_v1.0</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_复审R2.html">智能网联新能源汽车_复审R2</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查.html">智能网联新能源汽车_红队审查</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_v1.html">智能网联新能源汽车_红队审查_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第2轮.html">智能网联新能源汽车_红队审查_第2轮</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第3轮.html">智能网联新能源汽车_红队审查_第3轮</a>
+</div>
+</div><script>
+(function(){
+  // 高亮当前页：用 new URL() 把相对 href 解析为绝对路径后比对 pathname
+  document.querySelectorAll('.sidebar a').forEach(function(a){
+    try{
+      if(new URL(a.getAttribute('href'), location.href).pathname === location.pathname){
+        a.classList.add('current');
+        var g=a.closest('.group');
+        if(g)g.classList.remove('collapsed');
+      }
+    }catch(e){}
+  });
+})();
+document.addEventListener('click',function(e){
+  var g=e.target.closest('.grp');
+  if(g){g.parentElement.classList.toggle('collapsed');return;}
+  var t=e.target.closest('#sidebarToggle');
+  if(t){document.body.classList.toggle('hide-sb');
+    t.textContent=document.body.classList.contains('hide-sb')?'☰':'◀';}
+});
+</script><div class="content"><nav><a href="00_使用说明/index.html">00_使用说明</a> <a href="06_数据与工具/index.html">06_数据与工具</a> <a href="08_归档/index.html">08_归档</a> <a href="AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="化纤/index.html">化纤</a> <a href="家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="新型电池/index.html">新型电池</a> <a href="智能网联新能源汽车/index.html">智能网联新能源汽车</a></nav><p><a href="../index.html">← 返回</a> · 生成于 2026-10-12 14:11</p>
+<h1 id="qwen-27b">开源中尺寸模型（Qwen 27B级）产业趋势与价值链节点研究（合并稿）</h1>
+<blockquote>
+<p>版本 v1.0 ｜ 2026-10-12 ｜ 本文合并《开源中尺寸模型_产业趋势研究.md》《开源中尺寸模型_机会节点研究.md》《开源中尺寸模型_候选企业清单.md》三份红队修正版研究为单文档，并补充本次一手核验数据（HF官方博客2026-03、Qwen3.5/3.6发布信息、DeepSeek许可条款、信通院《大模型专有云服务市场分析2026》）。
+规则：基本面研究，禁技术分析。事实/推断/预测分级标注；所有关键数字带来源与时点；区分「已发生」与「推演」，自媒体臆断不作为证据。
+研究边界：20-40B级（含MoE激活3-17B）开源权重模型普及后，对①算力链②云厂商③软件与服务④端侧硬件的影响。家庭常驻Agent细节归《家庭空间常驻Agent》研究，本文仅交叉引用。</p>
+</blockquote>
+<hr />
+<h2 id="0">0. 一句话结论</h2>
+<p><strong>事实</strong>：开源中尺寸模型已是全球开发者默认工作流——Qwen系列累计下载超30亿次、衍生模型超30万款（彭博/HF，2026-08）；开源与闭源旗舰的性能差距已缩窄至约1.7个百分点（斯坦福AI Index 2025）；中国模型占HF下载 plurality（41%，HF官方博客 2026-03-17）。
+<strong>推断</strong>：模型能力从稀缺品变为准公共品，模型层利润被开源商品化清零，价值向上（推理算力量）和向下（部署/调优/应用/端侧）两端迁移。中尺寸是私有化部署的甜点尺寸：一台4-8卡服务器或一台端侧推理盒即可承载，部署门槛从百万级降至数万-数十万级。
+<strong>预测</strong>：训练算力占比趋势性下降、推理成基本盘（推理算力已占中国智算约六成，IDC×信通院 2026-06调研）；「免费权重≠免费AI」，总算力消耗不降反升（杰文斯效应），但结构上从巨头训练集群扩散为千行百业的推理部署。</p>
+<hr />
+<h2 id="1">1. 事实基础：开源中尺寸模型现状</h2>
+<h3 id="11">1.1 主要模型谱系与许可（一手核验）</h3>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th>发布时间</th>
+<th>规模</th>
+<th>许可</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Qwen3-32B（稠密）</td>
+<td>2025-04-29</td>
+<td>32B</td>
+<td>Apache 2.0</td>
+<td>HF模型卡</td>
+</tr>
+<tr>
+<td>Qwen3-30B-A3B（MoE）</td>
+<td>2025-04</td>
+<td>30B总/3B激活</td>
+<td>Apache 2.0</td>
+<td>HF模型卡</td>
+</tr>
+<tr>
+<td>Qwen3.5-397B-A17B</td>
+<td>2026-02-16</td>
+<td>397B总/17B激活，262K原生上下文，原生多模态</td>
+<td>Apache 2.0</td>
+<td>HF/Qwen博客/Artificial Analysis</td>
+</tr>
+<tr>
+<td>Qwen3.5小模型（0.8B/2B/4B/9B）</td>
+<td>2026-03-02</td>
+<td>9B GPQA 81.7超gpt-oss-120B(80.1)</td>
+<td>Apache 2.0</td>
+<td>Qwen团队/benzene.ai</td>
+</tr>
+<tr>
+<td>Qwen3.6-35B-A3B</td>
+<td>2026-04-19</td>
+<td>35B总/3B激活</td>
+<td>Apache 2.0</td>
+<td>IT之家/腾讯新闻 2026-04-20</td>
+</tr>
+<tr>
+<td>DeepSeek-V3.2 / V3.2-Exp</td>
+<td>2025-09-29</td>
+<td>DSA稀疏注意力，API降50%+</td>
+<td>MIT</td>
+<td>deepseek.com官方</td>
+</tr>
+<tr>
+<td>DeepSeek-V4-Flash/V4-Pro</td>
+<td>2026（V4预览版已同步开源，百万上下文）</td>
+<td>—</td>
+<td>MIT</td>
+<td>deepseek.com/阿里云开源条款页</td>
+</tr>
+<tr>
+<td>DeepSeek-R1蒸馏Qwen 7B/14B/32B</td>
+<td>2025-01</td>
+<td>—</td>
+<td>MIT</td>
+<td>HF LICENSE</td>
+</tr>
+<tr>
+<td>Llama 4 Scout 17B</td>
+<td>2025-04</td>
+<td>17B激活MoE</td>
+<td>Llama 4 Community License（有限商用条款，月活&gt;7亿需授权）</td>
+<td>HF/Meta</td>
+</tr>
+<tr>
+<td>Gemma 3 27B</td>
+<td>2025-03</td>
+<td>27B</td>
+<td>Gemma许可（非Apache级宽松）</td>
+<td>Google</td>
+</tr>
+</tbody>
+</table>
+<p>许可要点：<strong>Qwen系与DeepSeek系（V3.1起）为Apache 2.0/MIT级完全商用许可</strong>，无用户量/营收门槛——这是私有化部署在G端与产业资本层面爆发的法律前提；Llama/Gemma许可有条件限制，中国模型在合规确定性上反而占优。</p>
+<h3 id="12">1.2 跑分与能力差距</h3>
+<ul>
+<li>Qwen3.5-397B：MMLU-Pro 87.8、GPQA-D 88.4、AIME2026 91.3（vs GPT-5.2的96.7）、SWE-bench Verified 76.4（vs Claude Opus 4.6的80.9）——<strong>接近但未全面超越闭源旗舰</strong>（第三方评测汇总 nxcode/DeepInfra，B级）。</li>
+<li>开源vs闭源整体差距约1.7pct（斯坦福AI Index 2025，A级）。</li>
+<li>中尺寸量化模型的现实天花板：Qwen3-32B综合Agent任务分18.4 vs 旗舰44.8（LLM Stats，B级）——<strong>开源在常规推理上够用，在复杂Agent任务上仍明显落后</strong>，端云分工因此长期存在。</li>
+</ul>
+<h3 id="13">1.3 下载量/衍生模型/企业采用（一手数据）</h3>
+<ul>
+<li>HF生态2025年：1300万用户、200万+公开模型、50万+公开数据集，同比接近翻倍（HF官方博客 2026-03-17，A级）。</li>
+<li><strong>Qwen累计下载超30亿次、衍生模型超30万款；2026年2月单月下载15.4亿次，超过其余八大发布方之和</strong>（凤凰网/PANews转引彭博，2026-08，B级）。</li>
+<li>中国模型占HF下载41%（2025年，HF官方博客，A级）；2025年新trending模型多数为中国开发或中国模型衍生（同上）。</li>
+<li><strong>采用集中度警示</strong>：HF上约半数模型总下载&lt;200次，top 0.01%（200款）模型占全部下载49.6%——「下载量」不等于「企业采用」，媒体常混淆（HF官方博客，A级）。</li>
+<li>企业侧：<strong>超过30%的财富500强在HF有认证组织账号</strong>；Thinking Machines的Tinker完全基于开源权重；Airbnb等加大开源使用（HF官方博客 2026-03，A级）。</li>
+<li>中国私有化侧：45%央企完成DeepSeek部署（甲子光年引浙商证券，2025-02，B级）；60+厂商推出DeepSeek一体机（2025-02）；<strong>信通院《大模型专有云服务市场分析（2026年）》（2026-07-30发布，A级）：全国日均词元调用量两年增幅超千倍；大模型专有云推理服务占国内推理服务超三成份额，预计2026年底达约35%</strong>——私有化/专有云不是边缘路线，是国内推理的主承载之一。</li>
+</ul>
+<h3 id="14">1.4 采用结构【推断】</h3>
+<ul>
+<li>G端/央国企：过尝鲜期，进入采购部署（部分从一体机转向EP推理集群，甲子光年2025）。</li>
+<li>金融/能源强监管：数据不出域硬约束，企业自建智算云推理算力超350 EFlops、日均Token产能超70万亿（IDC×信通院 2026-02）。</li>
+<li>中小企业：预算10-50万区间，「问多买少」（甲子光年2025-02访谈）——<strong>未来3年最大增量池，也是最大不确定性</strong>。</li>
+<li>C端/端侧：「端侧AI元年」叙事，中低端端侧AI芯片出货同比+110%（IDC 2026Q1报告转引），出货验证不足。</li>
+</ul>
+<hr />
+<h2 id="2">2. 对算力链的影响</h2>
+<h3 id="21">2.1 训练→推理迁移【事实为主】</h3>
+<p>已披露数据（事实级）：
+- 推理算力占中国智算约六成，企业自建线下推理占1/3以上（IDC×信通院联合调研，2026-06）。
+- 中国智能算力规模：2025年底1590 EFLOPS（FP16）→2026年3月底1880 EFLOPS（+18%/3个月）（国家数据局，经东财证券/IDC转引）。
+- Token调用量：中国公有云MaaS 2024年114万亿→2025年1944万亿（16x）→2026E约4万亿亿次量级延续20x级增长（IDC 2026-05）；2026年3月全国日均Token调用超140万亿（东财证券研报）。
+- 德勤：推理负载占比2023年1/3→2026年约2/3（36氪转引，B级）。
+- AI服务器厂商从项目制转向常态化扩容（证券之星 2026-07-08）。</p>
+<p>推演部分（须区分）：
+- <strong>开源中尺寸普及不减少算力需求，而是重塑结构</strong>：①算力从巨头训练集群搬进千行百业的推理机房与端侧；②推理先行使国产芯片获得放量入口（推断，东财证券观点）。<strong>⚠️量级背书需谨慎</strong>：「Agent化使单任务Token消耗放大20-30倍」出自海光信息IR口径，利益相关、无第三方核验，仅作C级证据。
+- <strong>杰文斯效应的三个削弱项</strong>（红队修正，2026-10）：①智算中心利用率不足40%（亿欧智库2026-07），总量上升≠有效需求上升；②本轮云涨价含成本推动成分（腾讯业绩会：硬件成本+盈利纪律；大摩2026-08：八家平均API价较25Q1 +48%/+80%），HBM周期回落可能反转；③需求弹性有限——讯飞AI学习机因芯片/存储涨价销量不及预期。</p>
+<h3 id="22">2.2 国产芯片受益逻辑</h3>
+<ul>
+<li>中国高端AI芯片2025年出货400万片、国产占41%（IDC）；<strong>Bernstein预测2026年英伟达在华份额降至约8%</strong>（归属Bernstein；TrendForce口径为2026年国产份额近90%——激进外推，取「结构性上行」而非点值）。</li>
+<li>华为昇腾2025年81.2万张（国产占49%）；寒武纪2026H1营收60亿(+108%)、毛利率55%；海光2026H1营收91亿(+66.5%)、DCU适配365款大模型覆盖99%非闭源模型——<strong>开源模型的可自由部署性，正是国产芯片「跑通模型生态」的前提</strong>：模型许可越开放，芯片适配壁垒越重要（适配从数月压缩到数日，DeepSeek V4 Day-0接入百余家）。</li>
+<li>竞争警示：国产GPU四小龙（摩尔线程/沐曦/壁仞/燧原）2025H2-2026密集上市，是寒武纪/海光隐含增速的直接威胁。</li>
+</ul>
+<h3 id="23">2.3 供需平衡判断【推断】</h3>
+<ul>
+<li>推理算力短期仍紧缺：云厂商2026年3月起集体涨价（AI算力产品+5%~34%，阿里/腾讯/百度，财联社；腾讯混元输入价+463%后整体再提价5%、百度+5~30%、商汤+12%；DeepSeek V4-Pro高峰输出价6→27元/百万tokens即+350%，2026-08-13）。</li>
+<li>净效应：私有化分流部分云需求，但每台一体机/推理盒本身是新增硬件需求；<strong>云GPU需求增速可能被私有化分流而低于MaaS调用量增速——云厂商「量增价升」持续性需打折</strong>。</li>
+<li><strong>「搬离云」2026年尚无证据</strong>：反向证据是腾讯2026Q2 capex 527.84亿（约528亿）（年化2000亿+）明确自研优先、阿里8月800亿港元配售全投AI基建。私有化分流的真实战场是G端/央国企预算盘子（一体机），与公有云增量是两个池子。</li>
+</ul>
+<hr />
+<h2 id="3">3. 对云厂商的影响：定价权与利润池</h2>
+<h3 id="31-api">3.1 开源对云API定价权的侵蚀【事实+推断】</h3>
+<ul>
+<li>开源模型免费→MaaS「模型溢价」消失，云厂商被迫赚推理吞吐、工具链和全家桶的钱（向量库/存储/安全/SLA）。火山引擎以豆包开源模型+低价拿下公有云MaaS调用量49.5%份额（IDC 2025）。</li>
+<li>矛盾现象：2026年云厂商集体涨价（见2.3）表明价格战结束、转「利润优先」——但大摩统计的+48~80%涨幅中相当部分是成本推动（HBM/内存涨价），不是需求定价权回归。</li>
+</ul>
+<h3 id="32-vs-api">3.2 私有化 vs 云API的份额变化【事实】</h3>
+<p>一手数据：
+- <strong>信通院《大模型专有云服务市场分析（2026）》（2026-07，A级）：大模型专有云服务推理服务占国内推理服务超三成份额，预计2026年底约35%；政务、金融、能源为主要落地行业；未来3~5年专有云推理服务市场保持高速增长</strong>。
+- 中国公有云MaaS营收：2025年30.7亿元→2026E约186亿元（IDC口径）——公有云MaaS盘子本身还小，<strong>国内大模型服务的主要形态从一开始就偏私有化/专有云，而非美国式API经济</strong>。
+- 智算云基础设施（AI IaaS）2025年486.7亿元、+128%（IDC）——云厂商的真实利润池在基础设施层而非模型API层。</p>
+<p>企业选择私有化的真实动机（按证据强度排序）：
+1. <strong>数据合规硬约束（A级）</strong>：政务/金融/能源核心数据不出域是监管要求，与成本无关（信通院报告、新华报业选型指南2026-07一致）。
+2. <strong>调用量大的成本临界（B级）</strong>：私有化为一次性算力投入+持续运维，适合调用量大场景；腾讯云开发者社区调研（2025-06，C级、非权威）称67%大型企业倾向私有化/混合、78%中小企业选云起步——<strong>比例数据来源可信度有限，仅作方向性参考</strong>。
+3. <strong>可控性与深度定制（B级）</strong>：自选模型/版本/微调，IDC调研85.8%企业选混合架构。
+4. <strong>供给侧推力</strong>：大模型一体机把私有化门槛降到「通电即用」，泛政府类单位私有化部署服务器（一体机）开支空间约1000亿元（券商测算，浙商证券口径，推演级）。</p>
+<p>判断【推断】：开源中尺寸是云厂商的「特洛伊木马」——客户随时可拿走模型自部署，云MaaS必须靠工具链/SLA/混合方案锁定客户；<strong>纯模型API业务毛利结构性承压，AI IaaS才是云厂商真实利润池</strong>。私有化部署市场格局分散（百度智能云、商汤、电信AI、中关村科金、创新奇智、星环等头部，IDC 2025），集中度远低于公有云——这是A股服务商的机会窗口。</p>
+<hr />
+<h2 id="4">4. 对软件与服务的影响</h2>
+<h3 id="41">4.1 应用层成本下降→应用繁荣？</h3>
+<p>已有证据（事实）：
+- 交付成本侧：模型免费+一体机化，部署成本从百万级降至数万-数十万级；金山办公以垂类Agent+上下文壁垒差异化，2026H1经调整净利+18~38%、WPS AI月活8013万(+307%)——<strong>应用层能留住利润的路径已被验证（办公垂类）</strong>。
+- IDC：72%企业已投产Agent（B级）。
+- 但「成本下降→应用爆发」的传导并非无摩擦：推理集群调优门槛高（EP并行）、模型同质化使场景工程成为竞争点；中小企业仍「问多买少」。
+- 反例警示：应用繁荣≠服务商繁荣——软通动力2026H1 AI相关收入114亿(+40%，占比61%)但归母-2.65亿、经营现金流-39.5亿；拓维信息2026H1智能计算收入-33%、扣非亏损。<strong>收入是真的，利润普遍为负或微利</strong>。</p>
+<h3 id="42">4.2 集成/微调/运维服务市场规模</h3>
+<ul>
+<li>模型成本清零后，价值转向：交付实施（一体机集成）、行业知识库/微调、Agent编排与运维。</li>
+<li>量化锚点（多为推演/单点）：泛政府私有化服务器开支空间约1000亿元（券商测算，乐观偏差警告）；一体机采购量2025/2027预测15/72万台（浙商证券）vs 实际「问多买少」（甲子光年）——<strong>销量预测与实际销售存在落差，禁用券商预测作锚</strong>，以政采网/运营商集采中标数据为准（裁定规则：2026Q4单季央国企中标≥5万台→券商路径成立；&lt;2万台→「问多买少」坐实）。</li>
+<li>一体机经济学：客户预算集中在10-50万；硬件同质化（都是服务器厂出货），差异化在软件调优——<strong>利润流向掌握推理引擎/调优能力的厂商，纯贴牌商赚搬运费</strong>（软通计算产品毛利率仅7.7%为证）。</li>
+<li>服务模式升级信号（信通院2026-07）：从「资源供给」向「场景交付」转型，计费从资源时长转向任务效果，「词元资产化运营」范式初现。</li>
+</ul>
+<hr />
+<h2 id="5-agent">5. 对端侧硬件的影响（与《家庭空间常驻Agent》交叉引用）</h2>
+<ul>
+<li>技术前提已具备：中尺寸MoE激活仅3B（Qwen3.6-35B-A3B、Qwen3.5小模型0.8-9B全开源），4-bit量化后稠密32B约需20-24GB显存——单张工作站卡或端侧芯片可跑。</li>
+<li>端侧推理芯片上限快速上移：后摩智能M50，10W/160TOPS可跑35-120B（WAIC 2026，雷科技/新浪转引）；瑞芯微RK182X支持3B/7B、RK1860将支持13B（钛媒体，B级）；高通骁龙8 Elite Gen 5端侧跑gpt-oss 20B级、220 token/s（高通官网，A级）；联想AI主机P7（30W跑122B，WAIC 2026）。</li>
+<li>需求侧：中低端端侧AI芯片出货同比+110%（IDC 2026Q1，B级）；AI PC（OPX一人公司需求160万台/2026，IDC，大盘PC仅-6.1%）；洛图科技2026年中国消费级AI硬件市场1.27万亿元（⚠️口径宽泛，含大量非LLM硬件）。</li>
+<li><strong>交叉引用</strong>：《家庭空间常驻Agent》研究结论——家庭常驻Agent的本地化、隐私化运行以端侧中尺寸推理为算力前提；本文的瑞芯微/全志/后摩等边缘推理芯片是两个队列的共同上游，该队列的终端公司（家庭机器人等）不在本清单重复覆盖。边界判断：端侧承接20-80%轻任务（36氪深圳案例：80%任务本地完成），复杂Agent任务仍回云（见1.2天花板）——端云分工而非端侧替代。</li>
+<li>证据强度总评：端侧叙事「元年」级，出货与复购验证不足，证据多为B/C级。</li>
+</ul>
+<hr />
+<h2 id="6">6. 节点排序：谁获得增量利润，谁被商品化侵蚀</h2>
+<p>价值链：<strong>模型层（开源免费）→ 推理芯片/ASIC → 服务器/一体机整机 → AIDC/机房 → 云MaaS/AI IaaS → 部署实施与调优 → 行业应用/Agent → 端侧终端</strong></p>
+<p>开源中尺寸普及的结构性效应：<strong>模型层利润被清零，价值向两端迁移</strong>——向上（推理算力总量暴涨）与向下（部署、调优、行业知识、Agent编排成为模型之后的价值捕获点）。</p>
+<p>开放式节点清单（禁机械加权，评级=证据强度×兑现状态的综合定性判断）：</p>
+<table>
+<thead>
+<tr>
+<th>节点</th>
+<th>受益逻辑</th>
+<th>关键证据</th>
+<th>证据强度</th>
+<th>兑现状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A 推理ASIC/国产加速芯片</strong></td>
+<td>推理负载2/3且是国产芯片放量入口；开源模型可自由部署放大适配价值</td>
+<td>推理占智算六成（IDC×信通院）；寒武纪+108%/毛利率55%、海光+66.5%已兑现</td>
+<td>A</td>
+<td>已兑现中。⚠️四小龙上市竞争+估值透支（寒武纪PS 38x）</td>
+</tr>
+<tr>
+<td><strong>B 推理服务器/整机</strong></td>
+<td>推理是持续性需求，常态化扩容替代项目制</td>
+<td>浪潮2026H1净利+270%、在手订单350亿+；工业富联2025归母353亿+52%、AI服务器全球份额第一</td>
+<td>A（利润端）</td>
+<td>利润端已兑现；<strong>收入端浪潮真实增速仅+5.2%</strong>，量增系利润率修复，需订单转化率验证</td>
+</tr>
+<tr>
+<td><strong>C 智算一体机（G端私有化）</strong></td>
+<td>数据不出域硬约束+45%央企已部署</td>
+<td>信通院：专有云推理占全国推理超三成→35%；60+厂商一体机；⚠️智算中心利用率&lt;40%提示复购风险</td>
+<td>B</td>
+<td>早期放量、验证中（见4.2裁定规则）</td>
+</tr>
+<tr>
+<td><strong>H AIDC分布式推理机房</strong></td>
+<td>推理从万卡单点转向多点分布式；自建推理350EFlops</td>
+<td>IDC×信通院；润泽液冷机柜价格回升至峰值</td>
+<td>B</td>
+<td>兑现中</td>
+</tr>
+<tr>
+<td><strong>D 部署实施与调优服务</strong></td>
+<td>模型免费后价值在交付</td>
+<td>汉得AI收入3.1亿、软通AI收入114亿+40%；利润普遍为负</td>
+<td>B</td>
+<td>收入先行、利润未到</td>
+</tr>
+<tr>
+<td><strong>E 行业Agent与垂类应用</strong></td>
+<td>模型同质化后上下文/场景/工作流是壁垒</td>
+<td>金山办公经调整净利+18-38%、WPS AI月活8013万</td>
+<td>B+</td>
+<td>办公垂类已验证，其他待证</td>
+</tr>
+<tr>
+<td><strong>F 端侧推理芯片/边缘盒</strong></td>
+<td>3B激活MoE+存算一体使端侧可跑中尺寸</td>
+<td>后摩M50、瑞芯微RK182X、端侧芯片出货+110%</td>
+<td>B-</td>
+<td>元年，出货未验证</td>
+</tr>
+<tr>
+<td><strong>G AI PC/超级个体终端</strong></td>
+<td>OPX范式驱动PC结构性需求</td>
+<td>IDC 160万台OPX需求</td>
+<td>C</td>
+<td>早期</td>
+</tr>
+<tr>
+<td><strong>I MaaS工具链/Token工厂</strong></td>
+<td>纯API溢价消失，工具链/调度/SLA是新分层</td>
+<td>火山49.5%份额靠综合能力；趋境科技TaaS半年融资10亿</td>
+<td>C+</td>
+<td>新模式，未证伪</td>
+</tr>
+<tr>
+<td><strong>J 配套电气/散热</strong></td>
+<td>推理机房带动配电/备电/液冷</td>
+<td>详见《AI数据中心800VDC供电》定稿研究（麦格米特/盛弘/金盘等）</td>
+<td>—</td>
+<td>引用，不重复计价</td>
+</tr>
+</tbody>
+</table>
+<p><strong>被商品化侵蚀的环节</strong>（反直觉但同样重要）：
+1. <strong>闭源模型API的纯模型溢价</strong>——开源旗舰差距仅1.7pct且许可完全商用，模型本身是最先被商品化的环节。反例压力测试：闭源厂靠推理质量代差（复杂Agent任务）与多模态前沿维持溢价窗口，但窗口在收窄。
+2. <strong>纯贴牌一体机商</strong>——硬件同质化，毛利率被压至个位数。
+3. <strong>无调优能力的纯算力租赁商</strong>——推理优化进步侵蚀其毛利。例外（观点分歧）：具备大模型客户长协+Token定价能力者不在此列——行云科技2026-07算力合同已出现Token收入挂钩定价（5年10.14→30.53亿、单价上调21-36%）。
+4. <strong>中游整机毛利率结构性低</strong>——被上游芯片和下游大客户两头挤压（浪潮毛利率4.91%，2025前三季）；真正的高毛利在芯片（寒武纪55%）和有场景粘性的应用（金山办公86%）。</p>
+<p><strong>利润流向的时间结构【推断】</strong>：
+- 已兑现（2025-2026报表可见）：A芯片、B服务器、H机房——确认性最高，估值已部分反映。
+- 正在兑现：C一体机、D部署服务——收入可见、利润未到，买收入质量不买收入规模。
+- 期权型（2027+）：E垂类Agent盈利扩散、F端侧放量、G PC结构变量、I Token工厂。</p>
+<hr />
+<h2 id="7-a">7. 候选企业初步清单（A股为主）</h2>
+<p>证据分级：A=财报/公告/权威一手；B=主流媒体/机构转引；C=单一来源/厂商自述/推断。本清单为候选初筛，估值与分级归06子目录。</p>
+<h3 id="abh">算力链（A/B/H节点）</h3>
+<table>
+<thead>
+<tr>
+<th>公司</th>
+<th>代码</th>
+<th>节点</th>
+<th>关键证据</th>
+<th>证据级</th>
+<th>核心风险</th>
+<th>优先级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寒武纪</td>
+<td>688256</td>
+<td>A</td>
+<td>2026H1营收60.0亿+108%、归母23.1亿、毛利率55.25%；适配DeepSeek/Qwen/GLM</td>
+<td>A</td>
+<td>现金流/净利比0.135、存货82.5亿、PS 38x估值透支、四小龙竞争</td>
+<td>高（估值压力）</td>
+</tr>
+<tr>
+<td>海光信息</td>
+<td>688041</td>
+<td>A+B</td>
+<td>2026H1营收91.0亿+66.5%；DCU适配365款大模型</td>
+<td>A</td>
+<td>毛利率降4.9pct；竞争加剧</td>
+<td>高</td>
+</tr>
+<tr>
+<td>浪潮信息</td>
+<td>000977</td>
+<td>B</td>
+<td>2026H1净利29.5亿+270%、在手订单350亿+、国产AI服务器份额52.3%(B)</td>
+<td>A/B</td>
+<td>毛利率约5%、收入真实增速仅+5.2%</td>
+<td>高</td>
+</tr>
+<tr>
+<td>工业富联</td>
+<td>601138</td>
+<td>B</td>
+<td>2025归母352.9亿+52%、AI服务器全球份额第一</td>
+<td>A</td>
+<td>体量大→边际弹性低</td>
+<td>中高（确定高弹性低）</td>
+</tr>
+<tr>
+<td>中科曙光</td>
+<td>603019</td>
+<td>B</td>
+<td>海光系整机+液冷（推断，待补验证数据）</td>
+<td>C</td>
+<td>数据待补</td>
+<td>中</td>
+</tr>
+<tr>
+<td>润泽科技</td>
+<td>300442</td>
+<td>H</td>
+<td>2025净利50.5亿+182%（含REITs一次性收益需拆扣非）；液冷智算中心</td>
+<td>B</td>
+<td>一次性收益扰动、客户集中</td>
+<td>高</td>
+</tr>
+<tr>
+<td>奥飞数据</td>
+<td>300738</td>
+<td>H</td>
+<td>大湾区+东南亚、算电协同</td>
+<td>C</td>
+<td>重资产杠杆</td>
+<td>中</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cde">云/私有化/软件服务（C/D/E节点）</h3>
+<table>
+<thead>
+<tr>
+<th>公司</th>
+<th>代码</th>
+<th>节点</th>
+<th>关键证据</th>
+<th>证据级</th>
+<th>核心风险</th>
+<th>优先级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>软通动力</td>
+<td>301236</td>
+<td>D+C</td>
+<td>2026H1 AI相关收入114亿+40%（占61%）；昇腾/鲲鹏双伙伴一体机</td>
+<td>A</td>
+<td>归母-2.65亿、OCF-39.5亿</td>
+<td>高（买收入质量）</td>
+</tr>
+<tr>
+<td>汉得信息</td>
+<td>300170</td>
+<td>D+E</td>
+<td>2025 AI收入3.1亿（2024年约0.6亿）；字节/火山系伙伴</td>
+<td>B</td>
+<td>2026H1总营收仅+6.1%、AI占比仍小</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>拓维信息</td>
+<td>002261</td>
+<td>C</td>
+<td>⚠️负向证据：2026H1智能计算收入-33%、扣非亏损</td>
+<td>A</td>
+<td>主业失血+信披违规</td>
+<td>低（反例警示）</td>
+</tr>
+<tr>
+<td>金山办公</td>
+<td>688111</td>
+<td>E</td>
+<td>2026H1经调整净利+18-39%、WPS AI月活8013万</td>
+<td>A</td>
+<td>估值高</td>
+<td>高</td>
+</tr>
+<tr>
+<td>科大讯飞</td>
+<td>002230</td>
+<td>C+E</td>
+<td>星火+一体机主力</td>
+<td>B</td>
+<td>2026H1扣非-6.4亿亏损扩大、总营收仅+6.5%</td>
+<td>中（红队下调观察）</td>
+</tr>
+<tr>
+<td>智微智能</td>
+<td>001339</td>
+<td>B</td>
+<td>2026H1净利预告+245-310%</td>
+<td>A/B</td>
+<td>总营收+56.6%（红队第2轮F2更正，原"+2.6%"系E10更正值错误）；客户集中、正常化基数不可靠</td>
+<td>中</td>
+</tr>
+<tr>
+<td>拓尔思/星环科技</td>
+<td>300229/688031</td>
+<td>D</td>
+<td>IDC私有化部署头部名单</td>
+<td>B</td>
+<td>G端预算节奏</td>
+<td>低中</td>
+</tr>
+</tbody>
+</table>
+<h3 id="f">端侧芯片（F节点）</h3>
+<table>
+<thead>
+<tr>
+<th>公司</th>
+<th>代码</th>
+<th>关键证据</th>
+<th>证据级</th>
+<th>优先级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>瑞芯微</td>
+<td>603893</td>
+<td>RK182X支持3B/7B、RK1860将支持13B</td>
+<td>B</td>
+<td>中</td>
+</tr>
+<tr>
+<td>全志科技</td>
+<td>300458</td>
+<td>AI玩具/平板SoC量产</td>
+<td>C</td>
+<td>低中</td>
+</tr>
+<tr>
+<td>（参照）高通/联想</td>
+<td>美股/港股</td>
+<td>骁龙8E Gen5端侧跑20B级；AI主机P7</td>
+<td>A/B</td>
+<td>参照系</td>
+</tr>
+</tbody>
+</table>
+<h3 id="j">配套电气（J节点，交叉引用）</h3>
+<p>盛弘股份/麦格米特/金盘科技/科士达——详见《AI数据中心800VDC供电》定稿研究，一体机分布式部署为二阶增量（推断），不在此重复估值。</p>
+<h3 id="_1">排除/警惕名单</h3>
+<ul>
+<li>纯「一体机概念」无收入证实的贴牌商。</li>
+<li>无调优能力的纯算力租赁商（Token定价长协者除外）。</li>
+<li>「AI收入负增长+扣非亏损+治理瑕疵」组合（拓维类）。</li>
+<li>参照系（非评级对象）：国产GPU四小龙（摩尔线程/沐曦/壁仞/燧原）、美股博通（AI收入+106%）、AMD（DC收入+107%）。</li>
+</ul>
+<hr />
+<h2 id="8-08_">8. 监控指标（08_周报跟踪）</h2>
+<ul>
+<li>IDC中国智算云AI IaaS季度规模；公有云MaaS营收与调用量份额（火山/阿里/百度）</li>
+<li>一体机/智算服务器实际招标量（政采网、运营商集采）——节点C裁定核心</li>
+<li>IDC加速卡季报国产份额；寒武纪/海光/浪潮单季收入与毛利率</li>
+<li>专有云推理占全国推理份额（信通院年度更新，2026基准约30-35%）</li>
+<li>云厂商AI产品价格调整公告（区分需求型/成本型涨价）</li>
+<li>端侧AI芯片出货同比；AI PC渗透率</li>
+<li>软通/汉得/拓维AI业务毛利率与经营现金流拐点（D节点利润验证）</li>
+</ul>
+<hr />
+<h2 id="_2">主要来源索引</h2>
+<p>一手/权威：Hugging Face官方博客《State of Open Source: Spring 2026》(2026-03-17)；信通院《大模型专有云服务市场分析（2026年）》(2026-07-30)；斯坦福AI Index 2025；IDC《中国AI软件市场半年度追踪》及IDC×信通院联合调研(2026-02/06)；国家数据局智算规模；deepseek.com官方发布与许可页；阿里云开源模型条款页；高通官网；各公司财报/业绩预告。
+转引（B级）：东财证券研报、浙商证券、甲子光年、亿欧智库、德勤（36氪转引）、大摩（网转）、TrendForce/Bernstein（未来半导体转引）、证券时报数据宝、财联社、钛媒体、凤凰网。
+推演/单点（C级，已标注）：海光IR Token倍增口径、腾讯云社区企业调研比例、券商一体机1000亿空间测算、洛图1.27万亿口径。</p></div>

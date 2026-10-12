@@ -1,0 +1,405 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>开源中尺寸模型_红队审查_第2轮 · 研究库</title><style>body{font-family:-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;max-width:920px;margin:0 auto;padding:24px;line-height:1.75;color:#24292f}
+h1,h2,h3{border-bottom:1px solid #e1e4e8;padding-bottom:6px}h1{font-size:1.7em}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.92em;display:block;overflow-x:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px;text-align:left}th{background:#f6f8fa}
+blockquote{border-left:4px solid #d0d7de;margin:0;padding:2px 14px;color:#57606a;background:#f6f8fa}
+code{background:#f0f1f2;padding:1px 5px;border-radius:4px;font-size:.9em}
+pre{background:#f6f8fa;padding:12px;border-radius:8px;overflow-x:auto}
+a{color:#0969da}nav{font-size:.9em;margin-bottom:18px}
+nav a{margin-right:14px;text-decoration:none}
+.sidebar{display:none}
+@media(min-width:1100px){.sidebar{display:block;position:fixed;left:16px;top:16px;bottom:16px;width:230px;overflow:auto;font-size:.85em;border-right:1px solid #e1e4e8;padding-right:10px}
+body{margin-left:280px}
+.sidebar a{display:block;text-decoration:none;color:#24292f;padding:2px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sidebar .group{border-bottom:1px solid #eef0f2;padding:2px 0}
+.sidebar .grp{font-weight:700;margin-top:8px;margin-bottom:2px;color:#0969da;cursor:pointer;user-select:none;display:block;padding:6px 18px 6px 2px;position:relative;min-height:1.4em}
+.sidebar a.current{background:#ddf4ff;border-left:3px solid #0969da;color:#0550ae;font-weight:600;padding-left:8px;border-radius:0 4px 4px 0}
+.sidebar .group:has(a.current)>.grp{color:#0550ae}
+.sidebar .grp::after{content:'▾';position:absolute;right:2px;top:6px;font-size:.75em;color:#8b949e}
+.sidebar .collapsed .grp::after{content:'▸'}
+.sidebar .collapsed a{display:none}
+#sidebarToggle{position:fixed;left:16px;top:16px;z-index:30;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:.9em;color:#24292f}
+body.hide-sb{margin-left:24px}
+body.hide-sb .sidebar{display:none!important}}
+</style>
+<button id="sidebarToggle" title="收起/展开菜单">◀</button><div class="sidebar"><div class="grp">📖 研究库</div>
+<div class="group"><div class="grp">00_使用说明</div>
+<a href="../00_使用说明/README_使用说明.html">README_使用说明</a>
+<a href="../00_使用说明/任务队列.html">任务队列</a>
+<a href="../../00_使用说明/报告模板/company_report.html">company_report</a>
+<a href="../../00_使用说明/报告模板/industry_report.html">industry_report</a>
+<a href="../../00_使用说明/报告模板/node_report.html">node_report</a>
+<a href="../00_使用说明/研究总表.html">研究总表</a>
+</div>
+<div class="group"><div class="grp">06_数据与工具</div>
+<a href="../06_数据与工具/数据能力说明.html">数据能力说明</a>
+</div>
+<div class="group"><div class="grp">08_归档</div>
+<a href="../08_归档/归档登记表.html">归档登记表</a>
+</div>
+<div class="group"><div class="grp">AI数据中心800VDC供电</div>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_研究材料.html">AI数据中心800VDC供电_研究材料</a>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_机会节点研究.html">AI数据中心800VDC供电_机会节点研究</a>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_候选企业清单.html">AI数据中心800VDC供电_候选企业清单</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_三企业估值报告.html">AI数据中心800VDC供电_三企业估值报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/07_深度报告/AI数据中心800VDC供电_产业深度研究报告.html">AI数据中心800VDC供电_产业深度研究报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_复审R2.html">AI800VDC_复审R2</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_红队审查.html">AI800VDC_红队审查</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第2轮.html">AI数据中心800VDC供电_红队审查_第2轮</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第3轮.html">AI数据中心800VDC供电_红队审查_第3轮</a>
+</div>
+<div class="group"><div class="grp">化纤</div>
+<a href="../../行业研究/化纤/化纤_产业趋势研究.html">化纤_产业趋势研究</a>
+<a href="../../行业研究/化纤/化纤_机会节点研究.html">化纤_机会节点研究</a>
+<a href="../../行业研究/化纤/化纤_候选企业清单.html">化纤_候选企业清单</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_三企业估值报告.html">化纤_三企业估值报告</a>
+<a href="../../../行业研究/化纤/07_深度报告/化纤_产业深度研究报告.html">化纤_产业深度研究报告</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R2.html">化纤_复审R2</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R3.html">化纤_复审R3</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查.html">化纤_红队审查</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第2轮.html">化纤_红队审查_第2轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第3轮.html">化纤_红队审查_第3轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/审查记录.html">审查记录</a>
+</div>
+<div class="group"><div class="grp">家庭空间常驻Agent</div>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_产业趋势研究.html">家庭空间常驻Agent_产业趋势研究</a>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_机会节点研究.html">家庭空间常驻Agent_机会节点研究</a>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_候选企业清单.html">家庭空间常驻Agent_候选企业清单</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_核心企业估值报告.html">家庭空间常驻Agent_核心企业估值报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/07_深度报告/家庭空间常驻Agent_产业深度研究报告.html">家庭空间常驻Agent_产业深度研究报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_复审R2.html">家庭空间常驻Agent_复审R2</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_红队审查.html">家庭空间常驻Agent_红队审查</a>
+</div>
+<div class="group"><div class="grp">开源中尺寸模型</div>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势研究.html">开源中尺寸模型_产业趋势研究</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_机会节点研究.html">开源中尺寸模型_机会节点研究</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_候选企业清单.html">开源中尺寸模型_候选企业清单</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_估值与分级_v1.html">开源中尺寸模型_估值与分级_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_核心企业估值报告.html">开源中尺寸模型_核心企业估值报告</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_产业深度研究报告.html">开源中尺寸模型_产业深度研究报告</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_深度报告_v1.0.html">开源中尺寸模型_深度报告_v1.0</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_复审R2.html">开源中尺寸模型_复审R2</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查.html">开源中尺寸模型_红队审查</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_v1.html">开源中尺寸模型_红队审查_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第2轮.html">开源中尺寸模型_红队审查_第2轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第3轮.html">开源中尺寸模型_红队审查_第3轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/红队审查_待执行.html">红队审查_待执行</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势与节点研究.html">开源中尺寸模型_产业趋势与节点研究</a>
+</div>
+<div class="group"><div class="grp">新型电池</div>
+<a href="../../行业研究/新型电池/新型电池_产业趋势研究.html">新型电池_产业趋势研究</a>
+<a href="../../行业研究/新型电池/新型电池_机会节点研究.html">新型电池_机会节点研究</a>
+<a href="../../行业研究/新型电池/新型电池_候选企业清单.html">新型电池_候选企业清单</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_三企业估值报告.html">新型电池_三企业估值报告</a>
+<a href="../../../行业研究/新型电池/07_深度报告/新型电池_产业深度研究报告.html">新型电池_产业深度研究报告</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_复审R2.html">新型电池_复审R2</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查.html">新型电池_红队审查</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第2轮.html">新型电池_红队审查_第2轮</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第3轮.html">新型电池_红队审查_第3轮</a>
+</div>
+<div class="group"><div class="grp">智能网联新能源汽车</div>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_产业趋势研究.html">智能网联新能源汽车_产业趋势研究</a>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_机会节点研究.html">智能网联新能源汽车_机会节点研究</a>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_候选企业清单.html">智能网联新能源汽车_候选企业清单</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_估值与分级_v1.html">智能网联新能源汽车_估值与分级_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_核心企业估值报告.html">智能网联新能源汽车_核心企业估值报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_产业深度研究报告.html">智能网联新能源汽车_产业深度研究报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_深度报告_v1.0.html">智能网联新能源汽车_深度报告_v1.0</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_复审R2.html">智能网联新能源汽车_复审R2</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查.html">智能网联新能源汽车_红队审查</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_v1.html">智能网联新能源汽车_红队审查_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第2轮.html">智能网联新能源汽车_红队审查_第2轮</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第3轮.html">智能网联新能源汽车_红队审查_第3轮</a>
+</div>
+</div><script>
+(function(){
+  // 高亮当前页：用 new URL() 把相对 href 解析为绝对路径后比对 pathname
+  document.querySelectorAll('.sidebar a').forEach(function(a){
+    try{
+      if(new URL(a.getAttribute('href'), location.href).pathname === location.pathname){
+        a.classList.add('current');
+        var g=a.closest('.group');
+        if(g)g.classList.remove('collapsed');
+      }
+    }catch(e){}
+  });
+})();
+document.addEventListener('click',function(e){
+  var g=e.target.closest('.grp');
+  if(g){g.parentElement.classList.toggle('collapsed');return;}
+  var t=e.target.closest('#sidebarToggle');
+  if(t){document.body.classList.toggle('hide-sb');
+    t.textContent=document.body.classList.contains('hide-sb')?'☰':'◀';}
+});
+</script><div class="content"><nav><a href="00_使用说明/index.html">00_使用说明</a> <a href="06_数据与工具/index.html">06_数据与工具</a> <a href="08_归档/index.html">08_归档</a> <a href="AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="化纤/index.html">化纤</a> <a href="家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="新型电池/index.html">新型电池</a> <a href="智能网联新能源汽车/index.html">智能网联新能源汽车</a></nav><p><a href="../../index.html">← 返回</a> · 生成于 2026-10-12 14:11</p>
+<h1 id="__2">开源中尺寸模型_红队审查_第2轮</h1>
+<blockquote>
+<p>2026-10-12 ｜ 审查对象：深度报告定稿 v1.0、估值与分级 v1.1（红队修正版）、红队审查 v1（E1-E12 修正记录）
+本轮方法：①逐条复验 E1-E12 修正是否到位；②验证新增内容（隐含 CAGR 敏感性、杰文斯三削弱项、工业富联/国产 GPU 四小龙补入）的算术与来源；③东财 datacenter 独立复采抽验关键数字（脚本 <code>~/research/06_数据与工具/数据采集脚本.py</code>，venv=~/research/.venv，行情 RPT_VALUEANALYSIS_DET 2026-10-09 收盘、财报 RPT_LICO_FN_CPD 累计口径，2026-10-12 复采，15 家全部重跑，TTM 与增速按「2025年报−2025H1+2026H1」全量重算）；④行业层引用换源抽查（国家数据局官网 nda.gov.cn、亿欧智库报告原文、央广网/华尔街见闻、腾讯 2026Q2 业绩公告原文、讯飞中报多家转载、摩尔线程年报）。
+裁定分级沿用 v1：【事实错误】/【证据不足】/【观点分歧】/【口径问题】。</p>
+</blockquote>
+<hr />
+<h2 id="e1-e12">一、E1-E12 逐条复验结果</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>v1 修正内容</th>
+<th>复验结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E1</td>
+<td>浪潮 2026H1 营收增速 +5.2%（843.8 vs 801.9 亿），净利 +270%</td>
+<td>✅ 到位。复采 843.79/801.92 亿，+5.2%；净利 +270.0%（29.52 vs 7.97 亿）；毛利率 8.7% 均吻合</td>
+</tr>
+<tr>
+<td>E2</td>
+<td>软通总营收 +17.9%（186.1 vs 157.8 亿），+40% 系 AI 分部</td>
+<td>✅ 到位。复采 +17.9% 吻合</td>
+</tr>
+<tr>
+<td>E3</td>
+<td>拓维总营收 +0.4%、毛利率 18.7%、TTM 营收约 31.7 亿</td>
+<td>✅ 到位。复采 +0.4%、毛利率 18.72%、TTM 31.8 亿，全部吻合</td>
+</tr>
+<tr>
+<td>E4</td>
+<td>讯飞增速 +6.5%</td>
+<td>✅ 到位。复采 +6.5% 吻合</td>
+</tr>
+<tr>
+<td>E5</td>
+<td>汉得增速 +6.1%</td>
+<td>✅ 到位。复采 +6.1% 吻合</td>
+</tr>
+<tr>
+<td>E6</td>
+<td>金山办公增速 +24.7%；TTM 营收 76.3 亿</td>
+<td>⚠️ 半到位：增速 +24.7% 吻合；<strong>但 TTM 76.3 亿错误</strong>，复采为 <strong>65.8 亿</strong>（59.29−26.57+33.13）。76.3 恰为「2025年报+26Q2单季」的错误算式（59.29+17.0），见 F1</td>
+</tr>
+<tr>
+<td>E7</td>
+<td>TTM 营收列系统性更正</td>
+<td>❌ <strong>未到位，且方向部分颠倒</strong>。详见第二节 F1：v1 给出的「正确值」一半本身算式错误，浪潮/海光/曙光/润泽四家原值（1690/180.3/166/69）才是对的，却被判「低估」后改错</td>
+</tr>
+<tr>
+<td>E8</td>
+<td>软通 TTM 归母 +0.84 亿</td>
+<td>✅ 到位。复采 +0.84 亿吻合</td>
+</tr>
+<tr>
+<td>E9</td>
+<td>润泽 Q3 累计 47.0 亿（单季≈38.2 亿）、Q4 单季 3.5 亿</td>
+<td>✅ 到位。复采：Q3 单季 38.2、Q4 单季 3.46，全部吻合</td>
+</tr>
+<tr>
+<td>E10</td>
+<td>智微智能毛利率 39.5%、总营收增速仅约 +2.6%</td>
+<td>⚠️ 半到位：毛利率 39.5% ✅；<strong>但「+2.6%」错误</strong>，复采 26H1 营收 30.50 亿 vs 25H1 19.47 亿，<strong>+56.6%</strong>，与其净利 +282%（业绩预告 +245-310% 区间内）自洽。+2.6% 找不到任何可复算口径，属 E10 更正值本身错误，见 F2</td>
+</tr>
+<tr>
+<td>E11</td>
+<td>智算 159 万 PFLOPS=1590 EFLOPS、188 万 PFLOPS=1880 EFLOPS</td>
+<td>✅ 到位。换源国家数据局官网证实：刘烈宏中国发展高层论坛演讲（nda.gov.cn）原文「截至 2025 年底，中国智算总规模达 159 万 PFlops」「截至 2026 年 3 月底，全国智能算力总规模已达 188 万 PFLOPS（FP16）」；日均 Token「2025 年底 100 万亿→今年 3 月突破 140 万亿」亦为原文</td>
+</tr>
+<tr>
+<td>E12</td>
+<td>8% 归 Bernstein、TrendForce 口径国产近 90%</td>
+<td>⚠️ 维持原判，本轮未能对 Bernstein/TrendForce 原文独立换源（付费源），归属更正暂信任 v1；列为遗留待验</td>
+</tr>
+</tbody>
+</table>
+<p><strong>小结</strong>：E1-E5、E8-E11 复验到位；E6/E10 半到位（增速对、衍生值错）；E7 未到位且引入新错误；E12 待验。</p>
+<hr />
+<h2 id="2">二、第 2 轮新发现的事实错误清单</h2>
+<h3 id="f1-v11-21ttm-e7-11-8">F1【事实错误，系统性】估值文档 v1.1 表 2.1「TTM 营收」列：E7 修正混入错误算式，11 家中约 8 家数值错误</h3>
+<p><strong>根因判定</strong>：v1 的 E7「正确值」与 v1.1 采纳值，可被「<strong>2025年报 + 2026Q2单季</strong>」（=年报+26H1−26Q1，漏加 Q1/未减 25H1）这一错误算式精确复现，而非其声明的「2025年报−2025H1+2026H1」。东财同接口、同声明算式全量重算结果：</p>
+<table>
+<thead>
+<tr>
+<th>公司</th>
+<th>v1.1 现值</th>
+<th>本轮复采正确值</th>
+<th>偏差</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>浪潮信息</td>
+<td>2,137</td>
+<td><strong>1,690</strong></td>
+<td>+26%</td>
+<td><strong>E7 方向颠倒：v1 原文值 1690 本正确</strong>，被误判「低估 25%」后改错</td>
+</tr>
+<tr>
+<td>海光信息</td>
+<td>194.4</td>
+<td><strong>180.1</strong></td>
+<td>+7.9%</td>
+<td>原值 180.3 本正确</td>
+</tr>
+<tr>
+<td>中科曙光</td>
+<td>192.3</td>
+<td><strong>165.8</strong></td>
+<td>+16%</td>
+<td>原值 166 本正确</td>
+</tr>
+<tr>
+<td>润泽科技</td>
+<td>75.8</td>
+<td><strong>69.2</strong></td>
+<td>+9.5%</td>
+<td>原值 69 本正确</td>
+</tr>
+<tr>
+<td>金山办公</td>
+<td>76.3</td>
+<td><strong>65.8</strong></td>
+<td>+16%</td>
+<td>E6 衍生值随之错误</td>
+</tr>
+<tr>
+<td>瑞芯微</td>
+<td>60.7</td>
+<td><strong>52.3</strong></td>
+<td>+16%</td>
+<td></td>
+</tr>
+<tr>
+<td>全志科技</td>
+<td>38.1</td>
+<td><strong>33.9</strong></td>
+<td>+12%</td>
+<td></td>
+</tr>
+<tr>
+<td>汉得信息</td>
+<td>≈45</td>
+<td><strong>35.1</strong></td>
+<td>+28%</td>
+<td>与两种算式均不符</td>
+</tr>
+<tr>
+<td>奥飞数据</td>
+<td>≈22</td>
+<td><strong>28.4</strong></td>
+<td>−23%</td>
+<td></td>
+</tr>
+<tr>
+<td>科士达</td>
+<td>≈65</td>
+<td><strong>57.0</strong></td>
+<td>+14%</td>
+<td></td>
+</tr>
+<tr>
+<td>智微智能</td>
+<td>≈40</td>
+<td><strong>51.9</strong></td>
+<td>−22%</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>复算吻合的仅 4 家：寒武纪 96.1（注：其 25H1 营收 28.81 ≈ 26Q1 28.85，两种算式数值巧合接近）、软通 379.2（文档 381，&lt;0.5% 通过）、讯飞 278.2、拓维 31.8。
+<strong>影响</strong>：浪潮 PS 由 0.56x 被误算为 0.44x（低估 26%）；海光/曙光/润泽的 PS 类比较同向失真。<strong>表 2.1 TTM 营收列须按下表复采值整体重写</strong>。附：同列「2026H1 增速」复验中另发现全志文档 +37.7% vs 复采 +41.2%、科士达 +21.7% vs 复采 +19.8%（差 1.9-3.5pct，疑为旧版本数据或营业总收入/营业收入口径差，建议以现金流量表/利润表原文终裁，暂计【口径问题】）。</p>
+<h3 id="f2-26e10">F2【事实错误】智微智能「总营收增速仅约 +2.6%」——E10 更正值本身错误</h3>
+<p>复采 26H1 营收 30.50 亿 vs 25H1 19.47 亿，<strong>+56.6%</strong>；净利 +282% 与预告区间自洽。「+2.6%」找不到任何报告期组合可复现。该错误值已沿袭至 v1.1 表 2.1、第 4 节分级表、深度报告第 2 节节点 B 与第 3 节（三处表述「总营收仅 +2.6%」）。<strong>需修正</strong>：智微总营收增速约 +56.6%（毛利率 39.5%、净利 +282% 不变）；这不改变其 C 级结论（客户集中、正常化基数不可靠的降级理由仍在），但「收入零增长式」表述须删除。</p>
+<h3 id="2_1">不计入事实错误的表述问题（2 项，建议顺带修订）</h3>
+<ol>
+<li>讯飞「OCF 为负」成立（中报 OCF −9.45 亿、同比多流出 22.4%），但遗漏两点：①公司披露 <strong>Q2 单季经营性现金流已转正</strong>；②AI 学习机 <strong>7 月销量已修复至同比 +3%</strong>。第 1 节引用「学习机销量未达预期」作杰文斯削弱项时应补注「7 月已回升」，否则弱化项强度被高估。</li>
+<li>深度报告第 2 节腾讯「capex 530 亿」：业绩公告精确值 <strong>527.84 亿</strong>（约数 530 可接受，建议改写 528 亿）。</li>
+</ol>
+<hr />
+<h2 id="_1">三、新增内容验证</h2>
+<h3 id="31-cagr">3.1 隐含 CAGR 敏感性【算术核验通过】</h3>
+<ul>
+<li>(248/20.59)^(1/5)=64.5%、(204/25.45)^(1/5)=51.6%、(63/24.13)^(1/5)=21.2% —— 与文档 65%/52%/21% 一致；基数 20.59/25.45/24.13 亿与东财复采 2025 年报归母一致。</li>
+<li>40x 终值翻转：248×40=9,920 亿 ÷1.1⁴=6,777 亿 ≈ 文档 6,770 亿，vs 现市值 6,200 亿 → +9.3% ≈ 文档「+9%」✓。</li>
+<li>区间表述（终值 18-40x 下寒武纪 45-75%、海光 35-60%）与 2026E 基数降至 35-40% 的口径合理。</li>
+<li>金山办公 26Q1 报表归母 21.95 亿 &gt; 当季营收 16.13 亿 —— 东财复采证实，扣非核验前提设置正当。</li>
+</ul>
+<h3 id="32">3.2 杰文斯三削弱项【换源证实，补一处时效注】</h3>
+<ol>
+<li>利用率不足 40%：亿欧智库《2026 中国 AI 趋势报告》原文「整体利用率不足 40%」+ 财联社 2026-09 调研（部分建成智算中心实际利用率低于 40%）——双源证实 ✓。</li>
+<li>成本推动涨价：腾讯 2026Q2 业绩公告及业绩会（一财/公司公告）——capex 527.84 亿（+176%）、管理层确认内存等成本上涨后提价缩折扣 ✓。</li>
+<li>讯飞学习机销量未达预期 ✓，但 7 月已同比 +3%（见第二节第 1 条）。</li>
+<li>海光「Token +20-30 倍」维持 C 级（厂商 IR 口径，未独立核验）——处理正确。</li>
+</ol>
+<h3 id="33-gpu">3.3 工业富联与国产 GPU 四小龙【换源证实】</h3>
+<ul>
+<li>工业富联：2025 营收 9,028.87 亿（+48.22%）、归母 352.86 亿（+51.99%）——央广网/东方财富、华尔街见闻、巨潮年报摘要多源一致 ✓。「AI 服务器全球份额第一」未在本轮独立复现（属常见转引），维持原引用并标注来源。</li>
+<li>摩尔线程：2025 营收 15.06 亿（<strong>+243.37%</strong>）、归母 −10.0 亿（亏损收窄 38.2%）、2025-12 科创板上市——年报原文证实 ✓；「+243%」引用准确。其作为寒武纪/海光竞争参照的补入正确（毛利率 65.6%、生态兼容 MUSA，构成节点 A 竞争压力的现实证据）。</li>
+<li>沐曦/壁仞/燧原本轮未逐一核验，沿用 v1 待验。</li>
+</ul>
+<hr />
+<h2 id="2026-10-1215">四、东财独立复采抽验汇总（2026-10-12，15 家全量）</h2>
+<p>行情三列（市值/PE-TTM/PB，2026-10-09 收盘）15 家全部与 v1.1 一致（&lt;0.5%）——再证行情数据可靠。财报分项：E1-E5、E8-E11 涉及的增速/毛利率/单季拆分全部吻合。错误集中于 <strong>TTM 营收衍生列（F1）与智微增速（F2）</strong>，即第 1 轮修正过程自身引入/残留的错误——第 1 轮「错误集中在衍生列」的判断仍然成立，但修正执行层需要一次干净重算。</p>
+<hr />
+<h2 id="_2">五、总裁定与结论</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>裁定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E1-E5、E8-E11 修正</td>
+<td><strong>到位</strong>（全部与独立复采吻合）</td>
+</tr>
+<tr>
+<td>E6、E10 修正</td>
+<td><strong>半到位</strong>（增速对，TTM/智微增速衍生值错）</td>
+</tr>
+<tr>
+<td>E7 修正</td>
+<td><strong>未到位</strong>：修正算式错误（年报+Q2单季），11 家 TTM 中约 8 家现值错误，且浪潮/海光/曙光/润泽四家系把原正确值改错</td>
+</tr>
+<tr>
+<td>E12</td>
+<td>维持原判，Bernstein/TrendForce 原文仍待换源</td>
+</tr>
+<tr>
+<td>隐含 CAGR 敏感性</td>
+<td>算术核验通过【通过】</td>
+</tr>
+<tr>
+<td>杰文斯三削弱项</td>
+<td>换源证实；学习机需补「7 月已回升」注</td>
+</tr>
+<tr>
+<td>工业富联/四小龙补入</td>
+<td>关键数字换源证实【通过】</td>
+</tr>
+<tr>
+<td>行情三列</td>
+<td>15 家全部一致【通过】</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2_2">第 2 轮事实错误清单</h3>
+<ul>
+<li><strong>F1</strong>：表 2.1 TTM 营收列系统性错误（约 8-11 家，最大偏差 +28%，根因=E7 修正算式错误）【事实错误】</li>
+<li><strong>F2</strong>：智微智能总营收增速「+2.6%」（实为约 +56.6%），已沿袭至三处文档【事实错误】</li>
+</ul>
+<h2 id="2-1-1-10"><strong>事实错误数：2 处（系统性 1 处 + 个别 1 处，合计约 10 个具体数字）</strong></h2>
+<p><strong>未达零事实错误，不可定稿。</strong> 但错误范围完全锁定、修正量小：①按本轮复采值整体重写表 2.1 TTM 营收列（及深度报告/估值文档中引用浪潮 TTM 的 PS 表述：浪潮 PS 实为约 0.56x）；②智微智能增速改 +56.6% 并删「收入零增长」表述（C 级理由改为客户集中+基数不可靠）；③讯飞补「Q2 单季 OCF 转正、学习机 7 月回升」注。完成上述三点并复核后，预计第 3 轮即可零事实错误定稿。</p>
+<blockquote>
+<p>复采数据落盘：<code>~/research/06_数据与工具/原始数据/</code>（15 家 fin/quote JSON）；行业换源：nda.gov.cn（刘烈宏演讲原文 2026-03）、亿欧智库 2026-07 报告原文、腾讯 2026Q2 业绩公告、央广网/华尔街见闻（工业富联年报）、摩尔线程 2025 年报、讯飞 2026 中报多家转载。</p>
+</blockquote>
+<hr />
+<h2 id="2026-10-12">六、修正执行记录（2026-10-12，修正执行员）</h2>
+<p>三点修正路径已全部落实：
+1. <strong>F1</strong>：估值与分级表 2.1「TTM 营收」列按「2025年报−2025H1+2026H1」全量重算并整体重写 11 家（浪潮 1,690、海光 180.1、曙光 165.8、润泽 69.2、金山 65.8、瑞芯微 52.3、全志 33.9、汉得 35.1、奥飞 28.4、科士达 57.0、智微 51.9 亿；寒武纪/软通/讯飞/拓维原值经核维持）；浪潮 PS≈0.56x 已在脚注与表内更正（原 0.44x 作废）；全志 +41.2%、科士达 +19.8% 按【口径问题】暂计并标注待利润表原文终裁。
+2. <strong>F2</strong>：智微智能总营收增速改约 +56.6%（26H1 30.50 亿 vs 25H1 19.47 亿），沿袭三处（估值 v1 表 2.1 与第 4 节分级表、深度报告 v1.0 节点 B、机会节点研究节点 B、候选企业清单、产业趋势与节点研究）同步更正；C 级理由改写为「客户集中+正常化基数不可靠」，删除「收入零增长式」表述。
+3. <strong>E6/E10 半到位项补全</strong>：金山 TTM 营收 65.8 亿（深度报告第 3 节同步）；智微增速如上。讯飞补「Q2 单季 OCF 转正（H1 累计 -9.45 亿为累计口径）」「学习机 7 月销量同比 +3%」注（估值文档 §2.3 与深度报告 §1.2/§3）。腾讯 capex 改 527.84 亿（约 528 亿）。
+深度报告 v1.0 头部「最新更新/逻辑变化」已同步全部数字。</p></div>

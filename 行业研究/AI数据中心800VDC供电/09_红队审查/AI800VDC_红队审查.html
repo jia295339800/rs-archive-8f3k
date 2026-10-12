@@ -1,0 +1,324 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI800VDC_红队审查 · 研究库</title><style>body{font-family:-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;max-width:920px;margin:0 auto;padding:24px;line-height:1.75;color:#24292f}
+h1,h2,h3{border-bottom:1px solid #e1e4e8;padding-bottom:6px}h1{font-size:1.7em}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.92em;display:block;overflow-x:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px;text-align:left}th{background:#f6f8fa}
+blockquote{border-left:4px solid #d0d7de;margin:0;padding:2px 14px;color:#57606a;background:#f6f8fa}
+code{background:#f0f1f2;padding:1px 5px;border-radius:4px;font-size:.9em}
+pre{background:#f6f8fa;padding:12px;border-radius:8px;overflow-x:auto}
+a{color:#0969da}nav{font-size:.9em;margin-bottom:18px}
+nav a{margin-right:14px;text-decoration:none}
+.sidebar{display:none}
+@media(min-width:1100px){.sidebar{display:block;position:fixed;left:16px;top:16px;bottom:16px;width:230px;overflow:auto;font-size:.85em;border-right:1px solid #e1e4e8;padding-right:10px}
+body{margin-left:280px}
+.sidebar a{display:block;text-decoration:none;color:#24292f;padding:2px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sidebar .group{border-bottom:1px solid #eef0f2;padding:2px 0}
+.sidebar .grp{font-weight:700;margin-top:8px;margin-bottom:2px;color:#0969da;cursor:pointer;user-select:none;display:block;padding:6px 18px 6px 2px;position:relative;min-height:1.4em}
+.sidebar a.current{background:#ddf4ff;border-left:3px solid #0969da;color:#0550ae;font-weight:600;padding-left:8px;border-radius:0 4px 4px 0}
+.sidebar .group:has(a.current)>.grp{color:#0550ae}
+.sidebar .grp::after{content:'▾';position:absolute;right:2px;top:6px;font-size:.75em;color:#8b949e}
+.sidebar .collapsed .grp::after{content:'▸'}
+.sidebar .collapsed a{display:none}
+#sidebarToggle{position:fixed;left:16px;top:16px;z-index:30;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:.9em;color:#24292f}
+body.hide-sb{margin-left:24px}
+body.hide-sb .sidebar{display:none!important}}
+</style>
+<button id="sidebarToggle" title="收起/展开菜单">◀</button><div class="sidebar"><div class="grp">📖 研究库</div>
+<div class="group"><div class="grp">00_使用说明</div>
+<a href="../00_使用说明/README_使用说明.html">README_使用说明</a>
+<a href="../00_使用说明/任务队列.html">任务队列</a>
+<a href="../../00_使用说明/报告模板/company_report.html">company_report</a>
+<a href="../../00_使用说明/报告模板/industry_report.html">industry_report</a>
+<a href="../../00_使用说明/报告模板/node_report.html">node_report</a>
+<a href="../00_使用说明/研究总表.html">研究总表</a>
+</div>
+<div class="group"><div class="grp">06_数据与工具</div>
+<a href="../06_数据与工具/数据能力说明.html">数据能力说明</a>
+</div>
+<div class="group"><div class="grp">08_归档</div>
+<a href="../08_归档/归档登记表.html">归档登记表</a>
+</div>
+<div class="group"><div class="grp">AI数据中心800VDC供电</div>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_研究材料.html">AI数据中心800VDC供电_研究材料</a>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_机会节点研究.html">AI数据中心800VDC供电_机会节点研究</a>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_候选企业清单.html">AI数据中心800VDC供电_候选企业清单</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_三企业估值报告.html">AI数据中心800VDC供电_三企业估值报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/07_深度报告/AI数据中心800VDC供电_产业深度研究报告.html">AI数据中心800VDC供电_产业深度研究报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_复审R2.html">AI800VDC_复审R2</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_红队审查.html">AI800VDC_红队审查</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第2轮.html">AI数据中心800VDC供电_红队审查_第2轮</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第3轮.html">AI数据中心800VDC供电_红队审查_第3轮</a>
+</div>
+<div class="group"><div class="grp">化纤</div>
+<a href="../../行业研究/化纤/化纤_产业趋势研究.html">化纤_产业趋势研究</a>
+<a href="../../行业研究/化纤/化纤_机会节点研究.html">化纤_机会节点研究</a>
+<a href="../../行业研究/化纤/化纤_候选企业清单.html">化纤_候选企业清单</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_三企业估值报告.html">化纤_三企业估值报告</a>
+<a href="../../../行业研究/化纤/07_深度报告/化纤_产业深度研究报告.html">化纤_产业深度研究报告</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R2.html">化纤_复审R2</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R3.html">化纤_复审R3</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查.html">化纤_红队审查</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第2轮.html">化纤_红队审查_第2轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第3轮.html">化纤_红队审查_第3轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/审查记录.html">审查记录</a>
+</div>
+<div class="group"><div class="grp">家庭空间常驻Agent</div>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_产业趋势研究.html">家庭空间常驻Agent_产业趋势研究</a>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_机会节点研究.html">家庭空间常驻Agent_机会节点研究</a>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_候选企业清单.html">家庭空间常驻Agent_候选企业清单</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_核心企业估值报告.html">家庭空间常驻Agent_核心企业估值报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/07_深度报告/家庭空间常驻Agent_产业深度研究报告.html">家庭空间常驻Agent_产业深度研究报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_复审R2.html">家庭空间常驻Agent_复审R2</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_红队审查.html">家庭空间常驻Agent_红队审查</a>
+</div>
+<div class="group"><div class="grp">开源中尺寸模型</div>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势研究.html">开源中尺寸模型_产业趋势研究</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_机会节点研究.html">开源中尺寸模型_机会节点研究</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_候选企业清单.html">开源中尺寸模型_候选企业清单</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_估值与分级_v1.html">开源中尺寸模型_估值与分级_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_核心企业估值报告.html">开源中尺寸模型_核心企业估值报告</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_产业深度研究报告.html">开源中尺寸模型_产业深度研究报告</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_深度报告_v1.0.html">开源中尺寸模型_深度报告_v1.0</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_复审R2.html">开源中尺寸模型_复审R2</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查.html">开源中尺寸模型_红队审查</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_v1.html">开源中尺寸模型_红队审查_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第2轮.html">开源中尺寸模型_红队审查_第2轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第3轮.html">开源中尺寸模型_红队审查_第3轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/红队审查_待执行.html">红队审查_待执行</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势与节点研究.html">开源中尺寸模型_产业趋势与节点研究</a>
+</div>
+<div class="group"><div class="grp">新型电池</div>
+<a href="../../行业研究/新型电池/新型电池_产业趋势研究.html">新型电池_产业趋势研究</a>
+<a href="../../行业研究/新型电池/新型电池_机会节点研究.html">新型电池_机会节点研究</a>
+<a href="../../行业研究/新型电池/新型电池_候选企业清单.html">新型电池_候选企业清单</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_三企业估值报告.html">新型电池_三企业估值报告</a>
+<a href="../../../行业研究/新型电池/07_深度报告/新型电池_产业深度研究报告.html">新型电池_产业深度研究报告</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_复审R2.html">新型电池_复审R2</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查.html">新型电池_红队审查</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第2轮.html">新型电池_红队审查_第2轮</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第3轮.html">新型电池_红队审查_第3轮</a>
+</div>
+<div class="group"><div class="grp">智能网联新能源汽车</div>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_产业趋势研究.html">智能网联新能源汽车_产业趋势研究</a>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_机会节点研究.html">智能网联新能源汽车_机会节点研究</a>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_候选企业清单.html">智能网联新能源汽车_候选企业清单</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_估值与分级_v1.html">智能网联新能源汽车_估值与分级_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_核心企业估值报告.html">智能网联新能源汽车_核心企业估值报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_产业深度研究报告.html">智能网联新能源汽车_产业深度研究报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_深度报告_v1.0.html">智能网联新能源汽车_深度报告_v1.0</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_复审R2.html">智能网联新能源汽车_复审R2</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查.html">智能网联新能源汽车_红队审查</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_v1.html">智能网联新能源汽车_红队审查_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第2轮.html">智能网联新能源汽车_红队审查_第2轮</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第3轮.html">智能网联新能源汽车_红队审查_第3轮</a>
+</div>
+</div><script>
+(function(){
+  // 高亮当前页：用 new URL() 把相对 href 解析为绝对路径后比对 pathname
+  document.querySelectorAll('.sidebar a').forEach(function(a){
+    try{
+      if(new URL(a.getAttribute('href'), location.href).pathname === location.pathname){
+        a.classList.add('current');
+        var g=a.closest('.group');
+        if(g)g.classList.remove('collapsed');
+      }
+    }catch(e){}
+  });
+})();
+document.addEventListener('click',function(e){
+  var g=e.target.closest('.grp');
+  if(g){g.parentElement.classList.toggle('collapsed');return;}
+  var t=e.target.closest('#sidebarToggle');
+  if(t){document.body.classList.toggle('hide-sb');
+    t.textContent=document.body.classList.contains('hide-sb')?'☰':'◀';}
+});
+</script><div class="content"><nav><a href="00_使用说明/index.html">00_使用说明</a> <a href="06_数据与工具/index.html">06_数据与工具</a> <a href="08_归档/index.html">08_归档</a> <a href="AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="化纤/index.html">化纤</a> <a href="家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="新型电池/index.html">新型电池</a> <a href="智能网联新能源汽车/index.html">智能网联新能源汽车</a></nav><p><a href="../../index.html">← 返回</a> · 生成于 2026-10-12 14:11</p>
+<h1 id="ai800vdc">AI数据中心800VDC供电链研究 —— 红队独立审查</h1>
+<blockquote>
+<p>审查人：独立反方研究员（Red Team）｜审查日期：2026-10-12
+审查对象：<code>行业研究/AI数据中心800VDC供电/</code> 下三份文件（机会节点研究、候选企业清单、06_估值与分级/三企业估值报告）
+方法：①独立拉取行情与财报（数据采集脚本 quote/fin，2026-10-12执行）与报告数字比对；②web_search独立检索关键外部论据（Digitimes、SemiAnalysis、Schneider、公司公告与投关记录）；③对每项批判给出可证伪的验证信号。禁止技术分析。</p>
+</blockquote>
+<hr />
+<h2 id="_1">结论摘要（先说立场）</h2>
+<ol>
+<li><strong>原研究整体偏保守而非乐观</strong>——麦格米特C+、概率加权-55%的结论我部分支持；但研究链存在<strong>一处系统性乐观倾斜</strong>：三家估值情景建模的是"份额战/价格战"式悲观，<strong>唯独没有把"节奏滑期"（Digitimes 1Q27 + Schneider 2030渗透10%）作为独立悲观情景显式建模</strong>，而这是三个风险里发生概率最高的。</li>
+<li>数据抽查<strong>基本干净</strong>：三家核心财务数字（收入/归母/毛利率/OCF/PE/市值）独立拉取全部吻合；发现2处内部不一致（新洁能增速自相矛盾、麦格米特两文件股价口径不一）和1处金盘海外订单口径冲突。</li>
+<li>SemiAnalysis的"价值迁移"口径<strong>不适用于中国</strong>，原研究引用时未做折扣，这是引用层面最大的方法论漏洞。</li>
+</ol>
+<hr />
+<h2 id="1">一、节奏风险是否被充分定价？（问题1）</h2>
+<h3 id="_2">事实核验</h3>
+<ul>
+<li>Digitimes原文确认：2026-07-24《Nvidia 800V HVDC enters production in 1Q27, Delta set for 2Q ramp》——量产1Q27、台达2Q27爬坡。原研究引用属实。</li>
+<li>SemiAnalysis确有"大规模原生800VDC部署滑至2028年后"的独立预测（经Digitimes同文转述）。</li>
+<li>Schneider"2030年或仅10%新节点"：我检索到Schneider官方800VDC白皮书（SPD_WP213，立场是"rack-level架构先行"）与NetShelter 800VDC 660kW产品页，但<strong>未能直接复核"10% by 2030"的原始引语</strong>（The Next Platform 2026-05原文未取得）——该数字目前是单一二手来源，置信中等，原研究已标注争议但未标注"引语未复核"。</li>
+</ul>
+<h3 id="schneider">若Schneider口径成立，隐含预期崩塌幅度（测算，估算）</h3>
+<ul>
+<li>麦格米特：现市值601亿 = 原报告乐观情景500亿的1.20x，中性255亿的2.36x。中性情景假设"AI电源2028年收入85亿×7%净利率"。若渗透率沿Schneider曲线（2030年仅10%新节点），2028年AI电源收入合理值砍到30-45亿，中性隐含市值回落至~150-180亿；更关键的是<strong>估值锚切换</strong>：节奏滑期会让市场从"AI电源SOTP（28-35x）"切换回"扣非PE"——麦格TTM扣非约1.8-2亿×25x+净现金~30亿≈80-100亿，<strong>下行-83%~-87%</strong>，比原报告悲观情景的-88%相当但触发路径不同（原悲观情景是份额战，滑期情形下即便份额保住也跌）。</li>
+<li>欧陆通：PE-TTM 201x、26H1归母仅0.08亿，是全链最脆弱的预期载体。滑期情形下无任何扣非缓冲，锚切换后-90%量级。原研究在节点研究里给了欧陆通"预期差最大"的位置，但<strong>估值报告未覆盖欧陆通</strong>——这是研究覆盖面缺口。</li>
+<li>结论：<strong>节奏风险未被充分定价</strong>。三份文件都"收录"了Digitimes/Schneider口径，但情景表中它只在金盘卡片出现一句"持续性打折"。可证伪信号：①台达/光宝月度营收（台股，2026年11月起看800V出货环比）；②英伟达GTC DC 2026（10月）Power Rack实名单；③麦格米特26Q3电源分部环比——若环比&lt;10%，滑期正在兑现。</li>
+</ul>
+<h2 id="2">二、价值迁移论的适用性批判（问题2）</h2>
+<ul>
+<li>SemiAnalysis口径（sidecar +$0.4-0.5M/MW vs 集中式UPS -$1.2M/MW）的语境是<strong>北美hyperscaler自建</strong>：北美数据中心UPS+中低压配电单位造价高、hyperscaler自持机房自担迁移损益。文章确证存在（newsletter.semianalysis.com "Inside the 800VDC Revolution Part 1"，另经Tiger Brokers/BigGo转述：sidecar市场2028年峰值约$110亿、SST另有独立规模）。</li>
+<li><strong>中国不可直接套用的三个理由</strong>：①国内智算中心主力仍是54V/50V机柜+240V/336V HVDC（巴拿马电源路线），要替换的集中式UPS单位价值量远低于北美$1.2M/MW（国内同类设备价格约为北美的1/2-2/3，估算），即"被挤出的价值"小得多——中国场景下800VDC更接近<strong>纯增量</strong>而非迁移，这反而对国内设备商是相对利好，原研究把净迁移为负直接引入"预期差评估"作为利好认知修正，两个方向的错误叠加；②国产GPU生态（昇腾/寒武纪）走自身供电规范，英伟达800V标准在中国渗透率存在&lt;10%的结构性上限；③国内智算中心资本开支处于利用率和回报率约束期，先进架构采纳历来滞后北美1.5-2代。</li>
+<li>原研究"本土800VDC需求2027年前规模有限"的判断——红队认为<strong>该判断本身仍偏乐观</strong>：依据是七部门2026-09文件措辞仅为"探索"，且国内最大CSP（字节/阿里）2026年招标规范尚未出现800V占比要求。可证伪信号：2027年BAT/运营商智算中心招标技术规范中800V/HVDC-800标的份额；中恒电气/科华800V产品国内首单落地时点。</li>
+</ul>
+<h2 id="c3">三、麦格米特C+评级论证审查（问题3）</h2>
+<p><strong>原研究遗漏的正面证据（红队有义务补充）</strong>：
+- 高盛2026-03-09研报口径：公司在中国论坛披露<strong>斩获首个AI电源量产订单</strong>（datayes转述，单一来源）——原研究仅引"认证通过"，未引量产订单，若属实则"订单→收入"已走通一步。
+- 扣非-16.1%的成因拆解支持"扩张期费用前置属正常"的部分辩护：非经1.34亿中公允价值变动1.34亿为持有金融资产市值波动（网易/搜狐引中报），非经营性粉饰；汇兑损失为美元/卢比贬值所致，属可对冲的经营外因素；研发费用率11%+（2025研发9.8亿+）在AI代际切换期是合理投入。
+- 26H1海外收入21.8亿+45%（占36%），泰国基地承接北美订单是真实产能布局。</p>
+<p><strong>红队维持C+的理由（独立依据）</strong>：
+- 即便费用前置全部正当化，<strong>扣非净利率1.9%×601亿市值</strong>的数学不因动机善良而改变：中性情景要求2028年AI电源85亿×7%净利率，而台达（净利率约9%）在同一客户群内竞争，新进入者拿7%净利率的前提是台达主动让出价格带——历史上未发生。
+- 2025 ROIC 2.31%、经营现金流-2.37亿、分红融资比0.12：增长依赖股权输血是硬事实，26年1月26.63亿定增刚落地，若26Q3现金流再恶化，二次融资将直接摊薄（公司已表态推进赴港上市，候选清单提及）。
+- 评级论证缺一项：<strong>升级触发条件"单季扣非&gt;2亿"过松</strong>——26H1非经基数下，Q3扣非&gt;2亿只需电源板块环比+30%，无法区分"真盈利修复"与"公允价值波动退潮"。建议收紧为"扣非&gt;2亿且经营现金流&gt;扣非"。</p>
+<h2 id="b4">四、盛弘B+评级批判（问题4）</h2>
+<ul>
+<li><strong>"以基本盘估值给期权定价"的方向没有反</strong>：现价35.12元≈中性37.2元，即市场确实给HVDC期权定价≈0，B+的估值匹配逻辑自洽。且26H1 OCF 1.66亿&gt;归母、净现比1.47、2025 ROE 24.15%经独立fin数据确认——"全链质量最好"成立。</li>
+<li><strong>但61.9%毛利率是整个中性估值的单点依赖，且未经拆解</strong>：工业配套电源分部毛利率61.9% vs 公司整体40.7%、vs 科士达数据中心34-35%，高出近20pct。可能解释：①分部内含高毛利海外/定制项目；②分部成本归集口径（研发/费用下沉到其他分部）；③真有AIDC溢价。中报未披露分部内结构——<strong>这是未验证项，原研究直接把它当"可持续"写进中性情景（2028年毛利率60%维持）</strong>。敏感性：若回落至50%（电能质量历史水平），2028中性净利从7.3亿降至约6.2亿，中性值从116亿降至约95亿，现价109亿即<strong>不再低估</strong>——B+的"下行保护"叙事被这一条击穿。可证伪信号：26Q3分部毛利率是否仍&gt;60%。</li>
+<li>AIDC关键电源样品阶段属实（投关记录2026-05-10确认"AIDC部门2025下半年成立，其他产品研发推广按计划推进"，且投关口径明确APF/SVG在AIDC持续贡献收入）——原研究"期权而非收入"的定性准确，反方无异议。</li>
+<li>内部矛盾提示：估值报告说26H1"归母增速(+44%)高于扣非增速口径，存在少量非经"——但独立fin数据25H1归母1.58亿→26H1 2.28亿=+44.1%吻合；扣非未单列是真实数据缺口，报告已标注，但"量级不影响结论"缺依据，应改为"待26Q3扣非数据验证"。</li>
+</ul>
+<h2 id="3365">五、金盘订单+336%含金量（问题5）</h2>
+<ul>
+<li>订单数字属实：中报披露"数据中心领域新签订单38.69亿 +336%"（界面新闻2026-08-21引中报）。<strong>未发现关联方交易披露或框架协议vs正式合同拆分</strong>——半年报未列示关联采购/销售占比，"水分"指控无证据，标注<strong>未验证</strong>；但336%的基数效应是实打实的：25H1基数仅约8.9亿（38.69/4.36），低基数爆发不等于需求质量。</li>
+<li>更硬的证据在报表：订单/收入比2.1x、发出商品9.94亿（占总资产7.84%）、OCF-0.24亿、短借9.38亿+90.8%——原研究"验收周期瓶颈+备货融资"的解读我独立复核后<strong>支持</strong>。</li>
+<li><strong>发现一处内部数据冲突</strong>：候选企业清单写"海外订单19.4亿 +260%"，估值报告写"海外在手订单62.39亿 +122.7% 占58.3%"。两个口径（新签vs在手）混用且未标注，读者会误以为矛盾。需要统一：在手107亿（Q2末106.97亿）vs 新签74.93亿是不同分母。</li>
+<li>隐含预期核查支持原判断：272亿市值 vs 中性160亿，市场确实按"订单→收入线性转化+2027 SST兑现"定价了一半。B级评级（非C）合理，因为AI敞口已兑现为收入12.65亿+122.6%（全链最高兑现度）。</li>
+</ul>
+<h2 id="6">六、数据错误扫描（问题6，独立抽查结果）</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>抽查项</th>
+<th>报告值</th>
+<th>独立拉取值</th>
+<th>判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>麦格米特市值/PE-TTM</td>
+<td>601亿 / 268x</td>
+<td>601.3亿 / 268.17（2026-10-09）</td>
+<td>✅一致</td>
+</tr>
+<tr>
+<td>2</td>
+<td>盛弘26H1收入/归母/毛利率/OCF</td>
+<td>17.59亿 / 2.28亿 / 40.7% / 1.66亿</td>
+<td>17.59 / 2.278 / 40.70 / 0.5314×3.128亿股=1.66亿</td>
+<td>✅一致</td>
+</tr>
+<tr>
+<td>3</td>
+<td>金盘26H1收入/归母/OCF</td>
+<td>35.56亿 / 3.03亿 / -0.24亿</td>
+<td>35.56 / 3.027 / -0.238亿（-2376万）</td>
+<td>✅一致</td>
+</tr>
+<tr>
+<td>4</td>
+<td>麦格26H1收入/归母/扣非/OCF</td>
+<td>60.61亿 / 2.52亿 / 1.18亿(-16.1%) / 0.295亿</td>
+<td>60.61 / 2.521 / 1.18(-16.13%，网易引中报) / 0.0506×5.72亿股=0.29亿</td>
+<td>✅一致</td>
+</tr>
+<tr>
+<td>5</td>
+<td>欧陆通 PE-TTM</td>
+<td>201x</td>
+<td>201.22</td>
+<td>✅一致</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>新洁能26H1同比</strong></td>
+<td>"+97% yoy vs 25H1的2.35亿——实际约-1%"</td>
+<td>同句内自相矛盾：26H1归母2.33亿 vs 25H1 2.35亿为<strong>-1%</strong>，"+97%"应为笔误（或为Q2环比混淆）</td>
+<td>❌错误，候选企业清单</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>麦格米特股价口径</strong></td>
+<td>估值报告105.08元 vs 候选清单103.4元（均标2026-10-09）</td>
+<td>2026-10-09收盘105元附近（本次实时104.03）</td>
+<td>⚠️两文件不一致，股本反推（5.72亿vs5.81亿股）随之漂移，均系"估算"但应统一</td>
+</tr>
+<tr>
+<td>8</td>
+<td>金盘海外订单</td>
+<td>清单"19.4亿+260%" vs 报告"62.39亿+122.7%"</td>
+<td>两个不同口径（新签vs在手）未标注</td>
+<td>⚠️口径冲突</td>
+</tr>
+<tr>
+<td>9</td>
+<td>SST "$13B@2030"</td>
+<td>节点研究引用</td>
+<td>SemiAnalysis转述确有SST市场测算，Tiger Brokers转述口径为sidecar峰值~$110亿@2028+SST另计；"13B@2030"年份归属未能复核</td>
+<td>⚠️待复核</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Schneider"10% by 2030"</td>
+<td>节点研究引用</td>
+<td>原始The Next Platform引语未取得，Schneider官方白皮书立场可佐证方向</td>
+<td>⚠️单一二手来源</td>
+</tr>
+</tbody>
+</table>
+<p>总体：<strong>核心财务数字干净</strong>（抽查10项，8项完全一致），错误集中在媒体转述类数字与跨文件口径统一。</p>
+<h2 id="7">七、乐观倾向污染评估（问题7）</h2>
+<p>用户材料（时间表、560kW、6个PSU等）在机会节点研究中被逐条验证并修正（560→570kW、配置数字标"未能验证"），<strong>方法论上未被污染</strong>。但研究链存在三处残余倾斜：</p>
+<ol>
+<li><strong>情景结构倾斜（最重要）</strong>：三家企业悲观情景全部建模为"份额战/价格战"，没有一个情景显式包含"Digitimes 1Q27滑期+Schneider低渗透"这一<strong>发生概率可能最高的路径</strong>。滑期不是尾部风险——Digitimes（供应链口径）与Schneider（业主口径）两家独立给出比NVIDIA官方更慢的时间表，NVIDIA官方是三者中最乐观的一极，研究却把官方口径当基准。建议：麦格米特/欧陆通类标的主情景直接采用台达1Q27/2Q27节奏。</li>
+<li><strong>SemiAnalysis数字未中国化</strong>：$0.4-0.5M/MW与-$1.2M/MW被原样引用进节点研究结论，并在"预期差评估"里把净迁移为负包装成"偏正面认知修正"——方向含混。中国场景应单独测算（见第二节）。</li>
+<li><strong>订单叙事复读</strong>："+336%"在三个文件出现5次，均未附订单结构（客户集中度/框架协议占比）核查记录；"金盘在手订单107亿≈2025收入1.47x"的可信推导反而只在估值报告出现一次。媒体热词的重复权重高于报表冷数据，是研究链最典型的乐观污染形态。</li>
+</ol>
+<hr />
+<h2 id="_3">红队最终意见</h2>
+<table>
+<thead>
+<tr>
+<th>原结论</th>
+<th>红队判定</th>
+<th>独立依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>麦格米特C+</td>
+<td><strong>维持，收紧升级条件</strong></td>
+<td>扣非数学+ROIC 2.31%硬数据；补充高盛"首个量产订单"正面证据；升级条件改为"扣非&gt;2亿且OCF&gt;扣非"</td>
+</tr>
+<tr>
+<td>盛弘B+</td>
+<td><strong>下调至B（观察）</strong></td>
+<td>中性估值单点依赖61.9%未验证毛利率，敏感性下中性值≈现价，无安全边际</td>
+</tr>
+<tr>
+<td>金盘B</td>
+<td><strong>维持B</strong></td>
+<td>兑现度最高属实；但补"海外订单口径冲突"修正与订单结构核查义务</td>
+</tr>
+<tr>
+<td>节奏风险定价</td>
+<td><strong>原研究定价不足</strong></td>
+<td>官方口径被当基准；1Q27滑期应为主情景</td>
+</tr>
+<tr>
+<td>本土800VDC"2027年前规模有限"</td>
+<td><strong>仍偏乐观</strong></td>
+<td>54V/240V主力+国产GPU生态+招标规范缺位</td>
+</tr>
+</tbody>
+</table>
+<p><strong>下一个证伪窗口（全链共用）</strong>：2026年10月底26Q3季报——麦格扣非与现金流、盛弘工业配套电源分部毛利率、金盘现金流转正与否、欧陆通电源环比。任何一项证伪都直接触发上表对应评级动作。</p>
+<p><em>红队审查完。所有"⚠️/未验证"项均已列明补证路径，无一项以推断替代数据。</em></p></div>
