@@ -1,0 +1,350 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>开源中尺寸模型_金山办公_估值 · 研究库</title><style>body{font-family:-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;max-width:920px;margin:0 auto;padding:24px;line-height:1.75;color:#24292f}
+h1,h2,h3{border-bottom:1px solid #e1e4e8;padding-bottom:6px}h1{font-size:1.7em}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.92em;display:block;overflow-x:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px;text-align:left}th{background:#f6f8fa}
+blockquote{border-left:4px solid #d0d7de;margin:0;padding:2px 14px;color:#57606a;background:#f6f8fa}
+code{background:#f0f1f2;padding:1px 5px;border-radius:4px;font-size:.9em}
+pre{background:#f6f8fa;padding:12px;border-radius:8px;overflow-x:auto}
+a{color:#0969da}nav{font-size:.9em;margin-bottom:18px}
+nav a{margin-right:14px;text-decoration:none}
+.sidebar{display:none}
+@media(min-width:1100px){.sidebar{display:block;position:fixed;left:16px;top:16px;bottom:16px;width:230px;overflow:auto;font-size:.85em;border-right:1px solid #e1e4e8;padding-right:10px}
+body{margin-left:280px}
+.sidebar a{display:block;text-decoration:none;color:#24292f;padding:2px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sidebar .group{border-bottom:1px solid #eef0f2;padding:2px 0}
+.sidebar .grp{font-weight:700;margin-top:8px;margin-bottom:2px;color:#0969da;cursor:pointer;user-select:none;display:block;padding:6px 18px 6px 2px;position:relative;min-height:1.4em}
+.sidebar a.current{background:#ddf4ff;border-left:3px solid #0969da;color:#0550ae;font-weight:600;padding-left:8px;border-radius:0 4px 4px 0}
+.sidebar .group:has(a.current)>.grp{color:#0550ae}
+.sidebar .grp::after{content:'▾';position:absolute;right:2px;top:6px;font-size:.75em;color:#8b949e}
+.sidebar .collapsed .grp::after{content:'▸'}
+.sidebar .collapsed a{display:none}
+#sidebarToggle{position:fixed;left:16px;top:16px;z-index:30;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:.9em;color:#24292f}
+body.hide-sb{margin-left:24px}
+body.hide-sb .sidebar{display:none!important}}
+</style>
+<button id="sidebarToggle" title="收起/展开菜单">◀</button><div class="sidebar"><div class="grp">📖 研究库</div>
+<div class="group"><div class="grp">00_使用说明</div>
+<a href="../../../00_使用说明/README_使用说明.html">README_使用说明</a>
+<a href="../../../00_使用说明/任务队列.html">任务队列</a>
+<a href="../../../00_使用说明/企业估值队列.html">企业估值队列</a>
+<a href="../../../00_使用说明/估值对比总表.html">估值对比总表</a>
+<a href="../../../00_使用说明/报告模板/company_report.html">company_report</a>
+<a href="../../../00_使用说明/报告模板/industry_report.html">industry_report</a>
+<a href="../../../00_使用说明/报告模板/node_report.html">node_report</a>
+<a href="../../../00_使用说明/研究总表.html">研究总表</a>
+</div>
+<div class="group"><div class="grp">06_数据与工具</div>
+<a href="../../../06_数据与工具/数据能力说明.html">数据能力说明</a>
+</div>
+<div class="group"><div class="grp">08_归档</div>
+<a href="../../../08_归档/归档登记表.html">归档登记表</a>
+</div>
+<div class="group"><div class="grp">AI数据中心800VDC供电</div>
+<a href="../../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_研究材料.html">AI数据中心800VDC供电_研究材料</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_机会节点研究.html">AI数据中心800VDC供电_机会节点研究</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_候选企业清单.html">AI数据中心800VDC供电_候选企业清单</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_三企业估值报告.html">AI数据中心800VDC供电_三企业估值报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_欧陆通_估值.html">AI数据中心800VDC供电_欧陆通_估值</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_科华数据_估值.html">AI数据中心800VDC供电_科华数据_估值</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_科士达_估值.html">AI数据中心800VDC供电_科士达_估值</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/07_深度报告/AI数据中心800VDC供电_产业深度研究报告.html">AI数据中心800VDC供电_产业深度研究报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_复审R2.html">AI800VDC_复审R2</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_红队审查.html">AI800VDC_红队审查</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第2轮.html">AI数据中心800VDC供电_红队审查_第2轮</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第3轮.html">AI数据中心800VDC供电_红队审查_第3轮</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/欧陆通+科华+科士达_批量红队R1.html">欧陆通+科华+科士达_批量红队R1</a>
+</div>
+<div class="group"><div class="grp">化纤</div>
+<a href="../../../行业研究/化纤/化纤_产业趋势研究.html">化纤_产业趋势研究</a>
+<a href="../../../行业研究/化纤/化纤_机会节点研究.html">化纤_机会节点研究</a>
+<a href="../../../行业研究/化纤/化纤_候选企业清单.html">化纤_候选企业清单</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_三企业估值报告.html">化纤_三企业估值报告</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_台华新材_估值.html">化纤_台华新材_估值</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_恒逸石化_估值.html">化纤_恒逸石化_估值</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_神马股份_估值.html">化纤_神马股份_估值</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_荣盛石化_估值.html">化纤_荣盛石化_估值</a>
+<a href="../../../行业研究/化纤/07_深度报告/化纤_产业深度研究报告.html">化纤_产业深度研究报告</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R2.html">化纤_复审R2</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R3.html">化纤_复审R3</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查.html">化纤_红队审查</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第2轮.html">化纤_红队审查_第2轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第3轮.html">化纤_红队审查_第3轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/台华+神马_批量红队R1.html">台华+神马_批量红队R1</a>
+<a href="../../../行业研究/化纤/09_红队审查/审查记录.html">审查记录</a>
+</div>
+<div class="group"><div class="grp">家庭空间常驻Agent</div>
+<a href="../../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_产业趋势研究.html">家庭空间常驻Agent_产业趋势研究</a>
+<a href="../../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_机会节点研究.html">家庭空间常驻Agent_机会节点研究</a>
+<a href="../../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_候选企业清单.html">家庭空间常驻Agent_候选企业清单</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_乐鑫科技_估值.html">家庭空间常驻Agent_乐鑫科技_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_兆威机电_估值.html">家庭空间常驻Agent_兆威机电_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_奥比中光_估值.html">家庭空间常驻Agent_奥比中光_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_恒玄科技_估值.html">家庭空间常驻Agent_恒玄科技_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_核心企业估值报告.html">家庭空间常驻Agent_核心企业估值报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_绿的谐波_估值.html">家庭空间常驻Agent_绿的谐波_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_萤石网络_估值.html">家庭空间常驻Agent_萤石网络_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_鸣志电器_估值.html">家庭空间常驻Agent_鸣志电器_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/07_深度报告/家庭空间常驻Agent_产业深度研究报告.html">家庭空间常驻Agent_产业深度研究报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/W5估值_批量红队R2.html">W5估值_批量红队R2</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/W5估值_批量红队R3.html">W5估值_批量红队R3</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/W5估值_批量红队R4.html">W5估值_批量红队R4</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_复审R2.html">家庭空间常驻Agent_复审R2</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_红队审查.html">家庭空间常驻Agent_红队审查</a>
+</div>
+<div class="group"><div class="grp">开源中尺寸模型</div>
+<a href="../../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势研究.html">开源中尺寸模型_产业趋势研究</a>
+<a href="../../../行业研究/开源中尺寸模型/开源中尺寸模型_机会节点研究.html">开源中尺寸模型_机会节点研究</a>
+<a href="../../../行业研究/开源中尺寸模型/开源中尺寸模型_候选企业清单.html">开源中尺寸模型_候选企业清单</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_中科曙光_估值.html">开源中尺寸模型_中科曙光_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_中际旭创_估值.html">开源中尺寸模型_中际旭创_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_估值与分级_v1.html">开源中尺寸模型_估值与分级_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_寒武纪_估值.html">开源中尺寸模型_寒武纪_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_新易盛_估值.html">开源中尺寸模型_新易盛_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_核心企业估值报告.html">开源中尺寸模型_核心企业估值报告</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_浪潮信息_估值.html">开源中尺寸模型_浪潮信息_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_海光信息_估值.html">开源中尺寸模型_海光信息_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_润泽科技_估值.html">开源中尺寸模型_润泽科技_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_金山办公_估值.html">开源中尺寸模型_金山办公_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_产业深度研究报告.html">开源中尺寸模型_产业深度研究报告</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_深度报告_v1.0.html">开源中尺寸模型_深度报告_v1.0</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_复审R2.html">开源中尺寸模型_复审R2</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查.html">开源中尺寸模型_红队审查</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_v1.html">开源中尺寸模型_红队审查_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第2轮.html">开源中尺寸模型_红队审查_第2轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第3轮.html">开源中尺寸模型_红队审查_第3轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/红队审查_待执行.html">红队审查_待执行</a>
+<a href="../../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势与节点研究.html">开源中尺寸模型_产业趋势与节点研究</a>
+</div>
+<div class="group"><div class="grp">新型电池</div>
+<a href="../../../行业研究/新型电池/新型电池_产业趋势研究.html">新型电池_产业趋势研究</a>
+<a href="../../../行业研究/新型电池/新型电池_机会节点研究.html">新型电池_机会节点研究</a>
+<a href="../../../行业研究/新型电池/新型电池_候选企业清单.html">新型电池_候选企业清单</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_三企业估值报告.html">新型电池_三企业估值报告</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_天赐材料_估值.html">新型电池_天赐材料_估值</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_宁德时代_估值.html">新型电池_宁德时代_估值</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_恩捷股份_估值.html">新型电池_恩捷股份_估值</a>
+<a href="../../../行业研究/新型电池/07_深度报告/新型电池_产业深度研究报告.html">新型电池_产业深度研究报告</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_复审R2.html">新型电池_复审R2</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查.html">新型电池_红队审查</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第2轮.html">新型电池_红队审查_第2轮</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第3轮.html">新型电池_红队审查_第3轮</a>
+</div>
+<div class="group"><div class="grp">智能网联新能源汽车</div>
+<a href="../../../行业研究/智能网联新能源汽车/智能网联新能源汽车_产业趋势研究.html">智能网联新能源汽车_产业趋势研究</a>
+<a href="../../../行业研究/智能网联新能源汽车/智能网联新能源汽车_机会节点研究.html">智能网联新能源汽车_机会节点研究</a>
+<a href="../../../行业研究/智能网联新能源汽车/智能网联新能源汽车_候选企业清单.html">智能网联新能源汽车_候选企业清单</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_伯特利_估值.html">智能网联新能源汽车_伯特利_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_伯特利_估值_v2.html">智能网联新能源汽车_伯特利_估值_v2</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_估值与分级_v1.html">智能网联新能源汽车_估值与分级_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_保隆科技_估值.html">智能网联新能源汽车_保隆科技_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_德赛西威_估值.html">智能网联新能源汽车_德赛西威_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_核心企业估值报告.html">智能网联新能源汽车_核心企业估值报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_比亚迪_估值.html">智能网联新能源汽车_比亚迪_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_江淮汽车_估值.html">智能网联新能源汽车_江淮汽车_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_特锐德_估值.html">智能网联新能源汽车_特锐德_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_科博达_估值.html">智能网联新能源汽车_科博达_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_经纬恒润_估值.html">智能网联新能源汽车_经纬恒润_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_赛力斯_估值.html">智能网联新能源汽车_赛力斯_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_长安汽车_估值.html">智能网联新能源汽车_长安汽车_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_产业深度研究报告.html">智能网联新能源汽车_产业深度研究报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_深度报告_v1.0.html">智能网联新能源汽车_深度报告_v1.0</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_复审R2.html">智能网联新能源汽车_复审R2</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查.html">智能网联新能源汽车_红队审查</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_v1.html">智能网联新能源汽车_红队审查_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第2轮.html">智能网联新能源汽车_红队审查_第2轮</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第3轮.html">智能网联新能源汽车_红队审查_第3轮</a>
+</div>
+</div><script>
+(function(){
+  // 高亮当前页：用 new URL() 把相对 href 解析为绝对路径后比对 pathname
+  document.querySelectorAll('.sidebar a').forEach(function(a){
+    try{
+      if(new URL(a.getAttribute('href'), location.href).pathname === location.pathname){
+        a.classList.add('current');
+        var g=a.closest('.group');
+        if(g)g.classList.remove('collapsed');
+      }
+    }catch(e){}
+  });
+})();
+document.addEventListener('click',function(e){
+  var g=e.target.closest('.grp');
+  if(g){g.parentElement.classList.toggle('collapsed');return;}
+  var t=e.target.closest('#sidebarToggle');
+  if(t){document.body.classList.toggle('hide-sb');
+    t.textContent=document.body.classList.contains('hide-sb')?'☰':'◀';return;}
+  // SPA式导航：点击侧栏链接只刷新右侧内容，侧栏保持原位
+  var a=e.target.closest('.sidebar a');
+  if(!a||e.metaKey||e.ctrlKey||e.shiftKey)return;
+  e.preventDefault();
+  var url=new URL(a.getAttribute('href'),location.href).href;
+  fetch(url).then(function(r){
+    if(!r.ok){location.href='/rs-archive-8f3k/';throw new Error('404→home');}
+    return r.text();}).then(function(html){
+    var doc=new DOMParser().parseFromString(html,'text/html');
+    var nc=doc.querySelector('.content');
+    var oc=document.querySelector('.content');
+    if(nc&&oc){
+      oc.replaceWith(nc);
+      document.title=doc.title;
+      // 更新高亮
+      document.querySelectorAll('.sidebar a.current').forEach(function(x){x.classList.remove('current')});
+      a.classList.add('current');
+      history.pushState({sp:true},'',url);
+      window.scrollTo(0,0);
+    }else{location.href=url;} // 结构异常则整页跳转兜底
+  }).catch(function(){location.href=url;}); // 网络失败兜底
+});
+window.addEventListener('popstate',function(e){
+  fetch(location.href).then(function(r){
+    if(!r.ok){location.reload();throw new Error('404→reload');}
+    return r.text();}).then(function(html){
+    var doc=new DOMParser().parseFromString(html,'text/html');
+    var nc=doc.querySelector('.content');
+    var oc=document.querySelector('.content');
+    if(nc&&oc){
+      oc.replaceWith(nc);
+      document.title=doc.title;
+      document.querySelectorAll('.sidebar a.current').forEach(function(x){x.classList.remove('current')});
+      document.querySelectorAll('.sidebar a').forEach(function(x){
+        try{if(new URL(x.getAttribute('href'),location.href).pathname===location.pathname)x.classList.add('current');}catch(err){}
+      });
+    }else{location.reload();}
+  }).catch(function(){location.reload();});
+});
+</script><div class="content"><nav><a href="../../../00_使用说明/index.html">00_使用说明</a> <a href="../../../06_数据与工具/index.html">06_数据与工具</a> <a href="../../../08_归档/index.html">08_归档</a> <a href="../../../AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="../../../化纤/index.html">化纤</a> <a href="../../../家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="../../../开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="../../../新型电池/index.html">新型电池</a> <a href="../../../智能网联新能源汽车/index.html">智能网联新能源汽车</a></nav><p><a href="../../index.html">← 返回</a> · 生成于 2026-10-13 00:41</p>
+<h1 id="688111sh-v20pe75xpe">金山办公（688111.SH）估值 v2.0：剔除非经常项后真实PE约75x，"低PE"叙事作废</h1>
+<blockquote>
+<p><strong>数据基准日</strong>：2026-10-12收盘（东财datacenter，新浪换源交叉）｜<strong>财报覆盖</strong>：2022FY–2026H1（东财RPT_LICO_FN_CPD，2026-10-12复采）｜<strong>主要估值年</strong>：2027E→2030E｜<strong>证据限制</strong>：26Q1大额非经常项的精确构成未拆出（东财接口无扣非字段，非经常明细待半年报附注核验）；WPS AI付费收入未单列披露。
+<strong>口径声明（红队确认）</strong>：2026H1净利25.18亿中，26Q1单季报表归母21.95亿&gt;当季营收16.1亿，必含大额非经常/投资收益——<strong>正常化必须剔除，真实PE≈75x口径已由红队确认</strong>；表观PE(TTM)29.3x不可用于估值。</p>
+</blockquote>
+<h2 id="0">0. 结论与估值卡片</h2>
+<p><strong>一句话结论</strong>：金山办公是行业内最好的商业模式（毛利率84.9%、订阅制、Agent受益者），但剔除26Q1非经常项后真实PE约75x——市场实际上已在按"AI应用第一股"付全款，估值卡片必须以正常化口径重建。</p>
+<table>
+<thead>
+<tr>
+<th>必填项目</th>
+<th>悲观</th>
+<th>中性</th>
+<th>乐观</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>核心业务假设</strong></td>
+<td>WPS AI付费转化不及预期、C端ARPU见顶，正常化净利CAGR降至12%</td>
+<td>正常化净利CAGR 25%（订阅基本盘+AI增量）</td>
+<td>AI订阅ARPU重估+政企Agent放量，CAGR 32%</td>
+</tr>
+<tr>
+<td><strong>正常化归母净利润</strong></td>
+<td>2026E约18亿/2030E约28亿</td>
+<td>2026E约18亿/2030E约44亿</td>
+<td>2026E约18亿/2030E约55亿</td>
+</tr>
+<tr>
+<td><strong>净利率</strong></td>
+<td>38%</td>
+<td>42%（正常化，剔非经常）</td>
+<td>45%</td>
+</tr>
+<tr>
+<td><strong>ROIC</strong></td>
+<td>15%</td>
+<td>20%+</td>
+<td>25%+</td>
+</tr>
+<tr>
+<td><strong>现金流</strong></td>
+<td>OCF/归母≥1（订阅制预收，常年健康）</td>
+<td>同左</td>
+<td>同左</td>
+</tr>
+<tr>
+<td><strong>估值方法及参数</strong></td>
+<td>28亿×PE 40x=1,120亿→折现≈765亿（4年10%）</td>
+<td>44亿×PE 45x=1,980亿→折现≈1,352亿</td>
+<td>55亿×PE 50x=2,750亿→折现≈1,878亿</td>
+</tr>
+<tr>
+<td><strong>合理股权市值（折现）</strong></td>
+<td>≈765亿</td>
+<td>≈1,350亿</td>
+<td>≈1,880亿</td>
+</tr>
+<tr>
+<td><strong>较现价（1,057亿）</strong></td>
+<td><strong>-28%</strong></td>
+<td><strong>+28%</strong></td>
+<td><strong>+78%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>估值算式与口径</strong>：正常化2026E净利18亿【算：2025年归母18.36亿×正常化增速，即剔除26Q1非经常项后与2025年基本持平的口径；2026H1报表25.18亿中约10亿+为非经常成分【估，待半年报附注核验】】。订阅制给40–50x终值溢价（对照Adobe约30–35x+稀缺性）。三档折现值单调：765&lt;1,350&lt;1,880，档间差≥43%。</p>
+<blockquote>
+<p><strong>最关键假设</strong>：正常化净利18亿（2026E）——即2026年报表利润的高增长绝大部分不可持续（非经常主导），经营性利润增速约15%–20%【推断】。
+<strong>最容易错的假设</strong>：用表观PE(TTM)29.3x或"H1净利+237%"论证低估——两者均被非经常项污染，红队已确认真实PE≈75x口径。
+<strong>下一步要验证</strong>：2026半年报非经常明细附注（公允价值/投资收益构成）；2026Q3报表利润回归常态的幅度；WPS AI付费用户/收入是否单列披露。</p>
+</blockquote>
+<p><strong>当前行情</strong>：2026-10-12收盘227.70元，总市值1,056.6亿元，PE(TTM)29.29x（失真）、PB 7.01x（东财，2026-10-12）。TTM报表归母约36.1亿【算：18.36−7.47+25.18】、TTM营收65.8亿（红队第3轮复核定稿）。<strong>隐含预期</strong>：1,057亿÷正常化2026E 18亿≈<strong>59x</strong>；按红队确认的"真实PE≈75x"口径（对应更严格的正常化基数约14亿【估】）——无论哪种口径都远高于表观29x。<strong>与市场不同</strong>：市场以"PE 29x的高毛利AI应用龙头"叙事建仓，我们认为这29x是非经常项的会计幻觉；真实定价在60–75x，已透支中性情景，价格安全边际为零，向上依赖AI订阅数据超预期而非估值回归。</p>
+<h2 id="1">1. 这家公司做什么</h2>
+<p>WPS Office订阅（C端个人+政企SaaS）+WPS AI（端侧/私有化模型受益者：开源中尺寸模型降低其AI推理成本、提升Agent能力）。收入=订阅用户数×ARPU，预收款模式，现金流质量全行业最优。</p>
+<h2 id="2">2. 历史轨迹</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+<th style="text-align: right;">2026H1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营收（亿）</td>
+<td style="text-align: right;">51.2</td>
+<td style="text-align: right;">59.3</td>
+<td style="text-align: right;">33.1</td>
+</tr>
+<tr>
+<td>归母（亿）</td>
+<td style="text-align: right;">16.45</td>
+<td style="text-align: right;">18.36</td>
+<td style="text-align: right;">25.18*</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td style="text-align: right;">85.1%</td>
+<td style="text-align: right;">85.9%</td>
+<td style="text-align: right;">84.9%</td>
+</tr>
+<tr>
+<td>加权ROE</td>
+<td style="text-align: right;">15.51%</td>
+<td style="text-align: right;">15.20%</td>
+<td style="text-align: right;">17.76%（半年）*</td>
+</tr>
+</tbody>
+</table>
+<p>*2026H1含26Q1大额非经常项（约10亿+【估】）。来源：东财RPT_LICO_FN_CPD（2026-10-12）【事实】。转折一：26Q1单季报表归母21.95亿&gt;当季营收16.1亿【算】——会计上只能由非经常/投资收益解释，正常化后26Q1经营性利润约3–4亿【估】。转折二：剔除该项后2026H1经营性利润约15亿、同比+20%左右【推断】——与收入+24.7%匹配，是真实的但普通的增速。</p>
+<h2 id="3">3. 核心利润池</h2>
+<p>①C端订阅ARPU与AI付费转化；②政企信创采购周期；③投资收益/公允价值变动（非经常，波动极大，26Q1的主体）。</p>
+<h2 id="4">4. 正常化盈利（核心环节）</h2>
+<p>桥（2026H1，亿元）：报表归母25.18 − 非经常项约10【估，26Q1超额部分21.95−正常化单季约4亿=18亿口径需与附注核对，此处按审慎下限剔除10亿】 ≈ 经营性约15亿【推断】。年化正常化2026E约18亿（经营性增速15%–20%与收入+24.7%匹配但费用投入增加）。<strong>标注：非经常精确构成待半年报附注核验，若实际非经常更高，正常化基数下修、真实PE上修。</strong></p>
+<h2 id="5">5. 现金流</h2>
+<p>订阅制预收，OCF/归母常年≥1，全行业最优——这是唯一不需要折价的维度。</p>
+<h2 id="6-0">6. 三情景估值（见第0节）</h2>
+<p>三档单调。<strong>交叉验证</strong>：中性1,350亿对应2026E正常化18亿×75x——与红队确认的真实PE口径互洽；现价1,057亿≈59x正常化，处于中性折现值-22%与悲观+38%之间，定价"中性偏乐观"。</p>
+<h2 id="7">7. 压力测试</h2>
+<p>AI订阅证伪为单一冲击源：C端ARPU见顶+政企Agent不落地即悲观档，不单设。</p>
+<h2 id="8">8. 隐含预期与预期差</h2>
+<p>59–75x真实PE隐含2027–2030正常化CAGR约25%且终值45x。预期差：市场表观口径系统性高估其便宜程度；真实预期差为负（价格已含乐观）。作为"开源中尺寸模型受益者"的期权（AI成本下降→毛利率/ARPU弹性）尚未被单独定价——这是唯一向上的期权。</p>
+<h2 id="9">9. 四个时间问题</h2>
+<p>预测期2027E–2030E；验证节点2026Q3报表（利润应回落至常态约5亿【估】，若仍异常需重检正常化口径）、2026半年报附注；中性状态3年（CAGR 25%兑现）；可持续性：订阅粘性强，AI渗透是变量。</p>
+<h2 id="10-abcd">10. ABCD分级</h2>
+<p><strong>当前分级：B（v1的A下调两档：红队确认真实PE≈75x后，"高毛利+盈利+估值合理"三重属性中的估值项不成立；商业模式与现金流质量仍是A，价格不是）。</strong> <strong>升级</strong>：①市值回落至850亿以下（真实PE≤47x）→B+/A-；②WPS AI付费收入单列披露且≥5亿/年→B+。<strong>降级</strong>：Q3报表利润仍含大额非经常或经营性增速&lt;10%→C+；AI订阅转化证伪→C。</p>
+<h2 id="11">11. 最终判断</h2>
+<p><strong>悲观765亿｜中性1,350亿｜乐观1,880亿（折现中枢）。</strong> 最容易错的地方：以表观29x PE买入"便宜的AI应用龙头"——真实定价59–75x，安全边际为零；但同理，若AI订阅兑现，其现金流质量与毛利率是全行业最好的复利机器。局限：非经常构成未核验、AI收入未单列、正常化基数存在±15%误差带【标注】。</p>
+<p><strong>关键数据来源</strong>：东财RPT_VALUEANALYSIS_DET（2026-10-12收盘227.70元/市值1,056.6亿/PE 29.29/PB 7.01）、新浪换源交叉；RPT_LICO_FN_CPD（2026-10-12）；红队第2轮挑战⑥（26Q1非经常确认）及"真实PE≈75x"红队确认口径；TTM营收65.8亿（红队第3轮复核定稿）。</p></div>

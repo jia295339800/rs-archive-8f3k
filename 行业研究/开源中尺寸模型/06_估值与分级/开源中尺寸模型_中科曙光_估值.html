@@ -1,0 +1,356 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>开源中尺寸模型_中科曙光_估值 · 研究库</title><style>body{font-family:-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;max-width:920px;margin:0 auto;padding:24px;line-height:1.75;color:#24292f}
+h1,h2,h3{border-bottom:1px solid #e1e4e8;padding-bottom:6px}h1{font-size:1.7em}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.92em;display:block;overflow-x:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px;text-align:left}th{background:#f6f8fa}
+blockquote{border-left:4px solid #d0d7de;margin:0;padding:2px 14px;color:#57606a;background:#f6f8fa}
+code{background:#f0f1f2;padding:1px 5px;border-radius:4px;font-size:.9em}
+pre{background:#f6f8fa;padding:12px;border-radius:8px;overflow-x:auto}
+a{color:#0969da}nav{font-size:.9em;margin-bottom:18px}
+nav a{margin-right:14px;text-decoration:none}
+.sidebar{display:none}
+@media(min-width:1100px){.sidebar{display:block;position:fixed;left:16px;top:16px;bottom:16px;width:230px;overflow:auto;font-size:.85em;border-right:1px solid #e1e4e8;padding-right:10px}
+body{margin-left:280px}
+.sidebar a{display:block;text-decoration:none;color:#24292f;padding:2px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sidebar .group{border-bottom:1px solid #eef0f2;padding:2px 0}
+.sidebar .grp{font-weight:700;margin-top:8px;margin-bottom:2px;color:#0969da;cursor:pointer;user-select:none;display:block;padding:6px 18px 6px 2px;position:relative;min-height:1.4em}
+.sidebar a.current{background:#ddf4ff;border-left:3px solid #0969da;color:#0550ae;font-weight:600;padding-left:8px;border-radius:0 4px 4px 0}
+.sidebar .group:has(a.current)>.grp{color:#0550ae}
+.sidebar .grp::after{content:'▾';position:absolute;right:2px;top:6px;font-size:.75em;color:#8b949e}
+.sidebar .collapsed .grp::after{content:'▸'}
+.sidebar .collapsed a{display:none}
+#sidebarToggle{position:fixed;left:16px;top:16px;z-index:30;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:.9em;color:#24292f}
+body.hide-sb{margin-left:24px}
+body.hide-sb .sidebar{display:none!important}}
+</style>
+<button id="sidebarToggle" title="收起/展开菜单">◀</button><div class="sidebar"><div class="grp">📖 研究库</div>
+<div class="group"><div class="grp">00_使用说明</div>
+<a href="../../../00_使用说明/README_使用说明.html">README_使用说明</a>
+<a href="../../../00_使用说明/任务队列.html">任务队列</a>
+<a href="../../../00_使用说明/企业估值队列.html">企业估值队列</a>
+<a href="../../../00_使用说明/估值对比总表.html">估值对比总表</a>
+<a href="../../../00_使用说明/报告模板/company_report.html">company_report</a>
+<a href="../../../00_使用说明/报告模板/industry_report.html">industry_report</a>
+<a href="../../../00_使用说明/报告模板/node_report.html">node_report</a>
+<a href="../../../00_使用说明/研究总表.html">研究总表</a>
+</div>
+<div class="group"><div class="grp">06_数据与工具</div>
+<a href="../../../06_数据与工具/数据能力说明.html">数据能力说明</a>
+</div>
+<div class="group"><div class="grp">08_归档</div>
+<a href="../../../08_归档/归档登记表.html">归档登记表</a>
+</div>
+<div class="group"><div class="grp">AI数据中心800VDC供电</div>
+<a href="../../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_研究材料.html">AI数据中心800VDC供电_研究材料</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_机会节点研究.html">AI数据中心800VDC供电_机会节点研究</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_候选企业清单.html">AI数据中心800VDC供电_候选企业清单</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_三企业估值报告.html">AI数据中心800VDC供电_三企业估值报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_欧陆通_估值.html">AI数据中心800VDC供电_欧陆通_估值</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_科华数据_估值.html">AI数据中心800VDC供电_科华数据_估值</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_科士达_估值.html">AI数据中心800VDC供电_科士达_估值</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/07_深度报告/AI数据中心800VDC供电_产业深度研究报告.html">AI数据中心800VDC供电_产业深度研究报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_复审R2.html">AI800VDC_复审R2</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_红队审查.html">AI800VDC_红队审查</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第2轮.html">AI数据中心800VDC供电_红队审查_第2轮</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第3轮.html">AI数据中心800VDC供电_红队审查_第3轮</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/欧陆通+科华+科士达_批量红队R1.html">欧陆通+科华+科士达_批量红队R1</a>
+</div>
+<div class="group"><div class="grp">化纤</div>
+<a href="../../../行业研究/化纤/化纤_产业趋势研究.html">化纤_产业趋势研究</a>
+<a href="../../../行业研究/化纤/化纤_机会节点研究.html">化纤_机会节点研究</a>
+<a href="../../../行业研究/化纤/化纤_候选企业清单.html">化纤_候选企业清单</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_三企业估值报告.html">化纤_三企业估值报告</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_台华新材_估值.html">化纤_台华新材_估值</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_恒逸石化_估值.html">化纤_恒逸石化_估值</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_神马股份_估值.html">化纤_神马股份_估值</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_荣盛石化_估值.html">化纤_荣盛石化_估值</a>
+<a href="../../../行业研究/化纤/07_深度报告/化纤_产业深度研究报告.html">化纤_产业深度研究报告</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R2.html">化纤_复审R2</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R3.html">化纤_复审R3</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查.html">化纤_红队审查</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第2轮.html">化纤_红队审查_第2轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第3轮.html">化纤_红队审查_第3轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/台华+神马_批量红队R1.html">台华+神马_批量红队R1</a>
+<a href="../../../行业研究/化纤/09_红队审查/审查记录.html">审查记录</a>
+</div>
+<div class="group"><div class="grp">家庭空间常驻Agent</div>
+<a href="../../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_产业趋势研究.html">家庭空间常驻Agent_产业趋势研究</a>
+<a href="../../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_机会节点研究.html">家庭空间常驻Agent_机会节点研究</a>
+<a href="../../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_候选企业清单.html">家庭空间常驻Agent_候选企业清单</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_乐鑫科技_估值.html">家庭空间常驻Agent_乐鑫科技_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_兆威机电_估值.html">家庭空间常驻Agent_兆威机电_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_奥比中光_估值.html">家庭空间常驻Agent_奥比中光_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_恒玄科技_估值.html">家庭空间常驻Agent_恒玄科技_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_核心企业估值报告.html">家庭空间常驻Agent_核心企业估值报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_绿的谐波_估值.html">家庭空间常驻Agent_绿的谐波_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_萤石网络_估值.html">家庭空间常驻Agent_萤石网络_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_鸣志电器_估值.html">家庭空间常驻Agent_鸣志电器_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/07_深度报告/家庭空间常驻Agent_产业深度研究报告.html">家庭空间常驻Agent_产业深度研究报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/W5估值_批量红队R2.html">W5估值_批量红队R2</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/W5估值_批量红队R3.html">W5估值_批量红队R3</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/W5估值_批量红队R4.html">W5估值_批量红队R4</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_复审R2.html">家庭空间常驻Agent_复审R2</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_红队审查.html">家庭空间常驻Agent_红队审查</a>
+</div>
+<div class="group"><div class="grp">开源中尺寸模型</div>
+<a href="../../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势研究.html">开源中尺寸模型_产业趋势研究</a>
+<a href="../../../行业研究/开源中尺寸模型/开源中尺寸模型_机会节点研究.html">开源中尺寸模型_机会节点研究</a>
+<a href="../../../行业研究/开源中尺寸模型/开源中尺寸模型_候选企业清单.html">开源中尺寸模型_候选企业清单</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_中科曙光_估值.html">开源中尺寸模型_中科曙光_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_中际旭创_估值.html">开源中尺寸模型_中际旭创_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_估值与分级_v1.html">开源中尺寸模型_估值与分级_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_寒武纪_估值.html">开源中尺寸模型_寒武纪_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_新易盛_估值.html">开源中尺寸模型_新易盛_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_核心企业估值报告.html">开源中尺寸模型_核心企业估值报告</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_浪潮信息_估值.html">开源中尺寸模型_浪潮信息_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_海光信息_估值.html">开源中尺寸模型_海光信息_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_润泽科技_估值.html">开源中尺寸模型_润泽科技_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_金山办公_估值.html">开源中尺寸模型_金山办公_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_产业深度研究报告.html">开源中尺寸模型_产业深度研究报告</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_深度报告_v1.0.html">开源中尺寸模型_深度报告_v1.0</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_复审R2.html">开源中尺寸模型_复审R2</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查.html">开源中尺寸模型_红队审查</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_v1.html">开源中尺寸模型_红队审查_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第2轮.html">开源中尺寸模型_红队审查_第2轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第3轮.html">开源中尺寸模型_红队审查_第3轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/红队审查_待执行.html">红队审查_待执行</a>
+<a href="../../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势与节点研究.html">开源中尺寸模型_产业趋势与节点研究</a>
+</div>
+<div class="group"><div class="grp">新型电池</div>
+<a href="../../../行业研究/新型电池/新型电池_产业趋势研究.html">新型电池_产业趋势研究</a>
+<a href="../../../行业研究/新型电池/新型电池_机会节点研究.html">新型电池_机会节点研究</a>
+<a href="../../../行业研究/新型电池/新型电池_候选企业清单.html">新型电池_候选企业清单</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_三企业估值报告.html">新型电池_三企业估值报告</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_天赐材料_估值.html">新型电池_天赐材料_估值</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_宁德时代_估值.html">新型电池_宁德时代_估值</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_恩捷股份_估值.html">新型电池_恩捷股份_估值</a>
+<a href="../../../行业研究/新型电池/07_深度报告/新型电池_产业深度研究报告.html">新型电池_产业深度研究报告</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_复审R2.html">新型电池_复审R2</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查.html">新型电池_红队审查</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第2轮.html">新型电池_红队审查_第2轮</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第3轮.html">新型电池_红队审查_第3轮</a>
+</div>
+<div class="group"><div class="grp">智能网联新能源汽车</div>
+<a href="../../../行业研究/智能网联新能源汽车/智能网联新能源汽车_产业趋势研究.html">智能网联新能源汽车_产业趋势研究</a>
+<a href="../../../行业研究/智能网联新能源汽车/智能网联新能源汽车_机会节点研究.html">智能网联新能源汽车_机会节点研究</a>
+<a href="../../../行业研究/智能网联新能源汽车/智能网联新能源汽车_候选企业清单.html">智能网联新能源汽车_候选企业清单</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_伯特利_估值.html">智能网联新能源汽车_伯特利_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_伯特利_估值_v2.html">智能网联新能源汽车_伯特利_估值_v2</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_估值与分级_v1.html">智能网联新能源汽车_估值与分级_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_保隆科技_估值.html">智能网联新能源汽车_保隆科技_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_德赛西威_估值.html">智能网联新能源汽车_德赛西威_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_核心企业估值报告.html">智能网联新能源汽车_核心企业估值报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_比亚迪_估值.html">智能网联新能源汽车_比亚迪_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_江淮汽车_估值.html">智能网联新能源汽车_江淮汽车_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_特锐德_估值.html">智能网联新能源汽车_特锐德_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_科博达_估值.html">智能网联新能源汽车_科博达_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_经纬恒润_估值.html">智能网联新能源汽车_经纬恒润_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_赛力斯_估值.html">智能网联新能源汽车_赛力斯_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_长安汽车_估值.html">智能网联新能源汽车_长安汽车_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_产业深度研究报告.html">智能网联新能源汽车_产业深度研究报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_深度报告_v1.0.html">智能网联新能源汽车_深度报告_v1.0</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_复审R2.html">智能网联新能源汽车_复审R2</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查.html">智能网联新能源汽车_红队审查</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_v1.html">智能网联新能源汽车_红队审查_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第2轮.html">智能网联新能源汽车_红队审查_第2轮</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第3轮.html">智能网联新能源汽车_红队审查_第3轮</a>
+</div>
+</div><script>
+(function(){
+  // 高亮当前页：用 new URL() 把相对 href 解析为绝对路径后比对 pathname
+  document.querySelectorAll('.sidebar a').forEach(function(a){
+    try{
+      if(new URL(a.getAttribute('href'), location.href).pathname === location.pathname){
+        a.classList.add('current');
+        var g=a.closest('.group');
+        if(g)g.classList.remove('collapsed');
+      }
+    }catch(e){}
+  });
+})();
+document.addEventListener('click',function(e){
+  var g=e.target.closest('.grp');
+  if(g){g.parentElement.classList.toggle('collapsed');return;}
+  var t=e.target.closest('#sidebarToggle');
+  if(t){document.body.classList.toggle('hide-sb');
+    t.textContent=document.body.classList.contains('hide-sb')?'☰':'◀';return;}
+  // SPA式导航：点击侧栏链接只刷新右侧内容，侧栏保持原位
+  var a=e.target.closest('.sidebar a');
+  if(!a||e.metaKey||e.ctrlKey||e.shiftKey)return;
+  e.preventDefault();
+  var url=new URL(a.getAttribute('href'),location.href).href;
+  fetch(url).then(function(r){
+    if(!r.ok){location.href='/rs-archive-8f3k/';throw new Error('404→home');}
+    return r.text();}).then(function(html){
+    var doc=new DOMParser().parseFromString(html,'text/html');
+    var nc=doc.querySelector('.content');
+    var oc=document.querySelector('.content');
+    if(nc&&oc){
+      oc.replaceWith(nc);
+      document.title=doc.title;
+      // 更新高亮
+      document.querySelectorAll('.sidebar a.current').forEach(function(x){x.classList.remove('current')});
+      a.classList.add('current');
+      history.pushState({sp:true},'',url);
+      window.scrollTo(0,0);
+    }else{location.href=url;} // 结构异常则整页跳转兜底
+  }).catch(function(){location.href=url;}); // 网络失败兜底
+});
+window.addEventListener('popstate',function(e){
+  fetch(location.href).then(function(r){
+    if(!r.ok){location.reload();throw new Error('404→reload');}
+    return r.text();}).then(function(html){
+    var doc=new DOMParser().parseFromString(html,'text/html');
+    var nc=doc.querySelector('.content');
+    var oc=document.querySelector('.content');
+    if(nc&&oc){
+      oc.replaceWith(nc);
+      document.title=doc.title;
+      document.querySelectorAll('.sidebar a.current').forEach(function(x){x.classList.remove('current')});
+      document.querySelectorAll('.sidebar a').forEach(function(x){
+        try{if(new URL(x.getAttribute('href'),location.href).pathname===location.pathname)x.classList.add('current');}catch(err){}
+      });
+    }else{location.reload();}
+  }).catch(function(){location.reload();});
+});
+</script><div class="content"><nav><a href="../../../00_使用说明/index.html">00_使用说明</a> <a href="../../../06_数据与工具/index.html">06_数据与工具</a> <a href="../../../08_归档/index.html">08_归档</a> <a href="../../../AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="../../../化纤/index.html">化纤</a> <a href="../../../家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="../../../开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="../../../新型电池/index.html">新型电池</a> <a href="../../../智能网联新能源汽车/index.html">智能网联新能源汽车</a></nav><p><a href="../../index.html">← 返回</a> · 生成于 2026-10-13 00:41</p>
+<h1 id="603019sh-v2045pe">中科曙光（603019.SH）估值 v2.0：海光系的"整机+液冷"代理，45倍PE在为关联预期付钱</h1>
+<blockquote>
+<p><strong>数据基准日</strong>：2026-10-12收盘（东财datacenter，新浪换源交叉）｜<strong>财报覆盖</strong>：2022FY–2026H1（东财RPT_LICO_FN_CPD，2026-10-12复采）｜<strong>主要估值年</strong>：2027E｜<strong>证据限制</strong>：海光持股权益法贡献的准确分部利润未单独披露；液冷收入占比为B级转引；无卖方一致预期。
+<strong>旧版状态</strong>：v1中"证据不足暂不评级"——本版为按v2.0标准的首次完整估值，正常化利润中已单独处理海光投资收益。</p>
+</blockquote>
+<h2 id="0">0. 结论与估值卡片</h2>
+<p><strong>一句话结论</strong>：曙光的本业（整机/存储/液冷）毛利率27%、增速+27.6%质量不差，但当前1,075亿市值里同时装着"本业利润"和"海光信息的权益期权"——拆开后本业约26–28x，与可比整机比不算离谱，真正的弹性/风险都在海光股价本身。</p>
+<table>
+<thead>
+<tr>
+<th>必填项目</th>
+<th>悲观</th>
+<th>中性</th>
+<th>乐观</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>核心业务假设</strong></td>
+<td>2027年信创采购节奏放缓+液冷竞争压价，毛利率回到25%以下</td>
+<td>2027年收入+20%（信创+液冷双轮），毛利率27%±1pct</td>
+<td>液冷成为AI数据中心标配、份额领先，毛利率28%+，收入+30%</td>
+</tr>
+<tr>
+<td><strong>关键收入</strong></td>
+<td>2027E约165亿</td>
+<td>2027E约195亿</td>
+<td>2027E约225亿</td>
+</tr>
+<tr>
+<td><strong>关键利润率</strong></td>
+<td>净利率约10.5%</td>
+<td>净利率约12%</td>
+<td>净利率约13.5%</td>
+</tr>
+<tr>
+<td><strong>本业正常化归母（剔除海光投资收益）</strong></td>
+<td>2027E约17亿</td>
+<td>2027E约23亿</td>
+<td>2027E约30亿</td>
+</tr>
+<tr>
+<td><strong>ROIC与再投资</strong></td>
+<td>ROIC 8%</td>
+<td>ROIC 10%–11%</td>
+<td>ROIC 13%+</td>
+</tr>
+<tr>
+<td><strong>现金流</strong></td>
+<td>OCF/归母约0.7</td>
+<td>OCF/归母约0.9（2025年全年净现比健康）</td>
+<td>OCF/归母≥1</td>
+</tr>
+<tr>
+<td><strong>估值方法及参数</strong></td>
+<td>本业17亿×PE 22x=374亿，海光权益按市价×70%流动性折价</td>
+<td>本业23亿×PE 26x=598亿 + 海光权益折价项</td>
+<td>本业30亿×PE 28x=840亿 + 海光权益折价项</td>
+</tr>
+<tr>
+<td><strong>合理股权市值</strong></td>
+<td>≈600–650亿（含海光权益底部）</td>
+<td>≈850–950亿（中枢900亿）</td>
+<td>≈1,250–1,350亿</td>
+</tr>
+<tr>
+<td><strong>较现价（1,075亿）</strong></td>
+<td><strong>-42%~-40%</strong></td>
+<td><strong>-21%~-12%（中枢-16%）</strong></td>
+<td><strong>+16%~+26%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>海光权益项口径</strong>：曙光直接+间接持有海光信息约27.96%股权【事实：海光信息招股书及年报披露口径，2026-10-12市值4,962亿×27.96%≈1,388亿账面映射】。处理原则：<strong>海光权益不计入三档目标市值的加总主体</strong>（避免"子公司市值×持股比例"与母公司市值双重计价的循环），仅在解读当前市值时引用——当前1,075亿市值 ≪ 海光权益映射1,388亿【算】，即市场实际上在按"海光折价+本业估值"的混合定价，曙光股价已被海光贝塔主导。因此三档估值以<strong>本业利润×PE</strong>为锚，海光涨跌通过权益法投资收益间接进入利润。三档单调：600&lt;900&lt;1,300（中枢口径）。</p>
+<blockquote>
+<p><strong>最关键假设</strong>：本业净利率12%能否与毛利率27%并存——2026H1净利率13.0%【算：9.71/74.66】含海光投资收益贡献，剔除后本业净利率约9%–10%【估】，中性档按12%略偏乐观，已用23亿而非25亿对冲。
+<strong>最容易错的假设</strong>：把海光投资收益当作稳定利润——权益法收益随海光利润波动（海光2026H1归母17.98亿，+50%），且海光157x PE的市值波动不进入曙光利润表但主导其估值贝塔。
+<strong>下一步要验证</strong>：2026Q3本业收入增速是否≥20%；海光Q3业绩（11月）；液冷订单的A级披露。</p>
+</blockquote>
+<p><strong>当前行情</strong>：2026-10-12收盘73.50元，总市值1,075.4亿元，PE(TTM)44.46倍、PB 4.66倍（东财，2026-10-12）。TTM归母约24.2亿【算：21.76−7.29+9.71】、TTM营收165.8亿（红队第3轮复核定稿）。<strong>隐含预期</strong>：44x TTM中，若按本业正常化（约20亿）计为54x——显著高于中性档26x；若认为市值≈本业+海光折价权益，则隐含"海光折价约25%+本业25x"【估】。与市场不同：市场把曙光当"海光影子股"交易，我们认为影子折价不会消失（H股/科创板流动性差异+控股结构折价的普遍性），以本业估值为锚更稳健。</p>
+<h2 id="1">1. 这家公司做什么</h2>
+<p>高性能计算机（服务器/工作站）+存储+液冷基础设施+软件系统，中科院系，海光信息CPU/DCU的整机端主要出口。客户以政企信创+智算中心为主，项目制竞标。</p>
+<h2 id="2">2. 历史轨迹</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+<th style="text-align: right;">2026H1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营收（亿）</td>
+<td style="text-align: right;">131.5</td>
+<td style="text-align: right;">149.6</td>
+<td style="text-align: right;">74.7</td>
+</tr>
+<tr>
+<td>归母（亿）</td>
+<td style="text-align: right;">19.11</td>
+<td style="text-align: right;">21.76</td>
+<td style="text-align: right;">9.71</td>
+</tr>
+<tr>
+<td>毛利率</td>
+<td style="text-align: right;">29.2%</td>
+<td style="text-align: right;">30.6%</td>
+<td style="text-align: right;">27.2%</td>
+</tr>
+<tr>
+<td>加权ROE</td>
+<td style="text-align: right;">9.81%</td>
+<td style="text-align: right;">10.25%</td>
+<td style="text-align: right;">4.28%（半年）</td>
+</tr>
+</tbody>
+</table>
+<p>来源：东财RPT_LICO_FN_CPD（2026-10-12）【事实】。转折一：毛利率从30.6%降至27.2%（智算整机占比升、低毛利业务稀释），价值含义：收入结构在"以量换利"。转折二：2026H1收入+27.6%重新加速（对比2025全年+13.8%），信创+智算双轮确认，但毛利率同步下行——增长的"质"在换挡。</p>
+<h2 id="3">3. 核心利润池</h2>
+<p>①本业净利率（毛利率-费用率）；②海光权益法投资收益（波动项）；③液冷业务放量节奏（B级证据：收入占比未披露，仅公司宣传口径）。</p>
+<h2 id="4">4. 正常化盈利</h2>
+<p>2026H1归母9.71亿（Q1 2.28+Q2 7.43【算】）；H2占全年约55%–58%（2025年：H2 13.2/21.8=61%），2026E约21–23亿；剔除权益法收益波动后本业正常化约20–22亿【估】，2027E中性23亿。权益法收益未精确拆分（利润表未单列），按海光归母×27.96%×权益法确认比例估算约5亿/年【估】，标注缺口。</p>
+<h2 id="5">5. 现金流</h2>
+<p>2025年OCF健康（净现比&gt;1）；无大额商誉；资产负债表干净。海光股权本身是最大的"隐蔽资产"。</p>
+<h2 id="6-0">6. 三情景估值（见第0节）</h2>
+<p>三档单调无倒挂。<strong>交叉验证</strong>：当前市值1,075亿 = 本业中性598亿 + 海光权益映射折价约35%（1,388×0.65≈900亿）…超出市值——说明市场已给海光权益折价约50%或本业估值更低，两种解读均指向"当前定价并未脱离本业基本面太多"，但向上弹性取决于海光，向下缓冲来自本业。</p>
+<h2 id="7">7. 压力测试</h2>
+<p>海光单边下跌50%的冲击不进利润表（权益法按利润确认），但通过市值贝塔传导——已在评级中体现（不给A/B+以上的理由）。</p>
+<h2 id="8">8. 隐含预期</h2>
+<p>44x TTM vs 中性档隐含约40x（900亿/23亿+权益法收益口径），略高于中性——市场为"海光+信创+液冷"三重叙事付了小幅溢价，未到泡沫但无安全边际。</p>
+<h2 id="9">9. 四个时间问题</h2>
+<p>预测期2027E；验证节点2026Q3（10月底）、海光三季报；中性状态需1–2年（液冷放量）；可持续性取决于信创第二期采购节奏。</p>
+<h2 id="10-abcd">10. ABCD分级</h2>
+<p><strong>当前分级：B。</strong> 理由：本业质量达标（毛利率27%、增速27.6%、现金健康）但估值包含不可控的海光贝塔，且液冷关键证据仅B级。<strong>升级</strong>：液冷收入占比或订单额获A级披露且增速≥40%→B+；海光增速换挡后曙光本业独立估值被市场接受→A-。<strong>降级</strong>：本业收入增速&lt;10%→C+；海光出现份额/技术证伪信号→B-。</p>
+<h2 id="11">11. 最终判断</h2>
+<p><strong>悲观620亿｜中性900亿（850–950）｜乐观1,300亿（1,250–1,350）。</strong> 与市场最大的分歧：我们不对"海光映射市值"全额认价——控股结构折价是常态而非异常；以本业23亿×26x为中性锚，当前市值偏高约16%。局限：权益法收益未单独披露、液冷数据B级、无一致预期交叉，三处标注。</p>
+<p><strong>关键数据来源</strong>：东财RPT_VALUEANALYSIS_DET（2026-10-12收盘73.50元/市值1,075.4亿/PE 44.46/PB 4.66）、新浪换源交叉；RPT_LICO_FN_CPD（2026-10-12）；红队第2/3轮TTM 165.8亿定稿口径；海光持股比例取公司公开披露口径（约27.96%，待年报复核）。</p></div>
