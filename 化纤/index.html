@@ -168,7 +168,9 @@ document.addEventListener('click',function(e){
   if(!a||e.metaKey||e.ctrlKey||e.shiftKey)return;
   e.preventDefault();
   var url=new URL(a.getAttribute('href'),location.href).href;
-  fetch(url).then(function(r){return r.text();}).then(function(html){
+  fetch(url).then(function(r){
+    if(!r.ok){location.href='/rs-archive-8f3k/';throw new Error('404→home');}
+    return r.text();}).then(function(html){
     var doc=new DOMParser().parseFromString(html,'text/html');
     var nc=doc.querySelector('.content');
     var oc=document.querySelector('.content');
@@ -184,7 +186,9 @@ document.addEventListener('click',function(e){
   }).catch(function(){location.href=url;}); // 网络失败兜底
 });
 window.addEventListener('popstate',function(e){
-  fetch(location.href).then(function(r){return r.text();}).then(function(html){
+  fetch(location.href).then(function(r){
+    if(!r.ok){location.reload();throw new Error('404→reload');}
+    return r.text();}).then(function(html){
     var doc=new DOMParser().parseFromString(html,'text/html');
     var nc=doc.querySelector('.content');
     var oc=document.querySelector('.content');

@@ -170,7 +170,9 @@ document.addEventListener('click',function(e){
   if(!a||e.metaKey||e.ctrlKey||e.shiftKey)return;
   e.preventDefault();
   var url=new URL(a.getAttribute('href'),location.href).href;
-  fetch(url).then(function(r){return r.text();}).then(function(html){
+  fetch(url).then(function(r){
+    if(!r.ok){location.href='/rs-archive-8f3k/';throw new Error('404→home');}
+    return r.text();}).then(function(html){
     var doc=new DOMParser().parseFromString(html,'text/html');
     var nc=doc.querySelector('.content');
     var oc=document.querySelector('.content');
@@ -186,7 +188,9 @@ document.addEventListener('click',function(e){
   }).catch(function(){location.href=url;}); // 网络失败兜底
 });
 window.addEventListener('popstate',function(e){
-  fetch(location.href).then(function(r){return r.text();}).then(function(html){
+  fetch(location.href).then(function(r){
+    if(!r.ok){location.reload();throw new Error('404→reload');}
+    return r.text();}).then(function(html){
     var doc=new DOMParser().parseFromString(html,'text/html');
     var nc=doc.querySelector('.content');
     var oc=document.querySelector('.content');
@@ -200,7 +204,7 @@ window.addEventListener('popstate',function(e){
     }else{location.reload();}
   }).catch(function(){location.reload();});
 });
-</script><div class="content"><nav><a href="../00_使用说明/index.html">00_使用说明</a> <a href="../06_数据与工具/index.html">06_数据与工具</a> <a href="../08_归档/index.html">08_归档</a> <a href="../AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="../化纤/index.html">化纤</a> <a href="../家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="../开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="../新型电池/index.html">新型电池</a> <a href="../智能网联新能源汽车/index.html">智能网联新能源汽车</a></nav><p><a href="index.html">← 返回</a> · 生成于 2026-10-12 18:59</p>
+</script><div class="content"><nav><a href="../00_使用说明/index.html">00_使用说明</a> <a href="../06_数据与工具/index.html">06_数据与工具</a> <a href="../08_归档/index.html">08_归档</a> <a href="../AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="../化纤/index.html">化纤</a> <a href="../家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="../开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="../新型电池/index.html">新型电池</a> <a href="../智能网联新能源汽车/index.html">智能网联新能源汽车</a></nav><p><a href="index.html">← 返回</a> · 生成于 2026-10-12 19:10</p>
 <h1 id="w5">估值对比总表（W5 估值队列汇总）</h1>
 <blockquote>
 <p><strong>用途</strong>：全部已估值企业的三情景估值横向对比，按<strong>低估程度</strong>排序（中性估值 ÷ 当前市值，比值越高越低估排越前）。
@@ -226,7 +230,7 @@ window.addEventListener('popstate',function(e){
 </thead>
 <tbody>
 <tr>
-<td>1</td>
+<td>23</td>
 <td>家庭空间常驻Agent</td>
 <td>绿的谐波</td>
 <td>688017</td>
@@ -234,12 +238,12 @@ window.addEventListener('popstate',function(e){
 <td>120-170</td>
 <td>300-400</td>
 <td>462.0</td>
-<td>~32%</td>
+<td>~31%</td>
 <td>深度透支（D级泡沫样本）</td>
 <td>D</td>
 </tr>
 <tr>
-<td>2</td>
+<td>26</td>
 <td>家庭空间常驻Agent</td>
 <td>鸣志电器</td>
 <td>603728</td>
@@ -252,7 +256,7 @@ window.addEventListener('popstate',function(e){
 <td>D</td>
 </tr>
 <tr>
-<td>3</td>
+<td>25</td>
 <td>家庭空间常驻Agent</td>
 <td>奥比中光</td>
 <td>688322</td>
@@ -265,7 +269,7 @@ window.addEventListener('popstate',function(e){
 <td>C（下偏D）</td>
 </tr>
 <tr>
-<td>4</td>
+<td>21</td>
 <td>家庭空间常驻Agent</td>
 <td>兆威机电</td>
 <td>003021</td>
@@ -278,7 +282,7 @@ window.addEventListener('popstate',function(e){
 <td>D</td>
 </tr>
 <tr>
-<td>5</td>
+<td>13</td>
 <td>化纤</td>
 <td>神马股份</td>
 <td>600810</td>
@@ -291,7 +295,7 @@ window.addEventListener('popstate',function(e){
 <td>C+</td>
 </tr>
 <tr>
-<td>6</td>
+<td>8</td>
 <td>开源中尺寸模型</td>
 <td>中际旭创</td>
 <td>300308</td>
@@ -304,7 +308,7 @@ window.addEventListener('popstate',function(e){
 <td>B-</td>
 </tr>
 <tr>
-<td>7</td>
+<td>24</td>
 <td>AI数据中心800VDC供电</td>
 <td>欧陆通</td>
 <td>300870</td>
@@ -317,7 +321,7 @@ window.addEventListener('popstate',function(e){
 <td>C+</td>
 </tr>
 <tr>
-<td>8</td>
+<td>1</td>
 <td>开源中尺寸模型</td>
 <td>新易盛</td>
 <td>300502</td>
@@ -330,7 +334,7 @@ window.addEventListener('popstate',function(e){
 <td>B</td>
 </tr>
 <tr>
-<td>9</td>
+<td>10</td>
 <td>家庭空间常驻Agent</td>
 <td>恒玄科技</td>
 <td>688608</td>
@@ -343,7 +347,7 @@ window.addEventListener('popstate',function(e){
 <td>C</td>
 </tr>
 <tr>
-<td>10</td>
+<td>16</td>
 <td>AI数据中心800VDC供电</td>
 <td>科士达</td>
 <td>002518</td>
@@ -356,7 +360,7 @@ window.addEventListener('popstate',function(e){
 <td>C+（下沿偏C）</td>
 </tr>
 <tr>
-<td>11</td>
+<td>15</td>
 <td>AI数据中心800VDC供电</td>
 <td>科华数据</td>
 <td>002335</td>
@@ -369,7 +373,7 @@ window.addEventListener('popstate',function(e){
 <td>C+</td>
 </tr>
 <tr>
-<td>12</td>
+<td>6</td>
 <td>化纤</td>
 <td>台华新材</td>
 <td>603057</td>
@@ -377,12 +381,12 @@ window.addEventListener('popstate',function(e){
 <td>75-90</td>
 <td>120-140</td>
 <td>86.4</td>
-<td>~96%</td>
+<td>~95%</td>
 <td>略透支</td>
 <td>B-</td>
 </tr>
 <tr>
-<td>13</td>
+<td>3</td>
 <td>家庭空间常驻Agent</td>
 <td>乐鑫科技</td>
 <td>688018</td>
@@ -390,12 +394,12 @@ window.addEventListener('popstate',function(e){
 <td>250-310</td>
 <td>380-450</td>
 <td>261.8</td>
-<td>~108%</td>
+<td>~107%</td>
 <td>轻微低估</td>
 <td>B</td>
 </tr>
 <tr>
-<td>14</td>
+<td>2</td>
 <td>家庭空间常驻Agent</td>
 <td>萤石网络</td>
 <td>688475</td>
@@ -408,7 +412,7 @@ window.addEventListener('popstate',function(e){
 <td>B+</td>
 </tr>
 <tr>
-<td>15</td>
+<td>5</td>
 <td>智能网联新能源汽车</td>
 <td>伯特利</td>
 <td>603596</td>
@@ -421,7 +425,7 @@ window.addEventListener('popstate',function(e){
 <td>A-</td>
 </tr>
 <tr>
-<td>16</td>
+<td>19</td>
 <td>智能网联新能源汽车</td>
 <td>长安汽车</td>
 <td>000625</td>
@@ -434,7 +438,7 @@ window.addEventListener('popstate',function(e){
 <td>B-</td>
 </tr>
 <tr>
-<td>17</td>
+<td>12</td>
 <td>智能网联新能源汽车</td>
 <td>科博达</td>
 <td>603786</td>
@@ -447,7 +451,7 @@ window.addEventListener('popstate',function(e){
 <td>B-</td>
 </tr>
 <tr>
-<td>18</td>
+<td>9</td>
 <td>智能网联新能源汽车</td>
 <td>经纬恒润</td>
 <td>688326</td>
@@ -460,7 +464,7 @@ window.addEventListener('popstate',function(e){
 <td>C</td>
 </tr>
 <tr>
-<td>19</td>
+<td>4</td>
 <td>智能网联新能源汽车</td>
 <td>保隆科技</td>
 <td>603197</td>
@@ -473,7 +477,7 @@ window.addEventListener('popstate',function(e){
 <td>B-</td>
 </tr>
 <tr>
-<td>20</td>
+<td>11</td>
 <td>智能网联新能源汽车</td>
 <td>特锐德</td>
 <td>300001</td>
@@ -486,7 +490,7 @@ window.addEventListener('popstate',function(e){
 <td>B</td>
 </tr>
 <tr>
-<td>21</td>
+<td>20</td>
 <td>智能网联新能源汽车</td>
 <td>赛力斯</td>
 <td>601127</td>
@@ -499,7 +503,7 @@ window.addEventListener('popstate',function(e){
 <td>B</td>
 </tr>
 <tr>
-<td>22</td>
+<td>7</td>
 <td>智能网联新能源汽车</td>
 <td>德赛西威</td>
 <td>002920</td>
@@ -512,7 +516,7 @@ window.addEventListener('popstate',function(e){
 <td>B+</td>
 </tr>
 <tr>
-<td>23</td>
+<td>14</td>
 <td>智能网联新能源汽车</td>
 <td>比亚迪</td>
 <td>002594</td>
@@ -525,7 +529,7 @@ window.addEventListener('popstate',function(e){
 <td>B+</td>
 </tr>
 <tr>
-<td>24</td>
+<td>22</td>
 <td>智能网联新能源汽车</td>
 <td>江淮汽车</td>
 <td>600418</td>
@@ -538,7 +542,7 @@ window.addEventListener('popstate',function(e){
 <td>C（下偏D）</td>
 </tr>
 <tr>
-<td>25</td>
+<td>17</td>
 <td>化纤</td>
 <td>恒逸石化</td>
 <td>000703</td>
@@ -551,7 +555,7 @@ window.addEventListener('popstate',function(e){
 <td>C+</td>
 </tr>
 <tr>
-<td>26</td>
+<td>18</td>
 <td>化纤</td>
 <td>荣盛石化</td>
 <td>002493</td>
@@ -568,7 +572,7 @@ window.addEventListener('popstate',function(e){
 <hr />
 <h2 id="_1">排序说明与观察</h2>
 <ol>
-<li><strong>排序键</strong>：中性估值中值 ÷ 当前市值，降序（越低估越靠前）。表内"~%"为该比值的近似值（区间中值口径）。</li>
+<li><strong>排序键（用户2026-10-12确认）</strong>：当前市值相较于中性估值的低估程度，即 中性估值中值 ÷ 当前市值，降序——越低估排越前；比率&gt;100%=低估，&lt;100%=透支。现有及后续新增企业一律按此排序。</li>
 <li><strong>结构性发现（2026-10-12 全队列定稿结论）</strong>：纯概念标的的叙事溢价收敛在 66-73%（鸣志72%/奥比73%/江淮70%/兆威66%）——<strong>证据是否进报表是低估与否的分水岭</strong>；敞口落报表的（萤石/乐鑫/保隆）估值回归正常区间。</li>
 <li><strong>队列内唯一显著低估档</strong>：新易盛（+42%）、萤石网络（+21%）；乐鑫/保隆轻微低估；伯特利中性定价。</li>
 <li><strong>深度透支档（现价高于乐观情景）</strong>：鸣志、兆威、欧陆通、江淮、绿的——即"市场已把乐观情景全额定价仍不够"，红队认定其定价锚是叙事而非基本面。</li>
