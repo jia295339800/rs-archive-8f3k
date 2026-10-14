@@ -1,0 +1,501 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>轮胎_机会节点研究 · 研究库</title><style>body{font-family:-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;max-width:920px;margin:0 auto;padding:24px;line-height:1.75;color:#24292f}
+h1,h2,h3{border-bottom:1px solid #e1e4e8;padding-bottom:6px}h1{font-size:1.7em}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.92em;display:block;overflow-x:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px;text-align:left}th{background:#f6f8fa}
+blockquote{border-left:4px solid #d0d7de;margin:0;padding:2px 14px;color:#57606a;background:#f6f8fa}
+code{background:#f0f1f2;padding:1px 5px;border-radius:4px;font-size:.9em}
+pre{background:#f6f8fa;padding:12px;border-radius:8px;overflow-x:auto}
+a{color:#0969da}nav{font-size:.9em;margin-bottom:18px}
+nav a{margin-right:14px;text-decoration:none}
+.sidebar{display:none}
+@media(min-width:1100px){.sidebar{display:block;position:fixed;left:16px;top:16px;bottom:16px;width:230px;overflow:auto;font-size:.85em;border-right:1px solid #e1e4e8;padding-right:10px}
+body{margin-left:280px}
+.sidebar a{display:block;text-decoration:none;color:#24292f;padding:2px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sidebar .group{border-bottom:1px solid #eef0f2;padding:2px 0}
+.sidebar .grp{font-weight:700;margin-top:8px;margin-bottom:2px;color:#0969da;cursor:pointer;user-select:none;display:block;padding:6px 18px 6px 2px;position:relative;min-height:1.4em}
+.sidebar a.current{background:#ddf4ff;border-left:3px solid #0969da;color:#0550ae;font-weight:600;padding-left:8px;border-radius:0 4px 4px 0}
+.sidebar .group:has(a.current)>.grp{color:#0550ae}
+.sidebar .grp::after{content:'▾';position:absolute;right:2px;top:6px;font-size:.75em;color:#8b949e}
+.sidebar .collapsed .grp::after{content:'▸'}
+.sidebar .collapsed a{display:none}
+.sidebar .group.sub{border-bottom:none;margin-left:12px}
+.sidebar .group.sub>.grp{font-weight:400;color:#8b949e;margin-top:2px}
+.sidebar .group.sub a{font-size:.92em;color:#57606a}
+#sidebarToggle{position:fixed;left:16px;top:16px;z-index:30;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:.9em;color:#24292f}
+body.hide-sb{margin-left:24px}
+body.hide-sb .sidebar{display:none!important}}
+</style>
+<button id="sidebarToggle" title="收起/展开菜单">◀</button><div class="sidebar"><div class="grp">📖 研究库</div>
+<div class="group"><div class="grp">00_使用说明</div>
+<a href="../../00_使用说明/README_使用说明.html">README_使用说明</a>
+<a href="../../00_使用说明/任务队列.html">任务队列</a>
+<a href="../../00_使用说明/企业估值队列.html">企业估值队列</a>
+<a href="../../00_使用说明/估值对比总表.html">估值对比总表</a>
+<a href="../../00_使用说明/报告模板/company_report.html">company_report</a>
+<a href="../../00_使用说明/报告模板/industry_report.html">industry_report</a>
+<a href="../../00_使用说明/报告模板/node_report.html">node_report</a>
+<a href="../../00_使用说明/研究总表.html">研究总表</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../00_使用说明/估值红队v2_第2轮复审.html">估值红队v2_第2轮复审</a>
+<a href="../../00_使用说明/估值红队v2_第3轮终审.html">估值红队v2_第3轮终审</a>
+</div>
+</div>
+<div class="group"><div class="grp">06_数据与工具</div>
+<a href="../../06_数据与工具/数据能力说明.html">数据能力说明</a>
+</div>
+<div class="group"><div class="grp">08_归档</div>
+<a href="../../08_归档/归档登记表.html">归档登记表</a>
+</div>
+<div class="group"><div class="grp">AI数据中心800VDC供电</div>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_研究材料.html">AI数据中心800VDC供电_研究材料</a>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_机会节点研究.html">AI数据中心800VDC供电_机会节点研究</a>
+<a href="../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_候选企业清单.html">AI数据中心800VDC供电_候选企业清单</a>
+<a href="../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_三企业估值报告.html">AI数据中心800VDC供电_三企业估值报告</a>
+<a href="../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_欧陆通_估值.html">AI数据中心800VDC供电_欧陆通_估值</a>
+<a href="../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_科华数据_估值.html">AI数据中心800VDC供电_科华数据_估值</a>
+<a href="../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_科士达_估值.html">AI数据中心800VDC供电_科士达_估值</a>
+<a href="../../行业研究/AI数据中心800VDC供电/07_深度报告/AI数据中心800VDC供电_产业深度研究报告.html">AI数据中心800VDC供电_产业深度研究报告</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_复审R2.html">AI800VDC_复审R2</a>
+<a href="../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_红队审查.html">AI800VDC_红队审查</a>
+<a href="../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_估值红队_v2.html">AI数据中心800VDC供电_估值红队_v2</a>
+<a href="../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第2轮.html">AI数据中心800VDC供电_红队审查_第2轮</a>
+<a href="../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第3轮.html">AI数据中心800VDC供电_红队审查_第3轮</a>
+<a href="../../行业研究/AI数据中心800VDC供电/09_红队审查/欧陆通+科华+科士达_批量红队R1.html">欧陆通+科华+科士达_批量红队R1</a>
+</div>
+</div>
+<div class="group"><div class="grp">化纤</div>
+<a href="../../行业研究/化纤/化纤_产业趋势研究.html">化纤_产业趋势研究</a>
+<a href="../../行业研究/化纤/化纤_机会节点研究.html">化纤_机会节点研究</a>
+<a href="../../行业研究/化纤/化纤_候选企业清单.html">化纤_候选企业清单</a>
+<a href="../../行业研究/化纤/06_估值与分级/化纤_三企业估值报告.html">化纤_三企业估值报告</a>
+<a href="../../行业研究/化纤/06_估值与分级/化纤_台华新材_估值.html">化纤_台华新材_估值</a>
+<a href="../../行业研究/化纤/06_估值与分级/化纤_恒逸石化_估值.html">化纤_恒逸石化_估值</a>
+<a href="../../行业研究/化纤/06_估值与分级/化纤_神马股份_估值.html">化纤_神马股份_估值</a>
+<a href="../../行业研究/化纤/06_估值与分级/化纤_荣盛石化_估值.html">化纤_荣盛石化_估值</a>
+<a href="../../行业研究/化纤/07_深度报告/化纤_产业深度研究报告.html">化纤_产业深度研究报告</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../行业研究/化纤/09_红队审查/化纤_估值红队_v2.html">化纤_估值红队_v2</a>
+<a href="../../行业研究/化纤/09_红队审查/化纤_复审R2.html">化纤_复审R2</a>
+<a href="../../行业研究/化纤/09_红队审查/化纤_复审R3.html">化纤_复审R3</a>
+<a href="../../行业研究/化纤/09_红队审查/化纤_红队审查.html">化纤_红队审查</a>
+<a href="../../行业研究/化纤/09_红队审查/化纤_红队审查_第2轮.html">化纤_红队审查_第2轮</a>
+<a href="../../行业研究/化纤/09_红队审查/化纤_红队审查_第3轮.html">化纤_红队审查_第3轮</a>
+<a href="../../行业研究/化纤/09_红队审查/台华+神马_批量红队R1.html">台华+神马_批量红队R1</a>
+<a href="../../行业研究/化纤/09_红队审查/审查记录.html">审查记录</a>
+</div>
+</div>
+<div class="group"><div class="grp">家庭空间常驻Agent</div>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_产业趋势研究.html">家庭空间常驻Agent_产业趋势研究</a>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_机会节点研究.html">家庭空间常驻Agent_机会节点研究</a>
+<a href="../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_候选企业清单.html">家庭空间常驻Agent_候选企业清单</a>
+<a href="../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_乐鑫科技_估值.html">家庭空间常驻Agent_乐鑫科技_估值</a>
+<a href="../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_兆威机电_估值.html">家庭空间常驻Agent_兆威机电_估值</a>
+<a href="../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_奥比中光_估值.html">家庭空间常驻Agent_奥比中光_估值</a>
+<a href="../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_恒玄科技_估值.html">家庭空间常驻Agent_恒玄科技_估值</a>
+<a href="../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_核心企业估值报告.html">家庭空间常驻Agent_核心企业估值报告</a>
+<a href="../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_绿的谐波_估值.html">家庭空间常驻Agent_绿的谐波_估值</a>
+<a href="../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_萤石网络_估值.html">家庭空间常驻Agent_萤石网络_估值</a>
+<a href="../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_鸣志电器_估值.html">家庭空间常驻Agent_鸣志电器_估值</a>
+<a href="../../行业研究/家庭空间常驻Agent/07_深度报告/家庭空间常驻Agent_产业深度研究报告.html">家庭空间常驻Agent_产业深度研究报告</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../行业研究/家庭空间常驻Agent/09_红队审查/W5估值_批量红队R2.html">W5估值_批量红队R2</a>
+<a href="../../行业研究/家庭空间常驻Agent/09_红队审查/W5估值_批量红队R3.html">W5估值_批量红队R3</a>
+<a href="../../行业研究/家庭空间常驻Agent/09_红队审查/W5估值_批量红队R4.html">W5估值_批量红队R4</a>
+<a href="../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_估值红队_v2.html">家庭空间常驻Agent_估值红队_v2</a>
+<a href="../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_复审R2.html">家庭空间常驻Agent_复审R2</a>
+<a href="../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_红队审查.html">家庭空间常驻Agent_红队审查</a>
+</div>
+</div>
+<div class="group"><div class="grp">开源中尺寸模型</div>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势研究.html">开源中尺寸模型_产业趋势研究</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_机会节点研究.html">开源中尺寸模型_机会节点研究</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_候选企业清单.html">开源中尺寸模型_候选企业清单</a>
+<a href="../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_中科曙光_估值.html">开源中尺寸模型_中科曙光_估值</a>
+<a href="../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_中际旭创_估值.html">开源中尺寸模型_中际旭创_估值</a>
+<a href="../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_估值与分级_v1.html">开源中尺寸模型_估值与分级_v1</a>
+<a href="../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_寒武纪_估值.html">开源中尺寸模型_寒武纪_估值</a>
+<a href="../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_新易盛_估值.html">开源中尺寸模型_新易盛_估值</a>
+<a href="../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_核心企业估值报告.html">开源中尺寸模型_核心企业估值报告</a>
+<a href="../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_浪潮信息_估值.html">开源中尺寸模型_浪潮信息_估值</a>
+<a href="../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_海光信息_估值.html">开源中尺寸模型_海光信息_估值</a>
+<a href="../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_润泽科技_估值.html">开源中尺寸模型_润泽科技_估值</a>
+<a href="../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_金山办公_估值.html">开源中尺寸模型_金山办公_估值</a>
+<a href="../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_产业深度研究报告.html">开源中尺寸模型_产业深度研究报告</a>
+<a href="../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_深度报告_v1.0.html">开源中尺寸模型_深度报告_v1.0</a>
+<a href="../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势与节点研究.html">开源中尺寸模型_产业趋势与节点研究</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_估值红队_v2.html">开源中尺寸模型_估值红队_v2</a>
+<a href="../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_复审R2.html">开源中尺寸模型_复审R2</a>
+<a href="../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查.html">开源中尺寸模型_红队审查</a>
+<a href="../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_v1.html">开源中尺寸模型_红队审查_v1</a>
+<a href="../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第2轮.html">开源中尺寸模型_红队审查_第2轮</a>
+<a href="../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第3轮.html">开源中尺寸模型_红队审查_第3轮</a>
+<a href="../../行业研究/开源中尺寸模型/09_红队审查/红队审查_待执行.html">红队审查_待执行</a>
+</div>
+</div>
+<div class="group"><div class="grp">新型电池</div>
+<a href="../../行业研究/新型电池/新型电池_产业趋势研究.html">新型电池_产业趋势研究</a>
+<a href="../../行业研究/新型电池/新型电池_机会节点研究.html">新型电池_机会节点研究</a>
+<a href="../../行业研究/新型电池/新型电池_候选企业清单.html">新型电池_候选企业清单</a>
+<a href="../../行业研究/新型电池/06_估值与分级/新型电池_三企业估值报告.html">新型电池_三企业估值报告</a>
+<a href="../../行业研究/新型电池/06_估值与分级/新型电池_上能电气_估值.html">新型电池_上能电气_估值</a>
+<a href="../../行业研究/新型电池/06_估值与分级/新型电池_亿纬锂能_估值.html">新型电池_亿纬锂能_估值</a>
+<a href="../../行业研究/新型电池/06_估值与分级/新型电池_天赐材料_估值.html">新型电池_天赐材料_估值</a>
+<a href="../../行业研究/新型电池/06_估值与分级/新型电池_宁德时代_估值.html">新型电池_宁德时代_估值</a>
+<a href="../../行业研究/新型电池/06_估值与分级/新型电池_恩捷股份_估值.html">新型电池_恩捷股份_估值</a>
+<a href="../../行业研究/新型电池/06_估值与分级/新型电池_欣旺达_估值.html">新型电池_欣旺达_估值</a>
+<a href="../../行业研究/新型电池/06_估值与分级/新型电池_阳光电源_估值.html">新型电池_阳光电源_估值</a>
+<a href="../../行业研究/新型电池/07_深度报告/新型电池_产业深度研究报告.html">新型电池_产业深度研究报告</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../行业研究/新型电池/09_红队审查/新型电池_估值红队_v2.html">新型电池_估值红队_v2</a>
+<a href="../../行业研究/新型电池/09_红队审查/新型电池_估值红队_新增四家.html">新型电池_估值红队_新增四家</a>
+<a href="../../行业研究/新型电池/09_红队审查/新型电池_估值红队_新增四家_第2轮.html">新型电池_估值红队_新增四家_第2轮</a>
+<a href="../../行业研究/新型电池/09_红队审查/新型电池_复审R2.html">新型电池_复审R2</a>
+<a href="../../行业研究/新型电池/09_红队审查/新型电池_红队审查.html">新型电池_红队审查</a>
+<a href="../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第2轮.html">新型电池_红队审查_第2轮</a>
+<a href="../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第3轮.html">新型电池_红队审查_第3轮</a>
+</div>
+</div>
+<div class="group"><div class="grp">智能网联新能源汽车</div>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_产业趋势研究.html">智能网联新能源汽车_产业趋势研究</a>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_机会节点研究.html">智能网联新能源汽车_机会节点研究</a>
+<a href="../../行业研究/智能网联新能源汽车/智能网联新能源汽车_候选企业清单.html">智能网联新能源汽车_候选企业清单</a>
+<a href="../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_伯特利_估值.html">智能网联新能源汽车_伯特利_估值</a>
+<a href="../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_伯特利_估值_v2.html">智能网联新能源汽车_伯特利_估值_v2</a>
+<a href="../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_估值与分级_v1.html">智能网联新能源汽车_估值与分级_v1</a>
+<a href="../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_保隆科技_估值.html">智能网联新能源汽车_保隆科技_估值</a>
+<a href="../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_德赛西威_估值.html">智能网联新能源汽车_德赛西威_估值</a>
+<a href="../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_核心企业估值报告.html">智能网联新能源汽车_核心企业估值报告</a>
+<a href="../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_比亚迪_估值.html">智能网联新能源汽车_比亚迪_估值</a>
+<a href="../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_江淮汽车_估值.html">智能网联新能源汽车_江淮汽车_估值</a>
+<a href="../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_特锐德_估值.html">智能网联新能源汽车_特锐德_估值</a>
+<a href="../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_科博达_估值.html">智能网联新能源汽车_科博达_估值</a>
+<a href="../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_经纬恒润_估值.html">智能网联新能源汽车_经纬恒润_估值</a>
+<a href="../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_赛力斯_估值.html">智能网联新能源汽车_赛力斯_估值</a>
+<a href="../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_长安汽车_估值.html">智能网联新能源汽车_长安汽车_估值</a>
+<a href="../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_产业深度研究报告.html">智能网联新能源汽车_产业深度研究报告</a>
+<a href="../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_深度报告_v1.0.html">智能网联新能源汽车_深度报告_v1.0</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_估值红队_v2.html">智能网联新能源汽车_估值红队_v2</a>
+<a href="../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_复审R2.html">智能网联新能源汽车_复审R2</a>
+<a href="../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查.html">智能网联新能源汽车_红队审查</a>
+<a href="../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_v1.html">智能网联新能源汽车_红队审查_v1</a>
+<a href="../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第2轮.html">智能网联新能源汽车_红队审查_第2轮</a>
+<a href="../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第3轮.html">智能网联新能源汽车_红队审查_第3轮</a>
+</div>
+</div>
+<div class="group"><div class="grp">轮胎</div>
+<a href="../../行业研究/轮胎/轮胎_产业趋势研究.html">轮胎_产业趋势研究</a>
+<a href="../../行业研究/轮胎/轮胎_机会节点研究.html">轮胎_机会节点研究</a>
+<a href="../../行业研究/轮胎/06_估值与分级/轮胎_中策橡胶_估值.html">轮胎_中策橡胶_估值</a>
+<a href="../../行业研究/轮胎/06_估值与分级/轮胎_森麒麟_估值.html">轮胎_森麒麟_估值</a>
+<a href="../../行业研究/轮胎/06_估值与分级/轮胎_玲珑轮胎_估值.html">轮胎_玲珑轮胎_估值</a>
+<a href="../../行业研究/轮胎/06_估值与分级/轮胎_贵州轮胎_估值.html">轮胎_贵州轮胎_估值</a>
+<a href="../../行业研究/轮胎/06_估值与分级/轮胎_赛轮轮胎_估值.html">轮胎_赛轮轮胎_估值</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../行业研究/轮胎/09_红队审查/轮胎_批量红队R1.html">轮胎_批量红队R1</a>
+<a href="../../行业研究/轮胎/09_红队审查/轮胎_森麒麟+玲珑_红队R1.html">轮胎_森麒麟+玲珑_红队R1</a>
+<a href="../../行业研究/轮胎/09_红队审查/轮胎_红队R2复验.html">轮胎_红队R2复验</a>
+</div>
+</div>
+</div><script>
+(function(){
+  // 高亮当前页：用 new URL() 把相对 href 解析为绝对路径后比对 pathname
+  document.querySelectorAll('.sidebar a').forEach(function(a){
+    try{
+      if(new URL(a.getAttribute('href'), location.href).pathname === location.pathname){
+        a.classList.add('current');
+        var g=a.closest('.group');
+        if(g)g.classList.remove('collapsed');
+      }
+    }catch(e){}
+  });
+})();
+document.addEventListener('click',function(e){
+  var g=e.target.closest('.grp');
+  if(g){g.parentElement.classList.toggle('collapsed');return;}
+  var t=e.target.closest('#sidebarToggle');
+  if(t){document.body.classList.toggle('hide-sb');
+    t.textContent=document.body.classList.contains('hide-sb')?'☰':'◀';return;}
+  // SPA式导航：点击侧栏链接只刷新右侧内容，侧栏保持原位
+  var a=e.target.closest('.sidebar a');
+  if(!a||e.metaKey||e.ctrlKey||e.shiftKey)return;
+  e.preventDefault();
+  var url=new URL(a.getAttribute('href'),location.href).href;
+  fetch(url).then(function(r){
+    if(!r.ok){location.href='/rs-archive-8f3k/';throw new Error('404→home');}
+    return r.text();}).then(function(html){
+    var doc=new DOMParser().parseFromString(html,'text/html');
+    var nc=doc.querySelector('.content');
+    var oc=document.querySelector('.content');
+    if(nc&&oc){
+      oc.replaceWith(nc);
+      document.title=doc.title;
+      // 更新高亮
+      document.querySelectorAll('.sidebar a.current').forEach(function(x){x.classList.remove('current')});
+      a.classList.add('current');
+      history.pushState({sp:true},'',url);
+      window.scrollTo(0,0);
+    }else{location.href=url;} // 结构异常则整页跳转兜底
+  }).catch(function(){location.href=url;}); // 网络失败兜底
+});
+window.addEventListener('popstate',function(e){
+  fetch(location.href).then(function(r){
+    if(!r.ok){location.reload();throw new Error('404→reload');}
+    return r.text();}).then(function(html){
+    var doc=new DOMParser().parseFromString(html,'text/html');
+    var nc=doc.querySelector('.content');
+    var oc=document.querySelector('.content');
+    if(nc&&oc){
+      oc.replaceWith(nc);
+      document.title=doc.title;
+      document.querySelectorAll('.sidebar a.current').forEach(function(x){x.classList.remove('current')});
+      document.querySelectorAll('.sidebar a').forEach(function(x){
+        try{if(new URL(x.getAttribute('href'),location.href).pathname===location.pathname)x.classList.add('current');}catch(err){}
+      });
+    }else{location.reload();}
+  }).catch(function(){location.reload();});
+});
+</script><div class="content"><nav><a href="../../00_使用说明/index.html">00_使用说明</a> <a href="../../06_数据与工具/index.html">06_数据与工具</a> <a href="../../08_归档/index.html">08_归档</a> <a href="../../AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="../../化纤/index.html">化纤</a> <a href="../../家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="../../开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="../../新型电池/index.html">新型电池</a> <a href="../../智能网联新能源汽车/index.html">智能网联新能源汽车</a> <a href="../../轮胎/index.html">轮胎</a></nav><p><a href="../index.html">← 返回</a> · 生成于 2026-10-14 18:05</p>
+<h1 id="_w1">轮胎_机会节点研究（W1 · 第二步 · 节点研究员）</h1>
+<blockquote>
+<p>研究日期：2026-10-14 ｜ 上游输入：《轮胎_产业趋势研究.md》（同目录，产业研究员TOP3节点推荐）｜ 性质：基本面节点拆解，无技术分析
+行情/财务数据链路：东财datacenter-web（RPT_LICO_FN_CPD/RPT_VALUEANALYSIS_DET）+新浪行情，经 数据采集脚本.py（quote/fin）采集；采集成功，无403。
+证据等级标注：A=财报/公告证实；B=公司官方表态/投关记录；C=媒体/推测（<strong>C级不进估值</strong>）。</p>
+</blockquote>
+<hr />
+<h2 id="_1">一、三个节点的经济利润判断（先结论）</h2>
+<p>接续产业研究员结论："成本上行+贸易壁垒双挤压"下，超额利润只存在于三个位置，且2026H1财报已给出验证：</p>
+<table>
+<thead>
+<tr>
+<th>节点</th>
+<th>超额利润真实性（用数据验证，非叙事）</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①半钢胎出海龙头</td>
+<td>2026H1毛利率：赛轮26.99%、森麒麟19.57%，对比纯内销/低外销企业（通用15.29%、贵州轮胎19.42%、玲珑15.79%）差5~11pct；赛轮2026H1归母21.6亿+18%、ROE半年9.63%</td>
+<td><strong>真实存在，但已收窄</strong>：森麒麟毛利率从2024年32.8%降至2026H1的19.6%（美国对泰双反+新产能爬坡），出海红利在衰减，只有"多基地+复审降税"能力在维持溢价</td>
+</tr>
+<tr>
+<td>②非公路/巨型工程胎</td>
+<td>贵州轮胎2026H1毛利率19.4%（同比+3.6pct，为7家中唯一连续四个季度毛利率抬升的公司之一）；但归母仅3.58亿/半年、ROE 3.91%，绝对盈利水平一般</td>
+<td><strong>方向真实、弹性待验证</strong>：巨胎/矿胎高毛利口径的分部数据两家公司均不单独披露（缺数据，明说），目前只能用整体毛利率改善+公司表态（B级）支撑</td>
+</tr>
+<tr>
+<td>③液体黄金等差异化新材料</td>
+<td>无独立财务口径。液体黄金为赛轮子公司/技术品牌，销量占比、溢价未在定期报告量化披露（缺数据，明说）</td>
+<td><strong>暂不可财务验证</strong>，只能作为赛轮的估值加分项而非独立节点；现阶段其经济利润已体现在赛轮整体毛利率领先同业2~7pct中</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心结论（推断）</strong>：当前经济利润的真实流向是"<strong>多点海外产能 × 半钢出海 × 提价传导能力</strong>"的组合，单一节点（如纯液体黄金、纯非公路）尚不足以独立支撑一家公司进入估值队列；节点②③应作为①的加权因子使用。</p>
+<hr />
+<h2 id="12datacenter-web2026-10-14">二、横向财务对比表（近12期关键期，东财datacenter-web，采集日2026-10-14）</h2>
+<p>营收/归母单位：亿元。毛利率=XSMLL，ROE=加权。</p>
+<table>
+<thead>
+<tr>
+<th>公司</th>
+<th>2023A营收/归母/ROE/毛利率</th>
+<th>2024A营收/归母/ROE/毛利率</th>
+<th>2025A营收/归母/ROE/毛利率</th>
+<th>2026H1营收/归母/ROE/毛利率</th>
+<th>市值(亿)/PE-TTM/PB（2026-10-14）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>赛轮轮胎 601058</td>
+<td>259.8 / 30.9 / 23.4% / 27.5%</td>
+<td>318.0 / 40.6 / 22.8% / 27.6%</td>
+<td>367.9 / 35.2 / 17.0% / 24.7%</td>
+<td>200.3 / 21.6 / 9.63% / 27.0%</td>
+<td>407.7 / 10.6 / 1.80</td>
+</tr>
+<tr>
+<td>森麒麟 002984</td>
+<td>78.4 / 13.7 / 16.4% / 24.9%</td>
+<td>85.1 / 21.9 / 17.4% / 32.8%</td>
+<td>86.1 / 11.2 / 8.4% / 21.3%</td>
+<td>44.2 / 4.2 / 3.03% / 19.6%</td>
+<td>132.6 / 15.2 / 0.98</td>
+</tr>
+<tr>
+<td>贵州轮胎 000589</td>
+<td>96.0 / 8.3 / 12.5% / 22.0%</td>
+<td>106.9 / 6.2 / 7.4% / 17.9%</td>
+<td>109.5 / 6.2 / 6.7% / 18.3%</td>
+<td>57.4 / 3.6 / 3.91% / 19.4%</td>
+<td>66.1 / 9.1 / 0.72</td>
+</tr>
+<tr>
+<td>通用股份 601500</td>
+<td>50.6 / 2.2 / 4.2% / 15.5%</td>
+<td>69.6 / 3.7 / 6.5% / 16.4%</td>
+<td>85.0 / 2.0 / 3.3% / 13.1%</td>
+<td>44.5 / 1.4 / 2.26% / 15.3%</td>
+<td>60.2 / 21.9 / 1.00</td>
+</tr>
+<tr>
+<td>玲珑轮胎 601966</td>
+<td>201.7 / 13.9 / 6.9% / 20.3%</td>
+<td>220.6 / 17.5 / 8.2% / 22.1%</td>
+<td>246.4 / 13.7 / 6.1% / 17.0%</td>
+<td>127.3 / 1.0 / 0.44% / 15.8%</td>
+<td>154.7 / 25.1 / 0.69</td>
+</tr>
+<tr>
+<td>三角轮胎 601163</td>
+<td>104.2 / 14.0 / 11.4% / 21.4%</td>
+<td>101.6 / 11.0 / 8.4% / 17.9%</td>
+<td>98.2 / 9.2 / 6.7% / 20.0%</td>
+<td>50.8 / 3.4 / 2.41% / 17.9%</td>
+<td>99.6 / 11.5 / 0.71</td>
+</tr>
+<tr>
+<td>青岛双星 000599</td>
+<td>46.6 / -1.8 / -7.6% / 8.4%</td>
+<td>43.3 / -3.6 / -19.1% / 9.1%</td>
+<td>46.3 / -3.6 / -25.8% / 5.7%</td>
+<td>138.3* / 1.4 / 2.53% / 23.7%</td>
+<td>104.8 / 亏损 / 1.69</td>
+</tr>
+</tbody>
+</table>
+<p>注：<em>青岛双星2026H1营收138.3亿与2025全年46.3亿严重不匹配，疑为锦湖轮胎并表口径变动/追溯重述，</em><em>该口径未核实，双星的收入与毛利率数据可靠性存疑，按缺数据处理</em>*（东财接口原样返回，本人未核实公告）。其余公司口径连续可比。</p>
+<p>来源：东财datacenter-web RPT_LICO_FN_CPD（利润表摘要）/ RPT_VALUEANALYSIS_DET（估值），经数据采集脚本 fin/quote 命令采集，基准日期2026-10-14。</p>
+<p><strong>横向读数（事实）</strong>：
+1. 赛轮是唯一"高营收增长+20%+毛利率+半年9.6% ROE"三兼得的公司，2026H1毛利率创近三年单期新高（27.0%），在胶价九年高位下逆势扩张2.5pct——提价传导能力被财报证实（A）。
+2. 森麒麟是2024→2026退化最剧烈的公司：毛利率32.8%→19.6%，ROE 17.4%→半年3.0%。这与泰国基地受美双反（复审后税率1.24%已大幅降低，B）+摩洛哥/西班牙新产能费用前置相符，属于"出海红利兑现后的回落"，当前PE 15.2倍已部分定价修复预期。
+3. 玲珑2026H1归母仅1.0亿（半年ROE 0.44%），为新工厂集中投产+费用期，PB 0.69为板块最低但盈利拐点未证实。
+4. 贵州轮胎毛利率稳步修复（2025Q1的14.2%→2026Q2的19.4%），PE 9.1/PB 0.72为板块最低估值档。</p>
+<hr />
+<h2 id="_2">三、逐家节点敞口拆解</h2>
+<h3 id="1-601058">1. 赛轮轮胎 601058 —— 三节点全覆盖，敞口最大</h3>
+<ul>
+<li><strong>海外产能（A）</strong>：越南（全钢+半钢+非公路，已成熟，2025年越南子公司净利约16亿、占集团约46%，产业研究员引年报）；柬埔寨（半钢+全钢，已投产）；墨西哥工厂已投产（产业趋势研究引公开报道）；埃及规划半钢900万+全钢165万条（B，公司公告/官方口径，爬坡前夜）。多基地覆盖东南亚+北美+北非，是7家中唯一三洲布局的公司。</li>
+<li><strong>产品结构（A，2025年报）</strong>：外销收入282亿/总367.9亿≈77%外销占比；外销毛利率25.75% vs 内销20.77%。液体黄金获欧盟标签A级（A，认证事实）、已进入比亚迪/吉利/蔚来/一汽大众及VinFast/宝腾配套（A/B，年报与投关）。</li>
+<li><strong>风险（A）</strong>：越南子公司利润占比46%，恰是本轮美国301调查与EAEU反倾销的重点目标国——<strong>单一海外利润中心集中度与被打击对象重叠，显性标注</strong>。2026H1毛利率逆势新高说明短期未受损，但政策尾部风险大。</li>
+<li>节点敞口：①✔✔ ②✔（49-63吋巨胎全球少数玩家，B/C——巨胎收入占比未单独披露）③✔✔（液体黄金唯一产业化者）。</li>
+</ul>
+<h3 id="2-002984">2. 森麒麟 002984 —— 纯半钢出海，弹性已被双反消耗</h3>
+<ul>
+<li><strong>海外产能（A/B）</strong>：泰国基地成熟（美国双反复审税率17.06%→1.24%，B，公司公告口径，为7家中对美关税条件最好者）；摩洛哥工厂满产（B，投关记录，服务欧洲零关税）；西班牙规划中（B）；格鲁吉亚项目为媒体报道（C，不采信）。</li>
+<li><strong>产品结构（A）</strong>：以半钢为主（乘用车胎占比绝对主导），几乎无非公路敞口；新能源配套有进展但客户结构披露有限（B）。</li>
+<li><strong>风险（A）</strong>：2024→2026H1毛利率下滑13pct为板块最大，证明"单一品类（半钢）+泰国单一利润中心"在贸易摩擦下脆弱——正是产业研究员警示的"精准打击"形态之一（泰国基地）。摩洛哥爬坡是2026-2027主要对冲变量。</li>
+<li>节点敞口：①✔✔（对美通道最优）②✘ ③✘（自修补/静音有布局，C）。</li>
+</ul>
+<h3 id="3-000589-2">3. 贵州轮胎 000589 —— 节点②唯一纯正标的</h3>
+<ul>
+<li><strong>海外产能（A/B）</strong>：越南全钢基地（Advance Tyre）已投产并进入EAEU反倾销名单（A，名单事实）；非洲（莫桑比克等）推进中（B，投关口径，规模未量化）。</li>
+<li><strong>产品结构（A，年报）</strong>：全钢+非公路为主，非公路/工程子午胎占比显著高于同业（公司为国内工程胎头部，B）；矿卡胎绑定国内矿山与工程机械出海客户（B）。毛利率连续修复（14.2%→19.4%，A）与"非公路高毛利占比"逻辑一致，但<strong>分产品毛利数据未单独核验（缺数据，明说）</strong>。</li>
+<li><strong>风险（A）</strong>：越南基地进EAEU名单+全钢行业开工率64.9%，外销通道有政策折价；ROE仅6-7%量级，资本回报率低于赛轮约10pct。</li>
+<li>节点敞口：②✔✔ ①✔（弱）③✘。</li>
+</ul>
+<h3 id="4-601500">4. 通用股份 601500 —— 柬埔寨+泰国双基地，但盈利质量弱</h3>
+<ul>
+<li><strong>海外产能（A/B）</strong>：柬埔寨半钢基地投产、泰国基地（B，公告/投关）；美国对柬半钢双反调查已启动（C，媒体，需跟踪裁决）。</li>
+<li><strong>产品结构（A）</strong>：半钢+全钢，卡客车胎替换市场为主；外销占比提升中但2026H1毛利率仅15.3%、ROE半年2.26%，<strong>财务上未验证出超额利润</strong>；PE-TTM 21.9倍为盈利改善预期定价，安全边际弱。</li>
+<li>节点敞口：①✔ ②弱 ③✘。</li>
+</ul>
+<h3 id="5-601966">5. 玲珑轮胎 601966 —— 配套之王，盈利在底部、拐点未证实</h3>
+<ul>
+<li><strong>海外产能（A）</strong>：泰国基地成熟（亦受美对泰双反影响）；塞尔维亚工厂2024年量产、供欧洲主机厂（A，公告），是7家中唯一的欧洲本土产能（对欧反倾销的天然豁免位）。</li>
+<li><strong>产品结构（A）</strong>：新能源配套量国内领先（五菱/比亚迪等，A/B），配套占比高但配套毛利率低；2026H1归母仅1.0亿，新产能折旧+费用是主因（B，业绩说明口径）。</li>
+<li><strong>风险（A）</strong>：塞尔维亚爬坡若不及预期，0.44%的半年ROE意味着当前PB 0.69是"低估值陷阱"还是"反转期权"无法用现有数据区分——<strong>缺盈利拐点证据，不给估值入场券</strong>。</li>
+<li>节点敞口：①✔（欧洲 uniquely）②弱 ③弱（新材料有布局，C）。</li>
+</ul>
+<h3 id="6-601163">6. 三角轮胎 601163 —— 无海外产能的出口型，节点敞口错配</h3>
+<ul>
+<li><strong>海外产能（A）</strong>：无已投产海外制造基地（美国工厂多年停留在规划/中止状态，B/C）。出口靠国内基地直出。</li>
+<li><strong>产品结构（A）</strong>：半钢+全钢+非公路均衡，出口占比高（约5成，B）；毛利率2026H1 17.9%、ROE半年2.41%，在欧盟反倾销直接打击对欧出口的背景下（欧盟是中国小客车胎第一大出口地），<strong>是7家中受"直接出口被征税"敞口最大的公司之一</strong>。</li>
+<li>节点敞口：①✘（无海外基地=不具备"出海龙头"定义）②部分（非公路有出口，B）③✘。</li>
+</ul>
+<h3 id="7-000599">7. 青岛双星 000599 —— 重组锦湖，财务不可验证期</h3>
+<ul>
+<li><strong>事实（A）</strong>：重组锦湖轮胎已过会，双星+锦湖将形成中韩双基地布局（锦湖有韩国/越南等产能）。2023-2025连续三年归母亏损（-1.8/-3.6/-3.6亿），2025年报毛利率5.7%异常低；2026H1数据疑口径重述（见第二节注）。</li>
+<li><strong>判断（推断）</strong>：整合期+报表口径不清，无法做节点敞口的可靠拆解，不进入估值流程。</li>
+</ul>
+<hr />
+<h2 id="_3">四、经济利润流向判断（用数据，不叙事）</h2>
+<ol>
+<li><strong>真实的超额利润</strong>：只有赛轮在2026H1同时实现"毛利率同业最高（27.0%，领先第二名双星/玲珑约3~11pct）+归母正增长+18%+半年ROE 9.6%"。验证其利润来源：越南子公司净利16亿/集团35亿（2025年报，A），即超额利润主要沉淀在<strong>越南基地+液体黄金溢价</strong>两处——这正是节点①③的物理载体。</li>
+<li><strong>正在流失的超额利润</strong>：森麒麟毛利率-13pct（2024→2026H1，A）证明"半钢出海红利"本身在均值回归，超额利润正被(a)美国双反、(b)全球新增1.3亿条PCR产能（产业研究员数据）侵蚀；摩洛哥能否重建毛利率是2027年的核心证伪点。</li>
+<li><strong>潜在的超额利润</strong>：贵州轮胎毛利率连续四季修复但绝对ROE低，非公路节点的利润率证据仍停在"整体毛利率改善"层面，属"逻辑真实、量化不足"。</li>
+<li><strong>无超额利润</strong>：通用（ROE 2-3%）、玲珑（H1 ROE 0.44%）、三角（ROE 2.4%）、双星（亏损）——四家当前均在为成本/关税/产能爬坡买单。</li>
+</ol>
+<hr />
+<h2 id="_4">五、候选企业清单</h2>
+<h3 id="4">入队列名单（建议4家，按优先序）</h3>
+<table>
+<thead>
+<tr>
+<th>公司</th>
+<th>入选理由</th>
+<th>核心跟踪变量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>赛轮轮胎</strong></td>
+<td>三节点全覆盖，唯一被2026H1财报证实的超额利润持有者（毛利率27.0%+归母+18%），PE 10.6/PB 1.8对应22-23%的历史ROE中枢不贵</td>
+<td>越南301/EAEU终裁进展；埃及基地投产节奏；液体黄金销量占比；胶价&gt;18000元/吨持续期</td>
+</tr>
+<tr>
+<td><strong>贵州轮胎</strong></td>
+<td>节点②唯一纯正A股标的，毛利率连续修复+A（19.4%），PE 9.1/PB 0.72板块最低估值档，赔率型</td>
+<td>巨胎/矿胎收入与分部毛利率（若披露）；越南基地EAEU税率落地；非洲项目资本开支</td>
+</tr>
+<tr>
+<td><strong>森麒麟</strong></td>
+<td>半钢出海弹性标的，对美关税条件最优（复审1.24%），摩洛哥满产+西班牙规划提供毛利率修复路径，PB≈1；但毛利率已证退化，列入需验证的观察席位</td>
+<td>摩洛哥工厂实际毛利率（电话会/年报分部）；西班牙投产时间表；美国201调查是否覆盖泰国</td>
+</tr>
+<tr>
+<td><strong>玲珑轮胎</strong></td>
+<td>唯一欧洲本土产能（塞尔维亚，欧盟反倾销豁免位）+新能源配套第一梯队，PB 0.69深折价；以"拐点证实"为入场条件</td>
+<td>塞尔维亚产能利用率与欧洲订单；2026Q3归母环比；配套结构中新能源占比</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5">落选名单（防选择偏差，逐家写明理由）</h3>
+<table>
+<thead>
+<tr>
+<th>公司</th>
+<th>落选理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>通用股份</strong></td>
+<td>财务未验证出超额利润：2026H1毛利率15.3%（同业最低档）、半年ROE 2.26%，而PE-TTM 21.9倍为板块最高——预期已打满、证据不足；柬埔寨基地另面临美对柬半钢双反不确定性（C级）。若2026年报毛利率回到17%+可重新评估</td>
+</tr>
+<tr>
+<td><strong>三角轮胎</strong></td>
+<td>节点定义错配：无已投产海外基地，不具备"出海龙头"资格；在欧盟对华乘用车胎反倾销（4.3%-45.3%）落地背景下，作为高出口占比公司受直接打击敞口大；2026H1 ROE 2.41%无超额利润。观察其非公路出口是否独立走强后再议</td>
+</tr>
+<tr>
+<td><strong>青岛双星</strong></td>
+<td>连续三年亏损+2026H1报表口径疑重述（138亿 vs 2025全年46亿）无法核实，节点敞口拆解不可靠；锦湖整合收益属事件驱动而非节点基本面，不符合本队列只做基本面的纪律</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="w54">六、估值队列建议名单（供W5，建议4家）</h2>
+<p><strong>赛轮轮胎（601058）&gt; 贵州轮胎（000589）&gt; 森麒麟（002984，观察席位）&gt; 玲珑轮胎（601966，拐点条件席位）</strong></p>
+<ul>
+<li>建议W5对赛轮、贵州轮胎做完整三情景估值；森麒麟、玲珑先做简化估值+触发条件（森麒麟=摩洛哥毛利率证据；玲珑=2026Q3盈利环比证据），条件不触发则降级。</li>
+<li>全队列共同风险因子（单一变量可同时打击全部标的）：<strong>美国201全球保障调查</strong>——若落地覆盖所有来源国，"出海"逻辑整体失效，届时队列需整体重构。</li>
+<li>C级信息（格鲁吉亚项目、柬埔寨双反裁决、玲珑新材料布局等）均未参与任何入选判断。</li>
+</ul>
+<p><strong>缺数据声明</strong>：①各公司海外基地产能利用率无公开量化数据；②液体黄金销量/收入占比未披露；③非公路胎分部毛利率仅部分年报可查、本次未逐一核验原文；④青岛双星2026H1口径异常未核实公告；⑤海外子公司净利率仅赛轮（越南16亿）与产业研究员引用口径可用，其余公司无分国别利润披露。以上均已按"缺数据"处理，未用推测填补。</p>
+<hr />
+<p><em>数据来源：东财datacenter-web（RPT_LICO_FN_CPD/RPT_VALUEANALYSIS_DET，经数据采集脚本采集，行情基准日2026-10-14）；新浪行情hq.sinajs.cn；上游输入《轮胎_产业趋势研究.md》（2026-10-14）。财务期间：2023-2025年报、2026半年报/一季报。</em></p></div>

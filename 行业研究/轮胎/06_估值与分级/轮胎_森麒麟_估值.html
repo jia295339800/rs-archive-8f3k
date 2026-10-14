@@ -1,0 +1,569 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>轮胎_森麒麟_估值 · 研究库</title><style>body{font-family:-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;max-width:920px;margin:0 auto;padding:24px;line-height:1.75;color:#24292f}
+h1,h2,h3{border-bottom:1px solid #e1e4e8;padding-bottom:6px}h1{font-size:1.7em}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.92em;display:block;overflow-x:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px;text-align:left}th{background:#f6f8fa}
+blockquote{border-left:4px solid #d0d7de;margin:0;padding:2px 14px;color:#57606a;background:#f6f8fa}
+code{background:#f0f1f2;padding:1px 5px;border-radius:4px;font-size:.9em}
+pre{background:#f6f8fa;padding:12px;border-radius:8px;overflow-x:auto}
+a{color:#0969da}nav{font-size:.9em;margin-bottom:18px}
+nav a{margin-right:14px;text-decoration:none}
+.sidebar{display:none}
+@media(min-width:1100px){.sidebar{display:block;position:fixed;left:16px;top:16px;bottom:16px;width:230px;overflow:auto;font-size:.85em;border-right:1px solid #e1e4e8;padding-right:10px}
+body{margin-left:280px}
+.sidebar a{display:block;text-decoration:none;color:#24292f;padding:2px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sidebar .group{border-bottom:1px solid #eef0f2;padding:2px 0}
+.sidebar .grp{font-weight:700;margin-top:8px;margin-bottom:2px;color:#0969da;cursor:pointer;user-select:none;display:block;padding:6px 18px 6px 2px;position:relative;min-height:1.4em}
+.sidebar a.current{background:#ddf4ff;border-left:3px solid #0969da;color:#0550ae;font-weight:600;padding-left:8px;border-radius:0 4px 4px 0}
+.sidebar .group:has(a.current)>.grp{color:#0550ae}
+.sidebar .grp::after{content:'▾';position:absolute;right:2px;top:6px;font-size:.75em;color:#8b949e}
+.sidebar .collapsed .grp::after{content:'▸'}
+.sidebar .collapsed a{display:none}
+.sidebar .group.sub{border-bottom:none;margin-left:12px}
+.sidebar .group.sub>.grp{font-weight:400;color:#8b949e;margin-top:2px}
+.sidebar .group.sub a{font-size:.92em;color:#57606a}
+#sidebarToggle{position:fixed;left:16px;top:16px;z-index:30;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:.9em;color:#24292f}
+body.hide-sb{margin-left:24px}
+body.hide-sb .sidebar{display:none!important}}
+</style>
+<button id="sidebarToggle" title="收起/展开菜单">◀</button><div class="sidebar"><div class="grp">📖 研究库</div>
+<div class="group"><div class="grp">00_使用说明</div>
+<a href="../../../00_使用说明/README_使用说明.html">README_使用说明</a>
+<a href="../../../00_使用说明/任务队列.html">任务队列</a>
+<a href="../../../00_使用说明/企业估值队列.html">企业估值队列</a>
+<a href="../../../00_使用说明/估值对比总表.html">估值对比总表</a>
+<a href="../../../00_使用说明/报告模板/company_report.html">company_report</a>
+<a href="../../../00_使用说明/报告模板/industry_report.html">industry_report</a>
+<a href="../../../00_使用说明/报告模板/node_report.html">node_report</a>
+<a href="../../../00_使用说明/研究总表.html">研究总表</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../../00_使用说明/估值红队v2_第2轮复审.html">估值红队v2_第2轮复审</a>
+<a href="../../../00_使用说明/估值红队v2_第3轮终审.html">估值红队v2_第3轮终审</a>
+</div>
+</div>
+<div class="group"><div class="grp">06_数据与工具</div>
+<a href="../../../06_数据与工具/数据能力说明.html">数据能力说明</a>
+</div>
+<div class="group"><div class="grp">08_归档</div>
+<a href="../../../08_归档/归档登记表.html">归档登记表</a>
+</div>
+<div class="group"><div class="grp">AI数据中心800VDC供电</div>
+<a href="../../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_研究材料.html">AI数据中心800VDC供电_研究材料</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_机会节点研究.html">AI数据中心800VDC供电_机会节点研究</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_候选企业清单.html">AI数据中心800VDC供电_候选企业清单</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_三企业估值报告.html">AI数据中心800VDC供电_三企业估值报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_欧陆通_估值.html">AI数据中心800VDC供电_欧陆通_估值</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_科华数据_估值.html">AI数据中心800VDC供电_科华数据_估值</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_科士达_估值.html">AI数据中心800VDC供电_科士达_估值</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/07_深度报告/AI数据中心800VDC供电_产业深度研究报告.html">AI数据中心800VDC供电_产业深度研究报告</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_复审R2.html">AI800VDC_复审R2</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_红队审查.html">AI800VDC_红队审查</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_估值红队_v2.html">AI数据中心800VDC供电_估值红队_v2</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第2轮.html">AI数据中心800VDC供电_红队审查_第2轮</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第3轮.html">AI数据中心800VDC供电_红队审查_第3轮</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/欧陆通+科华+科士达_批量红队R1.html">欧陆通+科华+科士达_批量红队R1</a>
+</div>
+</div>
+<div class="group"><div class="grp">化纤</div>
+<a href="../../../行业研究/化纤/化纤_产业趋势研究.html">化纤_产业趋势研究</a>
+<a href="../../../行业研究/化纤/化纤_机会节点研究.html">化纤_机会节点研究</a>
+<a href="../../../行业研究/化纤/化纤_候选企业清单.html">化纤_候选企业清单</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_三企业估值报告.html">化纤_三企业估值报告</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_台华新材_估值.html">化纤_台华新材_估值</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_恒逸石化_估值.html">化纤_恒逸石化_估值</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_神马股份_估值.html">化纤_神马股份_估值</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_荣盛石化_估值.html">化纤_荣盛石化_估值</a>
+<a href="../../../行业研究/化纤/07_深度报告/化纤_产业深度研究报告.html">化纤_产业深度研究报告</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_估值红队_v2.html">化纤_估值红队_v2</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R2.html">化纤_复审R2</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R3.html">化纤_复审R3</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查.html">化纤_红队审查</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第2轮.html">化纤_红队审查_第2轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第3轮.html">化纤_红队审查_第3轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/台华+神马_批量红队R1.html">台华+神马_批量红队R1</a>
+<a href="../../../行业研究/化纤/09_红队审查/审查记录.html">审查记录</a>
+</div>
+</div>
+<div class="group"><div class="grp">家庭空间常驻Agent</div>
+<a href="../../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_产业趋势研究.html">家庭空间常驻Agent_产业趋势研究</a>
+<a href="../../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_机会节点研究.html">家庭空间常驻Agent_机会节点研究</a>
+<a href="../../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_候选企业清单.html">家庭空间常驻Agent_候选企业清单</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_乐鑫科技_估值.html">家庭空间常驻Agent_乐鑫科技_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_兆威机电_估值.html">家庭空间常驻Agent_兆威机电_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_奥比中光_估值.html">家庭空间常驻Agent_奥比中光_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_恒玄科技_估值.html">家庭空间常驻Agent_恒玄科技_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_核心企业估值报告.html">家庭空间常驻Agent_核心企业估值报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_绿的谐波_估值.html">家庭空间常驻Agent_绿的谐波_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_萤石网络_估值.html">家庭空间常驻Agent_萤石网络_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_鸣志电器_估值.html">家庭空间常驻Agent_鸣志电器_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/07_深度报告/家庭空间常驻Agent_产业深度研究报告.html">家庭空间常驻Agent_产业深度研究报告</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/W5估值_批量红队R2.html">W5估值_批量红队R2</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/W5估值_批量红队R3.html">W5估值_批量红队R3</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/W5估值_批量红队R4.html">W5估值_批量红队R4</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_估值红队_v2.html">家庭空间常驻Agent_估值红队_v2</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_复审R2.html">家庭空间常驻Agent_复审R2</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_红队审查.html">家庭空间常驻Agent_红队审查</a>
+</div>
+</div>
+<div class="group"><div class="grp">开源中尺寸模型</div>
+<a href="../../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势研究.html">开源中尺寸模型_产业趋势研究</a>
+<a href="../../../行业研究/开源中尺寸模型/开源中尺寸模型_机会节点研究.html">开源中尺寸模型_机会节点研究</a>
+<a href="../../../行业研究/开源中尺寸模型/开源中尺寸模型_候选企业清单.html">开源中尺寸模型_候选企业清单</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_中科曙光_估值.html">开源中尺寸模型_中科曙光_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_中际旭创_估值.html">开源中尺寸模型_中际旭创_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_估值与分级_v1.html">开源中尺寸模型_估值与分级_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_寒武纪_估值.html">开源中尺寸模型_寒武纪_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_新易盛_估值.html">开源中尺寸模型_新易盛_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_核心企业估值报告.html">开源中尺寸模型_核心企业估值报告</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_浪潮信息_估值.html">开源中尺寸模型_浪潮信息_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_海光信息_估值.html">开源中尺寸模型_海光信息_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_润泽科技_估值.html">开源中尺寸模型_润泽科技_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_金山办公_估值.html">开源中尺寸模型_金山办公_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_产业深度研究报告.html">开源中尺寸模型_产业深度研究报告</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_深度报告_v1.0.html">开源中尺寸模型_深度报告_v1.0</a>
+<a href="../../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势与节点研究.html">开源中尺寸模型_产业趋势与节点研究</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_估值红队_v2.html">开源中尺寸模型_估值红队_v2</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_复审R2.html">开源中尺寸模型_复审R2</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查.html">开源中尺寸模型_红队审查</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_v1.html">开源中尺寸模型_红队审查_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第2轮.html">开源中尺寸模型_红队审查_第2轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第3轮.html">开源中尺寸模型_红队审查_第3轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/红队审查_待执行.html">红队审查_待执行</a>
+</div>
+</div>
+<div class="group"><div class="grp">新型电池</div>
+<a href="../../../行业研究/新型电池/新型电池_产业趋势研究.html">新型电池_产业趋势研究</a>
+<a href="../../../行业研究/新型电池/新型电池_机会节点研究.html">新型电池_机会节点研究</a>
+<a href="../../../行业研究/新型电池/新型电池_候选企业清单.html">新型电池_候选企业清单</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_三企业估值报告.html">新型电池_三企业估值报告</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_上能电气_估值.html">新型电池_上能电气_估值</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_亿纬锂能_估值.html">新型电池_亿纬锂能_估值</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_天赐材料_估值.html">新型电池_天赐材料_估值</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_宁德时代_估值.html">新型电池_宁德时代_估值</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_恩捷股份_估值.html">新型电池_恩捷股份_估值</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_欣旺达_估值.html">新型电池_欣旺达_估值</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_阳光电源_估值.html">新型电池_阳光电源_估值</a>
+<a href="../../../行业研究/新型电池/07_深度报告/新型电池_产业深度研究报告.html">新型电池_产业深度研究报告</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_估值红队_v2.html">新型电池_估值红队_v2</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_估值红队_新增四家.html">新型电池_估值红队_新增四家</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_估值红队_新增四家_第2轮.html">新型电池_估值红队_新增四家_第2轮</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_复审R2.html">新型电池_复审R2</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查.html">新型电池_红队审查</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第2轮.html">新型电池_红队审查_第2轮</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第3轮.html">新型电池_红队审查_第3轮</a>
+</div>
+</div>
+<div class="group"><div class="grp">智能网联新能源汽车</div>
+<a href="../../../行业研究/智能网联新能源汽车/智能网联新能源汽车_产业趋势研究.html">智能网联新能源汽车_产业趋势研究</a>
+<a href="../../../行业研究/智能网联新能源汽车/智能网联新能源汽车_机会节点研究.html">智能网联新能源汽车_机会节点研究</a>
+<a href="../../../行业研究/智能网联新能源汽车/智能网联新能源汽车_候选企业清单.html">智能网联新能源汽车_候选企业清单</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_伯特利_估值.html">智能网联新能源汽车_伯特利_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_伯特利_估值_v2.html">智能网联新能源汽车_伯特利_估值_v2</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_估值与分级_v1.html">智能网联新能源汽车_估值与分级_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_保隆科技_估值.html">智能网联新能源汽车_保隆科技_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_德赛西威_估值.html">智能网联新能源汽车_德赛西威_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_核心企业估值报告.html">智能网联新能源汽车_核心企业估值报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_比亚迪_估值.html">智能网联新能源汽车_比亚迪_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_江淮汽车_估值.html">智能网联新能源汽车_江淮汽车_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_特锐德_估值.html">智能网联新能源汽车_特锐德_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_科博达_估值.html">智能网联新能源汽车_科博达_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_经纬恒润_估值.html">智能网联新能源汽车_经纬恒润_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_赛力斯_估值.html">智能网联新能源汽车_赛力斯_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_长安汽车_估值.html">智能网联新能源汽车_长安汽车_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_产业深度研究报告.html">智能网联新能源汽车_产业深度研究报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_深度报告_v1.0.html">智能网联新能源汽车_深度报告_v1.0</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_估值红队_v2.html">智能网联新能源汽车_估值红队_v2</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_复审R2.html">智能网联新能源汽车_复审R2</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查.html">智能网联新能源汽车_红队审查</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_v1.html">智能网联新能源汽车_红队审查_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第2轮.html">智能网联新能源汽车_红队审查_第2轮</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第3轮.html">智能网联新能源汽车_红队审查_第3轮</a>
+</div>
+</div>
+<div class="group"><div class="grp">轮胎</div>
+<a href="../../../行业研究/轮胎/轮胎_产业趋势研究.html">轮胎_产业趋势研究</a>
+<a href="../../../行业研究/轮胎/轮胎_机会节点研究.html">轮胎_机会节点研究</a>
+<a href="../../../行业研究/轮胎/06_估值与分级/轮胎_中策橡胶_估值.html">轮胎_中策橡胶_估值</a>
+<a href="../../../行业研究/轮胎/06_估值与分级/轮胎_森麒麟_估值.html">轮胎_森麒麟_估值</a>
+<a href="../../../行业研究/轮胎/06_估值与分级/轮胎_玲珑轮胎_估值.html">轮胎_玲珑轮胎_估值</a>
+<a href="../../../行业研究/轮胎/06_估值与分级/轮胎_贵州轮胎_估值.html">轮胎_贵州轮胎_估值</a>
+<a href="../../../行业研究/轮胎/06_估值与分级/轮胎_赛轮轮胎_估值.html">轮胎_赛轮轮胎_估值</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../../行业研究/轮胎/09_红队审查/轮胎_批量红队R1.html">轮胎_批量红队R1</a>
+<a href="../../../行业研究/轮胎/09_红队审查/轮胎_森麒麟+玲珑_红队R1.html">轮胎_森麒麟+玲珑_红队R1</a>
+<a href="../../../行业研究/轮胎/09_红队审查/轮胎_红队R2复验.html">轮胎_红队R2复验</a>
+</div>
+</div>
+</div><script>
+(function(){
+  // 高亮当前页：用 new URL() 把相对 href 解析为绝对路径后比对 pathname
+  document.querySelectorAll('.sidebar a').forEach(function(a){
+    try{
+      if(new URL(a.getAttribute('href'), location.href).pathname === location.pathname){
+        a.classList.add('current');
+        var g=a.closest('.group');
+        if(g)g.classList.remove('collapsed');
+      }
+    }catch(e){}
+  });
+})();
+document.addEventListener('click',function(e){
+  var g=e.target.closest('.grp');
+  if(g){g.parentElement.classList.toggle('collapsed');return;}
+  var t=e.target.closest('#sidebarToggle');
+  if(t){document.body.classList.toggle('hide-sb');
+    t.textContent=document.body.classList.contains('hide-sb')?'☰':'◀';return;}
+  // SPA式导航：点击侧栏链接只刷新右侧内容，侧栏保持原位
+  var a=e.target.closest('.sidebar a');
+  if(!a||e.metaKey||e.ctrlKey||e.shiftKey)return;
+  e.preventDefault();
+  var url=new URL(a.getAttribute('href'),location.href).href;
+  fetch(url).then(function(r){
+    if(!r.ok){location.href='/rs-archive-8f3k/';throw new Error('404→home');}
+    return r.text();}).then(function(html){
+    var doc=new DOMParser().parseFromString(html,'text/html');
+    var nc=doc.querySelector('.content');
+    var oc=document.querySelector('.content');
+    if(nc&&oc){
+      oc.replaceWith(nc);
+      document.title=doc.title;
+      // 更新高亮
+      document.querySelectorAll('.sidebar a.current').forEach(function(x){x.classList.remove('current')});
+      a.classList.add('current');
+      history.pushState({sp:true},'',url);
+      window.scrollTo(0,0);
+    }else{location.href=url;} // 结构异常则整页跳转兜底
+  }).catch(function(){location.href=url;}); // 网络失败兜底
+});
+window.addEventListener('popstate',function(e){
+  fetch(location.href).then(function(r){
+    if(!r.ok){location.reload();throw new Error('404→reload');}
+    return r.text();}).then(function(html){
+    var doc=new DOMParser().parseFromString(html,'text/html');
+    var nc=doc.querySelector('.content');
+    var oc=document.querySelector('.content');
+    if(nc&&oc){
+      oc.replaceWith(nc);
+      document.title=doc.title;
+      document.querySelectorAll('.sidebar a.current').forEach(function(x){x.classList.remove('current')});
+      document.querySelectorAll('.sidebar a').forEach(function(x){
+        try{if(new URL(x.getAttribute('href'),location.href).pathname===location.pathname)x.classList.add('current');}catch(err){}
+      });
+    }else{location.reload();}
+  }).catch(function(){location.reload();});
+});
+</script><div class="content"><nav><a href="../../../00_使用说明/index.html">00_使用说明</a> <a href="../../../06_数据与工具/index.html">06_数据与工具</a> <a href="../../../08_归档/index.html">08_归档</a> <a href="../../../AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="../../../化纤/index.html">化纤</a> <a href="../../../家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="../../../开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="../../../新型电池/index.html">新型电池</a> <a href="../../../智能网联新能源汽车/index.html">智能网联新能源汽车</a> <a href="../../../轮胎/index.html">轮胎</a></nav><p><a href="../../index.html">← 返回</a> · 生成于 2026-10-14 18:05</p>
+<h1 id="002984sz">森麒麟（002984.SZ）深度研究与估值：对美关税最优的半钢出海龙头，毛利率退化后摩洛哥能否重建利润率？</h1>
+<blockquote>
+<p><strong>数据基准日</strong>：2026-10-14｜<strong>财报覆盖</strong>：2023–2025年报、2026半年报（2026-08-25）｜<strong>币种</strong>：人民币｜<strong>主要估值年</strong>：2027E｜<strong>证据与数据限制</strong>：核心财务取自定期报告（A）与东财datacenter-web采集（A）；摩洛哥分部盈利为半年报子公司表（A）；复审1.24%税率细节为公司公告口径（B）；西班牙项目时间表不确定（A：尚未开工）。简化版报告（§2/§5/§11压缩），12章节与九行卡片完整。</p>
+</blockquote>
+<h2 id="0">0. 结论与估值卡片</h2>
+<p><strong>一句话结论</strong>：森麒麟的利润来源是"泰国基地高净利率×大尺寸半钢高占比"——2026H1泰国子公司净利4.11亿、净利率17.6%，几乎等于公司全部归母利润（4.20亿）；当前争议是毛利率32.8%→19.6%退化后，摩洛哥（H1净利率仅1.7%）能否接棒；当前市值132.6亿、PE-TTM 15.2倍接近中性档。</p>
+<table>
+<thead>
+<tr>
+<th>必填项目</th>
+<th>悲观</th>
+<th>中性</th>
+<th>乐观</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>核心业务假设</strong></td>
+<td>摩洛哥爬坡失败、净利率停在&lt;5%，胶价维持20000+元/吨，美国201波及泰国</td>
+<td>摩洛哥2027年满产、净利率修复至8-10%，胶价中枢18000元/吨</td>
+<td>摩洛哥净利率达12%+，土耳其项目如期贡献，胶价回落</td>
+</tr>
+<tr>
+<td><strong>关键价格/销量/份额</strong></td>
+<td>2027销量~3400万条，均价持平、提价失效</td>
+<td>销量~3600万条（+8%），均价随结构小幅上行</td>
+<td>销量~3800万条，摩洛哥/土耳其放量</td>
+</tr>
+<tr>
+<td><strong>关键成本/利润率</strong></td>
+<td>综合毛利率18%，汇兑再损失</td>
+<td>综合毛利率21%</td>
+<td>综合毛利率24%</td>
+</tr>
+<tr>
+<td><strong>正常化归母净利润</strong></td>
+<td>8亿（2027E）</td>
+<td>12亿（2027E）</td>
+<td>16亿（2027E）</td>
+</tr>
+<tr>
+<td><strong>ROIC与再投资假设</strong></td>
+<td>ROE&lt;7%，摩洛哥追加投入无回报</td>
+<td>ROE~10-11%，年Capex 25-30亿（摩洛哥二期+土耳其90.1%出资）</td>
+<td>ROE回升至14%+，Capex高峰后回落</td>
+</tr>
+<tr>
+<td><strong>现金流及资本开支</strong></td>
+<td>OCF~9亿，FCF≈-15亿</td>
+<td>OCF~15亿，FCF≈-12亿（扩张期）</td>
+<td>OCF~20亿，FCF缺口收窄</td>
+</tr>
+<tr>
+<td><strong>估值方法及参数</strong></td>
+<td>归母8亿×PE 9-10x</td>
+<td>归母12亿×PE 11-12x</td>
+<td>归母16亿×PE 13-14x</td>
+</tr>
+<tr>
+<td><strong>合理股权市值</strong></td>
+<td>72–80亿（中枢76亿）</td>
+<td>132–144亿（中枢138亿）</td>
+<td>208–224亿（中枢216亿）</td>
+</tr>
+<tr>
+<td><strong>合理每股价值</strong></td>
+<td>6.95–7.72元</td>
+<td>12.74–13.90元</td>
+<td>20.07–21.61元</td>
+</tr>
+</tbody>
+</table>
+<p><strong>估值算式</strong>：悲观8×9=72、8×10=80；中性12×11=132、12×12=144；乐观16×13=208、16×14=224（亿元）。PE依据见§6，非现价倒推。</p>
+<blockquote>
+<p><strong>最关键假设：</strong> 摩洛哥工厂（规划1200万条）能否把净利率从2026H1的1.7%修复到接近泰国基地的15%+量级——这是"毛利率重建"证伪点的物理载体。
+<strong>最容易错的假设：</strong> 复审1.24%税率的长期稳定性。该税率为本期复审结果（B），下轮复审或政策变化可逆转，市场易把它当成永久护城河。
+<strong>下一步要验证：</strong> 2026三季报（2026-10月末）单季毛利率与摩洛哥盈利；麒麟转债转股进度与稀释；西班牙建筑许可进展。</p>
+</blockquote>
+<p><strong>当前行情</strong>：2026-10-14收盘12.80元，总股本10.363亿股（市值÷股价倒算，含转债转股后动态股本，东财RPT_VALUEANALYSIS_DET），总市值132.64亿，PE-TTM 15.19倍、PB 0.98倍。存续麒麟转债（127050），2026-06-16已下修转股价，存在摊薄（稀释EPS 0.39元 vs 基本0.41元）。<strong>当前定价隐含</strong>：132.6亿÷TTM 8.73亿=15.2倍、÷中性2027E 12亿=11.1倍——市场定价略低于中性中枢，隐含"摩洛哥修复部分成功+关税优势存续"。<strong>与市场不同的判断</strong>：市场把1.24%税率与摩洛哥"满产"叙事当作既定事实，我们认为摩洛哥盈利能力尚未被任何一份财报证实（H1净利率1.7%，A级），观察席位定位。</p>
+<h2 id="1">1. 这家公司到底做什么？怎么赚钱？</h2>
+<p>场景：美国一位改装车主需要一套20寸SUV高性能胎，Sentury（森麒麟自有品牌）在电商/批发渠道价格约为米其林的60-70%，工厂直供泰国/摩洛哥基地。公司赚的是"中高端半钢胎单胎溢价×海外低成本制造"的差价：<strong>收入=销量×均价，成本≈70%原材料+折旧人工，利润率取决于基地所在地的关税通道与爬坡状态</strong>。17寸及以上大尺寸产品收入占比约65%（2026半年报A），是单胎毛利的核心来源。</p>
+<table>
+<thead>
+<tr>
+<th>主要业务/利润池</th>
+<th style="text-align: right;">收入及占比</th>
+<th style="text-align: right;">毛利率或利润贡献</th>
+<th>核心驱动</th>
+<th>竞争壁垒/风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>轮胎（半钢为主）</td>
+<td style="text-align: right;">44.20亿/2026H1（99%+，A）</td>
+<td style="text-align: right;">19.55%（H1轮胎分行业，A）</td>
+<td>H1销量1663.89万条（+11.9%，A）</td>
+<td>大尺寸结构溢价（B级表述）</td>
+</tr>
+<tr>
+<td>泰国基地</td>
+<td style="text-align: right;">23.39亿/2026H1（子公司表A）</td>
+<td style="text-align: right;">净利4.11亿、净利率17.6%</td>
+<td>对美通道+BOI税收优惠（免征/减半，A）</td>
+<td><strong>恰是美对泰双反对象；1.24%为复审结果非永久</strong></td>
+</tr>
+<tr>
+<td>摩洛哥基地</td>
+<td style="text-align: right;">7.28亿/2026H1（子公司表A）</td>
+<td style="text-align: right;">净利0.12亿、净利率1.7%，同比扭亏（A）</td>
+<td>对欧零关税区位（距欧14km）</td>
+<td>爬坡未满产、单位固定成本高（A）</td>
+</tr>
+<tr>
+<td>西班牙/土耳其</td>
+<td style="text-align: right;">未投产</td>
+<td style="text-align: right;">—</td>
+<td>西班牙1200万条未开工（A）；土耳其700万条2026-10新批（A）</td>
+<td>时间表不确定</td>
+</tr>
+</tbody>
+</table>
+<p>西班牙项目募集资金闲置、建筑许可未获批（2026半年报A），时间表不可承诺；土耳其项目总投资2.73亿美元、公司占90.1%，建设期18个月，公司可研口径净利率20.6%（B级，未验证）。</p>
+<h2 id="2">2. 过去几年，公司究竟发生了什么？</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">2023A</th>
+<th style="text-align: right;">2024A</th>
+<th style="text-align: right;">2025A</th>
+<th style="text-align: right;">2026H1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>营收（亿元）</td>
+<td style="text-align: right;">78.42</td>
+<td style="text-align: right;">85.11</td>
+<td style="text-align: right;">86.12</td>
+<td style="text-align: right;">44.22</td>
+</tr>
+<tr>
+<td>收入同比</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">+8.5%</td>
+<td style="text-align: right;">+1.2%</td>
+<td style="text-align: right;">+7.3%</td>
+</tr>
+<tr>
+<td>归母净利润（亿元）</td>
+<td style="text-align: right;">13.69</td>
+<td style="text-align: right;">21.86</td>
+<td style="text-align: right;">11.25</td>
+<td style="text-align: right;">4.20</td>
+</tr>
+<tr>
+<td>扣非归母（亿元）</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">4.03（-39.6%，A）</td>
+</tr>
+<tr>
+<td>销售毛利率（XSMLL）</td>
+<td style="text-align: right;">24.88%</td>
+<td style="text-align: right;">32.84%</td>
+<td style="text-align: right;">21.28%</td>
+<td style="text-align: right;">19.57%</td>
+</tr>
+<tr>
+<td>经营现金流OCF（亿元）</td>
+<td style="text-align: right;">~30（每股3.18元）</td>
+<td style="text-align: right;">~19（每股1.89元）</td>
+<td style="text-align: right;">~5.1（每股0.50元）</td>
+<td style="text-align: right;">4.52</td>
+</tr>
+<tr>
+<td>加权ROE</td>
+<td style="text-align: right;">16.41%</td>
+<td style="text-align: right;">17.36%</td>
+<td style="text-align: right;">8.41%</td>
+<td style="text-align: right;">3.03%（半年）</td>
+</tr>
+</tbody>
+</table>
+<p>来源：东财RPT_LICO_FN_CPD（采集2026-10-14，A）；2026H1明细经半年报核对（A）。</p>
+<p><strong>转折一</strong>：2024毛利率冲高32.8%→2026H1仅19.6%（事实A）→ 原因：三因素叠加且<strong>无法用现有A级数据精确拆分</strong>——(a)美国对泰双反+欧盟反倾销压制售价（税率变化公告B级可证影响方向）；(b)天胶从2024低位涨至20645元/吨九年高位（B级，成本占比70%+）；(c)摩洛哥爬坡摊销与费用前置（半年报明示"单位固定成本较高"A）。三者各占多少<strong>缺数据，明说</strong>：公司未披露分因素归因，只能定性排序（价格压制+成本上行主导，爬坡摊销次之）→ 价值含义：退化主因是行业性/政策性，而非纯公司经营失误，但也说明"单一基地+单一品类"在贸易摩擦下的脆弱（与产业研究结论一致）。
+<strong>转折二</strong>：2026H1汇兑损失0.97亿（财务费用0.98亿 vs 上年同期0.02亿，A）→ 原因：美元结算主体记账本位币变更+人民币波动 → 价值含义：一次性程度较高，中性情景按不再重复处理，但说明利润对汇率敏感。
+<strong>最新期变化</strong>：Q1归母2.10亿、Q2单季2.10亿（单季=累计−前一累计，A），环比走平；摩洛哥同比扭亏（A）是边际改善信号，但幅度尚小。</p>
+<h2 id="3-35">3. 核心利润池：真正决定估值的3–5个变量</h2>
+<h3 id="31-124">3.1 泰国基地净利率与1.24%税率</h3>
+<p>事实：2026H1泰国净利4.11亿/收入23.39亿=净利率17.6%（A）；美对泰双反复审税率17.06%→1.24%（公司公告口径，B）。机制：该税率是<strong>本期行政复审结果</strong>，适用范围为复审期间对泰出货的对美订单，随下一轮复审可变——是"当期最优"而非"永久豁免"（B，缺长期承诺依据）。判断：泰国利润率中含政策租金成分，中性情景按小幅衰减处理，不按17.6%线性外推。</p>
+<h3 id="32">3.2 摩洛哥重建毛利率的能力（核心证伪点）</h3>
+<p>事实：规划1200万条，2026H1收入7.28亿、净利0.12亿、净利率1.7%，"尚处于爬坡阶段、尚未达到满产状态"（A）；摩洛哥所得税前5年免征、后15%（A）。机制：满产后单位固定成本摊薄+免所得税，理论净利率应显著高于1.7%，但<strong>无任何一份财报证明它能达到泰国的15%+</strong>——本地供应链不成熟、用工培训成本是半年报自述难点（A）。三情景围绕此分野设定。</p>
+<h3 id="33">3.3 天胶价格与提价传导</h3>
+<p>事实：沪胶2026-10-09收20645元/吨、近九年高位（上期所经证券日报，B）；原材料占成本70%+（A）。机制：胶价每上涨1000元/吨，按年耗胶粗估（约3600万条×8-15kg/条）影响成本约3-5亿元/年，提价滞后2-3季度。天胶周期进正常化：中性取18000元/吨中枢（介于2025均价与现价之间），不按现价外推。</p>
+<h3 id="34">3.4 产能扩张的资本消耗</h3>
+<p>事实：摩洛哥二期、土耳其2.73亿美元（90.1%权益，A）、西班牙搁置（A）。价值含义：2027-2028年Capex高峰，FCF持续为负，转债存续+下修转股价（A）意味着稀释风险与股权融资通道并存。</p>
+<p><strong>敏感性计算</strong>（可复算，税前口径）：以2027E中性收入约92亿为基数，<strong>综合毛利率每变动1pct→毛利±0.92亿→按有效税率约13%税后归母±0.80亿</strong>。中性PE 11.5x下对应市值±9.2亿（约±7%）。另一组：泰国净利率若从17.6%降至12%（政策租金衰减），按泰国2027收入约48亿计，归母减少约2.7亿（税前），占中性利润22%——这是倍数折价的主因。</p>
+<h2 id="4">4. 正常化盈利：报表利润里哪些能够留下？</h2>
+<table>
+<thead>
+<tr>
+<th>调整事项</th>
+<th style="text-align: right;">最新报表金额</th>
+<th>正常化处理</th>
+<th>理由/证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>汇兑损失</td>
+<td style="text-align: right;">2026H1损失0.97亿（财务费用0.98亿，A）</td>
+<td>中性不再重复</td>
+<td>汇率方向不可持续外推；公司有套保但敞口大</td>
+</tr>
+<tr>
+<td>非经常性损益</td>
+<td style="text-align: right;">2026H1约0.17亿（归母4.20−扣非4.03，A）</td>
+<td>保留小额政府补助经常性部分</td>
+<td>占比&lt;5%，不构成扭曲</td>
+</tr>
+<tr>
+<td>摩洛哥爬坡费用</td>
+<td style="text-align: right;">未单独披露金额（A：仅定性）</td>
+<td>中性情景按满产正常化，爬坡差额视为暂时性</td>
+<td>半年报明示"单位固定成本较高"（A）</td>
+</tr>
+<tr>
+<td>转债稀释</td>
+<td style="text-align: right;">麒麟转债存续、已下修转股价（A）</td>
+<td>每股价值按10.363亿股现股本计算，稀释提示</td>
+<td>稀释EPS 0.39 vs 基本0.41（A）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>盈利桥（2027E中性）</strong>：收入92亿（量+8%、价微升）×毛利率21%=毛利19.3亿 − 期间费用约8.5亿（按2026H1费用率19%左右年化，含正常化汇兑净额假设约0）± 经常性其他损益净额约0.3亿（净额假设）− 税约13%（摩洛哥免税+泰国BOI优惠混合口径，净额假设）≈ <strong>归母12亿</strong>。最脆弱环节：泰国净利率的政策租金成分与摩洛哥正常化水平的双重不确定。</p>
+<h2 id="5">5. 现金流、再投资与资产负债表</h2>
+<p>事实（A）：2026H1 OCF 4.52亿、净现比1.08（健康）；2025年OCF约5.1亿（净现比0.45，扩张期营运资本+利润下滑双压）；2026H1末净资产138.45亿、总资产180.49亿，资产负债率约23%（低杠杆）。分红2025年度已实施（A）。Capex：摩洛哥二期+土耳其2.73亿美元+西班牙（若重启）合计年化25-30亿量级（各公告加总，B），简化FCF连续为负。</p>
+<p><strong>关键判断</strong>：现有利润的现金含量真实（净现比&gt;1），但"833Plus"战略意味着2027-2028年股东自由现金流持续为负，价值兑现必须依赖新基地净利率验证——这正是观察席位的含义：<strong>利润→FCF的转化被扩张中断，中间变量就是摩洛哥/土耳其的达产质量</strong>。ROIC暂不能可靠测算（在建转固节奏数据不全，明说），以ROE 8.4%（2025）与泰国基地净利率17.6%作替代证据。</p>
+<h2 id="6">6. 三情景估值：利润和倍数分别从哪里来？</h2>
+<h3 id="61">6.1 悲观：摩洛哥重建失败，政策与成本双压</h3>
+<p>假设：摩洛哥2027年满产但净利率停在5%以下（本地供应链成本超预期）；天胶维持20000元/吨+；下一轮复审税率回升或201波及泰国，泰国净利率降至12%；汇兑再损失。收入约88亿×毛利率18%→归母<strong>8亿</strong>（2027E）。倍数：盈利下行+政策租金消失+PB 0.98已接近净资产支撑，取<strong>9-10x</strong>（周期底部估值，参考当前PB≈1的隐含底线）。市值72-80亿，每股6.95-7.72元。</p>
+<h3 id="62">6.2 中性：摩洛哥部分重建，胶价中枢回落</h3>
+<p>假设：摩洛哥2027年达产、净利率修复至8-10%；天胶中枢18000元/吨；1.24%税率存续至2027年内；泰国净利率小幅回落至15-16%；汇兑中性。收入92亿×毛利率21%→归母<strong>12亿</strong>（2027E）。倍数：ROE回升至10-11%、增长来自产能而非价格，但政策尾部与FCF为负压制估值，取<strong>11-12x</strong>（低于A股制造业中枢，高于悲观档：泰国基地质量与复审能力有连续验证）。市值132-144亿，每股12.74-13.90元。<strong>此档最符合现有证据</strong>：摩洛哥已扭亏（方向A）、但幅度未证实。</p>
+<h3 id="63">6.3 乐观：摩洛哥净利率接近泰国，多基地兑现</h3>
+<p>假设：摩洛哥净利率12%+（免所得税兑现）、土耳其2028年提前贡献、天胶回落至17000以下、大尺寸占比继续提升。收入98亿×毛利率24%→归母<strong>16亿</strong>（2027E）。倍数：ROE回升至14%+、FCF拐点可见，取<strong>13-14x</strong>（不叠加高点PE：24%毛利率仍低于2024年的32.8%，视为修复而非新高）。市值208-224亿，每股20.07-21.61元。</p>
+<p><strong>交叉验证</strong>：①PB-ROE角度：中性2027E ROE约10-11%，合理PB约1.0-1.1x，对应市值约138-152亿（净资产138亿基数）——与PE法中性档一致。②卖方口径（C级仅对比）：市场普遍预期2026-2027归母10-14亿，与我们中性档重叠。③当前市值132.6亿=中性档下沿附近，市场定价基本中性、略偏保守。</p>
+<h2 id="7">7. 是否需要压力测试或状态迁移估值？</h2>
+<p><strong>压力情景</strong>：设置。触发：<strong>美国201全球保障调查落地且覆盖泰国来源</strong>（产业研究A/B：201为唯一覆盖全部来源国的武器），叠加EAEU对泰/越载重胎终裁扩散至半钢、欧盟反补贴跟进。传导：泰国对美订单流失或税负跳升，泰国净利率从17.6%降至境内水平约8-10%，摩洛哥/土耳其无法短期承接美国订单（产能与资质限制），归母降至约5亿（2027E，独立推导非简单砍20%）；现金效应：Capex已投+转债存续，财务约束可控（负债率23%）但扩张被迫放缓。合理市值5亿×8x=<strong>40亿</strong>（较悲观再-47%）。恢复条件：复审降税（公司已有17.06%→1.24%先例）或摩洛哥/土耳其产能替代美国订单。不并入三情景（概率不可量化），独立标注。
+<strong>状态迁移情景</strong>：不单设。原因：从"制造出海"向"品牌溢价型"迁移无量化收入结构证据（C级以下），按纪律不编造。</p>
+<h2 id="8">8. 当前价格已经隐含什么？哪里存在预期差？</h2>
+<p>当前市值132.6亿（2026-10-14）÷各档利润：÷TTM 8.73亿=<strong>15.2x</strong>；÷中性2027E 12亿=<strong>11.1x</strong>；÷悲观8亿=16.6x；÷乐观16亿=8.3x。市场定价位于中性档内，隐含信念：①1.24%税率短期存续；②摩洛哥扭亏趋势线性外推为持续修复。市场仍在质疑：毛利率能否回到20%+、西班牙是否重启。<strong>预期差在两处</strong>：向下，若摩洛哥2026年报净利率仍&lt;5%，中性利润下修至10亿、市值中枢降至115亿（-13%）；向上，若201不落地且摩洛哥达产净利率超10%，市场当前仅按TTM 15.2x定价、尚未给2027修复定价。<strong>观察席位含义</strong>：赔率中性偏正，但关键变量（摩洛哥盈利质量）没有任何A级财报支撑乐观外推，故不升级。</p>
+<h2 id="9">9. 四个时间问题与验证链</h2>
+<ul>
+<li><strong>预测期</strong>：2027E——摩洛哥满产+土耳其开工的第一个可验证年份。</li>
+<li><strong>达到目标状态</strong>：中性状态最早2027年报确认；摩洛哥净利率验证需2026年报/2027半年报分部数据。</li>
+<li><strong>验证时间表</strong>：2026三季报（2026-10月末）单季毛利率与归母；2026年报（2027-04）摩洛哥子公司净利、西班牙许可进展；麒麟转债季度转股公告。</li>
+<li><strong>状态可持续性</strong>：复审税率窗口约1-2年一轮；摩洛哥免所得税5年；大尺寸结构红利随同业跟进衰减。</li>
+</ul>
+<p><strong>价值兑现链</strong>：欧美替换需求→海外基地销量→收入→毛利率（胶价/税率/爬坡三赛跑）→OCF→摩洛哥增量ROIC→FCF（2028年后）。</p>
+<table>
+<thead>
+<tr>
+<th>下一验证节点与指标</th>
+<th style="text-align: right;">基期（标期间）</th>
+<th style="text-align: right;">通过线</th>
+<th style="text-align: right;">证伪线</th>
+<th>估值更新动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026Q3单季归母</td>
+<td style="text-align: right;">Q2单季2.10亿</td>
+<td style="text-align: right;">≥2.2亿</td>
+<td style="text-align: right;">&lt;1.6亿</td>
+<td>持续&lt;1.6亿→中性下修至10亿</td>
+</tr>
+<tr>
+<td>摩洛哥2026年报净利率</td>
+<td style="text-align: right;">2026H1：1.7%</td>
+<td style="text-align: right;">≥8%</td>
+<td style="text-align: right;">&lt;5%</td>
+<td>≥8%→升乐观权重；&lt;5%→降观察至谨慎档</td>
+</tr>
+<tr>
+<td>美国201裁决</td>
+<td style="text-align: right;">调查阶段（A/B）</td>
+<td style="text-align: right;">不覆盖泰国</td>
+<td style="text-align: right;">覆盖泰国</td>
+<td>覆盖→切压力档40亿</td>
+</tr>
+</tbody>
+</table>
+<h2 id="10-abcd">10. ABCD分级和升降级条件</h2>
+<p><strong>当前分级：C+（观察席位）。</strong> 依据：①基本面质量本可评B（泰国净利率17.6%、低杠杆、对美通道最优），但毛利率13pct退化（32.8%→19.6%，A）证明单一品类+关税租金的脆弱；②摩洛哥重建毛利率无A级证据（H1净利率仅1.7%）；③FCF持续为负+转债稀释；④估值赔率中性（132.6亿 vs 中性138亿），无显著安全边际。观察席位性质：<strong>入场券=摩洛哥盈利证据，未触发前不给B</strong>。</p>
+<p><strong>升级条件</strong>：2026年报摩洛哥净利率≥8% 且 2026Q3/Q4单季归母≥2.2亿 且 201调查未覆盖泰国 → 升B（若PB&lt;1同时成立可至B+）。
+<strong>降级条件</strong>：2026年报摩洛哥净利率&lt;5%、或201裁决覆盖泰国、或天胶站上22000元/吨且提价失败 → 降至C；压力档触发（归母趋势化降至6亿以下）→ D。
+<strong>落选或限制条件</strong>：土耳其项目可研净利率20.6%为B级公司口径，不得单独作为估值输入。</p>
+<h2 id="11">11. 最终判断、主要证据与局限</h2>
+<p><strong>悲观72–80亿｜中性132–144亿｜乐观208–224亿（中枢138亿，每股约13.3元）。</strong> 中性最可能成立的证据：泰国基地净利率连续验证（17.6%，A）、摩洛哥扭亏方向确定（A）、当前PB 0.98接近净资产提供底线支撑。</p>
+<p>长期价值来自"多基地关税通道×半钢中高端结构"，但必须坦承：<strong>当前价格已经把1.24%税率与摩洛哥满产当作事实定价，而两者都还是"过程"而非"结果"</strong>。最容易错的地方是把2024年32.8%毛利率当作正常化锚——那一年是低胶价+双反落地前的高点，正常化水平大概率显著低于它。</p>
+<p><strong>关键数据来源</strong>：森麒麟2026年半年度报告（2026-08-25，巨潮 http://static.cninfo.com.cn/finalpage/2026-08-25/1225498272.PDF）；土耳其项目公告2026-048（2026-10-08）；转债转股与下修公告（2026-06-16、10-09）；东财datacenter-web RPT_LICO_FN_CPD/RPT_VALUEANALYSIS_DET（采集2026-10-14，脚本 research/06_数据与工具/数据采集脚本.py）；沪胶价格引自产业趋势研究（B级）。
+<strong>未核实/无法披露的关键缺口</strong>：①毛利率退化13pct中双反/胶价/爬坡摊销的定量归因——公司未披露，明说；②摩洛哥产能利用率无量化数据（仅有"未达满产"定性，A）；③复审1.24%适用范围与期限细节（B级公告口径，未见完整裁定书）；④西班牙建筑许可时间表不确定（A：未开工）；⑤土耳其可研净利率20.6%未验证（B）。
+<strong>研究与文件状态</strong>：报告保存于 research/行业研究/轮胎/06_估值与分级/轮胎_森麒麟_估值.md；底稿 轮胎_森麒麟_model_v2.json；validate_report.py通过（见校验记录）；估值对比总表未更新（本任务范围外）；站点/GitHub同步未执行。</p></div>
