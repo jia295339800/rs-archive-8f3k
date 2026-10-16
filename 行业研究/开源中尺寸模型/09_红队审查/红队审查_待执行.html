@@ -25,7 +25,9 @@ body{margin-left:280px}
 .sidebar .group.sub a{font-size:.92em;color:#57606a}
 #sidebarToggle{position:fixed;left:16px;top:16px;z-index:30;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:.9em;color:#24292f}
 body.hide-sb{margin-left:24px}
-body.hide-sb .sidebar{display:none!important}}
+body.hide-sb .sidebar{display:none!important}
+#mdToggle{position:fixed;right:16px;top:16px;z-index:40;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:.85em;color:#24292f}
+#mdToggle:hover{background:#eef1f4}.content-mdraw{max-width:920px;margin:0 auto;padding:24px;line-height:1.75}
 </style>
 <button id="sidebarToggle" title="收起/展开菜单">◀</button><div class="sidebar"><div class="grp">📖 研究库</div>
 <div class="group"><div class="grp">00_使用说明</div>
@@ -278,6 +280,12 @@ document.addEventListener('click',function(e){
       document.querySelectorAll('.sidebar a.current').forEach(function(x){x.classList.remove('current')});
       a.classList.add('current');
       history.pushState({sp:true},'',url);
+      // 重置MD切换视图并重取新页面MD源
+      if(window.__mdReset)window.__mdReset();
+      fetch(url).then(function(r2){return r2.text()}).then(function(t2){
+        var m=t2.match(/<script>window\.__MD_SOURCE__ = ([\s\S]*?)<\/script>/);
+        window.__MD_SOURCE__=m?JSON.parse(m[1]):null;
+      });
       window.scrollTo(0,0);
     }else{location.href=url;} // 结构异常则整页跳转兜底
   }).catch(function(){location.href=url;}); // 网络失败兜底
@@ -299,7 +307,7 @@ window.addEventListener('popstate',function(e){
     }else{location.reload();}
   }).catch(function(){location.reload();});
 });
-</script><div class="content"><nav><a href="../../../00_使用说明/index.html">00_使用说明</a> <a href="../../../06_数据与工具/index.html">06_数据与工具</a> <a href="../../../08_归档/index.html">08_归档</a> <a href="../../../AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="../../../军工/index.html">军工</a> <a href="../../../化纤/index.html">化纤</a> <a href="../../../医疗美容/index.html">医疗美容</a> <a href="../../../家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="../../../开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="../../../新型电池/index.html">新型电池</a> <a href="../../../明泰铝业/index.html">明泰铝业</a> <a href="../../../智能网联新能源汽车/index.html">智能网联新能源汽车</a> <a href="../../../轮胎/index.html">轮胎</a></nav><p><a href="../../index.html">← 返回</a> · 生成于 2026-10-16 16:25</p>
+</script><button id="mdToggle" title="切换 Markdown / 渲染视图">M↓</button><div class="content"><nav><a href="../../../00_使用说明/index.html">00_使用说明</a> <a href="../../../06_数据与工具/index.html">06_数据与工具</a> <a href="../../../08_归档/index.html">08_归档</a> <a href="../../../AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="../../../军工/index.html">军工</a> <a href="../../../化纤/index.html">化纤</a> <a href="../../../医疗美容/index.html">医疗美容</a> <a href="../../../家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="../../../开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="../../../新型电池/index.html">新型电池</a> <a href="../../../明泰铝业/index.html">明泰铝业</a> <a href="../../../智能网联新能源汽车/index.html">智能网联新能源汽车</a> <a href="../../../轮胎/index.html">轮胎</a></nav><p><a href="../../index.html">← 返回</a> · 生成于 2026-10-16 16:45</p>
 <h1 id="_">红队审查_待执行</h1>
 <ul>
 <li>v1.0三份文档完成于2026-10-12，尚未过红队。</li>
@@ -310,3 +318,44 @@ window.addEventListener('popstate',function(e){
 <li>润泽科技净利+182%含REITs一次性收益，扣非口径未拆，估值前必须修正。</li>
 <li>"私有化部署把算力从云搬走"与"云厂商量增价升"两组证据存在张力，净效应判断为推断，未量化分流比例——最大不确定性。</li>
 </ul></div>
+<script>window.__MD_SOURCE__ = "# \u7ea2\u961f\u5ba1\u67e5_\u5f85\u6267\u884c\n- v1.0\u4e09\u4efd\u6587\u6863\u5b8c\u6210\u4e8e2026-10-12\uff0c\u5c1a\u672a\u8fc7\u7ea2\u961f\u3002\n- \u5df2\u77e5\u81ea\u6302\u76f2\u70b9\uff1a\n1. TrendForce\"2026\u56fd\u4ea7AI\u82af\u7247\u4efd\u989d90%\"\u4e3a\u6fc0\u8fdb\u5916\u63a8\uff0c\u6587\u6863\u5df2\u964d\u7ea7\u4e3a\u8d8b\u52bf\u5224\u65ad\uff0c\u7ea2\u961f\u9700\u590d\u6838\u3002\n2. \u4e00\u4f53\u673a\u91c7\u8d2d\u91cf\u5238\u5546\u9884\u6d4b\uff0815/39/72\u4e07\u53f0\uff09\u4e0e\"\u95ee\u591a\u4e70\u5c11\"\u5b9e\u9645\u89c2\u5bdf\u51b2\u7a81\uff0c\u5019\u9009\u6e05\u5355\u672a\u7ed9\u4efb\u4f55\u4e00\u4f53\u673a\u516c\u53f8A\u7ea7\u8bc1\u636e\u2014\u2014\u62d3\u7ef4\u4fe1\u606f\u4e3a\u8d1f\u5411\u53cd\u4f8b\uff0c\u9700\u9632\u5e78\u5b58\u8005\u504f\u5dee\uff08\u8f6f\u901a/\u667a\u5fae\u667a\u80fd\u7684\u9ad8\u589e\u53ef\u80fd\u540c\u6837\u542b\u5907\u8d27/\u4f4e\u57fa\u6570\u56e0\u7d20\uff09\u3002\n3. \u667a\u80fd\u7b97\u529b\u89c4\u6a21\u6570\u636e\u4e24\u5904\u53e3\u5f84\u65ad\u88c2\uff08159 EFLOPS vs 1882 EFLOPS\uff0c\u5747\u4e3a\u5b98\u65b9\u8f6c\u5f15\uff09\uff0c\u4ec5\u53d6\u8d8b\u52bf\u672a\u53d6\u70b9\u503c\u3002\n4. \u6da6\u6cfd\u79d1\u6280\u51c0\u5229+182%\u542bREITs\u4e00\u6b21\u6027\u6536\u76ca\uff0c\u6263\u975e\u53e3\u5f84\u672a\u62c6\uff0c\u4f30\u503c\u524d\u5fc5\u987b\u4fee\u6b63\u3002\n5. \"\u79c1\u6709\u5316\u90e8\u7f72\u628a\u7b97\u529b\u4ece\u4e91\u642c\u8d70\"\u4e0e\"\u4e91\u5382\u5546\u91cf\u589e\u4ef7\u5347\"\u4e24\u7ec4\u8bc1\u636e\u5b58\u5728\u5f20\u529b\uff0c\u51c0\u6548\u5e94\u5224\u65ad\u4e3a\u63a8\u65ad\uff0c\u672a\u91cf\u5316\u5206\u6d41\u6bd4\u4f8b\u2014\u2014\u6700\u5927\u4e0d\u786e\u5b9a\u6027\u3002\n";</script>
+<script>
+(function(){
+  var btn=document.getElementById('mdToggle');
+  var content=document.querySelector('.content');
+  var rendered=null;
+  function showMD(){
+    if(!rendered){
+      rendered=document.createElement('div');
+      rendered.className='content-mdraw';
+      content.parentNode.appendChild(rendered);
+    }
+    if(!rendered.dataset.loaded){
+      var pre=document.createElement('pre');
+      pre.style.cssText='white-space:pre-wrap;word-break:break-word;background:#f6f8fa;padding:16px;border-radius:8px;font-size:.9em';
+      pre.textContent=window.__MD_SOURCE__||'(无原始内容)';
+      rendered.appendChild(pre);
+      rendered.dataset.loaded='1';
+    }
+    content.style.display='none';
+    rendered.style.display='block';
+    btn.textContent='Mdown';
+    btn.dataset.mode='md';
+  }
+  function showRendered(){
+    if(rendered)rendered.style.display='none';
+    content.style.display='';
+    btn.textContent='Mdown';
+    btn.dataset.mode='rendered';
+  }
+  btn.addEventListener('click',function(){
+    btn.dataset.mode==='md'?showRendered():showMD();
+  });
+  window.__mdReset=function(){
+    if(rendered){rendered.style.display='none';rendered.innerHTML='';rendered.removeAttribute('data-loaded');}
+    content=document.querySelector('.content');
+    content.style.display='';
+    btn.textContent='Mdown';btn.dataset.mode='rendered';
+  };
+})();
+</script>

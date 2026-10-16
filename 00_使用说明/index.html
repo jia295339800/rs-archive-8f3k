@@ -24,7 +24,9 @@ body{margin-left:280px}
 .sidebar .group.sub a{font-size:.92em;color:#57606a}
 #sidebarToggle{position:fixed;left:16px;top:16px;z-index:30;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:.9em;color:#24292f}
 body.hide-sb{margin-left:24px}
-body.hide-sb .sidebar{display:none!important}}
+body.hide-sb .sidebar{display:none!important}
+#mdToggle{position:fixed;right:16px;top:16px;z-index:40;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:.85em;color:#24292f}
+#mdToggle:hover{background:#eef1f4}.content-mdraw{max-width:920px;margin:0 auto;padding:24px;line-height:1.75}
 </style><button id="sidebarToggle" title="收起/展开菜单">◀</button><div class="sidebar"><div class="grp">📖 研究库</div>
 <div class="group"><div class="grp">00_使用说明</div>
 <a href="../00_使用说明/README_使用说明.html">README_使用说明</a>
@@ -276,6 +278,12 @@ document.addEventListener('click',function(e){
       document.querySelectorAll('.sidebar a.current').forEach(function(x){x.classList.remove('current')});
       a.classList.add('current');
       history.pushState({sp:true},'',url);
+      // 重置MD切换视图并重取新页面MD源
+      if(window.__mdReset)window.__mdReset();
+      fetch(url).then(function(r2){return r2.text()}).then(function(t2){
+        var m=t2.match(/<script>window\.__MD_SOURCE__ = ([\s\S]*?)<\/script>/);
+        window.__MD_SOURCE__=m?JSON.parse(m[1]):null;
+      });
       window.scrollTo(0,0);
     }else{location.href=url;} // 结构异常则整页跳转兜底
   }).catch(function(){location.href=url;}); // 网络失败兜底

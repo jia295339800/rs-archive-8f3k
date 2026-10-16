@@ -25,7 +25,9 @@ body{margin-left:280px}
 .sidebar .group.sub a{font-size:.92em;color:#57606a}
 #sidebarToggle{position:fixed;left:16px;top:16px;z-index:30;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:.9em;color:#24292f}
 body.hide-sb{margin-left:24px}
-body.hide-sb .sidebar{display:none!important}}
+body.hide-sb .sidebar{display:none!important}
+#mdToggle{position:fixed;right:16px;top:16px;z-index:40;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:.85em;color:#24292f}
+#mdToggle:hover{background:#eef1f4}.content-mdraw{max-width:920px;margin:0 auto;padding:24px;line-height:1.75}
 </style>
 <button id="sidebarToggle" title="收起/展开菜单">◀</button><div class="sidebar"><div class="grp">📖 研究库</div>
 <div class="group"><div class="grp">00_使用说明</div>
@@ -278,6 +280,12 @@ document.addEventListener('click',function(e){
       document.querySelectorAll('.sidebar a.current').forEach(function(x){x.classList.remove('current')});
       a.classList.add('current');
       history.pushState({sp:true},'',url);
+      // 重置MD切换视图并重取新页面MD源
+      if(window.__mdReset)window.__mdReset();
+      fetch(url).then(function(r2){return r2.text()}).then(function(t2){
+        var m=t2.match(/<script>window\.__MD_SOURCE__ = ([\s\S]*?)<\/script>/);
+        window.__MD_SOURCE__=m?JSON.parse(m[1]):null;
+      });
       window.scrollTo(0,0);
     }else{location.href=url;} // 结构异常则整页跳转兜底
   }).catch(function(){location.href=url;}); // 网络失败兜底
@@ -299,7 +307,7 @@ window.addEventListener('popstate',function(e){
     }else{location.reload();}
   }).catch(function(){location.reload();});
 });
-</script><div class="content"><nav><a href="../../../00_使用说明/index.html">00_使用说明</a> <a href="../../../06_数据与工具/index.html">06_数据与工具</a> <a href="../../../08_归档/index.html">08_归档</a> <a href="../../../AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="../../../军工/index.html">军工</a> <a href="../../../化纤/index.html">化纤</a> <a href="../../../医疗美容/index.html">医疗美容</a> <a href="../../../家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="../../../开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="../../../新型电池/index.html">新型电池</a> <a href="../../../明泰铝业/index.html">明泰铝业</a> <a href="../../../智能网联新能源汽车/index.html">智能网联新能源汽车</a> <a href="../../../轮胎/index.html">轮胎</a></nav><p><a href="../../index.html">← 返回</a> · 生成于 2026-10-16 16:25</p>
+</script><button id="mdToggle" title="切换 Markdown / 渲染视图">M↓</button><div class="content"><nav><a href="../../../00_使用说明/index.html">00_使用说明</a> <a href="../../../06_数据与工具/index.html">06_数据与工具</a> <a href="../../../08_归档/index.html">08_归档</a> <a href="../../../AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="../../../军工/index.html">军工</a> <a href="../../../化纤/index.html">化纤</a> <a href="../../../医疗美容/index.html">医疗美容</a> <a href="../../../家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="../../../开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="../../../新型电池/index.html">新型电池</a> <a href="../../../明泰铝业/index.html">明泰铝业</a> <a href="../../../智能网联新能源汽车/index.html">智能网联新能源汽车</a> <a href="../../../轮胎/index.html">轮胎</a></nav><p><a href="../../index.html">← 返回</a> · 生成于 2026-10-16 16:45</p>
 <h1 id="r3-v11">化纤复审 R3（复验 v1.1，范围限定）</h1>
 <blockquote>
 <p>复验日期：2026-10-12｜对象：07_深度报告/化纤_产业深度研究报告.md（v1.1，21839 字节）｜范围：仅复验 R2 指出事项与 v1.1 六项修改，不重开全面审查。</p>
@@ -330,3 +338,44 @@ window.addEventListener('popstate',function(e){
 依据：R2 两项事实残留已修复且旧值仅存于勘误上下文；v1.1 六项修改逐一核对正文一致、算术自洽、无新引入矛盾；三项证据不足残余均已恰当降权标注。遗留事项（长丝出口口径重采、氨纶 Q4 数据裁决、纺服出口 11 月海关裁决）均已在 §8 分歧清单与 §7.3 证伪条件中跟踪，不构成定稿障碍。</p>
 <hr />
 <p><em>R3 复验为范围限定复审，仅覆盖上述事项；后续新数据（2026-11 海关 Q3、氨纶 Q4 库存价差）触发时建议启动第 4 轮核验。</em></p></div>
+<script>window.__MD_SOURCE__ = "# \u5316\u7ea4\u590d\u5ba1 R3\uff08\u590d\u9a8c v1.1\uff0c\u8303\u56f4\u9650\u5b9a\uff09\n\n> \u590d\u9a8c\u65e5\u671f\uff1a2026-10-12\uff5c\u5bf9\u8c61\uff1a07_\u6df1\u5ea6\u62a5\u544a/\u5316\u7ea4_\u4ea7\u4e1a\u6df1\u5ea6\u7814\u7a76\u62a5\u544a.md\uff08v1.1\uff0c21839 \u5b57\u8282\uff09\uff5c\u8303\u56f4\uff1a\u4ec5\u590d\u9a8c R2 \u6307\u51fa\u4e8b\u9879\u4e0e v1.1 \u516d\u9879\u4fee\u6539\uff0c\u4e0d\u91cd\u5f00\u5168\u9762\u5ba1\u67e5\u3002\n\n## \u4e00\u3001R2 \u4e24\u9879\u6b63\u6587\u6b8b\u7559\u4fee\u590d\u786e\u8ba4\n\n1. **\u65e7\u80a1\u4ef7 21.82/16.68/9.89**\uff1a\u5168\u6587\u68c0\u7d22\uff0c\u4ec5\u51fa\u73b0\u4e8e 2 \u5904\"\u5f03\u7528/\u52d8\u8bef\"\u4e0a\u4e0b\u6587\u2014\u2014\u00a7\u6570\u636e\u53e3\u5f84\u7ea6\u5b9a\uff08\"\u5b9a\u7a3f\u539f 21.82/16.68/9.89 \u4e24\u6b21\u72ec\u7acb\u53d6\u6570\u5747\u65e0\u6cd5\u590d\u73b0\uff0c\u4e88\u4ee5\u5f03\u7528\"\uff09\u4e0e \u00a75 \u5f00\u5934\uff08\"\u539f 21.82/16.68/9.89 \u5f03\u7528\"\uff09\u3002\u6b63\u6587\u5b9e\u9645\u53d6\u503c\u5df2\u5168\u90e8\u4e3a 21.63/16.45/9.77\uff08\u00a7\u53e3\u5f84\u7ea6\u5b9a\u3001\u00a75 \u8868\u5934\u53ca\u5e02\u503c/\u80a1\u4ef7\u884c\u3001\u7248\u672c\u8bb0\u5f55 v1.1\uff09\uff0c\u4e14 quote \u63a5\u53e3\u300c\u6700\u65b0\u4ef7\u8bef\u6807\u5386\u53f2 trade_date\u300d\u7f3a\u9677\u5df2\u6807\u6ce8\u3002**\u2192 \u5df2\u4fee\u590d**\n2. **\u65e7\u51fa\u53e3\u503c 730 \u4ebf/-0.6%**\uff1a\u5168\u6587\u68c0\u7d22 \"-0.6%\" \u96f6\u547d\u4e2d\uff1b\"730 \u4ebf\" \u4ec5\u51fa\u73b0\u4e8e 3 \u5904\"\u66f4\u6b63\u8bf4\u660e\"\u4e0a\u4e0b\u6587\uff08\u00a71.4\u3001\u00a72.2 \u8868\u3001\u00a78.1\uff0c\u5747\u6ce8\u660e\"730 \u4ebf\u7f8e\u5143/+3.5% \u5b9e\u4e3a\u7eba\u7ec7\u54c1\u51fa\u53e3\u989d\uff0c\u4e2d\u7eba\u8054\u5f15\u6d77\u5173\u603b\u7f72\u7edf\u8ba1\u5feb\u8baf 2026-07-15\"\uff09\u3002\u6b63\u6587\u670d\u88c5\u51fa\u53e3\u5df2\u7edf\u4e00\u4e3a 729.6 \u4ebf\u7f8e\u5143/-0.7%\uff08\u00a71.4\u3001\u00a72.2\u3001\u00a78.1\u3001\u7ed3\u8bba\u72b6\u6001\u603b\u8868\uff09\u3002**\u2192 \u5df2\u4fee\u590d**\n\n## \u4e8c\u3001v1.1 \u516d\u9879\u4fee\u6539\u6b63\u6587\u4e00\u81f4\u6027\u6838\u5bf9\uff08\u65e0\u65b0\u77db\u76fe\uff09\n\n1. \u80a1\u4ef7 21.63/16.45/9.77\uff1a\u00a7\u53e3\u5f84\u7ea6\u5b9a\u3001\u00a75 \u8868\u683c\u3001\u7248\u672c\u8bb0\u5f55\u4e09\u5904\u4e00\u81f4\uff1b\u534e\u5cf0 9.77 \u5143\u00d7\u5e02\u503c 506 \u4ebf\u4e0e\u80a1\u672c\u53e3\u5f84\u81ea\u6d3d\uff08\u5176\u4f59\u4e24\u5bb6\u540c\u6bd4\u5bf9\u5e02\u503c 545/285 \u4ebf\u65e0\u51b2\u7a81\uff09\u3002\u2714\n2. \u670d\u88c5\u51fa\u53e3 729.6 \u4ebf/-0.7%\uff1a\u00a71.4\u3001\u00a72.2\u3001\u00a78.1\u3001\u00a7\u7ed3\u8bba\u603b\u8868\u56db\u5904\u4e00\u81f4\uff1b730 \u4ebf\u66f4\u6b63\u6ce8\u91ca\u4e09\u5904\u8868\u8ff0\u4e00\u81f4\uff08+3.5% \u7eba\u7ec7\u54c1\uff09\u3002\u2714\n3. \u8f6c\u53e3\u5173\u7a0e\u5f52\u5c5e\uff1a\u00a71.4 \u4e0e \u00a72.2\uff08\u4e1c\u5357\u4e9a\u627f\u63a5\u884c\uff09\u5747\u6539\u4e3a 2025-07 \u7f8e\u8d8a\u8d38\u6613\u6846\u67b6\u534f\u5b9a\uff08\u8d22\u65b0 2025-07-03\uff09\uff0c\u5e76\u660e\u786e\u4e0e 301 \u7684 12.5% \u7cfb\u4e24\u4e2a\u5de5\u5177\uff1b\u00a77 \u672a\u518d\u51fa\u73b0\u9519\u8bef\u5f52\u5c5e\u3002\u2714\n4. \u534e\u5cf0\u7ba1\u7ebf\u4e0a\u4fee\u7ea6 50 \u4e07\u5428\u2248\u73b0\u6709\u4ea7\u80fd 47.5 \u4e07\u5428\u7684 105%\uff1a\u7b97\u672f\u81ea\u6d3d\uff0850/47.5\u2248105%\uff09\uff1b\u00a71.5\u3001\u00a74\u2461\u3001\u00a75\"\u6700\u5173\u952e\u5047\u8bbe\"\u884c\u4e00\u81f4\u3002\u2714\n5. \u6c28\u7eb6\u666f\u6c14\u53cc\u6e90\u51b2\u7a81\uff1a\u00a71.5\u3001\u00a74\u2461\u3001\u7ed3\u8bba\u603b\u8868\u5747\u6807\u6ce8\"\u9686\u4f17 vs \u5353\u521b\u4fe1\u53f7\u51b2\u7a81\u3001\u5f85 Q4 \u88c1\u51b3\"\uff0c\u4e14 \u00a77.3 \u8bc1\u4f2a\u6761\u4ef6 4 \u8865\u5165\u53cd\u5411\u9a8c\u8bc1\u7ebf\uff08\u5e93\u5b58\u91cd\u56de 45 \u5929\u4e0a\u65b9\uff0c\u5bf9\u5e94\u5353\u521b 8 \u6708\u5e95 37 \u5929\uff09\uff0c\u903b\u8f91\u95ed\u73af\u3002\u2714\n6. \u957f\u4e1d\u51fa\u53e3 184 \u4e07\u5428\u53e3\u5f84\u77db\u76fe\uff1a\u00a72.2 \u6807\u6ce8\u3010\u8bc1\u636e\u4e0d\u8db3\u3011\"184 \u4e07\u5428/+16.8% \u4e0e 2025H1 \u6da4\u7eb6\u957f\u4e1d\u51fa\u53e3 214.06 \u4e07\u5428\u65e0\u6cd5\u540c\u65f6\u4e3a\u771f\uff08\u9690\u542b\u540c\u6bd4\u7ea6 -14%\uff09\uff0c\u6f84\u6e05\u524d\u4e0d\u5f97\u7528\u4e8e\u4efb\u4f55\u5b9a\u91cf\u60c5\u666f\uff0c\u5efa\u8bae\u6309\u6d77\u5173\u7f16\u7801 5402/5403 \u91cd\u91c7\"\uff1b\u7248\u672c\u8bb0\u5f55 \u2465 \u540c\u6b65\uff1b\u00a78 \u672a\u65b0\u589e\u51b2\u7a81\u6761\u76ee\uff08\u8be5\u77db\u76fe\u5728 \u00a72.2 \u5185\u95ed\u73af\uff09\u3002\u2714\n\n\u672a\u53d1\u73b0\u516d\u9879\u4fee\u6539\u4e4b\u95f4\u6216\u4e0e\u65e2\u6709\u6b63\u6587\u7684\u65b0\u77db\u76fe\u3002\n\n## \u4e09\u3001R2 \u4e09\u9879\u975e\u9519\u8bef\u6b8b\u4f59\u6807\u6ce8\u72b6\u6001\n\n1. \u6c28\u7eb6\u9686\u4f17 vs \u5353\u521b\u53cc\u6e90\u51b2\u7a81\uff1a\u5df2\u6807\u6ce8\uff08\u00a71.5\u3001\u00a74\u2461\uff0c\u5f85 Q4 \u88c1\u51b3\uff09\u2714\n2. \u957f\u4e1d\u51fa\u53e3 184 \u4e07\u5428 vs \u6d77\u5173 214 \u4e07\u5428\u53e3\u5f84\uff1a\u5df2\u6807\u6ce8\u3010\u8bc1\u636e\u4e0d\u8db3\u3011+ \u91cd\u91c7\u5efa\u8bae\uff08\u00a72.2\uff09\u2714\n3. \u534e\u5cf0\u7ba1\u7ebf 50 \u4e07\u5428\uff1a\u5df2\u6309\u4e1c\u5434 2026-05 \u7814\u62a5\u4e0a\u4fee\u5e76\u5728 \u00a71.5/\u00a74\u2461/\u00a75 \u4e00\u81f4\u91c7\u7528 \u2714\n\n## \u56db\u3001\u7ed3\u8bba\u5224\u5b9a\n\n**\u96f6\u4e8b\u5b9e\u9519\u8bef\uff0c\u53ef\u5b9a\u7a3f\u3002**\n\u4f9d\u636e\uff1aR2 \u4e24\u9879\u4e8b\u5b9e\u6b8b\u7559\u5df2\u4fee\u590d\u4e14\u65e7\u503c\u4ec5\u5b58\u4e8e\u52d8\u8bef\u4e0a\u4e0b\u6587\uff1bv1.1 \u516d\u9879\u4fee\u6539\u9010\u4e00\u6838\u5bf9\u6b63\u6587\u4e00\u81f4\u3001\u7b97\u672f\u81ea\u6d3d\u3001\u65e0\u65b0\u5f15\u5165\u77db\u76fe\uff1b\u4e09\u9879\u8bc1\u636e\u4e0d\u8db3\u6b8b\u4f59\u5747\u5df2\u6070\u5f53\u964d\u6743\u6807\u6ce8\u3002\u9057\u7559\u4e8b\u9879\uff08\u957f\u4e1d\u51fa\u53e3\u53e3\u5f84\u91cd\u91c7\u3001\u6c28\u7eb6 Q4 \u6570\u636e\u88c1\u51b3\u3001\u7eba\u670d\u51fa\u53e3 11 \u6708\u6d77\u5173\u88c1\u51b3\uff09\u5747\u5df2\u5728 \u00a78 \u5206\u6b67\u6e05\u5355\u4e0e \u00a77.3 \u8bc1\u4f2a\u6761\u4ef6\u4e2d\u8ddf\u8e2a\uff0c\u4e0d\u6784\u6210\u5b9a\u7a3f\u969c\u788d\u3002\n\n---\n*R3 \u590d\u9a8c\u4e3a\u8303\u56f4\u9650\u5b9a\u590d\u5ba1\uff0c\u4ec5\u8986\u76d6\u4e0a\u8ff0\u4e8b\u9879\uff1b\u540e\u7eed\u65b0\u6570\u636e\uff082026-11 \u6d77\u5173 Q3\u3001\u6c28\u7eb6 Q4 \u5e93\u5b58\u4ef7\u5dee\uff09\u89e6\u53d1\u65f6\u5efa\u8bae\u542f\u52a8\u7b2c 4 \u8f6e\u6838\u9a8c\u3002*\n";</script>
+<script>
+(function(){
+  var btn=document.getElementById('mdToggle');
+  var content=document.querySelector('.content');
+  var rendered=null;
+  function showMD(){
+    if(!rendered){
+      rendered=document.createElement('div');
+      rendered.className='content-mdraw';
+      content.parentNode.appendChild(rendered);
+    }
+    if(!rendered.dataset.loaded){
+      var pre=document.createElement('pre');
+      pre.style.cssText='white-space:pre-wrap;word-break:break-word;background:#f6f8fa;padding:16px;border-radius:8px;font-size:.9em';
+      pre.textContent=window.__MD_SOURCE__||'(无原始内容)';
+      rendered.appendChild(pre);
+      rendered.dataset.loaded='1';
+    }
+    content.style.display='none';
+    rendered.style.display='block';
+    btn.textContent='Mdown';
+    btn.dataset.mode='md';
+  }
+  function showRendered(){
+    if(rendered)rendered.style.display='none';
+    content.style.display='';
+    btn.textContent='Mdown';
+    btn.dataset.mode='rendered';
+  }
+  btn.addEventListener('click',function(){
+    btn.dataset.mode==='md'?showRendered():showMD();
+  });
+  window.__mdReset=function(){
+    if(rendered){rendered.style.display='none';rendered.innerHTML='';rendered.removeAttribute('data-loaded');}
+    content=document.querySelector('.content');
+    content.style.display='';
+    btn.textContent='Mdown';btn.dataset.mode='rendered';
+  };
+})();
+</script>

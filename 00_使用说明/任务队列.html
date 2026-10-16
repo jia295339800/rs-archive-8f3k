@@ -25,7 +25,9 @@ body{margin-left:280px}
 .sidebar .group.sub a{font-size:.92em;color:#57606a}
 #sidebarToggle{position:fixed;left:16px;top:16px;z-index:30;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:.9em;color:#24292f}
 body.hide-sb{margin-left:24px}
-body.hide-sb .sidebar{display:none!important}}
+body.hide-sb .sidebar{display:none!important}
+#mdToggle{position:fixed;right:16px;top:16px;z-index:40;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:.85em;color:#24292f}
+#mdToggle:hover{background:#eef1f4}.content-mdraw{max-width:920px;margin:0 auto;padding:24px;line-height:1.75}
 </style>
 <button id="sidebarToggle" title="收起/展开菜单">◀</button><div class="sidebar"><div class="grp">📖 研究库</div>
 <div class="group"><div class="grp">00_使用说明</div>
@@ -278,6 +280,12 @@ document.addEventListener('click',function(e){
       document.querySelectorAll('.sidebar a.current').forEach(function(x){x.classList.remove('current')});
       a.classList.add('current');
       history.pushState({sp:true},'',url);
+      // 重置MD切换视图并重取新页面MD源
+      if(window.__mdReset)window.__mdReset();
+      fetch(url).then(function(r2){return r2.text()}).then(function(t2){
+        var m=t2.match(/<script>window\.__MD_SOURCE__ = ([\s\S]*?)<\/script>/);
+        window.__MD_SOURCE__=m?JSON.parse(m[1]):null;
+      });
       window.scrollTo(0,0);
     }else{location.href=url;} // 结构异常则整页跳转兜底
   }).catch(function(){location.href=url;}); // 网络失败兜底
@@ -299,7 +307,7 @@ window.addEventListener('popstate',function(e){
     }else{location.reload();}
   }).catch(function(){location.reload();});
 });
-</script><div class="content"><nav><a href="../00_使用说明/index.html">00_使用说明</a> <a href="../06_数据与工具/index.html">06_数据与工具</a> <a href="../08_归档/index.html">08_归档</a> <a href="../AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="../军工/index.html">军工</a> <a href="../化纤/index.html">化纤</a> <a href="../医疗美容/index.html">医疗美容</a> <a href="../家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="../开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="../新型电池/index.html">新型电池</a> <a href="../明泰铝业/index.html">明泰铝业</a> <a href="../智能网联新能源汽车/index.html">智能网联新能源汽车</a> <a href="../轮胎/index.html">轮胎</a></nav><p><a href="index.html">← 返回</a> · 生成于 2026-10-16 16:25</p>
+</script><button id="mdToggle" title="切换 Markdown / 渲染视图">M↓</button><div class="content"><nav><a href="../00_使用说明/index.html">00_使用说明</a> <a href="../06_数据与工具/index.html">06_数据与工具</a> <a href="../08_归档/index.html">08_归档</a> <a href="../AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="../军工/index.html">军工</a> <a href="../化纤/index.html">化纤</a> <a href="../医疗美容/index.html">医疗美容</a> <a href="../家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="../开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="../新型电池/index.html">新型电池</a> <a href="../明泰铝业/index.html">明泰铝业</a> <a href="../智能网联新能源汽车/index.html">智能网联新能源汽车</a> <a href="../轮胎/index.html">轮胎</a></nav><p><a href="index.html">← 返回</a> · 生成于 2026-10-16 16:45</p>
 <h1 id="_1">任务队列</h1>
 <blockquote>
 <p>格式：优先级 | 类型 | 对象 | 工作流 | 状态 | 备注</p>
@@ -382,3 +390,44 @@ window.addEventListener('popstate',function(e){
 | 中 | 产业 | 军工（国防军工） | W1 | ✅ 定稿（R1-R3三轮收敛，遗留2项非阻断：沈飞§8表述/高德保守锚26Q3复核） | 基础研究✅+三主线主题研究✅+六家头部v2.0估值✅（沈飞B/成飞B/高德红外B+/国科军工B-/中航高科B+/中国船舶B，2026-10-16定稿，见06_估值与分级/军工_中航沈飞_估值_v2.md及汇总json）；已入研究总表/企业估值队列/估值对比总表，转入W4监控 |
 || 中 | 产业 | 医疗美容——重点「维护性美容」 | W1✅基础定稿 | ✅ 定稿（R1-R3三轮收敛；遗留：华东股本独立源补证、华东Q3集采验证门） | 基础三份✅（选供给格局非押需求方向）。爱美客C+（中性194亿，现价透支约50%）+华东医药B-（中性494.5亿，现价=中性下沿期权免费）v2.0定稿（2026-10-16），已入研究总表/企业估值队列/估值对比总表；华熙/昊海落选裁决维持原判 |</li>
 </ul></div>
+<script>window.__MD_SOURCE__ = "# \u4efb\u52a1\u961f\u5217\n\n> \u683c\u5f0f\uff1a\u4f18\u5148\u7ea7 | \u7c7b\u578b | \u5bf9\u8c61 | \u5de5\u4f5c\u6d41 | \u72b6\u6001 | \u5907\u6ce8\n\n| \u4f18\u5148\u7ea7 | \u7c7b\u578b | \u5bf9\u8c61 | \u5de5\u4f5c\u6d41 | \u72b6\u6001 | \u5907\u6ce8 |\n|---|---|---|---|---|---|\n| \u9ad8 | \u4ea7\u4e1a | \u5316\u7ea4\uff08\u6da4\u7eb6/\u9526\u7eb6/\u7c98\u80f6/\u6c28\u7eb6\u7b49\uff09 | W1 | \u2705 \u590d\u5ba1\u901a\u8fc7 | R3\u590d\u9a8c\u96f6\u4e8b\u5b9e\u9519\u8bef\uff082026-10-12\uff09\uff1b\u6b8b\u4f59\u5206\u6b67\u5728\u00a78\u5206\u6b67\u6e05\u5355\u8ddf\u8e2a |\n| \u9ad8 | \u4ea7\u4e1a | AI\u6570\u636e\u4e2d\u5fc3800VDC\u4f9b\u7535\u94fe | W1\u53d8\u4f53 | \u2705 \u590d\u5ba1\u901a\u8fc7 | R2\u590d\u5ba1\u96f6\u4e8b\u5b9e\u9519\u8bef\uff082026-10-12\uff09\uff1b3\u9879\u975e\u963b\u65ad\u5c0f\u4e8b\u9879\u5f85\u5904\u7406 |\n| \u4e2d | \u4ea7\u4e1a | \u65b0\u578b\u7535\u6c60\u300c\u5341\u4e94\u4e94\u300d\u89c4\u5212\uff08\u50a8\u80fd\u7535\u6c60\u3001\u56fa\u6001\u7535\u6c60\uff09 | W1 | \u2705 \u5b9a\u7a3f\uff083\u8f6e\u7ea2\u961f\u6536\u655b\uff09 | \u7b2c3\u8f6e\u96f6\u4e8b\u5b9e\u9519\u8bef\uff1b\u5b50\u62a5\u544a\u7248\u672c\u53f7v1.0\u2192v1.1\u5f85\u987a\u624b\u66f4\u6b63\uff08\u975e\u963b\u65ad\uff09 |\n| \u4e2d | \u4ea7\u4e1a | \u667a\u80fd\u7f51\u8054\u65b0\u80fd\u6e90\u6c7d\u8f66\u300c\u5341\u4e94\u4e94\u300d\u89c4\u5212 | W1 | \u2705 \u590d\u5ba1\u901a\u8fc7 | R2\u6709\u6761\u4ef6\u901a\u8fc7+\u4f2f\u7279\u5229\u51c0\u73b0\u6bd4\u66f4\u6b63\u5df2\u843d\u76d8\uff08\u51c0\u73b0\u6bd41.17\u975e0.80\uff09\uff1b10-13\u4e58\u8054\u6708\u62a5\u5b9e\u53d1\u6838\u5bf9\u540e\u89e3\u9664\u964d\u7ea7 |\n| \u4e2d | \u4ea7\u4e1a | \u5bb6\u5ead\u7a7a\u95f4\u5e38\u9a7bAgent\uff08\u6d88\u8d39\u7ea7\u5bb6\u5ead\u673a\u5668\u4eba/\u5bb6\u5ead\u667a\u80fd\u4f53\uff09 | W1 | \u2705 \u590d\u5ba1\u901a\u8fc7 | R2\u901a\u8fc7\uff0811\u9879\u62bd\u67e5\u96f6\u4e8b\u5b9e\u9519\u8bef\uff09\uff1b3\u9879\u975e\u963b\u585e\u5e95\u7a3f\u540c\u6b65\u4e8b\u9879\u4e0b\u6b21\u76d1\u63a7\u5904\u7406 |\n\n| \u4e2d | \u4ea7\u4e1a | \u5f00\u6e90\u4e2d\u5c3a\u5bf8\u6a21\u578b\uff08Qwen 27B\u7ea7\uff09\u666e\u53ca\u540e\u7684\u4ea7\u4e1a\u5f71\u54cd | W1 | \u2705 \u590d\u5ba1\u901a\u8fc7 | R2\u590d\u5ba1\u96f6\u4e8b\u5b9e\u9519\u8bef\uff082026-10-12\uff09\uff1b6\u884c\u4e1a\u5168\u90e8\u6536\u655b\uff0c\u8f6c\u5165W4\u76d1\u63a7 |\n\n| \u9ad8 | W5\u4f30\u503c | AI\u6570\u636e\u4e2d\u5fc3800VDC\u4f9b\u7535\u94fe\uff1a\u91d1\u76d8\u79d1\u6280/\u76db\u5f18\u80a1\u4efd/\u9ea6\u683c\u7c73\u7279 | W5 | \u2705 \u5b8c\u6210 | \u89c106_\u4f30\u503c\u4e0e\u5206\u7ea7/AI\u6570\u636e\u4e2d\u5fc3800VDC\u4f9b\u7535_\u4e09\u4f01\u4e1a\u4f30\u503c\u62a5\u544a.md\uff082026-10-12\uff09 |\n| \u9ad8 | W5\u4f30\u503c | AI\u6570\u636e\u4e2d\u5fc3800VDC\u4f9b\u7535\u94fe\uff1a\u79d1\u534e\u6570\u636e(002335) | W5 | \u2705 \u5b8c\u6210\uff08\u5f85\u7ea2\u961f\uff09 | \u89c106_\u4f30\u503c\u4e0e\u5206\u7ea7/AI\u6570\u636e\u4e2d\u5fc3800VDC\u4f9b\u7535_\u79d1\u534e\u6570\u636e_\u4f30\u503c.md\uff082026-10-12\uff09\uff1b\u5206\u7ea7C+\uff1b\u5173\u952e\u4fee\u6b63\uff1aHVDC\u51fa\u8d27\u7b2c\u4e00\u964d\u4e3aC\u7ea7\uff08\u6765\u6e90\u672a\u5177\u540dPR\u7a3f\uff09\uff1b\u4e2d\u602722.0\u5143 vs \u73b0\u4ef728.24\u5143 |\n| \u9ad8 | W5\u4f30\u503c | AI\u6570\u636e\u4e2d\u5fc3800VDC\u4f9b\u7535\u94fe\uff1a\u79d1\u58eb\u8fbe/\u6b27\u9646\u901a/\u4e2d\u822a\u5149\u7535/\u65b0\u6d01\u80fd/\u91d1\u76d8\u4e4b\u5916\u5019\u9009 | W5 | \u5f85\u4f30\u503c | \u6309\u5019\u9009\u4f01\u4e1a\u6e05\u5355\u9010\u5bb6\u63a8\u8fdb\uff1b\u6bcf3-5\u5bb6\u6279\u91cf\u7ea2\u961f+\u603b\u8868\u66f4\u65b0 |\n| \u9ad8 | W5\u4f30\u503c | \u5316\u7ea4\u94fe\uff1a\u8363\u76db\u77f3\u5316(002493) | W5 | \u2705 \u5b8c\u6210\uff08\u5f85\u7ea2\u961f\uff09 | \u89c106_\u4f30\u503c\u4e0e\u5206\u7ea7/\u5316\u7ea4_\u8363\u76db\u77f3\u5316_\u4f30\u503c.md\uff082026-10-12\uff09\uff1b\u5206\u7ea7C+\uff1b\u4e2d\u6027~700\u4ebf vs \u73b0\u4ef71253\u4ebf\uff1b\u6d59\u77f3\u5316\u655e\u53e3\u4e0e\u6850\u6606\u4ea4\u53c9\u6821\u9a8c\u4e00\u81f4\uff1b\u6052\u529b\u77f3\u5316\u5f85\u4f30\u503c\uff08\u961f\u5217\u4e0b\u4e00\u5bb6\uff09 |\n| \u9ad8 | W5\u4f30\u503c | \u667a\u80fd\u7f51\u8054\u65b0\u80fd\u6e90\u6c7d\u8f66\uff1a\u6c5f\u6dee\u6c7d\u8f66(600418) | W5 | \u2705 \u5b8c\u6210\uff08\u5f85\u7ea2\u961f\uff09 | \u89c106_\u4f30\u503c\u4e0e\u5206\u7ea7/\u667a\u80fd\u7f51\u8054\u65b0\u80fd\u6e90\u6c7d\u8f66_\u6c5f\u6dee\u6c7d\u8f66_\u4f30\u503c.md\uff082026-10-12\uff09\uff1b**C\uff08\u4e0b\u884c\u504fD\uff09**\uff1b\u5c0a\u754c\u53d9\u4e8b\u6ea2\u4ef7\u2248347\u4ebf\u5360\u5e02\u503c70%\uff08\u88f8\u4f30\u503c150\u4ebf vs \u73b0\u4ef7497\u4ebf\uff09\uff1bS800\u6708\u9500-92%+\u6263\u975e\u8fde\u4e8f9\u5e74+OCF\u534a\u5e74-52.9\u4ebf\uff1b\u964dD\u89e6\u53d1=V\u7cfb\u5217\u8fde\u7eed\u4e24\u6708\u4e0b\u6ed1\u621626Q3\u6263\u975e>-5\u4ebf\uff08\u5c4a\u65f6\u8bb0\u5165\u8d1f\u6837\u672c\u5e93\uff09 |\n| \u9ad8 | W5\u4f30\u503c | \u5bb6\u5ead\u7a7a\u95f4\u5e38\u9a7bAgent\uff1a\u9e23\u5fd7\u7535\u5668(603728) | W5 | \u2705 \u5b8c\u6210\uff08\u5f85\u7ea2\u961f\uff09 | \u89c106_\u4f30\u503c\u4e0e\u5206\u7ea7/\u5bb6\u5ead\u7a7a\u95f4\u5e38\u9a7bAgent_\u9e23\u5fd7\u7535\u5668_\u4f30\u503c.md\uff082026-10-12\uff09\uff1b**\u5206\u7ea7D**\uff08\u961f\u5217\u7b2c\u4e8c\u4e2aD\uff09\uff1b\u5e02\u503c199\u4ebf vs \u4e2d\u602745-55\u4ebf\uff0c\u673a\u5668\u4eba\u53d9\u4e8b\u6ea2\u4ef7\u2248145\u4ebf\u5360\u5e02\u503c72%\uff08\u5168\u961f\u5217\u6700\u9ad8\uff0c\u4e0e\u6c5f\u6dee70%\u540c\u53e3\u5f84\uff09\uff1bA\u7d1a\u53e3\u5f84\u81ea\u8ba4\u673a\u5668\u4eba\u6536\u5165\u5360\u6bd4\u6781\u5c0f\u3001\u8ba2\u5355\u5168\u4e3aC\u7ea7\uff1b26Q3\u5355\u5217\u9a8c\u8bc1\u7a97\u53e3\uff1a\u4e3b\u4e1a\u5355\u5b63\u5f52\u6bcd\u22650.2\u4ebf\u901a\u8fc7/<0.1\u4ebf\u786e\u8ba4D |\n| \u9ad8 | W5\u4f30\u503c | \u5168\u961f\u521746\u5bb6v2.0\u91cd\u4f30+\u7ea2\u961f\u4e09\u8f6e\u6536\u655b | W5 | \u2705 \u5b9a\u7248 | 2026-10-13\u51cc\u6668\u5b8c\u6210\uff1av2.0\u6807\u51c6\uff0812\u8282+\u4e5d\u884c\u5361\u7247+\u52fe\u7a3dJSON\uff09\u5168\u961f\u5217\u8986\u76d6\uff1b\u7ea2\u961fR1\u7ea640\u5904\u2192R2\u6b8b\u755916\u5904\u2192R3\u7ec8\u5ba1\u96f6\u4e8b\u5b9e\u9519\u8bef\uff1b\u65b0\u6613\u76db\u699c\u9996\u64a4\u9500\uff08\u5cf0\u503c\u5916\u63a8\uff09\u3001\u5b81\u5fb7\u91cd\u767b\u7b2c\u4e00\uff0877%\uff09\uff1b26Q3\u5b63\u62a5\u4e3a\u5171\u540c\u9a8c\u8bc1\u7a97\u53e3 |\n\n## \u8f6e\u80ce\uff082026-10-14 \u65b0\u589e\uff0cW1\u542f\u52a8\uff09\n- [x] \u4ea7\u4e1a\u7814\u7a76 \u2705\uff082026-10-14\uff0cdeleg_488baf7b\uff0c\u8282\u70b9TOP3\uff1a\u534a\u94a2\u51fa\u6d77/\u975e\u516c\u8def\u5de8\u80ce/\u6db2\u4f53\u9ec4\u91d1\uff09\n- [x] \u8282\u70b9\u7814\u7a76 \u2705\uff082026-10-14\uff0cdeleg_1a610969\uff1b\u961f\u5217=\u8d5b\u8f6e/\u8d35\u5dde\u80ce\u5b8c\u6574+\u68ee\u9e92\u9e9f/\u73b2\u73d1\u6761\u4ef6\u5e2d\u4f4d\uff09\n- [ ] \u5019\u9009\u4f01\u4e1a\u6e05\u5355\uff08\u542b\u843d\u9009\u7406\u7531\uff09\n- [ ] W5\u4f30\u503c\u961f\u5217\uff08\u4ec5A\u80a1\uff0cv2.0\u5b50skill\u6807\u51c6\uff09\u2014\u2014\u27055/5\u5b9a\u7a3f\uff1a\u8d5b\u8f6eB+(\u4e2d\u6027441)\u2192\u8d35\u5ddeB-(64.6)\u2192\u4e2d\u7b56B+(407)\u2192\u68ee\u9e92\u9e9fC+(138)\u2192\u73b2\u73d1C(145)\uff1bR1\u4fee\u6b63+R2\u590d\u9a8c\u901a\u8fc7\uff0c\u5df2\u5165\u5bf9\u6bd4\u603b\u8868\n- [x] \u7ea2\u961f\u6536\u655b \u2705\uff08R1:9\u9879\u4fee\u6b63\u2192\u5168\u90e8\u843d\u5730\uff1b\u68ee\u9e92\u9e9f\u73b2\u73d1R1\u96f6\u9519\u8bef\uff1bR2\u590d\u9a8c\u901a\u8fc7\u96f6\u6b8b\u7559\uff09\n- [ ] \u884c\u4e1a\u6df1\u5ea6\u62a5\u544a\u5b9a\u7a3f+\u603b\u8868\u66f4\u65b0\n\n## \u660e\u6cf0\u94dd\u4e1a\uff082026-10-15\uff0c\u7528\u6237\u5355\u70b9\u597d\u5947\u53d1\u8d77\uff0cW2\u53cd\u5411\uff09\u2705\n- [x] \u4f30\u503c\u62a5\u544a\uff08v2.0\u6807\u51c6\uff0c\u4e1a\u52a1\u8bb2\u89e3\u7279\u522b\u5f3a\u5316\uff09\u2192 \u7ea2\u961fR1\u516d\u9879\u4fee\u6b63 \u2192 R2\u590d\u9a8c\u901a\u8fc7\u5b9a\u7a3f\n- \u7ed3\u8bba\uff1aB\u7ea7\uff1b\u60b2\u89c2153-209/\u4e2d\u6027241.5-310.5/\u4e50\u89c2325-405\u4ebf\uff1b\u73b0\u4ef7184\u4ebf=\u6bd4\u503c68%\uff0c\u5165\u603b\u8868\u5168\u8868\u4f4e\u4f30\u699c\u9996\n| \u4e2d | \u4ea7\u4e1a | \u519b\u5de5\uff08\u56fd\u9632\u519b\u5de5\uff09 | W1 | \u2705 \u5b9a\u7a3f\uff08R1-R3\u4e09\u8f6e\u6536\u655b\uff0c\u9057\u75592\u9879\u975e\u963b\u65ad\uff1a\u6c88\u98de\u00a78\u8868\u8ff0/\u9ad8\u5fb7\u4fdd\u5b88\u951a26Q3\u590d\u6838\uff09 | \u57fa\u7840\u7814\u7a76\u2705+\u4e09\u4e3b\u7ebf\u4e3b\u9898\u7814\u7a76\u2705+\u516d\u5bb6\u5934\u90e8v2.0\u4f30\u503c\u2705\uff08\u6c88\u98deB/\u6210\u98deB/\u9ad8\u5fb7\u7ea2\u5916B+/\u56fd\u79d1\u519b\u5de5B-/\u4e2d\u822a\u9ad8\u79d1B+/\u4e2d\u56fd\u8239\u8236B\uff0c2026-10-16\u5b9a\u7a3f\uff0c\u89c106_\u4f30\u503c\u4e0e\u5206\u7ea7/\u519b\u5de5_\u4e2d\u822a\u6c88\u98de_\u4f30\u503c_v2.md\u53ca\u6c47\u603bjson\uff09\uff1b\u5df2\u5165\u7814\u7a76\u603b\u8868/\u4f01\u4e1a\u4f30\u503c\u961f\u5217/\u4f30\u503c\u5bf9\u6bd4\u603b\u8868\uff0c\u8f6c\u5165W4\u76d1\u63a7 |\n|| \u4e2d | \u4ea7\u4e1a | \u533b\u7597\u7f8e\u5bb9\u2014\u2014\u91cd\u70b9\u300c\u7ef4\u62a4\u6027\u7f8e\u5bb9\u300d | W1\u2705\u57fa\u7840\u5b9a\u7a3f | \u2705 \u5b9a\u7a3f\uff08R1-R3\u4e09\u8f6e\u6536\u655b\uff1b\u9057\u7559\uff1a\u534e\u4e1c\u80a1\u672c\u72ec\u7acb\u6e90\u8865\u8bc1\u3001\u534e\u4e1cQ3\u96c6\u91c7\u9a8c\u8bc1\u95e8\uff09 | \u57fa\u7840\u4e09\u4efd\u2705\uff08\u9009\u4f9b\u7ed9\u683c\u5c40\u975e\u62bc\u9700\u6c42\u65b9\u5411\uff09\u3002\u7231\u7f8e\u5ba2C+\uff08\u4e2d\u6027194\u4ebf\uff0c\u73b0\u4ef7\u900f\u652f\u7ea650%\uff09+\u534e\u4e1c\u533b\u836fB-\uff08\u4e2d\u6027494.5\u4ebf\uff0c\u73b0\u4ef7=\u4e2d\u6027\u4e0b\u6cbf\u671f\u6743\u514d\u8d39\uff09v2.0\u5b9a\u7a3f\uff082026-10-16\uff09\uff0c\u5df2\u5165\u7814\u7a76\u603b\u8868/\u4f01\u4e1a\u4f30\u503c\u961f\u5217/\u4f30\u503c\u5bf9\u6bd4\u603b\u8868\uff1b\u534e\u7199/\u660a\u6d77\u843d\u9009\u88c1\u51b3\u7ef4\u6301\u539f\u5224 |\n";</script>
+<script>
+(function(){
+  var btn=document.getElementById('mdToggle');
+  var content=document.querySelector('.content');
+  var rendered=null;
+  function showMD(){
+    if(!rendered){
+      rendered=document.createElement('div');
+      rendered.className='content-mdraw';
+      content.parentNode.appendChild(rendered);
+    }
+    if(!rendered.dataset.loaded){
+      var pre=document.createElement('pre');
+      pre.style.cssText='white-space:pre-wrap;word-break:break-word;background:#f6f8fa;padding:16px;border-radius:8px;font-size:.9em';
+      pre.textContent=window.__MD_SOURCE__||'(无原始内容)';
+      rendered.appendChild(pre);
+      rendered.dataset.loaded='1';
+    }
+    content.style.display='none';
+    rendered.style.display='block';
+    btn.textContent='Mdown';
+    btn.dataset.mode='md';
+  }
+  function showRendered(){
+    if(rendered)rendered.style.display='none';
+    content.style.display='';
+    btn.textContent='Mdown';
+    btn.dataset.mode='rendered';
+  }
+  btn.addEventListener('click',function(){
+    btn.dataset.mode==='md'?showRendered():showMD();
+  });
+  window.__mdReset=function(){
+    if(rendered){rendered.style.display='none';rendered.innerHTML='';rendered.removeAttribute('data-loaded');}
+    content=document.querySelector('.content');
+    content.style.display='';
+    btn.textContent='Mdown';btn.dataset.mode='rendered';
+  };
+})();
+</script>

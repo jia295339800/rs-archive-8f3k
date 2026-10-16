@@ -25,7 +25,9 @@ body{margin-left:280px}
 .sidebar .group.sub a{font-size:.92em;color:#57606a}
 #sidebarToggle{position:fixed;left:16px;top:16px;z-index:30;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:.9em;color:#24292f}
 body.hide-sb{margin-left:24px}
-body.hide-sb .sidebar{display:none!important}}
+body.hide-sb .sidebar{display:none!important}
+#mdToggle{position:fixed;right:16px;top:16px;z-index:40;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:.85em;color:#24292f}
+#mdToggle:hover{background:#eef1f4}.content-mdraw{max-width:920px;margin:0 auto;padding:24px;line-height:1.75}
 </style>
 <button id="sidebarToggle" title="收起/展开菜单">◀</button><div class="sidebar"><div class="grp">📖 研究库</div>
 <div class="group"><div class="grp">00_使用说明</div>
@@ -278,6 +280,12 @@ document.addEventListener('click',function(e){
       document.querySelectorAll('.sidebar a.current').forEach(function(x){x.classList.remove('current')});
       a.classList.add('current');
       history.pushState({sp:true},'',url);
+      // 重置MD切换视图并重取新页面MD源
+      if(window.__mdReset)window.__mdReset();
+      fetch(url).then(function(r2){return r2.text()}).then(function(t2){
+        var m=t2.match(/<script>window\.__MD_SOURCE__ = ([\s\S]*?)<\/script>/);
+        window.__MD_SOURCE__=m?JSON.parse(m[1]):null;
+      });
       window.scrollTo(0,0);
     }else{location.href=url;} // 结构异常则整页跳转兜底
   }).catch(function(){location.href=url;}); // 网络失败兜底
@@ -299,7 +307,7 @@ window.addEventListener('popstate',function(e){
     }else{location.reload();}
   }).catch(function(){location.reload();});
 });
-</script><div class="content"><nav><a href="../../00_使用说明/index.html">00_使用说明</a> <a href="../../06_数据与工具/index.html">06_数据与工具</a> <a href="../../08_归档/index.html">08_归档</a> <a href="../../AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="../../军工/index.html">军工</a> <a href="../../化纤/index.html">化纤</a> <a href="../../医疗美容/index.html">医疗美容</a> <a href="../../家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="../../开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="../../新型电池/index.html">新型电池</a> <a href="../../明泰铝业/index.html">明泰铝业</a> <a href="../../智能网联新能源汽车/index.html">智能网联新能源汽车</a> <a href="../../轮胎/index.html">轮胎</a></nav><p><a href="../index.html">← 返回</a> · 生成于 2026-10-16 16:25</p>
+</script><button id="mdToggle" title="切换 Markdown / 渲染视图">M↓</button><div class="content"><nav><a href="../../00_使用说明/index.html">00_使用说明</a> <a href="../../06_数据与工具/index.html">06_数据与工具</a> <a href="../../08_归档/index.html">08_归档</a> <a href="../../AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="../../军工/index.html">军工</a> <a href="../../化纤/index.html">化纤</a> <a href="../../医疗美容/index.html">医疗美容</a> <a href="../../家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="../../开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="../../新型电池/index.html">新型电池</a> <a href="../../明泰铝业/index.html">明泰铝业</a> <a href="../../智能网联新能源汽车/index.html">智能网联新能源汽车</a> <a href="../../轮胎/index.html">轮胎</a></nav><p><a href="../index.html">← 返回</a> · 生成于 2026-10-16 16:45</p>
 <h1 id="_1">企业深度研究与估值报告模板</h1>
 <blockquote>
 <p>公司：<strong><em>_ ｜ 代码：</em></strong>_ ｜ 估值基准日：<strong><em>_ ｜ 数据截止：</em></strong>_</p>
@@ -389,3 +397,44 @@ window.addEventListener('popstate',function(e){
 <h2 id="9-abcd">9. ABCD分级 + 升降级触发条件</h2>
 <h2 id="10-red-team">10. Red Team 反方观点（独立，不得引用相同原始材料下附和）</h2>
 <h2 id="11">11. 后续跟踪指标清单</h2></div>
+<script>window.__MD_SOURCE__ = "# \u4f01\u4e1a\u6df1\u5ea6\u7814\u7a76\u4e0e\u4f30\u503c\u62a5\u544a\u6a21\u677f\n\n> \u516c\u53f8\uff1a____ \uff5c \u4ee3\u7801\uff1a____ \uff5c \u4f30\u503c\u57fa\u51c6\u65e5\uff1a____ \uff5c \u6570\u636e\u622a\u6b62\uff1a____\n\n## 1. \u4e1a\u52a1\u7406\u89e3\u5361\u7247\n- \u505a\u4ec0\u4e48 / \u5229\u6da6\u53d1\u52a8\u673a / \u884c\u4e1a\u5730\u4f4d / \u5356\u7ed9\u8c01 / \u7ade\u4e89\u80dc\u8d1f\u624b / \u6700\u503c\u5f97\u8ffd\u8e2a\u7684\u7ecf\u8425\u53d8\u91cf\n\n## 2. \u6240\u5904\u4ea7\u4e1a\u8282\u70b9\u4e0e\u4ef7\u503c\u6355\u83b7\u80fd\u529b\n## 3. \u7ade\u4e89\u5730\u4f4d\u4e0e\u53d1\u5c55\u7a7a\u95f4\uff08\u4e1a\u52a1\u655e\u53e3\uff1a\u4ea7\u4e1a\u5bf9\u6536\u5165/\u5229\u6da6\u8d21\u732e\u5360\u6bd4\uff09\n## 4. \u8d22\u52a1\u4e0e\u76c8\u5229\u8d28\u91cf\uff083\u20135\u5e74\uff1a\u6536\u5165\u6765\u6e90\u3001\u5229\u6da6\u7387\u3001\u6b63\u5e38\u5316EBIT/NOPAT\uff09\n## 5. ROIC\u3001WACC\u3001\u589e\u91cfROIC\u3001\u518d\u6295\u8d44\u9700\u6c42\n## 6. \u73b0\u91d1\u6d41\uff1a\u7ecf\u8425\u73b0\u91d1\u6d41 / Capex / FCF / \u8425\u8fd0\u8d44\u672c / \u6760\u6746\u4e0e\u7a00\u91ca\n## 7. \u6838\u5fc3\u589e\u957f\u4e0e\u76c8\u5229\u6539\u5584\u5047\u8bbe + \u4ef7\u503c\u5151\u73b0\u9a8c\u8bc1\u94fe\n\n## 8. \u4e09\u60c5\u666f\u4f30\u503c\u5361\u7247\n\n| \u6307\u6807 | \u60b2\u89c2 | \u4e2d\u6027 | \u4e50\u89c2 |\n|---|---|---|---|\n| \u6838\u5fc3\u4e1a\u52a1\u5047\u8bbe | | | |\n| \u4ef7\u683c/\u9500\u91cf/\u4efd\u989d\u5047\u8bbe | | | |\n| \u6210\u672c/\u5229\u6da6\u7387 | | | |\n| \u6b63\u5e38\u5316\u5229\u6da6 | | | |\n| ROIC\u4e0e\u518d\u6295\u8d44\u5047\u8bbe | | | |\n| FCF\u4e0eCapex\u5047\u8bbe | | | |\n| \u4f30\u503c\u65b9\u6cd5\u53ca\u53c2\u6570 | | | |\n| \u5408\u7406\u80a1\u6743\u5e02\u503c | | | |\n| \u5408\u7406\u6bcf\u80a1\u4ef7\u503c | | | |\n\n\u5f53\u524d\u5e02\u503c\uff1a____ \uff5c \u5f53\u524d\u4ef7\u683c\u9690\u542b\u9884\u671f\uff1a____ \uff5c \u4e0e\u5e02\u573a\u4e0d\u540c\u7684\u6838\u5fc3\u5224\u65ad\uff1a____\n\u65f6\u95f4\u7ef4\u5ea6\uff1a\u9884\u6d4b\u671f / \u76ee\u6807\u72b6\u6001\u5b9e\u73b0\u65f6\u95f4 / \u9a8c\u8bc1\u65f6\u95f4 / \u6301\u7eed\u6027\n\n**\u6700\u5173\u952e\u5047\u8bbe\uff1a**\n**\u6700\u5bb9\u6613\u9519\u7684\u5047\u8bbe\uff1a**\n**\u4e0b\u4e00\u6b65\u8981\u9a8c\u8bc1\uff1a**\n\n## 9. ABCD\u5206\u7ea7 + \u5347\u964d\u7ea7\u89e6\u53d1\u6761\u4ef6\n## 10. Red Team \u53cd\u65b9\u89c2\u70b9\uff08\u72ec\u7acb\uff0c\u4e0d\u5f97\u5f15\u7528\u76f8\u540c\u539f\u59cb\u6750\u6599\u4e0b\u9644\u548c\uff09\n## 11. \u540e\u7eed\u8ddf\u8e2a\u6307\u6807\u6e05\u5355\n";</script>
+<script>
+(function(){
+  var btn=document.getElementById('mdToggle');
+  var content=document.querySelector('.content');
+  var rendered=null;
+  function showMD(){
+    if(!rendered){
+      rendered=document.createElement('div');
+      rendered.className='content-mdraw';
+      content.parentNode.appendChild(rendered);
+    }
+    if(!rendered.dataset.loaded){
+      var pre=document.createElement('pre');
+      pre.style.cssText='white-space:pre-wrap;word-break:break-word;background:#f6f8fa;padding:16px;border-radius:8px;font-size:.9em';
+      pre.textContent=window.__MD_SOURCE__||'(无原始内容)';
+      rendered.appendChild(pre);
+      rendered.dataset.loaded='1';
+    }
+    content.style.display='none';
+    rendered.style.display='block';
+    btn.textContent='Mdown';
+    btn.dataset.mode='md';
+  }
+  function showRendered(){
+    if(rendered)rendered.style.display='none';
+    content.style.display='';
+    btn.textContent='Mdown';
+    btn.dataset.mode='rendered';
+  }
+  btn.addEventListener('click',function(){
+    btn.dataset.mode==='md'?showRendered():showMD();
+  });
+  window.__mdReset=function(){
+    if(rendered){rendered.style.display='none';rendered.innerHTML='';rendered.removeAttribute('data-loaded');}
+    content=document.querySelector('.content');
+    content.style.display='';
+    btn.textContent='Mdown';btn.dataset.mode='rendered';
+  };
+})();
+</script>

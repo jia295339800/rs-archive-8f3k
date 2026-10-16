@@ -25,7 +25,9 @@ body{margin-left:280px}
 .sidebar .group.sub a{font-size:.92em;color:#57606a}
 #sidebarToggle{position:fixed;left:16px;top:16px;z-index:30;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:.9em;color:#24292f}
 body.hide-sb{margin-left:24px}
-body.hide-sb .sidebar{display:none!important}}
+body.hide-sb .sidebar{display:none!important}
+#mdToggle{position:fixed;right:16px;top:16px;z-index:40;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:.85em;color:#24292f}
+#mdToggle:hover{background:#eef1f4}.content-mdraw{max-width:920px;margin:0 auto;padding:24px;line-height:1.75}
 </style>
 <button id="sidebarToggle" title="收起/展开菜单">◀</button><div class="sidebar"><div class="grp">📖 研究库</div>
 <div class="group"><div class="grp">00_使用说明</div>
@@ -278,6 +280,12 @@ document.addEventListener('click',function(e){
       document.querySelectorAll('.sidebar a.current').forEach(function(x){x.classList.remove('current')});
       a.classList.add('current');
       history.pushState({sp:true},'',url);
+      // 重置MD切换视图并重取新页面MD源
+      if(window.__mdReset)window.__mdReset();
+      fetch(url).then(function(r2){return r2.text()}).then(function(t2){
+        var m=t2.match(/<script>window\.__MD_SOURCE__ = ([\s\S]*?)<\/script>/);
+        window.__MD_SOURCE__=m?JSON.parse(m[1]):null;
+      });
       window.scrollTo(0,0);
     }else{location.href=url;} // 结构异常则整页跳转兜底
   }).catch(function(){location.href=url;}); // 网络失败兜底
@@ -299,7 +307,7 @@ window.addEventListener('popstate',function(e){
     }else{location.reload();}
   }).catch(function(){location.reload();});
 });
-</script><div class="content"><nav><a href="../../../00_使用说明/index.html">00_使用说明</a> <a href="../../../06_数据与工具/index.html">06_数据与工具</a> <a href="../../../08_归档/index.html">08_归档</a> <a href="../../../AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="../../../军工/index.html">军工</a> <a href="../../../化纤/index.html">化纤</a> <a href="../../../医疗美容/index.html">医疗美容</a> <a href="../../../家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="../../../开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="../../../新型电池/index.html">新型电池</a> <a href="../../../明泰铝业/index.html">明泰铝业</a> <a href="../../../智能网联新能源汽车/index.html">智能网联新能源汽车</a> <a href="../../../轮胎/index.html">轮胎</a></nav><p><a href="../../index.html">← 返回</a> · 生成于 2026-10-16 16:25</p>
+</script><button id="mdToggle" title="切换 Markdown / 渲染视图">M↓</button><div class="content"><nav><a href="../../../00_使用说明/index.html">00_使用说明</a> <a href="../../../06_数据与工具/index.html">06_数据与工具</a> <a href="../../../08_归档/index.html">08_归档</a> <a href="../../../AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="../../../军工/index.html">军工</a> <a href="../../../化纤/index.html">化纤</a> <a href="../../../医疗美容/index.html">医疗美容</a> <a href="../../../家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="../../../开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="../../../新型电池/index.html">新型电池</a> <a href="../../../明泰铝业/index.html">明泰铝业</a> <a href="../../../智能网联新能源汽车/index.html">智能网联新能源汽车</a> <a href="../../../轮胎/index.html">轮胎</a></nav><p><a href="../../index.html">← 返回</a> · 生成于 2026-10-16 16:45</p>
 <h1 id="w5-r3-2026-10-12">W5估值 批量红队 R3 复验（轻量）｜2026-10-12</h1>
 <p>复验范围：仅R2红队6处修正是否准确落盘、上下文自洽、无新引入错误。不重新抽查其他数字。</p>
 <h2 id="_1">逐项核对</h2>
@@ -316,3 +324,44 @@ window.addEventListener('popstate',function(e){
 - 奥比中光报告"三家横排"一句的排序号写反（鸣志72% &gt; 奥比73%，实际73%&gt;72%），不影响各自数字与结论，建议改为"奥比 73% ≥ 鸣志 72% ≈（略高于）江淮 70%"。
 - 鸣志145亿与"中值50亿"推算149亿存在约4亿约数偏差（按R2要求保留原数，不算错误）。</p>
 <p><strong>判定：除上述1处排序表述残留外，零事实错误；修正排序句后可定稿。</strong></p></div>
+<script>window.__MD_SOURCE__ = "# W5\u4f30\u503c \u6279\u91cf\u7ea2\u961f R3 \u590d\u9a8c\uff08\u8f7b\u91cf\uff09\uff5c2026-10-12\n\n\u590d\u9a8c\u8303\u56f4\uff1a\u4ec5R2\u7ea2\u961f6\u5904\u4fee\u6b63\u662f\u5426\u51c6\u786e\u843d\u76d8\u3001\u4e0a\u4e0b\u6587\u81ea\u6d3d\u3001\u65e0\u65b0\u5f15\u5165\u9519\u8bef\u3002\u4e0d\u91cd\u65b0\u62bd\u67e5\u5176\u4ed6\u6570\u5b57\u3002\n\n## \u9010\u9879\u6838\u5bf9\n\n1. **\u4e2d\u9645\u65ed\u521b**\uff1aTTM\u63a8\u7b97\u6539\u4e3a68.0\uff082025H2=108.0\u221240.0\uff09+26Q1 57.3+26Q2 79.2=204.5\u4ebf\uff0c\u4e0ePE-TTM 41.7x\u4e00\u81f4\uff088534/204.5\u224841.7\uff09\uff1b\u539f\u7a3f92.1/228.6\u4ec5\u4f5c\u4fee\u6b63\u6ce8\u8bb0\u4fdd\u7559\uff1b2026E\u53e3\u5f84\uff08290-330\u4ebf vs \u5bf9\u7167\u5361341\u4ebf\uff0c\u9884\u6d4b\u5047\u8bbe\u4e0d\u540c\u5404\u81ea\u6807\u6ce8\uff09\u5df2\u6ce8\u660e\u3002\u2705\n2. **\u8424\u77f3\u7f51\u7edc**\uff1a\"\u4e91SaaS\u6ea2\u4ef7\u22480\"\u4e09\u5904\uff08\u00a70\u7ed3\u8bba\u901f\u89c8\u3001\u00a73\u5b9a\u4ef7\u7a0b\u5ea6\u5224\u65ad\u3001\u00a75\u4e09\u53e5\u8bdd\uff09\u5747\u5df2\u6539\u4e3a\"\u672a\u5145\u5206\u5b9a\u4ef7\"\u5e76\u9644R2\u4fee\u6b63\u8bf4\u660e\uff0830x\u6574\u4f53\u500d\u6570\u6216\u5df2\u9690\u542b\u90e8\u5206\u4e91\u4ef7\u503c\uff09\u3002\u81ea\u6d3d\u6027\uff1a\u4e2d\u6027\u533a\u95f4245-275\u4ebf\u672a\u6539\uff0c\u5206\u90e8\u52a0\u603b294\u4ebf\u540e\u4ee5\u6574\u4f53PE 35-37x\u6821\u9a8c\uff08252-266\u4ebf\uff09\u53d6\u5e26\uff0c\u4e0e\u65b0\u8868\u8ff0\u4e0d\u77db\u76fe\u3002\u2705\n3. **\u6c5f\u6dee\u6c7d\u8f66**\uff1a\u5546\u7528\u8f66\u5e74\u5229\u6da62-5\u4ebf\u21921-3\u4ebf\uff08\u9644\u4e0b\u8c03\u7406\u7531\uff09\uff0c\u88f8\u4f30\u503c\u6539\u4e3a\u8c03\u6574\u540e\u51c0\u8d44\u4ea7/PB\u5e95\u7ebf\u4e3a\u4e3b\u951a\uff08124\u4ebf\u00d71.0-1.45x\u2248120-180\u4ebf\uff09\u3001\u5206\u90e8PE\u4ec5\u4ea4\u53c9\u9a8c\u8bc1\uff0c\u88f8\u4f30\u503c\u533a\u95f4120-180\u4ebf/\u4e2d\u67a2150\u4ebf\u4e0d\u53d8\u30021-3\u4ebf\u00d710-15x=10-45\u4ebf\u4e0e\u51c0\u8d44\u4ea7\u951a\u4ea4\u53c9\u9a8c\u8bc1\u91cf\u7ea7\u76f8\u5bb9\u3002\u2705\n4. **\u5965\u6bd4\u4e2d\u5149**\uff1a65-72%\u7edf\u4e00\u4e3a73%\uff0c\u5168\u6587\u4e09\u5904\uff08\u4e00\u53e5\u8bdd\u901f\u89c8\u3001\u4e09\u5bb6\u6a2a\u6392\u3001\u00a7\u56db\u5206\u7ea7\u4e0e\u4e09\u5bb6\u6a2a\u5411\u7ed3\u8bba\uff09\u5747\u4e00\u81f4\u3002\u26a0\ufe0f \u4f46\u4e09\u5bb6\u6a2a\u6392\u4e00\u53e5\"**\u9e23\u5fd7 72% > \u5965\u6bd4 73% \u2248 \u6c5f\u6dee 70%**\"\u6392\u5e8f\u903b\u8f91\u9519\u8bef\uff1a72<73\uff0c\u5e94\u4e3a\"\u5965\u6bd4 73% > \u9e23\u5fd7 72%\"\uff08\u6216\"\u9e23\u5fd772%\u3001\u5965\u6bd473%\u4e0d\u76f8\u4e0a\u4e0b\"\uff09\u3002\u6570\u5b57\u672c\u8eab\u4e00\u81f4\uff0c\u5c5e\u6392\u5e8f\u8868\u8ff0\u6b8b\u7559\u3002\n5. **\u9e23\u5fd7\u7535\u5668**\uff1a145\u4ebf\u5904\u5df2\u6ce8\u660e\"\u4e2d\u6027\u5e2645-55\u4ebf\u53d6\u4e2d\u503c\uff0c\u7ea2\u961fR2\u6ce8\u660e\"\u3002\u6570\u5b57\u5fae\u5dee\uff1a199\u221250=149\u4ebf\u2248\"\u7ea6145\u4ebf\"\uff0c4\u4ebf\u4e3a\u7ea6\u6570\u504f\u5dee\uff0c\u539f\u6570\u503c\u6309R2\u8981\u6c42\u4fdd\u7559\u672a\u6539\uff0c\u53ef\u63a5\u53d7\u3002\u2705\uff08\u5fae\u5dee\u63d0\u793a\uff09\n6. **\u65b0\u6613\u76db**\uff1a\u57fa\u51c6\u60c5\u666f\u5df2\u52a0\u654f\u611f\u6027\u58f0\u660e\"23x\u5bf92027\u518d\u5e73\u8861\u5e74\u5c5e\u6177\u6168\u4e0a\u6cbf\uff0c\u00b13x\u2248\u00b1900\u4ebf\"\uff08300\u4ebf\u00d73=900\u4ebf\uff0c\u7b97\u672f\u6b63\u786e\uff09\uff0c\u5e76\u6ce8\u660e\u60b2\u89c220x\u53e3\u5f84\u4e0e\u5361\u5185\u4e00\u81f4\u3002\u2705\n\n## \u7ed3\u8bba\n\n6\u5904\u4fee\u6b63\u5747\u5df2\u51c6\u786e\u843d\u76d8\uff0c\u65e0\u5b9e\u8d28\u65b0\u9519\u8bef\u3002\u6b8b\u75591\u5904\u8868\u8ff0\u95ee\u9898\uff1a\n- \u5965\u6bd4\u4e2d\u5149\u62a5\u544a\"\u4e09\u5bb6\u6a2a\u6392\"\u4e00\u53e5\u7684\u6392\u5e8f\u53f7\u5199\u53cd\uff08\u9e23\u5fd772% > \u5965\u6bd473%\uff0c\u5b9e\u964573%>72%\uff09\uff0c\u4e0d\u5f71\u54cd\u5404\u81ea\u6570\u5b57\u4e0e\u7ed3\u8bba\uff0c\u5efa\u8bae\u6539\u4e3a\"\u5965\u6bd4 73% \u2265 \u9e23\u5fd7 72% \u2248\uff08\u7565\u9ad8\u4e8e\uff09\u6c5f\u6dee 70%\"\u3002\n- \u9e23\u5fd7145\u4ebf\u4e0e\"\u4e2d\u503c50\u4ebf\"\u63a8\u7b97149\u4ebf\u5b58\u5728\u7ea64\u4ebf\u7ea6\u6570\u504f\u5dee\uff08\u6309R2\u8981\u6c42\u4fdd\u7559\u539f\u6570\uff0c\u4e0d\u7b97\u9519\u8bef\uff09\u3002\n\n**\u5224\u5b9a\uff1a\u9664\u4e0a\u8ff01\u5904\u6392\u5e8f\u8868\u8ff0\u6b8b\u7559\u5916\uff0c\u96f6\u4e8b\u5b9e\u9519\u8bef\uff1b\u4fee\u6b63\u6392\u5e8f\u53e5\u540e\u53ef\u5b9a\u7a3f\u3002**\n";</script>
+<script>
+(function(){
+  var btn=document.getElementById('mdToggle');
+  var content=document.querySelector('.content');
+  var rendered=null;
+  function showMD(){
+    if(!rendered){
+      rendered=document.createElement('div');
+      rendered.className='content-mdraw';
+      content.parentNode.appendChild(rendered);
+    }
+    if(!rendered.dataset.loaded){
+      var pre=document.createElement('pre');
+      pre.style.cssText='white-space:pre-wrap;word-break:break-word;background:#f6f8fa;padding:16px;border-radius:8px;font-size:.9em';
+      pre.textContent=window.__MD_SOURCE__||'(无原始内容)';
+      rendered.appendChild(pre);
+      rendered.dataset.loaded='1';
+    }
+    content.style.display='none';
+    rendered.style.display='block';
+    btn.textContent='Mdown';
+    btn.dataset.mode='md';
+  }
+  function showRendered(){
+    if(rendered)rendered.style.display='none';
+    content.style.display='';
+    btn.textContent='Mdown';
+    btn.dataset.mode='rendered';
+  }
+  btn.addEventListener('click',function(){
+    btn.dataset.mode==='md'?showRendered():showMD();
+  });
+  window.__mdReset=function(){
+    if(rendered){rendered.style.display='none';rendered.innerHTML='';rendered.removeAttribute('data-loaded');}
+    content=document.querySelector('.content');
+    content.style.display='';
+    btn.textContent='Mdown';btn.dataset.mode='rendered';
+  };
+})();
+</script>
