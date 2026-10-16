@@ -1,0 +1,380 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>军工_全套红队R1 · 研究库</title><style>body{font-family:-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;max-width:920px;margin:0 auto;padding:24px;line-height:1.75;color:#24292f}
+h1,h2,h3{border-bottom:1px solid #e1e4e8;padding-bottom:6px}h1{font-size:1.7em}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.92em;display:block;overflow-x:auto}
+th,td{border:1px solid #d0d7de;padding:6px 10px;text-align:left}th{background:#f6f8fa}
+blockquote{border-left:4px solid #d0d7de;margin:0;padding:2px 14px;color:#57606a;background:#f6f8fa}
+code{background:#f0f1f2;padding:1px 5px;border-radius:4px;font-size:.9em}
+pre{background:#f6f8fa;padding:12px;border-radius:8px;overflow-x:auto}
+a{color:#0969da}nav{font-size:.9em;margin-bottom:18px}
+nav a{margin-right:14px;text-decoration:none}
+.sidebar{display:none}
+@media(min-width:1100px){.sidebar{display:block;position:fixed;left:16px;top:16px;bottom:16px;width:230px;overflow:auto;font-size:.85em;border-right:1px solid #e1e4e8;padding-right:10px}
+body{margin-left:280px}
+.sidebar a{display:block;text-decoration:none;color:#24292f;padding:2px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sidebar .group{border-bottom:1px solid #eef0f2;padding:2px 0}
+.sidebar .grp{font-weight:700;margin-top:8px;margin-bottom:2px;color:#0969da;cursor:pointer;user-select:none;display:block;padding:6px 18px 6px 2px;position:relative;min-height:1.4em}
+.sidebar a.current{background:#ddf4ff;border-left:3px solid #0969da;color:#0550ae;font-weight:600;padding-left:8px;border-radius:0 4px 4px 0}
+.sidebar .group:has(a.current)>.grp{color:#0550ae}
+.sidebar .grp::after{content:'▾';position:absolute;right:2px;top:6px;font-size:.75em;color:#8b949e}
+.sidebar .collapsed .grp::after{content:'▸'}
+.sidebar .collapsed a{display:none}
+.sidebar .group.sub{border-bottom:none;margin-left:12px}
+.sidebar .group.sub>.grp{font-weight:400;color:#8b949e;margin-top:2px}
+.sidebar .group.sub a{font-size:.92em;color:#57606a}
+#sidebarToggle{position:fixed;left:16px;top:16px;z-index:30;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:2px 8px;cursor:pointer;font-size:.9em;color:#24292f}
+body.hide-sb{margin-left:24px}
+body.hide-sb .sidebar{display:none!important}}
+</style>
+<button id="sidebarToggle" title="收起/展开菜单">◀</button><div class="sidebar"><div class="grp">📖 研究库</div>
+<div class="group"><div class="grp">00_使用说明</div>
+<a href="../../../00_使用说明/README_使用说明.html">README_使用说明</a>
+<a href="../../../00_使用说明/任务队列.html">任务队列</a>
+<a href="../../../00_使用说明/企业估值队列.html">企业估值队列</a>
+<a href="../../../00_使用说明/估值对比总表.html">估值对比总表</a>
+<a href="../../../00_使用说明/报告模板/company_report.html">company_report</a>
+<a href="../../../00_使用说明/报告模板/industry_report.html">industry_report</a>
+<a href="../../../00_使用说明/报告模板/node_report.html">node_report</a>
+<a href="../../../00_使用说明/研究总表.html">研究总表</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../../00_使用说明/估值红队v2_第2轮复审.html">估值红队v2_第2轮复审</a>
+<a href="../../../00_使用说明/估值红队v2_第3轮终审.html">估值红队v2_第3轮终审</a>
+</div>
+</div>
+<div class="group"><div class="grp">06_数据与工具</div>
+<a href="../../../06_数据与工具/数据能力说明.html">数据能力说明</a>
+</div>
+<div class="group"><div class="grp">08_归档</div>
+<a href="../../../08_归档/归档登记表.html">归档登记表</a>
+</div>
+<div class="group"><div class="grp">AI数据中心800VDC供电</div>
+<a href="../../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_研究材料.html">AI数据中心800VDC供电_研究材料</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_机会节点研究.html">AI数据中心800VDC供电_机会节点研究</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/AI数据中心800VDC供电_候选企业清单.html">AI数据中心800VDC供电_候选企业清单</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_三企业估值报告.html">AI数据中心800VDC供电_三企业估值报告</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_欧陆通_估值.html">AI数据中心800VDC供电_欧陆通_估值</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_科华数据_估值.html">AI数据中心800VDC供电_科华数据_估值</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/06_估值与分级/AI数据中心800VDC供电_科士达_估值.html">AI数据中心800VDC供电_科士达_估值</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/07_深度报告/AI数据中心800VDC供电_产业深度研究报告.html">AI数据中心800VDC供电_产业深度研究报告</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_复审R2.html">AI800VDC_复审R2</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI800VDC_红队审查.html">AI800VDC_红队审查</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_估值红队_v2.html">AI数据中心800VDC供电_估值红队_v2</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第2轮.html">AI数据中心800VDC供电_红队审查_第2轮</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/AI数据中心800VDC供电_红队审查_第3轮.html">AI数据中心800VDC供电_红队审查_第3轮</a>
+<a href="../../../行业研究/AI数据中心800VDC供电/09_红队审查/欧陆通+科华+科士达_批量红队R1.html">欧陆通+科华+科士达_批量红队R1</a>
+</div>
+</div>
+<div class="group"><div class="grp">军工</div>
+<a href="../../../行业研究/军工/06_估值与分级/军工_产业趋势研究.html">军工_产业趋势研究</a>
+<a href="../../../行业研究/军工/06_估值与分级/军工_机会节点研究.html">军工_机会节点研究</a>
+<a href="../../../行业研究/军工/06_估值与分级/军工_候选企业清单.html">军工_候选企业清单</a>
+<a href="../../../行业研究/军工/06_估值与分级/军工_中国船舶_估值_v2.html">军工_中国船舶_估值_v2</a>
+<a href="../../../行业研究/军工/06_估值与分级/军工_中航成飞_估值_v2.html">军工_中航成飞_估值_v2</a>
+<a href="../../../行业研究/军工/06_估值与分级/军工_中航沈飞_估值_v2.html">军工_中航沈飞_估值_v2</a>
+<a href="../../../行业研究/军工/06_估值与分级/军工_中航高科_估值_v2.html">军工_中航高科_估值_v2</a>
+<a href="../../../行业研究/军工/06_估值与分级/军工_主线1_军贸出口.html">军工_主线1_军贸出口</a>
+<a href="../../../行业研究/军工/06_估值与分级/军工_主线2_新质战斗力.html">军工_主线2_新质战斗力</a>
+<a href="../../../行业研究/军工/06_估值与分级/军工_主线3_船舶.html">军工_主线3_船舶</a>
+<a href="../../../行业研究/军工/06_估值与分级/军工_国科军工_估值_v2.html">军工_国科军工_估值_v2</a>
+<a href="../../../行业研究/军工/06_估值与分级/军工_高德红外_估值_v2.html">军工_高德红外_估值_v2</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../../行业研究/军工/09_红队审查/军工_全套红队R1.html">军工_全套红队R1</a>
+<a href="../../../行业研究/军工/09_红队审查/军工_全套红队R2复审.html">军工_全套红队R2复审</a>
+<a href="../../../行业研究/军工/09_红队审查/军工_全套红队R3终审.html">军工_全套红队R3终审</a>
+<a href="../../../行业研究/军工/09_红队审查/红队审查_2026-10-16.html">红队审查_2026-10-16</a>
+</div>
+</div>
+<div class="group"><div class="grp">化纤</div>
+<a href="../../../行业研究/化纤/化纤_产业趋势研究.html">化纤_产业趋势研究</a>
+<a href="../../../行业研究/化纤/化纤_机会节点研究.html">化纤_机会节点研究</a>
+<a href="../../../行业研究/化纤/化纤_候选企业清单.html">化纤_候选企业清单</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_三企业估值报告.html">化纤_三企业估值报告</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_台华新材_估值.html">化纤_台华新材_估值</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_恒逸石化_估值.html">化纤_恒逸石化_估值</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_神马股份_估值.html">化纤_神马股份_估值</a>
+<a href="../../../行业研究/化纤/06_估值与分级/化纤_荣盛石化_估值.html">化纤_荣盛石化_估值</a>
+<a href="../../../行业研究/化纤/07_深度报告/化纤_产业深度研究报告.html">化纤_产业深度研究报告</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_估值红队_v2.html">化纤_估值红队_v2</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R2.html">化纤_复审R2</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_复审R3.html">化纤_复审R3</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查.html">化纤_红队审查</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第2轮.html">化纤_红队审查_第2轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/化纤_红队审查_第3轮.html">化纤_红队审查_第3轮</a>
+<a href="../../../行业研究/化纤/09_红队审查/台华+神马_批量红队R1.html">台华+神马_批量红队R1</a>
+<a href="../../../行业研究/化纤/09_红队审查/审查记录.html">审查记录</a>
+</div>
+</div>
+<div class="group"><div class="grp">家庭空间常驻Agent</div>
+<a href="../../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_产业趋势研究.html">家庭空间常驻Agent_产业趋势研究</a>
+<a href="../../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_机会节点研究.html">家庭空间常驻Agent_机会节点研究</a>
+<a href="../../../行业研究/家庭空间常驻Agent/家庭空间常驻Agent_候选企业清单.html">家庭空间常驻Agent_候选企业清单</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_乐鑫科技_估值.html">家庭空间常驻Agent_乐鑫科技_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_兆威机电_估值.html">家庭空间常驻Agent_兆威机电_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_奥比中光_估值.html">家庭空间常驻Agent_奥比中光_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_恒玄科技_估值.html">家庭空间常驻Agent_恒玄科技_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_核心企业估值报告.html">家庭空间常驻Agent_核心企业估值报告</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_绿的谐波_估值.html">家庭空间常驻Agent_绿的谐波_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_萤石网络_估值.html">家庭空间常驻Agent_萤石网络_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/06_估值与分级/家庭空间常驻Agent_鸣志电器_估值.html">家庭空间常驻Agent_鸣志电器_估值</a>
+<a href="../../../行业研究/家庭空间常驻Agent/07_深度报告/家庭空间常驻Agent_产业深度研究报告.html">家庭空间常驻Agent_产业深度研究报告</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/W5估值_批量红队R2.html">W5估值_批量红队R2</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/W5估值_批量红队R3.html">W5估值_批量红队R3</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/W5估值_批量红队R4.html">W5估值_批量红队R4</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_估值红队_v2.html">家庭空间常驻Agent_估值红队_v2</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_复审R2.html">家庭空间常驻Agent_复审R2</a>
+<a href="../../../行业研究/家庭空间常驻Agent/09_红队审查/家庭空间常驻Agent_红队审查.html">家庭空间常驻Agent_红队审查</a>
+</div>
+</div>
+<div class="group"><div class="grp">开源中尺寸模型</div>
+<a href="../../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势研究.html">开源中尺寸模型_产业趋势研究</a>
+<a href="../../../行业研究/开源中尺寸模型/开源中尺寸模型_机会节点研究.html">开源中尺寸模型_机会节点研究</a>
+<a href="../../../行业研究/开源中尺寸模型/开源中尺寸模型_候选企业清单.html">开源中尺寸模型_候选企业清单</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_中科曙光_估值.html">开源中尺寸模型_中科曙光_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_中际旭创_估值.html">开源中尺寸模型_中际旭创_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_估值与分级_v1.html">开源中尺寸模型_估值与分级_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_寒武纪_估值.html">开源中尺寸模型_寒武纪_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_新易盛_估值.html">开源中尺寸模型_新易盛_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_核心企业估值报告.html">开源中尺寸模型_核心企业估值报告</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_浪潮信息_估值.html">开源中尺寸模型_浪潮信息_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_海光信息_估值.html">开源中尺寸模型_海光信息_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_润泽科技_估值.html">开源中尺寸模型_润泽科技_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/06_估值与分级/开源中尺寸模型_金山办公_估值.html">开源中尺寸模型_金山办公_估值</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_产业深度研究报告.html">开源中尺寸模型_产业深度研究报告</a>
+<a href="../../../行业研究/开源中尺寸模型/07_深度报告/开源中尺寸模型_深度报告_v1.0.html">开源中尺寸模型_深度报告_v1.0</a>
+<a href="../../../行业研究/开源中尺寸模型/开源中尺寸模型_产业趋势与节点研究.html">开源中尺寸模型_产业趋势与节点研究</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_估值红队_v2.html">开源中尺寸模型_估值红队_v2</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_复审R2.html">开源中尺寸模型_复审R2</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查.html">开源中尺寸模型_红队审查</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_v1.html">开源中尺寸模型_红队审查_v1</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第2轮.html">开源中尺寸模型_红队审查_第2轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/开源中尺寸模型_红队审查_第3轮.html">开源中尺寸模型_红队审查_第3轮</a>
+<a href="../../../行业研究/开源中尺寸模型/09_红队审查/红队审查_待执行.html">红队审查_待执行</a>
+</div>
+</div>
+<div class="group"><div class="grp">新型电池</div>
+<a href="../../../行业研究/新型电池/新型电池_产业趋势研究.html">新型电池_产业趋势研究</a>
+<a href="../../../行业研究/新型电池/新型电池_机会节点研究.html">新型电池_机会节点研究</a>
+<a href="../../../行业研究/新型电池/新型电池_候选企业清单.html">新型电池_候选企业清单</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_三企业估值报告.html">新型电池_三企业估值报告</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_上能电气_估值.html">新型电池_上能电气_估值</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_亿纬锂能_估值.html">新型电池_亿纬锂能_估值</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_天赐材料_估值.html">新型电池_天赐材料_估值</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_宁德时代_估值.html">新型电池_宁德时代_估值</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_恩捷股份_估值.html">新型电池_恩捷股份_估值</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_欣旺达_估值.html">新型电池_欣旺达_估值</a>
+<a href="../../../行业研究/新型电池/06_估值与分级/新型电池_阳光电源_估值.html">新型电池_阳光电源_估值</a>
+<a href="../../../行业研究/新型电池/07_深度报告/新型电池_产业深度研究报告.html">新型电池_产业深度研究报告</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_估值红队_v2.html">新型电池_估值红队_v2</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_估值红队_新增四家.html">新型电池_估值红队_新增四家</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_估值红队_新增四家_第2轮.html">新型电池_估值红队_新增四家_第2轮</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_复审R2.html">新型电池_复审R2</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查.html">新型电池_红队审查</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第2轮.html">新型电池_红队审查_第2轮</a>
+<a href="../../../行业研究/新型电池/09_红队审查/新型电池_红队审查_第3轮.html">新型电池_红队审查_第3轮</a>
+</div>
+</div>
+<div class="group"><div class="grp">明泰铝业</div>
+<a href="../../../行业研究/明泰铝业/06_估值与分级/明泰铝业_明泰铝业_估值.html">明泰铝业_明泰铝业_估值</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../../行业研究/明泰铝业/09_红队审查/明泰铝业_红队R1.html">明泰铝业_红队R1</a>
+<a href="../../../行业研究/明泰铝业/09_红队审查/明泰铝业_红队R2复验.html">明泰铝业_红队R2复验</a>
+</div>
+</div>
+<div class="group"><div class="grp">智能网联新能源汽车</div>
+<a href="../../../行业研究/智能网联新能源汽车/智能网联新能源汽车_产业趋势研究.html">智能网联新能源汽车_产业趋势研究</a>
+<a href="../../../行业研究/智能网联新能源汽车/智能网联新能源汽车_机会节点研究.html">智能网联新能源汽车_机会节点研究</a>
+<a href="../../../行业研究/智能网联新能源汽车/智能网联新能源汽车_候选企业清单.html">智能网联新能源汽车_候选企业清单</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_伯特利_估值.html">智能网联新能源汽车_伯特利_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_伯特利_估值_v2.html">智能网联新能源汽车_伯特利_估值_v2</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_估值与分级_v1.html">智能网联新能源汽车_估值与分级_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_保隆科技_估值.html">智能网联新能源汽车_保隆科技_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_德赛西威_估值.html">智能网联新能源汽车_德赛西威_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_核心企业估值报告.html">智能网联新能源汽车_核心企业估值报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_比亚迪_估值.html">智能网联新能源汽车_比亚迪_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_江淮汽车_估值.html">智能网联新能源汽车_江淮汽车_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_特锐德_估值.html">智能网联新能源汽车_特锐德_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_科博达_估值.html">智能网联新能源汽车_科博达_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_经纬恒润_估值.html">智能网联新能源汽车_经纬恒润_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_赛力斯_估值.html">智能网联新能源汽车_赛力斯_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/06_估值与分级/智能网联新能源汽车_长安汽车_估值.html">智能网联新能源汽车_长安汽车_估值</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_产业深度研究报告.html">智能网联新能源汽车_产业深度研究报告</a>
+<a href="../../../行业研究/智能网联新能源汽车/07_深度报告/智能网联新能源汽车_深度报告_v1.0.html">智能网联新能源汽车_深度报告_v1.0</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_估值红队_v2.html">智能网联新能源汽车_估值红队_v2</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_复审R2.html">智能网联新能源汽车_复审R2</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查.html">智能网联新能源汽车_红队审查</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_v1.html">智能网联新能源汽车_红队审查_v1</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第2轮.html">智能网联新能源汽车_红队审查_第2轮</a>
+<a href="../../../行业研究/智能网联新能源汽车/09_红队审查/智能网联新能源汽车_红队审查_第3轮.html">智能网联新能源汽车_红队审查_第3轮</a>
+</div>
+</div>
+<div class="group"><div class="grp">轮胎</div>
+<a href="../../../行业研究/轮胎/轮胎_产业趋势研究.html">轮胎_产业趋势研究</a>
+<a href="../../../行业研究/轮胎/轮胎_机会节点研究.html">轮胎_机会节点研究</a>
+<a href="../../../行业研究/轮胎/06_估值与分级/轮胎_中策橡胶_估值.html">轮胎_中策橡胶_估值</a>
+<a href="../../../行业研究/轮胎/06_估值与分级/轮胎_森麒麟_估值.html">轮胎_森麒麟_估值</a>
+<a href="../../../行业研究/轮胎/06_估值与分级/轮胎_玲珑轮胎_估值.html">轮胎_玲珑轮胎_估值</a>
+<a href="../../../行业研究/轮胎/06_估值与分级/轮胎_贵州轮胎_估值.html">轮胎_贵州轮胎_估值</a>
+<a href="../../../行业研究/轮胎/06_估值与分级/轮胎_赛轮轮胎_估值.html">轮胎_赛轮轮胎_估值</a>
+<div class="group sub collapsed"><div class="grp">红队审查（内部）</div>
+<a href="../../../行业研究/轮胎/09_红队审查/轮胎_批量红队R1.html">轮胎_批量红队R1</a>
+<a href="../../../行业研究/轮胎/09_红队审查/轮胎_森麒麟+玲珑_红队R1.html">轮胎_森麒麟+玲珑_红队R1</a>
+<a href="../../../行业研究/轮胎/09_红队审查/轮胎_红队R2复验.html">轮胎_红队R2复验</a>
+</div>
+</div>
+</div><script>
+(function(){
+  // 高亮当前页：用 new URL() 把相对 href 解析为绝对路径后比对 pathname
+  document.querySelectorAll('.sidebar a').forEach(function(a){
+    try{
+      if(new URL(a.getAttribute('href'), location.href).pathname === location.pathname){
+        a.classList.add('current');
+        var g=a.closest('.group');
+        if(g)g.classList.remove('collapsed');
+      }
+    }catch(e){}
+  });
+})();
+document.addEventListener('click',function(e){
+  var g=e.target.closest('.grp');
+  if(g){g.parentElement.classList.toggle('collapsed');return;}
+  var t=e.target.closest('#sidebarToggle');
+  if(t){document.body.classList.toggle('hide-sb');
+    t.textContent=document.body.classList.contains('hide-sb')?'☰':'◀';return;}
+  // SPA式导航：点击侧栏链接只刷新右侧内容，侧栏保持原位
+  var a=e.target.closest('.sidebar a');
+  if(!a||e.metaKey||e.ctrlKey||e.shiftKey)return;
+  e.preventDefault();
+  var url=new URL(a.getAttribute('href'),location.href).href;
+  fetch(url).then(function(r){
+    if(!r.ok){location.href='/rs-archive-8f3k/';throw new Error('404→home');}
+    return r.text();}).then(function(html){
+    var doc=new DOMParser().parseFromString(html,'text/html');
+    var nc=doc.querySelector('.content');
+    var oc=document.querySelector('.content');
+    if(nc&&oc){
+      oc.replaceWith(nc);
+      document.title=doc.title;
+      // 更新高亮
+      document.querySelectorAll('.sidebar a.current').forEach(function(x){x.classList.remove('current')});
+      a.classList.add('current');
+      history.pushState({sp:true},'',url);
+      window.scrollTo(0,0);
+    }else{location.href=url;} // 结构异常则整页跳转兜底
+  }).catch(function(){location.href=url;}); // 网络失败兜底
+});
+window.addEventListener('popstate',function(e){
+  fetch(location.href).then(function(r){
+    if(!r.ok){location.reload();throw new Error('404→reload');}
+    return r.text();}).then(function(html){
+    var doc=new DOMParser().parseFromString(html,'text/html');
+    var nc=doc.querySelector('.content');
+    var oc=document.querySelector('.content');
+    if(nc&&oc){
+      oc.replaceWith(nc);
+      document.title=doc.title;
+      document.querySelectorAll('.sidebar a.current').forEach(function(x){x.classList.remove('current')});
+      document.querySelectorAll('.sidebar a').forEach(function(x){
+        try{if(new URL(x.getAttribute('href'),location.href).pathname===location.pathname)x.classList.add('current');}catch(err){}
+      });
+    }else{location.reload();}
+  }).catch(function(){location.reload();});
+});
+</script><div class="content"><nav><a href="../../../00_使用说明/index.html">00_使用说明</a> <a href="../../../06_数据与工具/index.html">06_数据与工具</a> <a href="../../../08_归档/index.html">08_归档</a> <a href="../../../AI数据中心800VDC供电/index.html">AI数据中心800VDC供电</a> <a href="../../../军工/index.html">军工</a> <a href="../../../化纤/index.html">化纤</a> <a href="../../../家庭空间常驻Agent/index.html">家庭空间常驻Agent</a> <a href="../../../开源中尺寸模型/index.html">开源中尺寸模型</a> <a href="../../../新型电池/index.html">新型电池</a> <a href="../../../明泰铝业/index.html">明泰铝业</a> <a href="../../../智能网联新能源汽车/index.html">智能网联新能源汽车</a> <a href="../../../轮胎/index.html">轮胎</a></nav><p><a href="../../index.html">← 返回</a> · 生成于 2026-10-16 14:16</p>
+<h1 id="r1">军工全套红队审查 R1</h1>
+<blockquote>
+<p>审查日期：2026-10-16。对象：产业趋势研究 / 机会节点 / 候选企业清单（基础三份）、主线1军贸 / 主线2新质 / 主线3船舶、六家v2.0估值报告及model_v2.json。
+方法：逐文件通读 + 九行卡片/三情景单调性/利润×PE/每股/TTM/隐含PE/upside 全部用Python机械复算；主线间交叉比对；对照《valuation-lessons》硬规则（口径分层、无源数字、压力档可复算、横向一致性）。
+本报告只列报，不修改原文。置信度标注：✔=复算确认无误；✘=复算不符。</p>
+</blockquote>
+<hr />
+<h2 id="_1">一、事实错误（数字/勾稽/笔误，复算可证）</h2>
+<p><strong>F1. 沈飞估值§0"市值12615亿"——数量级笔误（10倍）</strong> ✘
+- 位置：《军工_中航沈飞_估值_v2.md》§0估值算式行："总股本27.60亿股（市值12615亿÷45.70元…）"。
+- 正确值：市值1261.5亿（同报告§"当前行情"、model.json total_mv_yi=1261.5均正确）。
+- 建议：改为"1261.5亿"。这是单源数据无人工复核的典型产物，建议估值算式行加一道"市值=股本×股价"的自动核对。</p>
+<p><strong>F2. 中航高科§8"下行-27%/上行+59%~+88%"——与自家档位完全不勾稽</strong> ✘
+- 位置：《军工_中航高科_估值_v2.md》§8"下行-27%（悲观档），上行+59%~+88%（乐观档）"。
+- 复算：现价239.0亿 vs 悲观中枢232亿 = <strong>-2.9%</strong>（model.json check.upside_vs_price.悲观=-0.029，json是对的，正文错）；乐观下沿389亿=+62.8%、中枢424亿=+77.4%、上沿459亿=+91.9%；中性上沿360亿=+50.6%。"+59%"与"+88%"两个端点均无法从任何档位得出。
+- 建议：改为"下行≈-3%（已处悲观档中枢附近），上行+51%~+92%"，并同步检查§11"低于中性中枢-28%"（该句✔正确，239/331-1=-27.8%）。</p>
+<p><strong>F3. 高德红外§8"上行+29%~+76%"——上端点无法勾稽</strong> ✘
+- 位置：《军工_高德红外_估值_v2.md》§8"赔率结构好于沈飞/成飞（下行-20% vs 上行+29%~+76%）"。
+- 复算：中性中枢578亿=+28.6%✔；乐观下沿742亿=<strong>+65.1%</strong>、上沿875亿=<strong>+94.7%</strong>。+76%不是任何档位的值。
+- 建议：改为"+29%（中性）~+65%~+95%（乐观档区间）"。</p>
+<p><strong>F4. 沈飞§6 PB-ROE交叉验证的PB值复算不符</strong> ✘
+- 位置：《军工_中航沈飞_估值_v2.md》§6"中性1280亿对应PB≈4.9倍"。
+- 复算：按报告自身口径，净资产=现价市值÷现价PB=1261.5/5.39≈234亿；中性1280亿对应PB≈<strong>5.5倍</strong>，非4.9倍。
+- 建议：更正为≈5.5倍，或注明净资产取值口径（2025年末归母净资产来源）。</p>
+<p><strong>F5. 成飞§6 PB-ROE交叉验证的PB值不可复算</strong> ✘
+- 位置：《军工_中航成飞_估值_v2.md》§6"中性1520亿对应PB≈6.9倍"。
+- 复算：两条路径都得不到6.9——①ROE反推：2025归母34.32亿÷ROE26.8%≈加权净资产128亿 → PB≈11.9倍；②现价口径：1653.5/7.91≈209亿 → 1520/209≈<strong>7.3倍</strong>。成飞2025年重组发行股份导致加权与期末净资产差异巨大，正文未给净资产数。
+- 建议：明确采用期末归母净资产口径并给出数值；若净资产口径无法落地，删除该交叉验证项而非保留错误倍数。</p>
+<p><strong>F6. 高德红外§6 PB交叉验证复算不符</strong> ✘
+- 位置：《军工_高德红外_估值_v2.md》§6"578亿对应≈6.9倍（归母净资产…约77亿）"。
+- 复算：578/77.1≈<strong>7.5倍</strong>。另注：用"半年ROE 17.51%直接除"得77亿未年化，属期间口径，可用但应标注。
+- 建议：更正为≈7.5倍并标注净资产为"26H1净资产（期间ROE口径推算）"。</p>
+<p><strong>F7. 沈飞§4乐观档利润桥传导链断裂</strong> ✘（违反valuation-lessons"情景档利润必须能用自家盈利桥复算"）
+- 位置：《军工_中航沈飞_估值_v2.md》§4："乐观档48亿=军贸增量【推断】：假设2027军贸收入70-80亿、净利率比内销高3-4pct，增量利润约8亿"。
+- 复算：①增量利润=70~80亿×(3~4pct)=<strong>2.1~3.2亿</strong>，不是8亿；要凑8亿需净利率差约10pct。②算式行自洽性：580亿×8.5%=<strong>49.3亿≠48亿</strong>（差1.3亿）。
+- 建议：二选一——(a)将军贸净利率假设改为"高出内销约10pct（对应军贸净利率17%+）"并明示这是纯推断的上限假设；(b)把乐观档利润下修至43~44亿并同步改卡片/算式/§6/§8/§11五处与model.json。当前写法下乐观档的+29%空间虚增。</p>
+<p><strong>F8. 高德红外§4中性收入推导跳跃</strong> ✘
+- 位置：《军工_高德红外_估值_v2.md》§4："收入台阶95亿（=26H1的42.2×2×季节性微调-军品节奏）"。
+- 复算：42.2×2=84.4亿，到95亿需<strong>+12.5%</strong>，称"季节性微调"名不副实。军品交付H2偏重可以辩护，但+12.5%是显性假设，需写出依据（如2025年H2/H1收入比）。
+- 建议：补2025年上下半年收入分布作锚；若2025年H2占比约53%（则84.4×1.06≈89亿），中性收入与利润（21亿）应同步下修约6%。</p>
+<p>其余机械复算✔（无错项备案）：六家np单调性全部成立；全部mv=np×PE复算成立（成飞乐观上沿47×44=2068、船舶119×22=2618等）；全部中枢=区间均值成立；每股价值=市值/股本成立；TTM归母与PE(TTM)六家全部勾稽（沈飞28.5亿/44.2、成飞32.3亿/51.2、船舶140.3亿/19.0、高德18.56亿/24.2、国科2.29亿/46.9、高科8.65亿/27.6）；隐含2027E PE六家全部成立；沈飞/成飞/船舶/国科/高德的upside（除F2/F3外）与json一致；船舶2027利润增速假设≤30%符合主线3要求（中性100亿&lt;2026年化水平，✔无矛盾）；沈飞/成飞中性档均不含歼-35签约/军贸基准假设，符合主线1"签约当催化"要求（✔）；正常化锚处理（沈飞禁用26H1年化、成飞按5%净利率而非4.55%机械外推、国科45%毛利率按脉冲处理）合理性✔。</p>
+<hr />
+<h2 id="_2">二、证据问题（来源/口径/一致性缺陷）</h2>
+<p><strong>E1. 正文与model.json口径漂移（三处）</strong>
+- 高德悲观档：正文"12亿×PE 30"，json pe=[28,32]；国科悲观档：正文"PE 32"，json pe=[30,34]。两处json存了区间、正文只写单值（或反之），且高德正文明确写"悲观按区间中枢给360亿"，json却存[336,384]整段区间——同一档位两套口径。
+- 建议：固定一个规则（正文卡片给区间、算式行给中枢；json与正文逐字段同构），并在生成脚本里做正文↔json diff校验。model_v2.json与正文不一致是R2复验清单明令禁止的项。</p>
+<p><strong>E2. 高德红外"下沿保护"未完全落实——减持信息零传导</strong>（任务重点项③）
+- 主线2明确记载"实控人2026年1-2月减持10.21亿"并要求"对高德红外估值区间设下沿保护（弹药板块下行+减持）"。
+- 实查：grep《军工_高德红外_估值_v2.md》与《军工_高德红外_model_v2.json》，<strong>"减持"零出现</strong>。下沿保护只落实了一半：有订单退坡悲观档（360亿）+PE非单调辩护，但减持供给压力、主线2的原始证据均未进入报告；known_gaps也未列。
+- 建议：在§3核心变量与model.json key_risk中加入实控人减持（10.21亿，2026年1-2月，主线2口径）作为流动性/信号变量；按valuation-lessons流动性规则评估是否需要在悲观档显性化折价。</p>
+<p><strong>E3. 军贸大单数字口径混乱（主线1 vs 主线2）</strong>
+- 主线1：高德"2025-07签6.85亿军贸系统合同"、"军贸总包合同（6.85亿/18.54亿）"；主线2："连续公告军品大单（3笔18.71亿+18.54亿）"。"18.71亿"是3笔合计还是第4笔？两文无对照说明。国科军工4.66亿军贸合同（主线1【事实】）在国科估值报告正文中未引用（乐观档仅写"军贸弹药出口【推断】"）。
+- 建议：主线2改为"3笔合计18.71亿（含25-07的6.85亿）+26-02的18.54亿"（如属实）；国科报告§3核心变量补入4.66亿已签军贸合同作为乐观档唯一A级锚。</p>
+<p><strong>E4. 三条主线的"对六家估值影响"名单与实际六家不符</strong>
+- 实际六家：沈飞、成飞、中国船舶、高德红外、国科军工、中航高科。
+- 主线1§七写的名单是"沈飞/成飞/西飞/中国船舶/…中航光电、光启技术等"（且该句本身语病）；主线2§七评了中航光电、光启技术（均非六家）；主线3§七评了中船防务（非六家）。<strong>三线均未提及国科军工与中航高科的影响评估</strong>。
+- 建议：三线§七统一按实际六家名单逐家表态（国科军工在主线1/主线2分层中均有出现，缺估值影响段落属遗漏；中航高科在主线2属"主题/储备"层，同样缺表态）；西飞/光电/光启移入"清单外标的"附注。</p>
+<p><strong>E5. 行情数据单源、未按已知缺陷换源交叉</strong>
+- 数据能力说明已标注东财历史行情存在trade_date误标缺陷，要求换源交叉。实查：六家报告与候选清单的行情（价格/市值/PE/PB/股本）全部仅引东财RPT_VALUEANALYSIS_DET单源，无第二来源核对。F1的10倍笔误正是单源无复核环境的产物。
+- 建议：对六家的股本、市值、PB做一次第二来源抽查（公司定期报告/中证指数）；股本×股价=市值这道检查可脚本化。</p>
+<p><strong>E6. 候选清单与主线3/船舶v2结论矛盾未加注</strong>
+- 清单对中国船舶："民船周期+军船，板块利润之王，估值最低"（A类）。主线3与船舶v2的核心结论恰是"19倍TTM是周期股估值陷阱，'估值最低'是错觉"。基础层与主线层对同一标的给出方向相反的直觉引导，清单未加任何注。
+- 建议：清单该行加注"TTM口径，周期顶部利润；周期位置与估值陷阱讨论见主线3及船舶v2"。</p>
+<p><strong>E7. 候选清单口径标注不对称（小项）</strong>
+- 沈飞行标注了"-57.7%/-58.4%，交付节奏"，成飞行（-26.8%）与国科飞行（收入-10%、归母-23%）未标注同比方向——同表内处理深度不一致；成飞未标注2024序列为重组备考口径（v2报告已标注）。
+- 另：主线1称高德军贸板块"毛利率57.81%"（2025年报分部口径）与清单/估值报告的整体毛利率52%口径并存，建议在引用处打"分部vs整体"标签，避免读者混用。</p>
+<hr />
+<h2 id="_3">三、分歧意见（判断/表述层面，不构成错误）</h2>
+<p><strong>D1. 产业趋势研究§三把"歼-35巴基斯坦订单"写得像已成立事实，与主线1矛盾。</strong>
+- 位置：产业趋势§三·驱动一第5条："军贸合同（出口）公告：歼-35巴基斯坦订单（2025-06公开报道，40架）"。主线1§一.5的结论是"巴方2025-06公开否认已签约、截至2026-10无官方确认、把签约当催化而非底仓逻辑"。
+- 建议：该条改为"歼-35巴方40架报道（2025-06，<strong>巴方已否认签约</strong>，跟踪官方确认）"。基础层是入门地图，读者最可能只读这一份，此处的模糊代价最高。</p>
+<p><strong>D2. 机会节点§一"民船周期上行"与主线3的修正结论用词不一致。</strong>
+- 主线3标题即"高位平台，而非上行初段【重要修正】"，机会节点仍写"民船周期上行+军船交付"。
+- 建议：统一为"民船高位平台期（主线3修正口径）"。</p>
+<p><strong>D3. 产业趋势§五"军贸：从预期走向兑现的第二曲线"未吸收主线1的降级修正。</strong>
+- 主线1的修正论点是"军贸是主机厂利润率的期权，不是当期利润引擎"，产业趋势§五仍写"打开主机厂利润天花板"且无保留。
+- 建议：产业趋势§五第2条加一句"兑现节奏与幅度修正见主线1（利润兑现滞后签约2-5年）"。</p>
+<p><strong>D4. 高德悲观档PE(30)&gt;中性下沿PE(25)的非单调设计：可接受，但应显性声明。</strong>
+- 辩护（芯片独占资产价值支撑）成立、市值单调未破坏，符合规则；但正文与json口径不一（E1）使该设计看起来像失误。
+- 建议：卡片注明"悲观档PE有意高于中性下沿：低利润情景由资产价值托底，非倒挂失误"，与json统一。</p>
+<p><strong>D5. 沈飞中性档实质是单点事件赌注，档内无缓冲。</strong>
+- 中性档=「大单2026Q4落地」这一单一时点事件成立；报告§8自己也承认"中性档仅+1%空间、赔率不佳"。中性/乐观/悲观三档对大单时点的敏感度是阶跃式的，缺一个"大单延迟一个季度"的次档。
+- 建议：不必加档（会破坏三档结构），但在§7状态迁移中显性写明"中性档对Q4落地时点的半档敏感性"，否则中性1280亿中枢的表观精度（精确到个位）超出假设的支撑力。</p>
+<hr />
+<h2 id="_4">四、结论</h2>
+<ul>
+<li><strong>必须修（事实层）</strong>：F1–F8，其中F2/F3（upside数字凭空）、F7（乐观档利润桥断链、虚增上行空间）、F1（10倍笔误）为高危；每处修正涉及卡片/算式/§6/§8/§11/json多点位同步。</li>
+<li><strong>应当修（证据层）</strong>：E1–E7，优先E2（高德减持下沿保护未落实，任务重点项）与E4（主线↔六家名单错位）。</li>
+<li><strong>建议修（表述层）</strong>：D1–D5，优先D1（产业趋势的歼-35表述）。</li>
+<li>六家三情景单调性、利润×PE勾稽、TTM与隐含PE复算整体质量良好；主线间核心约束（船舶2027增速≤30%、歼-35签约不当基准）均已守住。</li>
+</ul></div>
